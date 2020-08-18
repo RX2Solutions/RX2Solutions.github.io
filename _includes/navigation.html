@@ -6,65 +6,24 @@
       </a>
       <div class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown static">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages </a>
-                  <ul class="dropdown-menu megamenu">
-                      <li>
-                          <div class="container">
-                              <div class="row">
-                                  <div class="col-lg-3 col-md-6 col-sm-12">
-                                      <h5 class="dropdown-title bottom10"> General </h5>
-                                      <a class="dropdown-item" href="about.html">About Us</a>
-                                      <a class="dropdown-item" href="services.html">Services</a>
-                                      <a class="dropdown-item" href="services-detail.html">Service Detail</a>
-                                      <a class="dropdown-item" href="testimonial.html">Testimonials</a>
-                                      <a class="dropdown-item" href="contact.html">Contact Us</a>
-                                      <a class="dropdown-item" href="team.html">Our Team</a>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6 col-sm-12">
-                                      <h5 class="dropdown-title opacity-10"> Others </h5>
-                                      <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                      <a class="dropdown-item" href="gallery-detail.html">Gallery Detail</a>
-                                      <a class="dropdown-item" href="pricing.html">Pricing</a>
-                                      <a class="dropdown-item" href="404.html">404 Error</a>
-                                      <a class="dropdown-item" href="faq.html">FAQ's</a>
-                                      <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6 col-sm-12">
-                                      <h5 class="dropdown-title bottom10"> Account </h5>
-                                      <a class="dropdown-item" href="login.html">Login</a>
-                                      <a class="dropdown-item" href="register.html">Register</a>
-                                      <a class="dropdown-item" href="forget-password.html">Reset Password</a>
-                                      <a class="dropdown-item" href="support.html">Support</a>
-                                  </div>
-                                  <div class="col-lg-3 col-md-6 col-sm-12">
-                                      <h5 class="dropdown-title bottom10"> Shop Pages </h5>
-                                      <a class="dropdown-item" href="shop.html">Shop</a>
-                                      <a class="dropdown-item" href="shop-detail.html">Shop Detail</a>
-                                      <a class="dropdown-item" href="shop-cart.html">Shopping Cart</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown position-relative">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Blog </a>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="blog-1.html">Blog Layout 1</a>
-                      <a class="dropdown-item" href="blog-2.html">Blog Layout 2</a>
-                      <a class="dropdown-item" href="blog-detail.html">Blog Layout 3</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+
+            {% for item in site.data.navigation %}
+                {% if item.subitems[0] %}
+                    <li class="nav-item dropdown position-relative">
+                        <a class="nav-link dropdown-toggle{% if page.url == item.link %} current{% endif %}" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{ item.name }} </a>
+                        <div class="dropdown-menu">
+                            {% for subitem in item.subitems %}
+                                <a class="dropdown-item" href="{{ subitem.link }}">{{ subitem.name}}</a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link{% if page.url == item.link %} current{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+
           </ul>
       </div>
       <ul class="social-icons social-icons-simple d-lg-inline-block d-none animated fadeInUp mt-0" data-wow-delay="300ms">
@@ -78,12 +37,3 @@
       </a>
   </div>
 </nav>
-<!--
-    <nav>
-      {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-            {{ item.name }}
-      </a>
-      {% endfor %}
-    </nav>
--->
