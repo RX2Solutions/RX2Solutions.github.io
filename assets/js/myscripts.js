@@ -923,7 +923,7 @@ jQuery($=> {
 
 });
 
-$('.parallaxie').parallaxie();
+$('.hero').parallaxie();
 
 $(window).on("load", function () {
     "use strict";
