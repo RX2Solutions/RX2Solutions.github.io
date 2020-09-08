@@ -7,8 +7,8 @@
     link: ./about.html#meet-the-team
 - name: Our Solutions
   subitems:
-  - name: IT Staffing
-    link: ./it.html
+  - name: Information Technology
+    link: ./information-technology.html
   - name: Accounting & Finance
     link: ./af.html
   - name: Scientific & Clinical
@@ -17,9 +17,14 @@
     link: ./engineering-supplychain.html
   - name: Marketing & Creative
     link: ./marketing-creative
-- name: Respectfully Professional Process
-  link: ./rpp.html
 - name: Publications
   link: ./blog.html
 - name: Careers
   link: https://www2.jobdiva.com/portal/?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/
+- name: Login
+  link: ./about.html
+  subitems:
+  - name: Client
+    link: https://www2.jobdiva.com/portal/#/login?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/
+  - name: Consultant
+    link: https://www2.jobdiva.com/portal/?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/

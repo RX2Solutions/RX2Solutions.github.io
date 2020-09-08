@@ -1,6 +1,6 @@
 ---
 layout: default
-title: IT Staffing
+title: Information Technology
 text-color: white
 # Create some techy graphic/put RPP in there
 ---

@@ -1,24 +1,10 @@
----
----
 <!doctype html>
 <html>
 {% include headers.html %}
   <body>
     {% include preloader.html %}
     {% include navigation.html %}
-    <div class="hero" style='background: url("./assets/images/
-    {%- if page.background -%}
-      {{- page.background -}}
-    {%- else -%}
-      377.jpg
-    {%- endif -%}
-    ")' data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
-    <div class="gutsRow" style="color:{{ page.text-color }}">
-          <div style="margin: 40px;">
-            {{ content }}
-          </div>
-      </div>
-  </div>
+    {{ content }}
     {% include endscripts.html %}
 </body>
 </html>
