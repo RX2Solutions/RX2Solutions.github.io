@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: hero
 title: Information Technology
 text-color: white
-# Create some techy graphic/put RPP in there
+background: stock-photo-communication-technology-for-internet-business-global-world-network-and-telecommunication-on-earth-1421446100.jpg
 ---
 # {{ page.title }}
 As a technology-driven organization we understand how important it is to have the right software, hardware, and people in place.

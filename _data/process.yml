@@ -9,7 +9,11 @@ process:
     link: ./rpp.html#approach
     short: We go deep to ensure fit. Throughoughly vetting candidates providung across requirements and budget range. We are on clients' and job seekers' teams. 
     long:
-  - name: Communication & Deployment
+  - name: Communication
+    link: ./rpp.html#communication-and-deployment
+    short: We will be in touch with you throughout the entire process as a trusted advisor to help facilitate hiring, share progress, report market conditions, and set reasonable expectations.
+    long:
+  - name: Deployment
     link: ./rpp.html#communication-and-deployment
     short: We will be in touch with you throughout the entire process as a trusted advisor to help facilitate hiring, share progress, report market conditions, and set reasonable expectations.
     long:
