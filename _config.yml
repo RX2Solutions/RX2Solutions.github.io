@@ -1,4 +1,5 @@
-# theme: jekyll-theme-cayman
+baseurl: /rx2solutions-com
+
 collections:
   authors:
     output: true

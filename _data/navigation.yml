@@ -1,30 +1,30 @@
 - name: About Us
-  link: ./about.html
+  link: /about.html
   subitems:
   - name: Why RX2 Solutions?
-    link: ./about.html#why-rx2-solutions
+    link: /about.html#why-rx2-solutions
   - name: Respectfully Professional Process
-    link: ./rpp.html
+    link: /rpp.html
   - name: Meet the Team
-    link: ./about.html#meet-the-team
+    link: /about.html#meet-the-team
 - name: Our Solutions
   subitems:
   - name: Information Technology
-    link: ./information-technology.html
+    link: /information-technology.html
   - name: Accounting & Finance
-    link: ./af.html
+    link: /af.html
   - name: Scientific & Clinical
-    link: ./scientific-clinical.html
+    link: /scientific-clinical.html
   - name: Engineering & Supply Chain
-    link: ./engineering-supplychain.html
+    link: /engineering-supplychain.html
   - name: Marketing & Creative
-    link: ./marketing-creative
+    link: /marketing-creative
 - name: Publications
-  link: ./blog.html
+  link: /blog.html
 - name: Careers
   link: https://www2.jobdiva.com/portal/?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/
 - name: Login
-  link: ./about.html
+  link: /about.html
   subitems:
   - name: Client
     link: https://www2.jobdiva.com/login_timesheet.jsp?a=bgjdnwc9nv07ivdb0syybuj8ucs9qa069dbvjfjr8ddm03lcdn91xmixspyjd7zj

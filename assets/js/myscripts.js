@@ -921,6 +921,68 @@ jQuery($=> {
         });
     }
 
+    /* =====================================
+                CubePortfolio
+    ====================================== */
+    /* ------Blog Masonry----- */
+    $("#blog-measonry").cubeportfolio({
+        layoutMode: 'grid',
+        defaultFilter: '*',
+        animationType: "scaleSides",
+        gapHorizontal: 30,
+        gapVertical: 30,
+        gridAdjustment: "responsive",
+        mediaQueries: [{
+            width: 1500,
+            cols: 4
+        }, {
+            width: 1100,
+            cols: 3
+        }, {
+            width: 992,
+            cols: 3
+        }, {
+            width: 768,
+            cols: 3
+        }, {
+            width: 480,
+            cols: 1
+        }, {
+            width: 320,
+            cols: 1,
+        }],
+    });
+
+    /*services*/
+    $("#services-measonry").cubeportfolio({
+        layoutMode: 'grid',
+        defaultFilter: '.client',
+        filters: '#services-filter',
+        animationType: "scaleSides",
+        gapHorizontal: 30,
+        gapVertical: 30,
+        gridAdjustment: "responsive",
+        mediaQueries: [{
+            width: 1500,
+            cols: 4
+        }, {
+            width: 1100,
+            cols: 4
+        }, {
+            width: 992,
+            cols: 4
+        }, {
+            width: 768,
+            cols: 2
+        }, {
+            width: 480,
+            cols: 1
+        }, {
+            width: 320,
+            cols: 1,
+        }],
+    });
+
 });
 
 $('.hero').parallaxie();

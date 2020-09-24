@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg transparent-bg bg-transparent darkcolor static-nav mt-sm-4 mt-2">
   <div class="container bg-white border-radius-50 position-relative">
-      <a class="navbar-brand pl-2" href="index.html">
-          <img src="./assets/images/RX2-Solutions-01-1-e1540759905312.jpg" alt="logo" class="logo-default">
-          <img src="./assets/images/RX2-Solutions-01-1-e1540759905312.jpg" alt="logo" class="logo-scrolled">
+      <a class="navbar-brand pl-2" href="{{ site.baseurl }}/index.html">
+          <img src="{{ site.baseurl }}/assets/images/RX2-Solutions-01-1-e1540759905312.jpg" alt="logo" class="logo-default">
+          <img src="{{ site.baseurl }}/assets/images/RX2-Solutions-01-1-e1540759905312.jpg" alt="logo" class="logo-scrolled">
       </a>
       <div class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
@@ -13,13 +13,13 @@
                         <a class="nav-link dropdown-toggle{% if page.url == item.link %} current{% endif %}" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{ item.name }} </a>
                         <div class="dropdown-menu">
                             {% for subitem in item.subitems %}
-                                <a class="dropdown-item" href="{{ subitem.link }}">{{ subitem.name}}</a>
+                                <a class="dropdown-item" href="{{ site.baseurl }}{{ subitem.link }}">{{ subitem.name}}</a>
                             {% endfor %}
                         </div>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link{% if page.url == item.link %} current{% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+                        <a class="nav-link{% if page.url == item.link %} current{% endif %}" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
