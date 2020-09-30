@@ -375,6 +375,7 @@ jQuery($=> {
             live: true
         });
         wow.init();
+        console.warn("wow init");
     }
     if ($(window).width() > 992) {
 

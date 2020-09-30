@@ -1,3 +1,8 @@
+{%- assign pageimage = "newspaper-1422025_1280.png" -%}
+{%- if page.image -%}
+{%- assign pageimage = page.image -%}
+{%- endif -%}
+
 <!doctype html>
 <html>
 {% include headers.html %}
@@ -10,20 +15,22 @@
       <div class="row">
           <div class="col-lg-8 col-md-7">
               <div class="news_item shadow">
-                  <div class="image">
-                      <img src="images/blog-measonry1.jpg" alt="Latest News" class="img-responsive">
-                  </div>
+                {%- if page.image -%}
+                <div class="image">
+                      <img src="{{- basurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
+                </div>
+                {%- endif -%}
                   <div class="news_desc text-center text-md-left">
-                      <h3 class="text-capitalize font-normal darkcolor">{{ page.title }}</h3>
-                      <ul class="meta-tags top20 bottom20">
-                          <li><a href="#."><i class="fas fa-calendar-alt"></i> {{ page.date | date_to_string }}</a></li>
-                          <li><a href="#."> <i class="far fa-user"></i> 
+                    <h3 class="text-capitalize font-normal darkcolor">{{ page.title }}</h3>
+                    <ul class="meta-tags top20 bottom20">
+                        <li><a href="#."><i class="fas fa-calendar-alt"></i> {{ page.date | date_to_string }}</a></li>
+                        <li><a href="#."> <i class="far fa-user"></i> 
                             {%- assign author = site.authors | where: 'short_name', page.author | first -%}
                             {%- if author -%}
-                              <a href="{{ author.url }}"> {{ author.name -}}</a>
+                            <a href="{{ author.url }}"> {{ author.name -}}</a>
                             {%- endif -%}
-                          </li>
-                      </ul>
+                        </li>
+                    </ul>
 <div class="blog-article">
 {{ content }}
 </div>
@@ -36,16 +43,18 @@
                       <h4 class="text-capitalize darkcolor bottom20 text-center text-md-left">Recent Posts</h4>
                       {% for post in site.posts %}
                       <div class="single_post bottom15">
-                          <a href="{{ post.url }}" class="post"><img src="images/blog-recent-1.jpg" alt="post image"></a>
+                        {%- if post.thumbnail -%}
+                          <a href="{{- baseurl -}}{{ post.url }}" class="post"><img src="{{- baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
+                        {%- endif -%}
                           <div class="text">
-                              <a href="{{ post.url }}">{{ post.title }}</a>
-                              <span>{{ page.date | date_to_string }}</span>
+                              <a href="{{- baseurl -}}{{ post.url }}">{{ post.title }}</a>
+                              <span>{{ post.date | date_to_string }}</span>
                           </div>
                       </div>
                       {% endfor %}
                   </div>
                   <div class="widget shadow heading_space text-center text-md-left">
-                      <h4 class="text-capitalize darkcolor bottom20">Categories</h4>
+                      <h4 class="text-capitalize darkcolor bottom20">Tags</h4>
                       <ul class="webcats">
 {% for tag in site.tags %}
                           <li><a href="#.">{{ tag[0] }} <span>({{ tag[1].size }})</span></a></li>

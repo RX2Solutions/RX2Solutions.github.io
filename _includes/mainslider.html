@@ -1,7 +1,7 @@
 {%- unless include.background -%}
 {%- assign include.background = "377.jpg" -%}
 {%- endunless -%}
-<section id="mainpagehero" class="hero" style='background: url("./assets/images/{{- include.background -}}")' data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
+<section id="mainpagehero" class="hero" style='background: url("{{- vaseurl -}}/assets/images/{{- include.background -}}")' data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
   <div class="container">
     <div class="gutsRow" style="color:{{- include.text-color -}}">
         <div class="gutsContent">

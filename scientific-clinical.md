@@ -2,7 +2,8 @@
 layout: default
 title: Scientific & Clinical
 text-color: black
-background: stock-photo-science-biotechnology-dna-illustration-and-abstract-illustration-1440959093.jpg
+background: stock-photo-science-chemistry-biology-medicine-and-people-concept-close-up-of-scientist-hand-with-test-281783735.jpg
+back_old: stock-photo-science-biotechnology-dna-illustration-and-abstract-illustration-1440959093.jpg
 # do some sort of DNA graphic with our RPP or something> 
 ---
 {% capture hero_text %}
