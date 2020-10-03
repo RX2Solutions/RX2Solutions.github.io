@@ -9,16 +9,16 @@
     link: /about.html#meet-the-team
 - name: Our Solutions
   subitems:
-  - name: Information Technology
-    link: /information-technology.html
   - name: Accounting & Finance
     link: /accounting-finance.html
-  - name: Scientific & Clinical
-    link: /scientific-clinical.html
   - name: Engineering & Supply Chain
     link: /engineering-supplychain.html
+  - name: Information Technology
+    link: /information-technology.html
   - name: Marketing & Creative
     link: /marketing-creative
+  - name: Scientific & Clinical
+    link: /scientific-clinical.html
 - name: Publications
   link: /blog.html
 - name: Careers

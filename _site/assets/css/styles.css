@@ -20,6 +20,14 @@ body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open 
 
 .gutsContent { margin: 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; background: #222; /* fallback for browsers that don't understand rgba */ border: solid 2px #fff; /* fallback for browsers that don't understand rgba */ background-color: rgba(64, 64, 64, 0.5); /* slighly transparent black */ border-color: rgba(255, 255, 255, 0.9); /* Very transparent white */ }
 
+.gutsContentarticle p { margin-top: 10px; margin-bottom: 10px; }
+
+.gutsContent ul { list-style: disc outside; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
+
+.gutsContent ol { list-style: decimal outside; margin-top: 5px; margin-bottom: 10px; margin-left: 10px; }
+
+.gutsContent li { margin-left: 10px; }
+
 /* ----- Social Icons ----- */
 .social-icons-simple { margin-top: -3px; }
 
