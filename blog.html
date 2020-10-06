@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 ---
-<section id="main-banner-page" class="position-relative page-header blog2-header section-nav-smooth" style="background-image: url('{{- baseurl -}}/assets/images/stock-vector-abstract-blue-and-green-wavy-lines-colorful-vector-background-394634593-cropped.jpg')" data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
+<section id="main-banner-page" class="position-relative page-header blog2-header section-nav-smooth" style="background-image: url('{{- site.baseurl -}}/assets/images/stock-vector-abstract-blue-and-green-wavy-lines-colorful-vector-background-394634593-cropped.jpg')" data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
   <div class="overlay overlay-dark opacity-4 z-index-1"></div>
   <div class="container">
       <div class="row">
@@ -35,22 +35,22 @@ title: Blog
             {% for post in site.posts %}
             <article class="blog-item heading_space wow fadeIn text-center text-md-left" data-wow-delay="300ms">
               {%- if post.image -%}
-              <div class="image"><img src="{{- baseurl -}}/assets/images/{{- post.image -}}" alt="article main image" class="border_radius"></div>
+              <div class="image"><img src="{{- site.baseurl -}}/assets/images/{{- post.image -}}" alt="article main image" class="border_radius"></div>
               {%- endif -%}
-                  <h3 class="darkcolor font-light bottom10 top30"> <a href="{{ post.url }}">{{- post.title -}}</a></h3>
+                  <h3 class="darkcolor font-light bottom10 top30"> <a href="{{- site.baseurl }}{{ post.url }}">{{- post.title -}}</a></h3>
                   <ul class="commment">
                       <li><a href="#."><i class="fas fa-calendar"></i>{{- post.date | date_to_string -}}</a></li>
                       <li>
                         {%- assign author = site.authors | where: 'short_name', post.author | first -%}
                         {%- if author -%}
-                        <a href="{{- baseurl -}}{{- author.url -}}"><i class="fas fa-user"></i> {{ author.name -}}</a>
+                        <a href="{{- site.baseurl -}}/{{- author.url -}}"><i class="fas fa-user"></i> {{ author.name -}}</a>
                         {%- endif -%}
                       </li>
                   </ul>
                   <div class="top15 blog-article">
                     {{ post.excerpt }}
                   </div>
-                  <a class=" button btn-primary" href="{{ post.url }}">Read More</a>
+                  <a class=" button btn-primary" href="{{- site.baseurl -}}{{ post.url }}">Read More</a>
               </article>
               {% endfor %}
             </div>
@@ -62,10 +62,10 @@ title: Blog
                     {% for post in site.posts %}
                     <div class="single_post bottom15">
                       {%- if post.thumbnail -%}
-                        <a href="{{- baseurl -}}{{ post.url }}" class="post"><img src="{{- baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
+                        <a href="{{- site.baseurl -}}{{ post.url }}" class="post"><img src="{{- site.baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
                       {%- endif -%}
                         <div class="text">
-                            <a href="{{- baseurl -}}{{ post.url }}">{{ post.title }}</a>
+                            <a href="{{- site.baseurl -}}{{ post.url }}">{{ post.title }}</a>
                             <span>{{ post.date | date_to_string }}</span>
                         </div>
                     </div>

@@ -17,7 +17,7 @@
               <div class="news_item shadow">
                 {%- if page.image -%}
                 <div class="image">
-                      <img src="{{- baseurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
+                      <img src="{{- site.baseurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
                 </div>
                 {%- endif -%}
                   <div class="news_desc text-center text-md-left">
@@ -27,7 +27,7 @@
                         <li><a href="#."> <i class="far fa-user"></i> 
                             {%- assign author = site.authors | where: 'short_name', page.author | first -%}
                             {%- if author -%}
-                            <a href="{{- baseurl -}}{{- author.url -}}"> {{ author.name -}}</a>
+                            <a href="{{- site.baseurl -}}{{- author.url -}}"> {{ author.name -}}</a>
                             {%- endif -%}
                         </li>
                     </ul>
@@ -44,10 +44,10 @@
                       {% for post in site.posts %}
                       <div class="single_post bottom15">
                         {%- if post.thumbnail -%}
-                          <a href="{{- baseurl -}}{{ post.url }}" class="post"><img src="{{- baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
+                          <a href="{{- site.baseurl -}}{{ post.url }}" class="post"><img src="{{- site.baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
                         {%- endif -%}
                           <div class="text">
-                              <a href="{{- baseurl -}}{{ post.url }}">{{ post.title }}</a>
+                              <a href="{{- site.baseurl -}}{{ post.url }}">{{ post.title }}</a>
                               <span>{{ post.date | date_to_string }}</span>
                           </div>
                       </div>
