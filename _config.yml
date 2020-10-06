@@ -1,5 +1,3 @@
-baseurl: /rx2solutions-com
-
 collections:
   authors:
     output: true
