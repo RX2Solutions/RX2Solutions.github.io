@@ -17,5 +17,3 @@ Our differentiator is our _Respectfully Professional Process,_ which has been de
 {% assign hero_text_html = hero_text | markdownify %}
 
 {% include mainslider.html text-color="white" content=hero_text_html background="stock-photo-abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-and-lines-connection-550182499.jpg" %}
-
-{% include team.html %}

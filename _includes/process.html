@@ -1,29 +1,75 @@
-<!-- Process section -->
 <section id="our-process" class="padding bgdark">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
+            <div class="col text-center">
                 <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
                     <h2 class="font-normal">{{- site.data.process.sectiontitle -}}</h2>
-                    <span>{{- site.data.process.sectionmain -}}</span>
                 </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col text-center whitecolor">
+                {{- site.data.process.sectionmain -}}
             </div>
         </div>
         <div class="row">
             <ul class="process-wrapp">
+                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                    <span class="pro-step bottom20">01</span>
+                    <p class="fontbold bottom25">Discovery</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
+                    <span class="pro-step bottom20">02</span>
+                    <p class="fontbold bottom25">Approach</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
+                    <span class="pro-step bottom20">03</span>
+                    <p class="fontbold bottom25">Communication & Recalibration</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
+                    <span class="pro-step bottom20">04</span>
+                    <p class="fontbold bottom25">Deployment</p>
+                    <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--
+<section id="our-process" class="padding bgdark">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                    <h2 class="font-normal">{{- site.data.process.sectiontitle -}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col text-center whitecolor">
+                {{- site.data.process.sectionmain -}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <ul class="process-wrapp">
                 {% assign step = 1 %}
                 {% assign delay = 300 %}
                 {% for item in site.data.process.process %}
                 <li class="whitecolor wow fadeIn" data-wow-delay="{{- delay -}}ms">
-                    <span class="pro-step bottom20">0{{- item.step -}}</span>
+                    <span class="pro-step bottom20">0{{- step -}}</span>
                     <p class="fontbold bottom25">{{- item.name -}}</p>
-<!--                    <p class="mt-n2 mt-sm-0">{{- item.short -}}</p> -->
+                    <p class="mt-n2 mt-sm-0">{{- item.short -}}</p>
                 </li>
                     {% assign step = step | plus: 1 %}
                     {% assign delay = delay | plus: 100 %}
                 {% endfor %}
             </ul>
+            </div>
         </div>
     </div>
 </section>
-<!-- Process ends-->
+-->

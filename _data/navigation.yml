@@ -2,11 +2,11 @@
   link: /about.html
   subitems:
   - name: Why RX2 Solutions?
-    link: /about.html#why-rx2-solutions
+    link: /about.html
   - name: Respectfully Professional Process
     link: /rpp.html
   - name: Meet the Team
-    link: /about.html#meet-the-team
+    link: /team.html
 - name: Our Solutions
   subitems:
   - name: Accounting & Finance

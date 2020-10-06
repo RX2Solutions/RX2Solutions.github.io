@@ -17,7 +17,7 @@
               <div class="news_item shadow">
                 {%- if page.image -%}
                 <div class="image">
-                      <img src="{{- basurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
+                      <img src="{{- baseurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
                 </div>
                 {%- endif -%}
                   <div class="news_desc text-center text-md-left">
@@ -27,7 +27,7 @@
                         <li><a href="#."> <i class="far fa-user"></i> 
                             {%- assign author = site.authors | where: 'short_name', page.author | first -%}
                             {%- if author -%}
-                            <a href="{{ author.url }}"> {{ author.name -}}</a>
+                            <a href="{{- baseurl -}}{{- author.url -}}"> {{ author.name -}}</a>
                             {%- endif -%}
                         </li>
                     </ul>
