@@ -82,34 +82,35 @@ body {
 
 .gutsContent p {
     font-size: large;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .gutsContent h1 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .gutsContent ul {
     font-size: large;
     list-style: disc outside;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .gutsContent ol {
     font-size: large;
     list-style: decimal outside;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 10px;
 }
 
 .gutsContent li {
     font-size: large;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -382,7 +383,7 @@ ul.social-icons.white li a:focus {
 .contact-table .icon-cell,
 .feature-item .icon,
 .cbp-l-filters .cbp-filter-item span,
-.testi-box .testimonial-round>img,
+.testi-box .round>img,
 .feature-item .icon,
 #services-slider .service-box>span {
     -webkit-transition: all 0.3s ease-in-out;
@@ -1491,7 +1492,7 @@ a.dropdown-toggle::after {
 }
 
 .blog2-header {
-    background: url(../images/bg-blog2-header.jpg) no-repeat;
+//    background: url(../images/bg-blog2-header.jpg) no-repeat;
 }
 
 .blog-detail-header {
@@ -1564,10 +1565,6 @@ a.dropdown-toggle::after {
 
 .reset-header {
     background: url(../images/bg-reset-header.jpg) no-repeat;
-}
-
-.testimonial-bg {
-    background: url(../images/testimonial-bg.jpg) no-repeat;
 }
 
 .contact-banner::before,
@@ -4218,7 +4215,7 @@ form.findus .select:after {
     left: 0;
     top: 0;
     position: absolute;
-    background: url(../images/testimonial-bg.jpg) no-repeat center center;
+    background: url(/assets/images/stock-photo-close-up-a-fun-group-of-friends-standing-together-1568584720.jpg) no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     z-index: -1;
@@ -4279,7 +4276,7 @@ form.findus .select:after {
 }
 
 .testimonial-bg {
-    background: url(../images/testimonial-bg.jpg) no-repeat;
+//    background: url(/assets/images/stock-photo-close-up-a-fun-group-of-friends-standing-together-1568584720.jpg) no-repeat;
 }
 
 

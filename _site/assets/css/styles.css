@@ -20,15 +20,15 @@ body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open 
 
 .gutsContent { margin: 20px; }
 
-.gutsContent p { font-size: large; margin-top: 10px; margin-bottom: 10px; }
+.gutsContent p { font-size: large; margin-top: 20px; margin-bottom: 10px; }
 
-.gutsContent h1 { margin-top: 10px; margin-bottom: 10px; }
+.gutsContent h1 { margin-top: 10px; margin-bottom: 20px; }
 
-.gutsContent ul { font-size: large; list-style: disc outside; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
+.gutsContent ul { font-size: large; list-style: disc outside; margin-top: 20px; margin-bottom: 10px; margin-left: 20px; }
 
-.gutsContent ol { font-size: large; list-style: decimal outside; margin-top: 5px; margin-bottom: 10px; margin-left: 10px; }
+.gutsContent ol { font-size: large; list-style: decimal outside; margin-top: 20px; margin-bottom: 10px; margin-left: 10px; }
 
-.gutsContent li { font-size: large; margin-left: 10px; }
+.gutsContent li { font-size: large; margin-left: 20px; margin-bottom: 10px; }
 
 /* ----- Social Icons ----- */
 .social-icons-simple { margin-top: -3px; }
@@ -103,7 +103,7 @@ ul.social-icons.white li a, ul.social-icons-simple.white li a, ul.social-icons l
 
 .button-readmore:hover::after { margin-left: 0; }
 
-a, *::before, *::after, .button, .image img, .navbar, .navbar .dropdown-menu, .team-content h4, .overlay, .overlay ul, .card-header .card-link:before, .contact-table .icon-cell, .feature-item .icon, .cbp-l-filters .cbp-filter-item span, .testi-box .testimonial-round > img, .feature-item .icon, #services-slider .service-box > span { -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+a, *::before, *::after, .button, .image img, .navbar, .navbar .dropdown-menu, .team-content h4, .overlay, .overlay ul, .card-header .card-link:before, .contact-table .icon-cell, .feature-item .icon, .cbp-l-filters .cbp-filter-item span, .testi-box .round > img, .feature-item .icon, #services-slider .service-box > span { -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 .side-menu .btn-close::before, .side-menu .btn-close::after, .process-wrapp li > .pro-step::before, .process-wrapp li::before, .process-wrapp li::after, .half-section-alt::before, .team-content::before, .progress-bars .progress .progress-bar span::after, .bg-testimonial::after, ul.rounded li::before, .webcats li a::before, ul.hours_links li::before, .side-nav .navbar-nav .nav-link::after, .numbered .tp-count:before, .owl-prev::before, .owl-next::before, .contact-banner::before { content: ""; }
 
@@ -432,8 +432,6 @@ a.dropdown-toggle::after { transition: all 0s; }
 
 .blog-header { background: url(../images/bg-blog-header.jpg) no-repeat; }
 
-.blog2-header { background: url(../images/bg-blog2-header.jpg) no-repeat; }
-
 .blog-detail-header { background: url(../images/bg-blog-detail-header.jpg) no-repeat; }
 
 .service-header { background: url(../images/bg-service-header.jpg) no-repeat; }
@@ -469,8 +467,6 @@ a.dropdown-toggle::after { transition: all 0s; }
 .sign-up-header { background: url(../images/bg-sign-up-header.jpg) no-repeat; }
 
 .reset-header { background: url(../images/bg-reset-header.jpg) no-repeat; }
-
-.testimonial-bg { background: url(../images/testimonial-bg.jpg) no-repeat; }
 
 .contact-banner::before, .contact-banner iframe { position: absolute; }
 
@@ -1349,7 +1345,7 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 
 .bg-transparent { background: transparent; }
 
-.bg-testimonial::after { height: 55%; left: 0; top: 0; position: absolute; background: url(../images/testimonial-bg.jpg) no-repeat center center; -webkit-background-size: cover; background-size: cover; z-index: -1; }
+.bg-testimonial::after { height: 55%; left: 0; top: 0; position: absolute; background: url(/assets/images/stock-photo-close-up-a-fun-group-of-friends-standing-together-1568584720.jpg) no-repeat center center; -webkit-background-size: cover; background-size: cover; z-index: -1; }
 
 .bg-testimonial::after, .testi-box .testimonial-round > img { width: 100%; }
 
@@ -1366,8 +1362,6 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 #testimonial-slider .owl-nav { width: 300px; display: inline-block; height: 30px; -webkit-transform: translateY(-150%); -moz-transform: translateY(-150%); -ms-transform: translateY(-150%); -o-transform: translateY(-150%); transform: translateY(-150%); margin-left: 2%; position: absolute; z-index: 5; }
 
 .testimonial-header { background: url(../images/bg-testimonial-header.jpg) no-repeat; }
-
-.testimonial-bg { background: url(../images/testimonial-bg.jpg) no-repeat; }
 
 /*App Features*/
 #app-feature .feature-item:hover, .feature-item.image { cursor: pointer; }
