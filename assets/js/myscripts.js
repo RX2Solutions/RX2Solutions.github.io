@@ -187,6 +187,14 @@ jQuery($=> {
         });
     }
 
+    /*
+     * Side menu collapse opener
+     * */
+    $(".collapsePagesSideMenu").on('click', function () {
+        $(this).children().toggleClass("rotate-180");
+    });
+
+
     /* ----- Full Screen ----- */
     let resizebanner = ()=> {
         let $fullscreen = $(".full-screen");
@@ -991,4 +999,5 @@ $('.hero').parallaxie();
 $(window).on("load", function () {
     "use strict";
     $(".loader").fadeOut(800);
+    $('.side-menu').removeClass('opacity-0');
 });
