@@ -3,7 +3,7 @@ layout: hero
 title: Why RX2 Solutions?
 text-color: white
 oldbackground: stock-photo-abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-and-lines-connection-550182499.jpg
-background: stock-vector-abstract-blue-and-green-wavy-lines-colorful-vector-background-394634593-cropped.jpg
+background: shutterstock_394634593-cropped.jpg
 ---
 # {{ page.title }}
 RX2 Solutions was founded on the principle of being a _Respectfully Professional Company._ We have evolved from a Staffing firm into a Technology Company that delivers customized Staff Augmentation and Talent Acquisition Solutions in the areas of Accounting & Finance, Creative & Marketing, Engineering & Supply Chain,  Information Technology, and Scientific & Clinical. 
