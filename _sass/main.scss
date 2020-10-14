@@ -1360,6 +1360,12 @@ a.dropdown-toggle::after {
 
 /*---- Navigation Ends ----*/
 
+.full-height {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+}
+
 /*-----Page Headers----- */
 
 .page-header {
@@ -2611,7 +2617,7 @@ p {
 }
 
 .bgdarker {
-    background: #f0f0f0;
+    background: #ededed;
 }
 
 .bgdefault {
@@ -3058,7 +3064,7 @@ section,
     margin-right: 10px;
     padding: 2rem 1rem;
     margin-top: -30px;
-    background: #f7f7f7;
+    background: #f4f4f4;
     z-index: 5;
 }
 
@@ -4298,6 +4304,7 @@ form.findus .select:after {
 }
 
 .testimonial-bg {
+    width: 100vw;
 //    background: url(/assets/images/stock-photo-close-up-a-fun-group-of-friends-standing-together-1568584720.jpg) no-repeat;
 }
 

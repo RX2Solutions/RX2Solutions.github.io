@@ -355,7 +355,7 @@ jQuery($=> {
 
     /* =====================================
      Parallax And responsive plugins initialize
-      ====================================== */
+      ======================================
     let $tooltip = $('.tooltip');
     $(()=> {
         $tooltip.tooltipster({
@@ -373,6 +373,7 @@ jQuery($=> {
             // }
         });
     });
+*/
     /*Wow Animations*/
     if ($(".wow").length && $(window).outerWidth() >= 567) {
         let wow = new WOW({
@@ -383,18 +384,22 @@ jQuery($=> {
             live: true
         });
         wow.init();
-        console.warn("wow init");
+//        console.warn("wow init");
     }
+
     if ($(window).width() > 992) {
 
         $(".parallax").parallaxie({
             //speed value btw (-1 to 1)
             speed: 0.55,
             offset: 0,
+            size: "cover"
         });
+
         $(".parallax.parallax-slow").parallaxie({
             speed: 0.31,
         });
+
     } else if ($(window).width() < 576) {
         $('#pagepiling #submit_btn').on('click', function () {
             $('#pagepiling #result').remove();
@@ -518,9 +523,9 @@ jQuery($=> {
     /*Testimonials*/
     $("#testimonial-slider").owlCarousel({
         items: 1,
-        autoplay: false,
+        autoplay: true,
         autoplayHoverPause: true,
-        mouseDrag: false,
+        mouseDrag: true,
         loop: true,
         margin: 30,
         animateIn: "fadeIn",

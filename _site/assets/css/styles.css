@@ -379,6 +379,8 @@ a.dropdown-toggle::after { transition: all 0s; }
   .contactus-wrapp.position-absolute { top: -300px !important; }
   .full-map { height: 540px !important; } }
 /*---- Navigation Ends ----*/
+.full-height { width: 100vw; height: 100vh; min-height: 700px; }
+
 /*-----Page Headers----- */
 .page-header { background-position: center center; -webkit-background-size: cover; background-size: cover; background-attachment: fixed; width: 100%; }
 
@@ -838,7 +840,7 @@ p { font-weight: normal; line-height: 1.7; }
 
 .bglight { background: #f6f7f8; }
 
-.bgdarker { background: #f0f0f0; }
+.bgdarker { background: #ededed; }
 
 .bgdefault { background: #1cb0b5; }
 
@@ -999,7 +1001,7 @@ section, .image, .image img { position: relative; }
 #services-slider .owl-item.center .service-box:hover { background-position: right center; }
 
 /*Services main*/
-.services-main .services-content { margin-left: 10px; margin-right: 10px; padding: 2rem 1rem; margin-top: -30px; background: #f7f7f7; z-index: 5; }
+.services-main .services-content { margin-left: 10px; margin-right: 10px; padding: 2rem 1rem; margin-top: -30px; background: #f4f4f4; z-index: 5; }
 
 @media screen and (max-width: 767px) { #services-slider { margin: -70px 0 0; }
   #services-slider.half-margin { margin: -55px 0 0; }
@@ -1368,6 +1370,8 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 #testimonial-slider .owl-nav { width: 300px; display: inline-block; height: 30px; -webkit-transform: translateY(-150%); -moz-transform: translateY(-150%); -ms-transform: translateY(-150%); -o-transform: translateY(-150%); transform: translateY(-150%); margin-left: 2%; position: absolute; z-index: 5; }
 
 .testimonial-header { background: url(../images/bg-testimonial-header.jpg) no-repeat; }
+
+.testimonial-bg { width: 100vw; }
 
 /*App Features*/
 #app-feature .feature-item:hover, .feature-item.image { cursor: pointer; }
