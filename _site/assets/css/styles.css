@@ -379,7 +379,7 @@ a.dropdown-toggle::after { transition: all 0s; }
   .contactus-wrapp.position-absolute { top: -300px !important; }
   .full-map { height: 540px !important; } }
 /*---- Navigation Ends ----*/
-.full-height { width: 100vw; height: 100vh; min-height: 700px; }
+.full-height { /*    width: 100vw; height: 100vh; min-height: 700px; */ }
 
 /*-----Page Headers----- */
 .page-header { background-position: center center; -webkit-background-size: cover; background-size: cover; background-attachment: fixed; width: 100%; }
