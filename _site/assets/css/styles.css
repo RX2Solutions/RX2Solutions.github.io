@@ -379,7 +379,7 @@ a.dropdown-toggle::after { transition: all 0s; }
   .contactus-wrapp.position-absolute { top: -300px !important; }
   .full-map { height: 540px !important; } }
 /*---- Navigation Ends ----*/
-.full-height { /*    width: 100vw; height: 100vh; min-height: 700px; */ }
+.full-height { /*    width: 100vw; height: 100vh; */ min-height: 1500px; }
 
 /*-----Page Headers----- */
 .page-header { background-position: center center; -webkit-background-size: cover; background-size: cover; background-attachment: fixed; width: 100%; }
@@ -1294,7 +1294,11 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 
 .blog-article li { margin-left: 10px; }
 
+.blog-article img { float: left; margin-right: 10px; }
+
 /*----- Team -----*/
+.teamhr hr { border: 1px solid #777; }
+
 .team-content { padding: 2rem 1rem; background: #fff; text-align: center; height: 108px; position: relative; overflow: hidden; z-index: 1; }
 
 .equal-shadow-team .team-content { box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1); }

@@ -408,6 +408,7 @@ jQuery($=> {
     } else {
         $('#pagepiling .para-opacity').removeClass('opacity-5');
     }
+
     $(window).resize(function () {
         if ($(window).width() < 576) {
             $('#pagepiling .para-opacity').addClass('opacity-5');

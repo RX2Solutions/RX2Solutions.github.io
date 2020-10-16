@@ -13,3 +13,14 @@ Our differentiator is our _Respectfully Professional Process,_ which has been de
 * Mission Statement:  RX2 Solutions seeks to help build stronger organizations and allow others to achieve their goals through the creation and execution of world-class human capital strategies.
 * Vision Statement:  To become the go-to resource for both job seekers and hiring managers through professionalism, integrity, and unparalleled service.
 * Value Statement:  Be Respectfully Professional while maintaining honesty and integrity towards colleagues, customers, and candidates.
+
+<div class="container">
+  <div class="row pt-4">
+    <div class="col-md-6 text-center">
+      <a href="{{- site.baseurl -}}/rpp.html" class="button btnsecondary gradient-btn mb-4">More about the Rspectfully Professional Process</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <a href="{{- site.baseurl -}}/team.html" class="button btnsecondary gradient-btn mb-4">Meet the Team</a>
+    </div>
+  </div>
+</div>

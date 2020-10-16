@@ -1363,8 +1363,8 @@ a.dropdown-toggle::after {
 .full-height {
 /*    width: 100vw;
     height: 100vh;
-    min-height: 700px;
     */
+    min-height: 1500px;
 }
 
 /*-----Page Headers----- */
@@ -4030,7 +4030,15 @@ form.findus .select:after {
     margin-left: 10px;
 }
 
+.blog-article img {
+    float: left;
+    margin-right: 10px;
+}
+
 /*----- Team -----*/
+.teamhr hr {
+    border: 1px solid #777;
+}
 
 .team-content {
     padding: 2rem 1rem;
