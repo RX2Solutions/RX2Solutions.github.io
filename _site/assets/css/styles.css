@@ -1288,6 +1288,8 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 
 .blog-article p { font-size: large; margin-top: 10px; margin-bottom: 10px; }
 
+.blog-article blockquote { font-size: large; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
+
 .blog-article ul { list-style: disc outside; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
 
 .blog-article ol { list-style: decimal outside; margin-top: 5px; margin-bottom: 10px; margin-left: 10px; }
