@@ -207,7 +207,7 @@
     <!-- End side menu -->
 
     
-<section id="mainpagehero" class="hero" style="background-size: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(&quot;/assets/images/stock-photo-abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-and-lines-connection-550182499.jpg&quot;)">
+<section id="mainpagehero" class="hero" style="background-size: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(&quot;/assets/images/stock-photo-abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-and-lines-connection-550182499.jpg&quot;)">
   <div class="container">
     <div class="row gutsRow" style="color:white">
         <div class="gutsContent">
@@ -340,59 +340,107 @@
 
 <!-- Testimonials -->
 <section id="our-testimonial" class="bglight padding_bottom">
-  <div class="parallax page-header testimonial-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/stock-photo-diversity-people-group-team-union-concept-386966809-cropped.jpeg')">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 offset-lg-6 col-md-12 text-center text-lg-right">
-                  <div class="heading-title wow fadeInUp padding_testi" data-wow-delay="300ms">
-                      <span class="whitecolor"></span>
-                      <h2 class="whitecolor font-normal">What Our Clients and Candidates Say</h2>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="container">
-      <div class="owl-carousel" id="testimonial-slider">
-          <!--item 1-->
-          <div class="item testi-box">
-              <div class="row align-items-center">
-                  <div class="col-lg-4 col-md-12 text-center">
-                      <div class="testimonial-round d-inline-block">
-                      </div>
-                      <h4 class="defaultcolor font-light top15"><a href="#.">CFO</a></h4>
-                      <p>A Life Sciences Client</p>
-                  </div>
-                  <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
-                      <p class="bottom15 top90">
-                        I have had an excellent experience with Rx2 Solutions for my search for candidates.
-                        They take the time to understand what we are looking for and our Company culture to provide high quality candidates.
-                        It has been a pleasure to partner with them!
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <!--item 2-->
-          <div class="item testi-box">
-              <div class="row align-items-center">
-                  <div class="col-lg-4 col-md-12 text-center">
-                      <div class="testimonial-round d-inline-block">
-                      </div>
-                      <h4 class="defaultcolor font-light top15"><a href="#.">Lynne W.</a></h4>
-                      <p>A Life Sciences Organization</p>
-                  </div>
-                  <div class="col-lg-6 offset-lg-2 col-md-10 offset-md-1 text-lg-left text-center">
-                      <p class="bottom15 top90">
-                        I’ve worked with RX2 Solutions on several, hard to fill needs.
-                        RX2 Solutions is able to provide high caliber candidates, even on the most difficult searches.
-                        They are a “go to” when I have a need, particularly in the Information Technology space.
-                        I look forward to working with RX2 Solutions for any future need.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="parallax page-header testimonial-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/stock-photo-diversity-people-group-team-union-concept-386966809-cropped.jpeg')">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="heading-title wow fadeInUp padding_testi" data-wow-delay="300ms">
+                        <h2 class="whitecolor font-normal">What Our Clients and Candidates Say</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="testimonials-filter" class="cbp-l-filters dark top20 bottom20 wow fadeIn d-table mx-auto" data-wow-delay="350ms">
+                <div data-filter=".client" class="cbp-filter-item cbp-filter-item-active">
+                    <span>Clients</span>
+                </div>
+                <div data-filter=".candidate" class="cbp-filter-item">
+                    <span>Candidates</span>
+                </div>
+            </div>
+        </div>
+        <div id="testimonials-measonry" class="cbp">
+            <!-- Client Testimonial Items -->
+            <div class="cbp-item client">
+                <div class="owl-carousel" id="testimonial-slider-client">
+                    <!-- Client item 1 -->
+                    <div class="item container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-lg-right text-center">
+                                <h3 class="defaultcolor font-normal">CFO</h3>
+                                <p>A Life Sciences Client</p>
+                            </div>
+                            <div class="col-lg-8 text-lg-left text-center">
+                                <p class="">
+                                    I have had an excellent experience with Rx2 Solutions for my search for candidates.
+                                    They take the time to understand what we are looking for and our Company culture to provide high quality candidates.
+                                    It has been a pleasure to partner with them!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Client item 2 -->
+                    <div class="item container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-lg-right text-center">
+                                <h3 class="defaultcolor font-normal">Lynne W.</h3>
+                                <p>Another Life Sciences Client</p>
+                            </div>
+                            <div class="col-lg-8 text-lg-left text-center">
+                                <p class="">
+                                    I’ve worked with RX2 Solutions on several, hard to fill needs.
+                                    RX2 Solutions is able to provide high caliber candidates, even on the most difficult searches.
+                                    They are a “go to” when I have a need, particularly in the Information Technology space.
+                                    I look forward to working with RX2 Solutions for any future need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- Candidate Testimonial Items -->
+            <div class="cbp-item candidate">
+                <div class="owl-carousel" id="testimonial-slider-candidate">
+                    <!-- Candidate item 1 -->
+                    <div class="item container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-lg-right text-center">
+                                <h3 class="defaultcolor font-normal">CFO</h3>
+                                <p>A Life Sciences Candidate</p>
+                            </div>
+                            <div class="col-lg-8 text-lg-left text-center">
+                                <p class="">
+                                    I have had an excellent experience with Rx2 Solutions for my search for candidates.
+                                    They take the time to understand what we are looking for and our Company culture to provide high quality candidates.
+                                    It has been a pleasure to partner with them!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Candidate item 2 -->
+                    <div class="item container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-lg-right text-center">
+                                <h3 class="defaultcolor font-normal">Lynne W.</h3>
+                                <p>Another Life Sciences Candidate</p>
+                            </div>
+                            <div class="col-lg-8 text-lg-left text-center">
+                                <p class="">
+                                    I’ve worked with RX2 Solutions on several, hard to fill needs.
+                                    RX2 Solutions is able to provide high caliber candidates, even on the most difficult searches.
+                                    They are a “go to” when I have a need, particularly in the Information Technology space.
+                                    I look forward to working with RX2 Solutions for any future need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!--Testimonials Ends-->
 

@@ -521,10 +521,11 @@ jQuery($=> {
         }
     });
 
-    /*Testimonials*/
-    $("#testimonial-slider").owlCarousel({
+    /* Client Testimonials */
+    $("#testimonial-slider-client").owlCarousel({
         items: 1,
         autoplay: true,
+        autoplayTimeout: 5000,
         autoplayHoverPause: true,
         mouseDrag: true,
         loop: true,
@@ -532,20 +533,24 @@ jQuery($=> {
         animateIn: "fadeIn",
         animateOut: "fadeOut",
         dots: false,
-        nav: true,
-        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-        responsive: {
-            980: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            320: {
-                items: 1,
-            },
-        }
+        nav: false
     });
+
+    /* Candidate Testimonials */
+    $("#testimonial-slider-candidate").owlCarousel({
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        mouseDrag: true,
+        loop: true,
+        margin: 30,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        dots: false,
+        nav: false
+    });
+
     //gallery detail slider
     $("#carousel-gallery-detail").owlCarousel({
         items: 1,
@@ -998,6 +1003,36 @@ jQuery($=> {
         }],
     });
 
+        /* testimonials filtered*/
+        $("#testimonials-measonry").cubeportfolio({
+            layoutMode: 'grid',
+            defaultFilter: '.client',
+            filters: '#testimonials-filter',
+            animationType: "scaleSides",
+            gapHorizontal: 30,
+            gapVertical: 30,
+            gridAdjustment: "responsive",
+            mediaQueries: [{
+                width: 1500,
+                cols: 1
+            }, {
+                width: 1100,
+                cols: 1
+            }, {
+                width: 992,
+                cols: 1
+            }, {
+                width: 768,
+                cols: 1
+            }, {
+                width: 480,
+                cols: 1
+            }, {
+                width: 320,
+                cols: 1,
+            }],
+        });
+    
 });
 
 $('.hero').parallaxie();

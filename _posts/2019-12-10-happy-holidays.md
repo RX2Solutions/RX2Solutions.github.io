@@ -3,6 +3,7 @@ layout: post
 title: Happy Holidays
 author: rx2solutions
 tags: announcement
+image: RX2-Holiday-Photo-1200x1600.jpg
 ---
 <div class="container">
 <div class="row">
@@ -14,8 +15,6 @@ tags: announcement
 <p>Happy Holidays</p>
 
 <p>~RX2 Solutions</p>
-
-<img src="{{- baseurl -}}/assets/images/RX2-Holiday-Photo-1200x1600.jpg" style="object-fit: contain;">
 </div>
 </div>
 </div>
