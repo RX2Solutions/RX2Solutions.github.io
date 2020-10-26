@@ -3124,7 +3124,7 @@ section,
 
 .cbp-l-filters .cbp-filter-item span {
     color: #26313c;
-    font-size: 0.85rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     position: relative;
     padding-bottom: 0;
@@ -3371,7 +3371,7 @@ section,
 }
 
 .news_item:hover .image img {
-    transform: scale(1.05);
+    transform: scale(1.0);
 }
 
 .news_item,
@@ -3806,7 +3806,7 @@ form.findus .select:after {
 }
 
 .blog-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.00);
 }
 
 .single_post {
@@ -4006,6 +4006,14 @@ form.findus .select:after {
     font-size: larger;
 }
 
+.blog-article h2 {
+    font-size: large;
+}
+
+.blog-article h3 {
+    font-size: large;
+}
+
 .blog-article p {
     font-size: large;
     margin-top: 10px;
@@ -4139,10 +4147,11 @@ form.findus .select:after {
     -ms-transform: scale(1.0);
     transform: scale(1.0);
 
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
 }
 
 .overlay {

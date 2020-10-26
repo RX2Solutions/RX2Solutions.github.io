@@ -1,8 +1,3 @@
-{%- assign pageimage = "newspaper-1422025_1280.png" -%}
-{%- if page.image -%}
-{%- assign pageimage = page.image -%}
-{%- endif -%}
-
 <!doctype html>
 <html>
 {% include headers.html %}
@@ -10,7 +5,7 @@
     {% include preloader.html %}
     {% include navigation.html %}
 <!-- post content -->
-<section id="our-blog" class="bglight padding">
+<section id="our-blog" class="bgdarker padding">
   <div class="container">
       <div class="row">
           <div class="col-lg-8 col-md-7">
@@ -52,14 +47,6 @@
                           </div>
                       </div>
                       {% endfor %}
-                  </div>
-                  <div class="widget shadow heading_space text-center text-md-left">
-                      <h4 class="text-capitalize darkcolor bottom20">Tags</h4>
-                      <ul class="webcats">
-{% for tag in site.tags %}
-                          <li><a href="#.">{{ tag[0] }} <span>({{ tag[1].size }})</span></a></li>
-{% endfor %}
-                      </ul>
                   </div>
               </aside>
           </div>

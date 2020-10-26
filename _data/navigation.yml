@@ -19,8 +19,12 @@
     link: /marketing-creative.html
   - name: Scientific & Clinical
     link: /scientific-clinical.html
-- name: Publications
-  link: /blog.html
+- name: Blog
+  subitems:
+  - name: Publications
+    link: /articles.html
+  - name: Announcements
+    link: /announcements.html
 - name: Careers
   link: https://www2.jobdiva.com/portal/?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/
 - name: Login

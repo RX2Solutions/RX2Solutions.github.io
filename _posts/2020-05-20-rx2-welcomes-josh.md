@@ -2,7 +2,7 @@
 layout: post
 title: RX2 Solutions Welcomes Josh Roby as their Director, Strategic Staffing
 author: rx2solutions
-tags: publication press
+tags: announcement
 thumbnail: JR-Headshot-150x150.jpeg
 ---
 **FOR IMMEDIATE RELEASE**
