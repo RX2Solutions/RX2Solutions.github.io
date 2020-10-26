@@ -3,7 +3,7 @@
 
 html, body { margin: 0; padding: 0; }
 
-body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open Sans', sans-serif; overflow-x: hidden; direction: ltr; }
+body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open Sans', sans-serif; overflow-x: hidden; direction: ltr; background: #e2e2e2; }
 
 ::selection { background: rgba(3, 169, 245, 0.5) !important; color: #fff; }
 
