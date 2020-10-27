@@ -22,7 +22,7 @@
                         <li><a href="#."> <i class="far fa-user"></i> 
                             {%- assign author = site.authors | where: 'short_name', page.author | first -%}
                             {%- if author -%}
-                            <a href="{{- site.baseurl -}}{{- author.url -}}"> {{ author.name -}}</a>
+                            <a href="#."> {{ author.name -}}</a>
                             {%- endif -%}
                         </li>
                     </ul>

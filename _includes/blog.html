@@ -49,7 +49,7 @@
                       <li>
                         {%- assign author = site.authors | where: 'short_name', post.author | first -%}
                         {%- if author -%}
-                        <a href="{{- site.baseurl -}}/{{- author.url -}}"><i class="fas fa-user"></i> {{ author.name -}}</a>
+                        <a href="#."><i class="fas fa-user"></i> {{ author.name -}}</a>
                         {%- endif -%}
                       </li>
                   </ul>
