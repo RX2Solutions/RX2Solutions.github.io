@@ -16,7 +16,7 @@ body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open 
 .hero { /* Sizing */ width: 100vw; height: 100vh; min-height: 700px; display: flex; flex-direction: column; }
 .hero > div { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
-.gutsRow { flex: 1; display: flex; justify-content: center; flex-direction: column; }
+.gutsRow { flex: 1; display: flex; justify-content: center; flex-direction: column; margin-top: 0px; }
 
 .gutsContent { margin: 20px; }
 
