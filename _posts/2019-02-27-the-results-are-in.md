@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Winner of the 76ers Raffle is...
+title: The Results are In...
 author: rx2solutions
 tags: announcement
 ---

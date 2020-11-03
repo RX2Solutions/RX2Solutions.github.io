@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Effectively Search for a New Job?
+title: How to Effectively Search for a New Job
 author: rx2solutions
 tags: publication
 ---
