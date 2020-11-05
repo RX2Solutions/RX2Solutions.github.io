@@ -1,11 +1,11 @@
 {%- unless include.background -%}
 {%- assign include.background = "377.jpg" -%}
 {%- endunless -%}
-<section id="mainpagehero" class="hero" style='background-size: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{- site.baseurl -}}/assets/images/{{- include.background -}}")' >
+<section id="mainpagehero" class="min-vh-100" style='background-size: auto; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{- site.baseurl -}}/assets/images/{{- include.background -}}")'>
   <div class="container">
-    <div class="row gutsRow" style="color:{{- include.text-color -}}">
-        <div class="gutsContent">
-          <div style="margin: 20px; margin-top: 100px;">
+    <div class="row min-vh-100 align-items-center" style='color:{{- include.text-color -}}'>
+        <div class="col gutsContent">
+          <div style="margin: 20px; margin-top: 80px;">
             {{ include.content }}
           </div>
         </div>
