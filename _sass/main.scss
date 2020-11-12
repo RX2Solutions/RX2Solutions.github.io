@@ -116,6 +116,72 @@ body {
 }
 
 
+/*Pagination*/
+
+.pagination li>a {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    line-height: 36px;
+    font-size: 18px;
+    color: #a5a5a5;
+    text-align: center;
+    margin: 0 4px;
+    border: none;
+}
+
+.pagination li>a:hover,
+.pagination li>a:focus,
+.pagination li.active>a {
+    background: #24cdd5 !important;
+    color: #fff;
+    border: 0;
+}
+
+.pagination li>a.disabled {
+    pointer-events: none;
+}
+
+.pagination li>a,
+.pagination li:first-child a,
+.pagination li:last-child a,
+ul.rounded li::before,
+.webcats li a::before,
+.eny_profile .profile_photo>img,
+.single_post .post>img {
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+blockquote.blockquote {
+    font-style: italic;
+}
+
+blockquote.blockquote::before {
+    content: "\f10d";
+    width: 40px;
+    font-size: 28px;
+    margin-right: 5px;
+    color: #a1a1a1;
+}
+
+ul.rounded>li+li {
+    margin-top: 20px;
+}
+
+.rounded li {
+    padding-left: 20px;
+}
+
+ul.rounded li::before {
+    height: 10px;
+    width: 10px;
+    background: #24cdd5;
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+
 /* ----- Social Icons ----- */
 
 .social-icons-simple {

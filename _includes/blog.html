@@ -1,5 +1,26 @@
 {%- assign desired_posts = site.posts | where: "tags", page.desired-tag -%}
 {%- assign show_recents = "true" -%}
+{%- assign postsperpage = 5 -%}
+{%- assign thispage = page.this_page | default: 1 -%}
+{%- assign thispageminusone = thispage | minus: 1 -%}
+{%- assign postoffset = thispageminusone | times: postsperpage -%}
+{%- assign numarticles = desired_posts | size -%}
+{%- assign maxpages = numarticles | divided_by: postsperpage -%}
+{%- assign maxpages = maxpages | plus: 1 -%}
+{%- assign pagename = page.desired-tag | append: "s" -%}
+{%- if pagename == "publications" -%}
+{%- assign pagename = "articles" -%}
+{%- endif -%}
+
+{%- assign previouspage = thispage | minus: 1 -%}
+{%- if previouspage != 1 -%}
+{%- assign previouspagename = pagename | append: previouspage -%}
+{%- else -%}
+{%- assign previouspagename = pagename -%}
+{%- endif -%}
+
+{%- assign nextpage = thispage | plus: 1 -%}
+{%- assign nextpagename = pagename | append: nextpage -%}
 
 <section id="main-banner-page" class="position-relative page-header blog2-header section-nav-smooth" style="background-image: url('{{- sitec.baseurl -}}/assets/images/shutterstock_394634593-cropped.jpg')" data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
   <div class="overlay overlay-dark opacity-4 z-index-1"></div>
@@ -36,7 +57,7 @@
 {% endif %}
 <div class="news_item shadow">
 <div class="news_desc">
-    {% for post in desired_posts %}
+    {% for post in desired_posts offset:postoffset limit:postlimit %}
             <article class="blog-item heading_space wow fadeIn text-center text-md-left" data-wow-delay="300ms">
               {%- if post.headline-image -%}
               <div class="image"><img src="{{- site.baseurl -}}/assets/images/{{- post.headline-image -}}" alt="article main image" class="border_radius"></div>
@@ -59,15 +80,24 @@
                   <a class=" button btn-primary" href="{{- site.baseurl -}}{{ post.url }}">Read More</a>
               </article>
               {% endfor %}
-</div>
-</div>
+{% if maxpages > 1 %}
+              <ul class="pagination padding-bottom bottom40 justify-content-center justify-content-md-start top40">
+                <li class="page-item"><a class="page-link{% if thispage == 1 %}  disabled{% endif %}" href="{{- previouspagename -}}.html"><i class="fa fa-angle-left"></i></a></li>
+                {%- for pageloop in (1..maxpages) -%}
+                <li class="page-item{% if pageloop == thispage %} active{% endif %}"><a class="page-link" href="{{- pagename -}}{%- if pageloop != 1 -%}{{- pageloop -}}{%- endif -%}.html">{{ pageloop }}</a></li>
+                {%- endfor -%}
+                <li class="page-item"><a class="page-link{% if thispage == maxpages %}  disabled{% endif %}" href="{{- nextpagename -}}.html"><i class="fa fa-angle-right"></i></a></li>
+              </ul>
+{% endif %}
+            </div>
+          </div>
         </div>
 {% if show_recents == "true" %}
           <div class="col-lg-4">
             <aside class="sidebar whitebox mt-5 mt-md-0">
                 <div class="widget heading_space shadow wow fadeIn" data-wow-delay="350ms">
                     <h4 class="text-capitalize darkcolor bottom20 text-center text-md-left">Recent Posts</h4>
-                    {% for post in site.posts %}
+                    {% for post in site.posts limit:5 %}
                     <div class="single_post bottom15">
                       {%- if post.thumbnail -%}
                         <a href="{{- site.baseurl -}}{{ post.url }}" class="post"><img src="{{- site.baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>

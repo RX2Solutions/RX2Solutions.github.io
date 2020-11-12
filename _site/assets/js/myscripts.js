@@ -525,7 +525,7 @@ jQuery($=> {
     $("#testimonial-slider-client").owlCarousel({
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 20000,
         autoplayHoverPause: true,
         mouseDrag: true,
         loop: true,
