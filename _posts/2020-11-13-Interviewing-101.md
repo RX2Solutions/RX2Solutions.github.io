@@ -33,6 +33,7 @@ It’s that time of year again, people are looked over, promotions are given to 
 Interviewing in the post-COVID world can take many forms and video interviewing is more common than ever.  Below we will discuss best practices for any interview and then give specifics for phone, video, and on-site interviewing.
 
 **Advice for all interviews**:
+
   <ol>  
     <li>Before the day of the interview – make sure you know the logistics:</li>
       <ol>
@@ -79,7 +80,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     <li>If you have a headset, use it.</li>
   </ol>
   
-**Video Interview:**
+**Video Interview:**:
 
   <ol>
     <li>Arrive at least 5 minutes early to the interview.</li>
@@ -101,7 +102,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     <li>What to bring with you:  bring a pen/pencil, notepad, portfolio of work (if applicable) and five copies of your resume.</li>
   </ol>
   
-**Conclusion**
+**Conclusion**:
 
 Interviewing is a skill that you can improve on with time.  Like anything else, controlling the areas that you can control are crucial for putting your best foot forward for an interview.
 
