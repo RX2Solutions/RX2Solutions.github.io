@@ -1,9 +1,10 @@
-
+---
 layout: post
 title: Interviewing 101
 author: rx2solutions
 tags: publications
 thumbnail: resume101.jpg
+---
 
 **Interviewing 101**
 
@@ -11,21 +12,21 @@ It’s that time of year again, people are looked over, promotions are given to 
 
 **Pre-Interview**:
 
-<ol>
-  <li>Research the company extensively.</li>
-    <ol>
-      <li>Thoroughly review company’s website.</li>
-      <li>Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company,           etc. Maybe you’ll know someone who works there who could give you a referral.</li>
-      <li>Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.</li>
-    </ol>
-  <li>Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.</li>
-    <ol>
-      <li>Our tips on resume writing can be found here:  [https://rx2solutions.com/2020/08/19/resume-writing.html](https://rx2solutions.com/2020/08/19/resume-               writing.html).</li>
-      <li>One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.</li>
-      <li>If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here:  [https://www.entrepreneur.com/article/232420]                       (https://www.entrepreneur.com/article/232420) and it takes the interview to a place that you don’t want it to go - usually eliminating you from                      consideration. </li>
-      <li>Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.</li>
-    </ol>
- </ol>
+  <ol>
+    <li>Research the company extensively.</li>
+      <ol>
+        <li>Thoroughly review company’s website.</li>
+        <li>Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.</li>
+        <li>Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.</li>
+      </ol>
+    <li>Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.</li>
+      <ol>
+        <li>Our tips on resume writing can be found here:  [https://rx2solutions.com/2020/08/19/resume-writing.html](https://rx2solutions.com/2020/08/19/resume-               writing.html).</li>
+        <li>One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.</li>
+        <li>If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here:  [https://www.entrepreneur.com/article/232420]                       (https://www.entrepreneur.com/article/232420) and it takes the interview to a place that you don’t want it to go - usually eliminating you from                      consideration. </li>
+        <li>Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.</li>
+      </ol>
+  </ol>
 
 **During the Interview**:
 
