@@ -21,7 +21,7 @@ It’s that time of year again, people are looked over, promotions are given to 
       </ol>
     <li>Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.</li>
       <ol>
-        <li>Our tips on resume writing can be found here:  <a href="https://rx2solutions.com/2020/08/19/resume-writing.html" </a></li>
+        <li>Our tips on resume writing can be found here:  <a href="https://rx2solutions.com/2020/08/19/resume-writing.html"</a></li>
         <li>One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.</li>
         <li>If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here: <a href="https://www.entrepreneur.com/article/232420"               </a> and it takes the interview to a place that you don’t want it to go - usually eliminating you from consideration. </li>
         <li>Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.</li>
