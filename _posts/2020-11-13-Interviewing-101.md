@@ -69,6 +69,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
           <li>If you are interested in the role, you can tell the interviewer that you are interested and that you hope to move to the next step in the interview             process.</li>
           <li>**Never** ask the question “**when can I start?**”</li>
       </ol>
+    </ol>
 
 **Phone Interview**:
 
