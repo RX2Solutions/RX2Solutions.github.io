@@ -71,12 +71,15 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
       </ol>
 
 **Phone Interview**:
+
   <ol>
     <li>Make sure you are somewhere quiet, where you won’t be interrupted, with good phone reception.</li>
     <li>Even if you’re a great multi-tasker, make the interview your only task.  The most common mistake here is that job seekers take the phone interview while        driving, using Bluetooth.  We highly advise against this – the interview should be your only priority while it’s happening.</li>
     <li>If you have a headset, use it.</li>
   </ol>
+  
 **Video Interview:**
+
   <ol>
     <li>Arrive at least 5 minutes early to the interview.</li>
     <li>Treat the video interview like an in-person interview in terms of what you wear.  If you would dress business formal for the on-site interview, that’s what     you should wear for the video interview.</li>
@@ -85,7 +88,9 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     <li>With regards to setting, make sure there is as little clutter in the background as possible.  The attention during the interview should be on you rather        than on the room you are in.</li>
      <li>If you have a headset, headphones and an external microphone then use it.  Sometimes with video interviews, the sound quality can suffer, and you want to      be able to put your best foot forward during the conversation.</li>
   </ol>
+  
 **In-Person Interview**:
+
   <ol>
     <li>Logistics:  Map out your route to the interview and plan on arriving at least 30 minutes early to the general vicinity of the interview.</li>
     <li>This does NOT mean arrive at the company’s building 30 minutes early as doing this would be a major mistake.</li>
@@ -94,6 +99,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     <li>What to wear:  unless you are told otherwise, default to wearing business formal attire</li>
     <li>What to bring with you:  bring a pen/pencil, notepad, portfolio of work (if applicable) and five copies of your resume.</li>
   </ol>
+  
 **Conclusion**
 
 Interviewing is a skill that you can improve on with time.  Like anything else, controlling the areas that you can control are crucial for putting your best foot forward for an interview.
