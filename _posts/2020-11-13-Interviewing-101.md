@@ -2,7 +2,7 @@
 layout: post
 title: Interviewing 101
 author: rx2solutions
-tags: publications
+tags: publication
 thumbnail: resume101.jpg
 ---
 
