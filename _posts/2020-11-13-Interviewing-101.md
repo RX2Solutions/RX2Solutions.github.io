@@ -4,11 +4,12 @@ title: Interviewing 101
 author: rx2solutions
 tags: publication
 thumbnail: resume101.jpg
+excerpt_separator: <!--more-->
 ---
-
 **Interviewing 101**
 
 It’s that time of year again, people are looked over, promotions are given to someone else, or it’s just time to make a change. Regardless of your reasons for looking at new opportunities, congratulations on getting your interview!  This guide covers the three phases of an interview: pre-interview, during interview and post-interview.
+<!--more-->
 
 **Pre-Interview**:
 

@@ -3,8 +3,10 @@ layout: post
 title: 'Resume Writing: Best Practices'
 author: rx2solutions
 tags: publication
+excerpt_separator: <!--more-->
 ---
 Whether you are gainfully employed and looking for a better opportunity, a recent college grad, or someone who was laid off due to COVID after being at the same company for 10-years, having a strong resume will help you find the opportunity that you want.
+<!--more-->
 
 From a combined 40-years of professional experience helping job seekers find new opportunities, here are the RX2 Solutions principles for writing a strong resume:
 - **Use the Three C’s of Resume Writing: Clean, Consistent, Concise.**
