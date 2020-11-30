@@ -17,8 +17,7 @@ It’s that time of year again, people are looked over, promotions are given to 
 Research the company extensively.
   1. Thoroughly review company’s website.  
     - Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.
-    - Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.
-    
+    - Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.    
   3. Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.
     - Our tips on resume writing can be found here:  <a href="https://rx2solutions.com/2020/08/19/resume-writing.html">https://rx2solutions.com/2020/08/19/resume-writing.htm</a>.
     - One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.
