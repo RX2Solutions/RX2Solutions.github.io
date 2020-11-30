@@ -102,7 +102,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     <li>What to wear:  unless you are told otherwise, default to wearing business formal attire</li>
     <li>What to bring with you:  bring a pen/pencil, notepad, portfolio of work (if applicable) and five copies of your resume.</li>
   </ol>
-  <br></br>  
+
 **Conclusion**:
 
 Interviewing is a skill that you can improve on with time.  Like anything else, controlling the areas that you can control are crucial for putting your best foot forward for an interview.
