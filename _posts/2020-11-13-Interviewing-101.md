@@ -6,52 +6,39 @@ tags: publication
 thumbnail: resume101.jpg
 excerpt_separator: <!--more-->
 ---
-**Interviewing 101**
+- **Interviewing 101**
 
 It’s that time of year again, people are looked over, promotions are given to someone else, or it’s just time to make a change. Regardless of your reasons for looking at new opportunities, congratulations on getting your interview!  This guide covers the three phases of an interview: pre-interview, during interview and post-interview.
 <!--more-->
 
-**Pre-Interview**:
-
-  <ol>
-    <li>Research the company extensively.</li>
-      <ol>
-        <li>Thoroughly review company’s website.</li>
-        <li>Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.</li>
-        <li>Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.</li>
-      </ol>
-    <li>Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.</li>
-      <ol>
-        <li>Our tips on resume writing can be found here:  <a href="https://rx2solutions.com/2020/08/19/resume-writing.html" style="color:blue">https://rx2solutions.com/2020/08/19/resume-writing.htm</a></li>
-        <li>One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.</li>
-        <li>If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here: <a href="https://www.entrepreneur.com/article/232420" style="color:blue">https://www.entrepreneur.com/article/232420"</a> and it takes the interview to a place that you don’t want it to go - usually eliminating you from consideration. </li>
-        <li>Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.</li>
-      </ol>
-  </ol>
-
-**During the Interview**:
+- **Pre-Interview**:
+Research the company extensively.
+  1. Thoroughly review company’s website.
+    - Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.
+    - Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.
+  1. Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.
+    - Our tips on resume writing can be found here:  <a href="https://rx2solutions.com/2020/08/19/resume-writing.html">https://rx2solutions.com/2020/08/19/resume-writing.htm</a>.
+    - One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.</li>
+    - If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here: <a               href="https://www.entrepreneur.com/article/232420">https://www.entrepreneur.com/article/232420"</a> and it takes the interview to a place that you don’t want it to go - usually eliminating you from consideration. </li>
+    - Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.
+  
+- **During the Interview**:
 
 Interviewing in the post-COVID world can take many forms and video interviewing is more common than ever.  Below we will discuss best practices for any interview and then give specifics for phone, video, and on-site interviewing.
 
-**Advice for all interviews**:
-
-  <ol>  
-    <li>Before the day of the interview – make sure you know the logistics:</li>
-      <ol>
-        <li>Phone:  who is calling who – OR are you using a bridge line.</li>
-        <li>Video:  make sure you have the video meeting information.</li>
-        <li>In-person:  make sure you know where you are meeting, how to get there, what entrance to use, where to park, etc.</li>
-      </ol>
-    <li>Always tell the truth.</li>
-    <li>If something can be said in a positive or a negative way, figure out how to say it in a positive way.  This means never talking negatively about former             employers or co-workers.</li>
-    <li>Most interviews are going to ask you some or all of the following questions, so rehearse positive ways to answer the following questions:</li>
-       <ol>
-         <li>Tell me about yourself.</li>
-         <li>Why are you looking for a new role?</li>
-         <li>Why are you interested in this role / this company?</li>
-         <li>Explaining any resume gaps.</li>
-      </ol>
-    <li>There are plenty of resources online that describe common interview questions.  Below is an article that we suggest you review in detail.</li>
+ - **Advice for all interviews**:
+  1. Before the day of the interview – make sure you know the logistics:</li>
+    - Phone:  who is calling who – OR are you using a bridge line.</li>
+    - Video:  make sure you have the video meeting information.</li>
+    - In-person:  make sure you know where you are meeting, how to get there, what entrance to use, where to park, etc.</li>
+  1. Always tell the truth.</li>
+  1. If something can be said in a positive or a negative way, figure out how to say it in a positive way.  This means never talking negatively about former             employers or co-workers.</li>
+  1. Most interviews are going to ask you some or all of the following questions, so rehearse positive ways to answer the following questions:</li>
+    - Tell me about yourself.</li>
+    - Why are you looking for a new role?</li>
+    - Why are you interested in this role / this company?</li>
+    - Explaining any resume gaps.</li>
+   1. There are plenty of resources online that describe common interview questions.  Below is an article that we suggest you review in detail.</li>
       <ol>
         <li>[https://www.themuse.com/advice/interview-questions-and-answers](https://www.themuse.com/advice/interview-questions-and-answers)</li>
       </ol>
