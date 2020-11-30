@@ -6,12 +6,13 @@ tags: publication
 thumbnail: resume101.jpg
 excerpt_separator: <!--more-->
 ---
-- **Interviewing 101**
+
+**Interviewing 101**
 
 It’s that time of year again, people are looked over, promotions are given to someone else, or it’s just time to make a change. Regardless of your reasons for looking at new opportunities, congratulations on getting your interview!  This guide covers the three phases of an interview: pre-interview, during interview and post-interview.
 <!--more-->
 
-- **Pre-Interview**:
+**Pre-Interview**:
 Research the company extensively.
   1. Thoroughly review company’s website.
     - Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.
@@ -22,11 +23,11 @@ Research the company extensively.
     - If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here: <a               href="https://www.entrepreneur.com/article/232420">https://www.entrepreneur.com/article/232420"</a> and it takes the interview to a place that you don’t want it to go - usually eliminating you from consideration. </li>
     - Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.
   
-- **During the Interview**:
+**During the Interview**:
 
 Interviewing in the post-COVID world can take many forms and video interviewing is more common than ever.  Below we will discuss best practices for any interview and then give specifics for phone, video, and on-site interviewing.
 
- - **Advice for all interviews**:
+**Advice for all interviews**:
   1. Before the day of the interview – make sure you know the logistics:</li>
     - Phone:  who is calling who – OR are you using a bridge line.</li>
     - Video:  make sure you have the video meeting information.</li>
@@ -39,8 +40,7 @@ Interviewing in the post-COVID world can take many forms and video interviewing 
     - Why are you interested in this role / this company?</li>
     - Explaining any resume gaps.</li>
    1. There are plenty of resources online that describe common interview questions.  Below is an article that we suggest you review in detail.</li>
-      <ol>
-        <li>[https://www.themuse.com/advice/interview-questions-and-answers](https://www.themuse.com/advice/interview-questions-and-answers)</li>
+    - [https://www.themuse.com/advice/interview-questions-and-answers](https://www.themuse.com/advice/interview-questions-and-answers)</li>
       </ol>
     <li>If at some point during the interview you are asked a question and you don’t know the answer – tell the truth!</li>
        <ol>
