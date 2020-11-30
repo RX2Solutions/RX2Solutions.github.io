@@ -3,7 +3,6 @@ layout: post
 title: Negotiating Salary in Your Existing Role (Part 1 of 2)
 author: rx2solutions
 tags: publication
-image: accounting-343067_1280-cropped.jpg
 thumbnail: negotiate-thumbnail.jpg
 ---
 # Deciding to Negotiate
