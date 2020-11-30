@@ -15,8 +15,7 @@ It’s that time of year again, people are looked over, promotions are given to 
 **Pre-Interview**:
 
 Research the company extensively.
-  1. Thoroughly review company’s website.
-  
+  1. Thoroughly review company’s website.  
     - Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.
     - Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.
     
