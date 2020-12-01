@@ -2,6 +2,7 @@
 layout: post
 title: The Results are In...
 author: rx2solutions
+thumbnail: tommy-boudreau-diO0a_ZEiEE-unsplash.jpg
 tags: announcement
 ---
 
