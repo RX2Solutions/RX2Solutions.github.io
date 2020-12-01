@@ -2,6 +2,7 @@
 layout: post
 title: Why Work with a Quality-First Recruiter?
 author: rx2solutions
+thumbnail: pexels-burst-374006.jpg
 tags: publication
 ---
 Business is going well, and you and your team have more work than you can handle - or maybe a key member of your team received an offer they can't refuse, and they just put in their notice that they are moving on. Either way, you're looking to hire a full-time employee in the hottest candidate market in the past 60 years. A little background on today's current market:
