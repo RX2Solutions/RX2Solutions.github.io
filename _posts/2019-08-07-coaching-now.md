@@ -2,6 +2,7 @@
 layout: post
 title: Coaching Now; Generation Z and the Art of the Compromise
 author: rx2solutions
+thumbnail: thinkoutside.jpg
 tags: publication
 ---
 # Preface
