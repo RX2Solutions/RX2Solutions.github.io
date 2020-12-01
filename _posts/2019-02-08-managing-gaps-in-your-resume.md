@@ -2,6 +2,7 @@
 layout: post
 title: Managing Gaps in Your Resume
 author: rx2solutions
+thumbnail: pexels-sebastian-voortman-411207.jpg
 tags: publication
 ---
 For a job seeker, one of the most difficult things to manage and discuss are gaps in a resume. The gaps we are discussing refer to six-plus months of extended periods of time without employment. In the current job market when a candidate's resume demonstrates these extended periods between jobs, often prospective employers and recruiters will simply pass over the resume.
