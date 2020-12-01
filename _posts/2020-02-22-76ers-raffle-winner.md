@@ -2,6 +2,7 @@
 layout: post
 title: The Winner of the 76ers Raffle is...
 author: rx2solutions
+thumbnail: pexels-markus-spiske-1752757.jpg
 tags: announcement
 ---
 Congratulations to Dan Diegel for winning the RX2 Solutions 76ers Raffle.
