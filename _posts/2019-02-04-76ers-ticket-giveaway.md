@@ -2,7 +2,7 @@
 layout: post
 title: 76ers Ticket Giveaway!
 author: rx2solutions
-thumbnail: pexels-jd-danny-2385477.jpg
+thumbnail: Basketball.jpg
 tags: announcement
 ---
 RX2 Solutions is proud to announce our first ever raffle for our 76ers tickets!
