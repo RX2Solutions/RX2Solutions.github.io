@@ -19,7 +19,7 @@ Research the company extensively.
     - Look them up on LinkedIn and see what types of employees they have, where the employees are located, how long most employees have been with the company, etc. Maybe you’ll know someone who works there who could give you a referral.
     - Look up recent news stories about the company – you never know what you’ll find and how you can use it to position yourself positively during the                   interview.    
 3. Thoroughly review your own resume!  If its on your resume, its fair game for the interviewer to ask you about it.
-    - Our tips on resume writing can be found here: [Resume Writing 101] (https://rx2solutions.com/2020/08/19/resume-writing.html).
+    - Our tips on resume writing can be found here: [Resume Writing 101] (https://rx2solutions.com/2020/08/19/resume-writing.html)
     - One common mistake is that job seekers don’t fully update their resume and have items on the resume that they used freshman year of undergrad or                   something from a job 10+ years ago that they no longer use.
     - If you are asked about something on your resume and you aren’t familiar with it, the interviewer automatically thinks “what else on here are you not               familiar with anymore”.  It’s the **Van Halen Brown M&M theory** that you can read about here: [Van Halen Brown M&M theory](https://www.entrepreneur.com/article/232420) and it takes the interview to a place that you don’t want it to go - usually eliminating you from consideration.
     - Make sure you either update your resume to only the skills you have that are current OR go through a refresher to ensure you can competently discuss               everything.
