@@ -93,6 +93,10 @@ body {
     margin-bottom: 20px;
 }
 
+.gutsContent a:hover {
+    color: #1cb0b5;
+}
+
 .gutsContent ul {
     font-size: large;
     list-style: disc outside;
@@ -3421,11 +3425,13 @@ section,
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
+
 .news_desc p{
     margin-bottom: 0;
 }
+
 #our-blog .news_desc p{
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 #our-blog .news_item{
     margin-bottom: 30px;
@@ -4072,6 +4078,8 @@ form.findus .select:after {
 
 .blog-article h1 {
     font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .blog-article h2 {
@@ -4084,8 +4092,6 @@ form.findus .select:after {
 
 .blog-article p {
     font-size: large;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .blog-article blockquote {
@@ -4097,7 +4103,6 @@ form.findus .select:after {
 
 .blog-article ul {
     list-style: disc outside;
-    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
 }
@@ -4116,6 +4121,10 @@ form.findus .select:after {
 .blog-article img {
     float: left;
     margin-right: 10px;
+}
+
+.blog-article a, a:hover {
+    color: #1cb0b5;
 }
 
 /*----- Team -----*/

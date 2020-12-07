@@ -19,6 +19,8 @@ body { font-size: 15px; color: #808080; font-weight: normal; font-family: 'Open 
 
 .gutsContent h1 { margin-top: 10px; margin-bottom: 20px; }
 
+.gutsContent a:hover { color: #1cb0b5; }
+
 .gutsContent ul { font-size: large; list-style: disc outside; margin-top: 20px; margin-bottom: 10px; margin-left: 20px; }
 
 .gutsContent ol { font-size: large; list-style: decimal outside; margin-top: 20px; margin-bottom: 10px; margin-left: 10px; }
@@ -1084,7 +1086,7 @@ section, .image, .image img { position: relative; }
 
 .news_desc p { margin-bottom: 0; }
 
-#our-blog .news_desc p { margin-bottom: 35px; }
+#our-blog .news_desc p { margin-bottom: 10px; }
 
 #our-blog .news_item { margin-bottom: 30px; }
 
@@ -1298,23 +1300,25 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 @media (max-width: 768px) { .apply_coupon .btn_common { font-size: 10px; padding: 10px 1rem; } }
 .blog-article { font-size: large; }
 
-.blog-article h1 { font-size: larger; }
+.blog-article h1 { font-size: larger; margin-top: 10px; margin-bottom: 10px; }
 
 .blog-article h2 { font-size: large; }
 
 .blog-article h3 { font-size: large; }
 
-.blog-article p { font-size: large; margin-top: 10px; margin-bottom: 10px; }
+.blog-article p { font-size: large; }
 
 .blog-article blockquote { font-size: large; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
 
-.blog-article ul { list-style: disc outside; margin-top: 10px; margin-bottom: 10px; margin-left: 10px; }
+.blog-article ul { list-style: disc outside; margin-bottom: 10px; margin-left: 10px; }
 
 .blog-article ol { list-style: decimal outside; margin-top: 5px; margin-bottom: 10px; margin-left: 10px; }
 
 .blog-article li { margin-left: 10px; }
 
 .blog-article img { float: left; margin-right: 10px; }
+
+.blog-article a, a:hover { color: #1cb0b5; }
 
 /*----- Team -----*/
 .teamhr hr { border: 1px solid #777; }
