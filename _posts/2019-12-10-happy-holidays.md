@@ -5,7 +5,6 @@ author: rx2solutions
 tags: announcement
 image: RX2-Holiday-Photo-1200x1600.jpg
 thumbnail: Snowflakes-blue.jpg
-headline-image: RX2-Holiday-Photo-headline.jpg
 ---
 <div class="container">
 <div class="row">
