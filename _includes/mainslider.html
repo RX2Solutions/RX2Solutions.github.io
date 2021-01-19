@@ -1,7 +1,10 @@
 {%- unless include.background -%}
 {%- assign include.background = "377.jpg" -%}
 {%- endunless -%}
-<section id="mainpagehero" class="min-vh-100" style='background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{- site.baseurl -}}/assets/images/{{- include.background -}}")'>
+{%- unless include.opacity -%}
+{%- assign include.opacity = ".5" -%}
+{%- endunless -%}
+<section id="mainpagehero" class="min-vh-100" style='background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, {{- include.opacity -}}), rgba(0, 0, 0, {{- include.opacity -}})), url("{{- site.baseurl -}}/assets/images/{{- include.background -}}")'>
   <div class="container">
     <div class="row min-vh-100 align-items-center" style='color:{{- include.text-color -}}'>
         <div class="col gutsContent">
