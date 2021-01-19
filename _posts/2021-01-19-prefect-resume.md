@@ -4,11 +4,13 @@ title: I have the prefect resume, Now what?
 author: rx2solutions
 thumbnail: PAPER-AND-PENCIL.jpg
 tags: publication
+excerpt_separator: <!--more-->
 ---
 
 **I have the perfect resume, now what?**
 
 Once you have perfected your resume, it’s time to put yourself out there and apply to various roles of interest.  In case you missed them, please check out our articles about resume writing best practices and resume formatting.
+<!--more-->
 
 When you are actively looking for a job, you may need to change some of your habits…
 
