@@ -62,7 +62,6 @@ Senior level tax accountant with eight years of proven experience at both the na
   <li>  4th...</li>
   <li>  5th...</li>
 </ul>
-<b>EDUCATION & CERTIFICATIONS</b>
-ABC University  
-Bachelor of Science in Managerial Accounting
+<br><b>EDUCATION & CERTIFICATIONS</b></br>
+ABC University - Bachelor of Science in Managerial Accounting
 </p>
