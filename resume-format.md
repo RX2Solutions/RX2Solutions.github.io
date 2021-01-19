@@ -2,8 +2,8 @@
 layout: hero
 title: Resume Formating Guide
 text-color: white
-background: resume%20blue.jpg
-opacity: .25
+background: resume blue.jpg
+opacity: ".25"
 ---
 # {{ page.title }}
 <p> <b>FIRSTNAME LASTNAME</b>
