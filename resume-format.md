@@ -1,6 +1,7 @@
 ---
+layout: hero
 title: Resume Formating Guide
-text-color: dark grey
+text-color: white
 background: https://rx2solutions.com/assets/images/resume%20blue.jpg
 ---
 # {{ page.title }}
