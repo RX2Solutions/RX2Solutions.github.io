@@ -36,7 +36,7 @@ The tendency these days is to screen all calls where you don’t know the number
 This is especially true for recent college grads.
 
 <ul>
-<strong>Our Advice:</strong>  Make sure your voicemail is professional as an unprofessional voicemail may lead to you never getting the interview and you’d never know it.  If you are unsure about what your voicemail should be, you can find some ideas<a href="https://corporatefinanceinstitute.com/resources/careers/soft-skills/professional-voicemail-greetings/">here</a>.
+<strong>Our Advice:</strong>  Make sure your voicemail is professional as an unprofessional voicemail may lead to you never getting the interview and you’d never know it.  If you are unsure about what your voicemail should be, you can find some ideas <a href="https://corporatefinanceinstitute.com/resources/careers/soft-skills/professional-voicemail-greetings/">here</a>.
 </ul>
 
 
