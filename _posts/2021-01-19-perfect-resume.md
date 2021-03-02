@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I have the prefect resume, Now what?
+title: I have the perfect resume, Now what?
 author: rx2solutions
 thumbnail: PAPER-AND-PENCIL.jpg
 tags: publication
