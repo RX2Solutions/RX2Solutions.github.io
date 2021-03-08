@@ -3,7 +3,7 @@ layout: post
 title: RX2 Solutions Welcomes Amanda Narcise as their Recruiting Manager
 author: rx2solutions
 tags: announcement
-thumbnail: AN150_BW.jpeg
+thumbnail: AN150_BW.jpg
 ---
 **FOR IMMEDIATE RELEASE**
 
@@ -13,9 +13,9 @@ info@rx2solutions.com
 
 **{{ page.title }}**
 
-[*Plymouth Meeting, PA, March 8th, 2021*] RX2 Solutions, The Respectfully Professional Talent Acquisition and Staff Augmentation Company is proud to announce the arrival of its newest Director, Josh Roby.
+[*Plymouth Meeting, PA, March 8th, 2021*] RX2 Solutions, The Respectfully Professional Talent Acquisition and Staff Augmentation Company is proud to announce the arrival of its newest Recruiting Manager, Amanda Narcise.
 
-![Amanda Headshot]({{- baseurl -}}/assets/images/AN150_BW.jpeg)
+![Amanda Headshot]({{- baseurl -}}asset/images/AN150_BW.jpg)
 Amanda Narcise brings over 10 years of professional staffing experience in the life science, healthcare, and administrative space to RX2 Solutions. She is a go-getter who is energized by results and was drawn to the professional environment, similar mindset, and Respectfully Professional culture of RX2 Solutions. She has a tenacious drive for creating staffing solutions that exceed business goals while providing the highest level of service to the client and the job seeker. 
 
 Amanda enjoys spending time with her nieces and nephew in her spare time, going down the shore and trying out new restaurants. 
