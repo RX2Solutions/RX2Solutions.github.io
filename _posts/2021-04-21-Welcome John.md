@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RX2 Solutions Welcomes Amanda Narcise as their Recruiting Manager
+title: RX2 Solutions Welcomes John Thomas as an Associate, Strategic Staffing
 author: rx2solutions
 tags: announcement
 thumbnail: JBT B-W HEADSHOT RX2.jpg
