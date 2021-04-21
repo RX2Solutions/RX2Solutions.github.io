@@ -15,7 +15,7 @@ info@rx2solutions.com
 
 [*Plymouth Meeting, PA, April 21th, 2021*] RX2 Solutions, The Respectfully Professional Talent Acquisition and Staff Augmentation Company is proud to announce the arrival of its newest Associate, Strategic Staffing John Thomas.
 
-![John Headshot]({{- baseurl -}}/assets/images/JBT B-W HEADSHOT RX2-150-122.jpg)
+![John Headshot]({{- baseurl -}}/assets/images/JBT B-W HEADSHOT RX2-50.jpg)
 John comes from a nationally recognized home health care company and has a strong background in customer service, vendor management, and IT support.  Originally from the suburbs of Philadelphia, he received his degree in Health Policy and Administration from Penn State University. 
 
 He is a lifelong Phillies and Eagles fan who enjoys traveling, exploring the outdoors, spending time with friends and family, and playing his guitar.
