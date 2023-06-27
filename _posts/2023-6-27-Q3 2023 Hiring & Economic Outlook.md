@@ -40,7 +40,7 @@ returned to work including desire for higher wages reducing interest in low-payi
 early retirement, increased dependent care needs, and a possible increase in people being paid under the table<sup>ix</sup>.  
 With unemployment rates being historically low and seven million people leaving the workforce that have not returned 
 yet since 2020, it's unlikely that we will see a dramatic shift in the labor supply in the near-term.  <br>
-
+<br>
 On the demand side, there are a historic number of advertised job vacancies in the US currently. Across all regions 
 and industries there were 10.1 million job postings as of April 2023<sup>x</sup>.  Over the past 25 years, there were never more 
 than 8 million postings (until mid-2021), and the historical average is around five million.  Economists were 
@@ -55,9 +55,9 @@ out to [info@rx2solutions.com](mailto:info@rx2solutions.com), 610.340.3490. <br>
 <br>
 <be>
 <br>
-**_References_**
-______
-_i_ [https://www.forbes.com](https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90) <br>
+**_References_** <br>
+______ <br>
+_i_ [forbes.com](https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90)<br>
 _ii_ [https://www.forbes.com/advisor](https://www.forbes.com/advisor/investing/fed-funds-rate-history) <br>
 _iii_ [https://www.techtarget.com](https://www.techtarget.com/whatis/feature/Silicon-Valley-Bank-collapse-explained-What-you-need-to-know#:~:text=The%20collapse%20happened%20for%20multiple,SVB's%20depositors%20were%20startup%20companies) <br>
 _iv_ [https://ycharts.com](https://ycharts.com/indicators/us_inflation_rate) <br>
