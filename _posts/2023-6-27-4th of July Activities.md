@@ -13,12 +13,12 @@ has highlighted some of the best events in the area!
 **FOURTH OF JULY ACTIVITIES**
 
 **Pennsylvania**
-- **<i>Philadelphia, PA Wawa Welcome America July 4th Concert</i>**
+- **<i>Philadelphia, Wawa Welcome America July 4th Concert</i>**
 <be></br>
 Tuesday, July 4, 2023 | 7 p.m. Time of Fireworks: 9:45 p.m
 <be></br>
 This is it: the big one. Wawa Welcome America culminates in a giant, free-for-everyone party on the Benjamin Franklin Parkway on the evening of the Fourth of July. The centerpiece of the celebration is a high-energy concert headlined by superstars Ludacris and Demi Lovato ahead of a stunning fireworks finale. Note: Guests can enter the Parkway through gates at 20th Street and Logan Circle beginning at 4 p.m.
-**Where**: Benjamin Franklin Parkway, 200 N. 19th Street
+Where: Benjamin Franklin Parkway, 200 N. 19th Street
 Time of Fireworks: Tuesday, July 4, 2023: 9:45 p.m.Your Guide to July 4th Fireworks in Philly for 2023
 
 - **<i>Penn's Landing, Pershing’s Own Concert, and Waterfront Fireworks</i>**
@@ -32,7 +32,7 @@ Where: Great Plaza at Penn's Landing, 101 S. Christopher Columbus Boulevard
 <be></br>
 Tuesday, July 4, 2023 | 7:15-9:15 p.m.
 <be></br>
-The Chester County Concert Band treats the town to patriotic tunes while folks gather in Wayne’s Wilson Farm Park ahead of an Independence Day fireworks display, lighting up the skies at dusk. This year, grab refreshments at one of the pay-as-you-go food and ice cream trucks, or pack your own lawn chairs and picnics.
+The Chester County Concert Band treats the town to patriotic tunes while folks gather in Wayne’s Wilson Farm Park ahead of an Independence Day fireworks display, lighting up the skies at dusk. This year, grab refreshments at one of the pay-as-you-go food and ice cream trucks or pack your own lawn chairs and picnics.
 **Where**: Wilson Farm Park, 500 Lee Road, Wayne
 
 
