@@ -20,7 +20,8 @@ This is it: the big one. Wawa Welcome America culminates in a giant, free-for-ev
 Where: Benjamin Franklin Parkway, 200 N. 19th Street
 Time of Fireworks: Tuesday, July 4, 2023: 9:45 p.m.Your Guide to July 4th Fireworks in Philly for 2023
 
-- Penn's Landing, Pershing’s Own Concert, and Waterfront Fireworks
+- **<i>Penn's Landing, Pershing’s Own Concert, and Waterfront Fireworks</i>**
+<be></br>
 Saturday, July 1, 2023 | 8-9:45 p.m.
 Originally formed back in 1922 by General John J. Pershing, the United States Army band Pershing’s Own comes to Philadelphia for a patriotic, star-spangled concert — capped off by an exciting fireworks show over the water. (And Philly has no shortage of spots to enjoy the fireworks.)
 Where: Great Plaza at Penn's Landing, 101 S. Christopher Columbus Boulevard
