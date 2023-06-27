@@ -37,41 +37,60 @@ The Chester County Concert Band treats the town to patriotic tunes while folks g
 
 
 - **_Conshohocken, Sutcliffe Park_**
-<be>
+<be></br>
 Monday, July 3, 2023 | 9:30 p.m.
-<be>
+<be></br>
 The Borough of Conshohocken will host the Fireworks Display on Monday, July 3, 2023. Fireworks begin at dusk approximately around 9:30 p.m. The fireworks display will be larger so that fireworks may be visible from as many vantage points as possible throughout the Borough. Due to the larger size of fireworks, a wider safety perimeter surrounding the discharge zone is required. As such, Sutcliffe Park and surrounding areas will be closed to the public during the event. Tests of the larger Fireworks display were completed to ensure that the majority of the Borough could still view and enjoy the fireworks from outside Sutcliffe Park.
 
 
 - **_Allentown, J. Birney Crum Stadium_**
-<be>
+<be></br>
 July 4, 2023 | 5 p.m. – 10 p.m.
-<be>
+<be></br>
 The City of Allentown’s free 4th of July Celebration is at J. Birney Crum Stadium on July 4 from 5–10 p.m. The event features live music and entertainment, family fun, delicious food options and a rousing, musical fireworks show. The stadium gates open at 5 p.m. The night will be capped by a brilliant fireworks display that is sure to dazzle the audience. The fireworks show will be accompanied by music broadcast throughout the stadium. More details on music performances to come.
 The Best Places in Lehigh Valley to See 4th of July Fireworks | Discover Lehigh Valley
 
 **JERSEY SHORE**
-- Atlantic City Fireworks
-***Friday, June 30, 2023 | 9:30 p.m.***
-North Beach Atlantic City has announced that the entertainment district of Atlantic City will host its 3rd annual summer-kick off premiere ocean-front firework spectacular on Friday, June 30 at 9:30 p.m. This event will be free and open to the public featuring several viewing locations throughout the north end of the boardwalk. The locations include: Steel Pier, Resorts Casino Hotel, Hard Rock Hotel & Casino Atlantic City, Showboat, and Ocean Casino Resort.
+- **_Atlantic City Fireworks_**
+<be></br>
+Friday, June 30, 2023 | 9:30 p.m.
+North Beach Atlantic City has announced that the entertainment district of Atlantic City will host its 3rd annual summer-kick off premiere ocean-front firework spectacular on Friday, June 30, at 9:30 p.m. This event will be free and open to the public featuring several viewing locations throughout the north end of the boardwalk. The locations include: Steel Pier, Resorts Casino Hotel, Hard Rock Hotel & Casino Atlantic City, Showboat, and Ocean Casino Resort.
 
 
-- Wildwood 4th of July Fireworks
+- **_Wildwood 4th of July Fireworks_**
+<be></br>
 Tuesday, July 4, 2023 | 10 p.m.
+<be></br>
 Celebrate Independence Day on the Wildwoods Boardwalk and enjoy the 4th of July Fireworks Spectacular at 10 p.m.! This special fireworks spectacular, launched from the beach at Pine Avenue, is synchronized to patriotic music playing over the Wildwoods Boardwalk sound system!
 
 
-- Ocean City 4th of July Celebration
+- **_Ocean City 4th of July Celebration_**
+<be></br>
 Tuesday, July 4, 2023 | 7 p.m. – 9:30 p.m.
+<be></br>
 Celebrate Independence Day down the shore in Ocean City with a kite flying competition at 7 pm, followed by live entertainment and a boardwalk fireworks display at 9 pm.
-Fourth of July Celebration - America's Greatest Family Resort | Official Site of Ocean City, NJ
+
 **Delaware**
 
-- Wilmington, Tubman-Garrett Riverfront Park
-July 4th Celebration and Fireworks
+- **_Wilmington, Tubman-Garrett Riverfront Park_**
+<be></br>
 Tuesday, July 4, 2023 | 4 p.m. – 10 p.m.
+<be></br>
 4:00 p.m. to 10:00 p.m. (fireworks preshow at 9:15) Tubman-Garrett Riverfront Park, Rosa Parks Drive, Wilmington, DE 19801
 City Arts and Entertainment | Wilmington, DE (wilmingtonde.gov)
+
+- **_Dewey Beach 4th of July Fireworks_**
+<be></br>
+Tuesday, July 4, 2023 | 9:30 p.m.
+<be></br>
+Fireworks will once again light up the sky in Dewey Beach July 4. The display will launch from a barge in the bay in front of Northbeach/ Ivy, two blocks from the Rusty Rudder, and will be visible throughout town. 
+
+- **_Rehoboth Beach Firework Show_**
+<be></br>
+Sunday, July 2, 2023 | 9:30 p.m.
+<be></br>
+Rehoboth Beach's fireworks show will take place on Sunday, July 2 at 9:30 p.m. They say the display will be 20 minutes and visible along the beach and boardwalk. The Funsters will perform at the bandstand starting at 8 p.m. and will continue after the fireworks display.
+
 
 If you or anyone you know is currently looking for work or is looking for hiring assistance, RX2 Solutions is here to help. Feel free to contact us at 
 [info@rx2solutions.com](mailto:info@rx2solutions.com) to discuss how we can be of service to you. For more information, visit [www.rx2solutions.com](https://www.rx2solutions.com) or call us at 610.340.3490.
