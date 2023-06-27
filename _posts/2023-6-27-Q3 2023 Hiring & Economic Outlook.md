@@ -6,7 +6,7 @@ tags: publication
 thumbnail: report.jpg
 excerpt_separator: <!--more-->
 ---
-RX2 Solutions Q3 2023 Hiring & Economic Outlook
+**RX2 Solutions Q3 2023 Hiring & Economic Outlook**
 
 Despite what many news stations are reporting, the US economy is doing well, and we are still seeing strong demand 
 for staffing services.  Demand has gone down some from where it was in Q1 and Q2, and historically, we have 
@@ -55,9 +55,10 @@ out to [info@rx2solutions.com](mailto:info@rx2solutions.com), 610.340.3490. <br>
 <br>
 <be>
 <br>
-**References** <br>
+<b>References</b>
+<br>
 ____________________________ <br>
-<sup>i</sup> [forbes.com](https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90/)
+<sup>i</sup> <a href="https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90>Forbes.com/brianbushard</a>
 <br>
 <sup>ii</sup> [https://www.forbes.com/advisor](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)
 <br>
