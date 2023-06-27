@@ -58,7 +58,7 @@ out to [info@rx2solutions.com](mailto:info@rx2solutions.com), 610.340.3490. <br>
 <b>References</b>
 <br>
 ____________________________ <br>
-<sup>i</sup> <a href="https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90>Forbes.com/brianbushard</a>
+<sup>i</sup> <a href="https://www.forbes.com/sites/brianbushard/2023/06/26/2023-layoff-tracker-goldman-sachs-reportedly-cutting-managing-directors/?sh=10059a376b90">Forbes.com/brianbushard</a>
 <br>
 <sup>ii</sup> [https://www.forbes.com/advisor](https://www.forbes.com/advisor/investing/fed-funds-rate-history/)
 <br>
