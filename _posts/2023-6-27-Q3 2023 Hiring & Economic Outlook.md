@@ -37,9 +37,7 @@ is the labor participation rate – this is the measure of how many non-incarcer
 62.6% where it stands today.  This represents that around seven million people who were working before the pandemic 
 have not returned to the workforce yet<sup>viii</sup>.  There are a number of reasons why economists believe people have not 
 returned to work including desire for higher wages reducing interest in low-paying jobs, aging baby boomers taking 
-early retirement, increased dependent care needs, and a possible increase in people being paid under the table<sup>ix</sup>.  
-With unemployment rates being historically low and seven million people leaving the workforce that have not returned 
-yet since 2020, it's unlikely that we will see a dramatic shift in the labor supply in the near-term.  <br>
+early retirement, increased dependent care needs, and a possible increase in people being paid under the table<sup>ix</sup>. With unemployment rates being historically low and seven million people leaving the workforce that have not returned yet since 2020, it's unlikely that we will see a dramatic shift in the labor supply in the near-term.  <br>
 <br>
 On the demand side, there are a historic number of advertised job vacancies in the US currently. Across all regions 
 and industries there were 10.1 million job postings as of April 2023<sup>x</sup>.  Over the past 25 years, there were never more 
