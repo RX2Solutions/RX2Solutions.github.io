@@ -23,7 +23,7 @@ Saturday, July 1, 2023 | 8-9:45 p.m.<br>
 Originally formed back in 1922 by General John J. Pershing, the United States Army band Pershing’s Own comes to Philadelphia for a patriotic, star-spangled concert — capped off by an exciting fireworks show over the water. (And Philly has no shortage of spots to enjoy the fireworks.)<br>
 Where: Great Plaza at Penn's Landing, 101 S. Christopher Columbus Boulevard <br>
 
-- **<i>Wayne, Wilson Farm Park Fourth of July Celebration<i>** <br>
+- **_Wayne, Wilson Farm Park Fourth of July Celebration_** <br>
 Tuesday, July 4, 2023 | 7:15-9:15 p.m.<br>
 The Chester County Concert Band treats the town to patriotic tunes while folks gather in Wayne’s Wilson Farm Park ahead of an Independence Day fireworks display, lighting up the skies at dusk. This year, grab refreshments at one of the pay-as-you-go food and ice cream trucks or pack your own lawn chairs and picnics.<br>
 Where: Wilson Farm Park, 500 Lee Road, Wayne <br>
