@@ -51,7 +51,7 @@ likely lead to further increases in wages for employers to remain competitive in
 talent they need.  Some areas we’ve identified where employers can improve their hiring success is to increase 
 their perceived employee benefits and to streamline and expedite their interview process.  If you’d like to 
 discuss your hiring strategy with RX2 Solutions and how we can play a part in it, feel free to reach 
-out to [info@rx2solutions.com](mailto:info@rx2solutions.com), 610.240.3490. <br>
+out to [info@rx2solutions.com](mailto:info@rx2solutions.com), 610.340.3490. <br>
 <br>
 <be>
 <br>
