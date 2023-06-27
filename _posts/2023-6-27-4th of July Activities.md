@@ -38,7 +38,7 @@ The Borough of Conshohocken will host the Fireworks Display on Monday, July 3, 2
 July 4, 2023 | 5 p.m. – 10 p.m. <br>
 The City of Allentown’s free 4th of July Celebration is at J. Birney Crum Stadium on July 4 from 5–10 p.m. The event features live music and entertainment, family fun, delicious food options and a rousing, musical fireworks show. The stadium gates open at 5 p.m. The night will be capped by a brilliant fireworks display that is sure to dazzle the audience. The fireworks show will be accompanied by music broadcast throughout the stadium. More details on music performances to come.<br>
 
-**JERSEY SHORE**
+**Jersey Shore**
 - **_Atlantic City Fireworks_** <br>
 Friday, June 30, 2023 | 9:30 p.m. <br>
 North Beach Atlantic City has announced that the entertainment district of Atlantic City will host its 3rd annual summer-kick off premiere ocean-front firework spectacular on Friday, June 30, at 9:30 p.m. This event will be free and open to the public featuring several viewing locations throughout the north end of the boardwalk. The locations include: Steel Pier, Resorts Casino Hotel, Hard Rock Hotel & Casino Atlantic City, Showboat, and Ocean Casino Resort. <br>
