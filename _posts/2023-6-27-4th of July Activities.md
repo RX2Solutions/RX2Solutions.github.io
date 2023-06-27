@@ -14,7 +14,7 @@ has highlighted some of the best events in the area!
 
 **Pennsylvania**
 - **<i>Philadelphia, PA Wawa Welcome America July 4th Concert</i>**
-<br></br>
+<be></br>
 Tuesday, July 4, 2023 | 7 p.m.
 This is it: the big one. Wawa Welcome America culminates in a giant, free-for-everyone party on the Benjamin Franklin Parkway on the evening of the Fourth of July. The centerpiece of the celebration is a high-energy concert headlined by superstars Ludacris and Demi Lovato ahead of a stunning fireworks finale. Note: Guests can enter the Parkway through gates at 20th Street and Logan Circle beginning at 4 p.m.
 Where: Benjamin Franklin Parkway, 200 N. 19th Street
