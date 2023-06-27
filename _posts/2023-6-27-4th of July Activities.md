@@ -15,33 +15,38 @@ has highlighted some of the best events in the area!
 **Pennsylvania**
 - **<i>Philadelphia, PA Wawa Welcome America July 4th Concert</i>**
 <be></br>
-Tuesday, July 4, 2023 | 7 p.m.
+Tuesday, July 4, 2023 | 7 p.m. Time of Fireworks: 9:45 p.m
+<be></br>
 This is it: the big one. Wawa Welcome America culminates in a giant, free-for-everyone party on the Benjamin Franklin Parkway on the evening of the Fourth of July. The centerpiece of the celebration is a high-energy concert headlined by superstars Ludacris and Demi Lovato ahead of a stunning fireworks finale. Note: Guests can enter the Parkway through gates at 20th Street and Logan Circle beginning at 4 p.m.
-Where: Benjamin Franklin Parkway, 200 N. 19th Street
+**Where**: Benjamin Franklin Parkway, 200 N. 19th Street
 Time of Fireworks: Tuesday, July 4, 2023: 9:45 p.m.Your Guide to July 4th Fireworks in Philly for 2023
 
 - **<i>Penn's Landing, Pershing’s Own Concert, and Waterfront Fireworks</i>**
 <be></br>
 Saturday, July 1, 2023 | 8-9:45 p.m.
+<be></br>
 Originally formed back in 1922 by General John J. Pershing, the United States Army band Pershing’s Own comes to Philadelphia for a patriotic, star-spangled concert — capped off by an exciting fireworks show over the water. (And Philly has no shortage of spots to enjoy the fireworks.)
 Where: Great Plaza at Penn's Landing, 101 S. Christopher Columbus Boulevard
 
-- Wayne, Wilson Farm Park
-Fourth of July Celebration
+- **<i>Wayne, Wilson Farm Park Fourth of July Celebration<i>**
+<be></br>
 Tuesday, July 4, 2023 | 7:15-9:15 p.m.
+<be></br>
 The Chester County Concert Band treats the town to patriotic tunes while folks gather in Wayne’s Wilson Farm Park ahead of an Independence Day fireworks display, lighting up the skies at dusk. This year, grab refreshments at one of the pay-as-you-go food and ice cream trucks, or pack your own lawn chairs and picnics.
-Where: Wilson Farm Park, 500 Lee Road, Wayne
+**Where**: Wilson Farm Park, 500 Lee Road, Wayne
 
 
-- Conshohocken, Sutcliffe Park
-July 3rd Fireworks Display 
+- **_Conshohocken, Sutcliffe Park_**
+<be>
 Monday, July 3, 2023 | 9:30 p.m.
+<be>
 The Borough of Conshohocken will host the Fireworks Display on Monday, July 3, 2023. Fireworks begin at dusk approximately around 9:30 p.m. The fireworks display will be larger so that fireworks may be visible from as many vantage points as possible throughout the Borough. Due to the larger size of fireworks, a wider safety perimeter surrounding the discharge zone is required. As such, Sutcliffe Park and surrounding areas will be closed to the public during the event. Tests of the larger Fireworks display were completed to ensure that the majority of the Borough could still view and enjoy the fireworks from outside Sutcliffe Park.
-July 3rd Fireworks Display | Borough of Conshohocken (conshohockenpa.gov)
 
-- Allentown, J. Birney Crum Stadium
-City of Allentown 4th of July Celebration
+
+- **_Allentown, J. Birney Crum Stadium_**
+<be>
 July 4, 2023 | 5 p.m. – 10 p.m.
+<be>
 The City of Allentown’s free 4th of July Celebration is at J. Birney Crum Stadium on July 4 from 5–10 p.m. The event features live music and entertainment, family fun, delicious food options and a rousing, musical fireworks show. The stadium gates open at 5 p.m. The night will be capped by a brilliant fireworks display that is sure to dazzle the audience. The fireworks show will be accompanied by music broadcast throughout the stadium. More details on music performances to come.
 The Best Places in Lehigh Valley to See 4th of July Fireworks | Discover Lehigh Valley
 
