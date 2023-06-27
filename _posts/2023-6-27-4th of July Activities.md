@@ -6,7 +6,7 @@ tags: publication
 thumbnail: nightsky.jpg
 excerpt_separator: <!--more-->
 ---
-It's that time of year again when everyone is looking for Funny Family activities to do for the Fourth of July. Well, look no further, as RX2 Solutions 
+It's that time of year again when everyone is looking for Fun Family activities for the Fourth of July. Well, look no further, as RX2 Solutions 
 has highlighted some of the best events in the area!
 <!--more-->
 
