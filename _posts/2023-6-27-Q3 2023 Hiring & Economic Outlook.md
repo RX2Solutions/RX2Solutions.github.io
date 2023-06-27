@@ -61,8 +61,8 @@ _i_ [https://www.forbes.com](https://www.forbes.com/sites/brianbushard/2023/06/2
 _ii_ [https://www.forbes.com/advisor](https://www.forbes.com/advisor/investing/fed-funds-rate-history) <br>
 _iii_ [https://www.techtarget.com](https://www.techtarget.com/whatis/feature/Silicon-Valley-Bank-collapse-explained-What-you-need-to-know#:~:text=The%20collapse%20happened%20for%20multiple,SVB's%20depositors%20were%20startup%20companies) <br>
 _iv_ [https://ycharts.com](https://ycharts.com/indicators/us_inflation_rate) <br>
-_v _[https://www.cfr.org/](https://www.cfr.org/blog/history-and-future-federal-reserves-2-percent-target-rate-inflation-0#:~:text=The%202%20percent%20target%20was,of%20then%2D%20Chair%20Ben%20Bernanke.&text=Despite%20coming%20about%20somewhat%20accidentally,is%20a%20reasonable%20inflation%20target) <br>
-_vi _[https://www.bls.gov/charts](https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm) <br>
+_v_ [https://www.cfr.org/](https://www.cfr.org/blog/history-and-future-federal-reserves-2-percent-target-rate-inflation-0#:~:text=The%202%20percent%20target%20was,of%20then%2D%20Chair%20Ben%20Bernanke.&text=Despite%20coming%20about%20somewhat%20accidentally,is%20a%20reasonable%20inflation%20target) <br>
+_vi_ [https://www.bls.gov/charts](https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm) <br>
 _vii_ [https://www.cnbc.com](https://www.cnbc.com/2023/06/02/jobs-report-may-2023-.html) <br>
 _viii_ [https://ycharts.com/indicators](https://ycharts.com/indicators/labor_force_participation_rate#:~:text=Basic%20Info,long%20term%20average%20of%2062.84%25) <br>
 _ix_ [https://www.forbes.com/sites](https://www.forbes.com/sites/qai/2023/01/25/unemployment-is-low-but-so-is-the-labor-force-participation-rate---whats-going-on-in-the-us-labor-market/?sh=10f98c3e244e) <br>
