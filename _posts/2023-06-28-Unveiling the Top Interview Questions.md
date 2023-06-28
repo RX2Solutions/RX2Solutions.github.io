@@ -33,4 +33,4 @@ As a hiring manager, conducting interviews is crucial in finding the right candi
 
 Interviews as a hiring manager involve asking thought-provoking questions that provide insights into candidates' qualifications, skills and fit within your organization. The ten interview questions discussed above provide a solid foundation for evaluating candidates and making informed hiring decisions. <br>
 
-If you or anyone you know is currently looking for work or is looking for hiring assistance, RX2 Solutions is here to help. Feel free to contact us at [info@rx2solutions.com](mailto:info@rx2solutions.com) to discuss how we can be of service to you. For more information, visit [www.rx2solutions.com](https://www.rx2solutions.com) or call us at 610.340.3490.
+If you or anyone you know is currently looking for work or is looking for hiring assistance, RX2 Solutions is here to help. Feel free to contact us at [info@rx2solutions.com](mailto:info@rx2solutions.com) or 610.340.3490 to discuss how we can be of service to you.
