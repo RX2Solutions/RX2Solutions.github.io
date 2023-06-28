@@ -68,6 +68,5 @@ Sunday, July 2, 2023 | 9:30 p.m. <br>
 Rehoboth Beach's fireworks show will take place on Sunday, July 2 at 9:30 p.m. They say the display will be 20 minutes and visible along the beach and boardwalk. The Funsters will perform at the bandstand starting at 8 p.m. and will continue after the fireworks display. <br>
 
 
-If you or anyone you know is currently looking for work or is looking for hiring assistance, RX2 Solutions is here to help. Feel free to contact us at 
-[info@rx2solutions.com](mailto:info@rx2solutions.com) to discuss how we can be of service to you. For more information, visit [www.rx2solutions.com](https://www.rx2solutions.com) or call us at 610.340.3490.
+If you or anyone you know is currently looking for work or is looking for hiring assistance, RX2 Solutions is here to help. Feel free to contact us at [info@rx2solutions.com](mailto:info@rx2solutions.com) or 610.340.3490 to discuss how we can be of service to you.
 
