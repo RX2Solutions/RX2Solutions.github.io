@@ -18,5 +18,6 @@ Here's to seeing you when we turn ten! <br>
 <br>
 Rob & Ross <br>
 <br>
+<img src="image.png" width="400" height="200">
 ![RX2 Team]({{- baseurl -}}/assets/images/Phillies.jpg)<br>
 
