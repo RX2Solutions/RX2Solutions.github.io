@@ -8,7 +8,8 @@ excerpt_separator: <!--more-->
 ---
 
 **Celebrating 5 Years**
-![RX2 Team]({{- baseurl -}}/assets/images/RX2Phillies2.jpg)
+![RX2 Team]({{- baseurl -}}/assets/images/RX2Phillies2.jpg)<br>
+
 As we hit our 5th Anniversary, we want to thank everyone for the past five years. <br>
 <!--more-->
 <br>
