@@ -17,8 +17,11 @@ Starting RX2 Solutions has been a humbling, exciting, and life-changing experien
 <br>
 Here's to seeing you when we turn ten! <br>
 <br>
-Rob & Ross <br>
 <br>
 <img src="https://rx2solutions.com/assets/images/Phillies.jpg" width="400" height="200">
+<br>
+Thanks, <br>
+Rob & Ross <br>
+
 
 
