@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 
 **Celebrating 5 Years**
 <br>
+<br>
 As we hit our 5th Anniversary, we want to thank everyone for the past five years. <br>
 <!--more-->
 <br>
@@ -18,6 +19,6 @@ Here's to seeing you when we turn ten! <br>
 <br>
 Rob & Ross <br>
 <br>
-<img src="image.png" width="400" height="200">
-![RX2 Team]({{- baseurl -}}/assets/images/Phillies.jpg)<br>
+<img src="phillies.jpg" width="400" height="200">
+
 
