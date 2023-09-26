@@ -13,10 +13,10 @@ has highlighted some of our staffs favorite Fall Treats!
 ![Whoopie Pie]({{- baseurl -}}/assets/images/whoopie.png)
 These pumpkin whoopie pies are the perfect fall treat! Each soft and fluffy cookie is filled with a creamy maple cream cheese filling that will leave you wanting more. You won't be able to resist these scrumptious pumpkin whoopie pies! Follow the link for the full recipe & notes: https://foodfolksandfun.net/pumpkin-whoopie-pies/ <BR>
 <BR>
-![Graveyard Halloween Brownies]({{- baseurl -}}/assets/images/gy.jpg)
+![Graveyard Halloween Brownies]({{- baseurl -}}/assets/images/GY.jpg)
 Graveyard Halloween brownies are a spooky and delicious treat that will delight kids and adults. Serve them on a dark and eerie platter for a creepy dessert experience that will leave your guests screaming for more. Follow the link for the full recipe & notes: https://tastesbetterfromscratch.com/halloween-graveyard-brownies/ <BR>
 <BR>
-![BBQ Meatballs]({{- baseurl -}}/assets/images/bbq.jpg)
+![BBQ Meatballs]({{- baseurl -}}/assets/images/BBQ.jpg)
 Nothing says fall more than football! This is the perfect appetizer for all your Eagles watch parties or tailgating at The Linc. This simple recipe is sure to be a crowd-pleaser at your next gathering! Follow the link for the full recipe & notes: https://tastesbetterfromscratch.com/slow-cooker-cranberry-bbq-meatballs/ <BR>
 <BR>
 ![Pumpkin Chocolate Chip Bread]({{- baseurl -}}/assets/images/Pumpkin.jpg)
