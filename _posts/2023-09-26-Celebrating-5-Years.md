@@ -18,4 +18,4 @@ Here's to seeing you when we turn ten! <br>
 Rob & Ross <br>
 <br>
 
-![RX2 Team]({{- baseurl -}}/assets/images/RX2Phillies.jpg)
+![RX2 Team]({{- baseurl -}}/assets/images/RX2Phillies2.jpg)
