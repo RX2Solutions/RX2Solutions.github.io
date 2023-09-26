@@ -7,7 +7,7 @@ thumbnail: RX2P.jpg
 excerpt_separator: <!--more-->
 ---
 
-<B><U>Celebrating 5 Years</b></u>
+**Celebrating 5 Years**
 
 As we hit our 5th Anniversary, we want to thank everyone for the past five years. <br>
 <br>
