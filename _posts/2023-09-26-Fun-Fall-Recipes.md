@@ -3,7 +3,7 @@ layout: post
 title: Fun Fall Recipes
 author: rx2solutions
 tags: 
-thumbnail: spider.jpg
+thumbnail: cookie.jpg
 excerpt_separator: <!--more-->
 ---
 It's that time of year again when everyone is looking for Fun Fall Recipes! Well, look no further, as RX2 Solutions 
