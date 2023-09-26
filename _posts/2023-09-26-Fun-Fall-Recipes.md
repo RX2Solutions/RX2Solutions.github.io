@@ -14,7 +14,7 @@ has highlighted some of our staffs favorite Fall Treats!
 **Whoopie Pie**
 These pumpkin whoopie pies are the perfect fall treat! Each soft and fluffy cookie is filled with a creamy maple cream cheese filling that will leave you wanting more. You won't be able to resist these scrumptious pumpkin whoopie pies! Follow the link for the full recipe & notes: https://foodfolksandfun.net/pumpkin-whoopie-pies/ <BR>
 <BR>
-![Graveyard Halloween Brownies]({{- baseurl -}}/assets/images/GY.jpg)
+![Graveyard Halloween Brownies]({{- baseurl -}}/assets/images/RIP.jpg)
 **Graveyard Halloween Brownies**
 Graveyard Halloween brownies are a spooky and delicious treat that will delight kids and adults. Serve them on a dark and eerie platter for a creepy dessert experience that will leave your guests screaming for more. Follow the link for the full recipe & notes: https://tastesbetterfromscratch.com/halloween-graveyard-brownies/ <BR>
 <BR>
@@ -28,7 +28,7 @@ Chocolate chip spider cookies are a fun and playful twist on a classic favorite.
 <BR>
 ![Buffalo Chicken Dip]({{- baseurl -}}/assets/images/dip.jpg)
 **Buffalo Chicken Dip**
-Buffalo chicken dip is a delicious and flavorful appetizer that is perfect for any party or gathering. The tangy and zesty flavor of the buffalo sauce combined with the creamy and cheesy texture of the dip creates a mouthwatering taste that is sure to please any crowd. Whether you're hosting a game day party or just looking for a tasty snack, buffalo chicken dip is the perfect choice! Follow the link for the full dip recipe & notes: https://tastesbetterfromscratch.com/buffalo-chicken-dip/
+Buffalo chicken dip is a delicious and flavorful appetizer that is perfect for any party or gathering. The tangy and zesty flavor of the buffalo sauce combined with the creamy and cheesy texture of the dip creates a mouthwatering taste that is sure to please any crowd. Whether you're hosting a game day party or just looking for a tasty snack, buffalo chicken dip is the perfect choice! Follow the link for the full dip recipe & notes: https://tastesbetterfromscratch.com/buffalo-chicken-dip/ <br>
 <BR>
 ![BBQ Meatballs]({{- baseurl -}}/assets/images/BBQ.jpg)
 **BBQ Meatballs**
