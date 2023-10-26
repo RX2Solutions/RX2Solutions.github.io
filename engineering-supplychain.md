@@ -1,6 +1,6 @@
 ---
 layout: hero
-title: Engineering & Supply Chain
+title: Engineering & Manufacturing
 text-color: white
 oldbackground: stock-photo-smart-city-and-abstract-dot-point-connect-with-gradient-line-and-aesthetic-intricate-wave-line-1499306735.jpg
 background: stock-photo-traffic-in-hong-kong-at-sunset-time-234548350.jpg
