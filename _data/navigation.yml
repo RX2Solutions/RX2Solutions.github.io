@@ -13,12 +13,12 @@
     link: /accounting-finance.html
   - name: Engineering & Manufacturing
     link: /engineering-supplychain.html
-  - name: Technology & Business
-    link: /information-technology.html
   - name: Sales & Marketing
     link: /marketing-creative.html
   - name: Scientific & Clinical
     link: /scientific-clinical.html
+  - name: Technology & Business
+    link: /information-technology.html
 - name: Blog
   subitems:
   - name: Publications
