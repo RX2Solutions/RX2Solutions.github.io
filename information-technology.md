@@ -1,6 +1,6 @@
 ---
 layout: hero
-title: I
+title: Technology & Business
 text-color: white
 background: stock-photo-communication-technology-for-internet-business-global-world-network-and-telecommunication-on-earth-1421446100.jpg
 ---
