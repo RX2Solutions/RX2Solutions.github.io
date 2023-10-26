@@ -1,6 +1,6 @@
 ---
 layout: hero
-title: Marketing & Creative
+title: Sales & Marketing
 text-color: white
 background: stock-photo-we-live-series-interplay-of-intense-colors-on-the-subject-of-inner-world-dreams-and-spirituality-690674728.jpg
 ---
