@@ -51,7 +51,7 @@
 </section>
 
 <section id="our-blog" class="bglight padding">
-    <div class="container">
+    <div class="container-fluid">
         {%- assign columncounter = 1 -%}
         {% for post in desired_posts offset:postoffset limit:postlimit %}
         <!-- {{- columnscounter -}} -->
@@ -59,7 +59,7 @@
         <div class="row">
         {% endif %}
             <div class="col-md">
-                <div class="news_item shadow text-center text-md-start">
+                <div class="news_item shadow text-center h-100">
                     <a class="image" href="{{- site.baseurl -}}{{ post.url }}">
                         {%- if post.headline-image -%}
                         <img src="{{- site.baseurl -}}/assets/images/{{- post.headline-image -}}" alt="article main image" class="img-responsive">
