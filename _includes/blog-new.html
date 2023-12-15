@@ -1,0 +1,108 @@
+{%- assign desired_posts = site.posts | where: "tags", page.desired-tag -%}
+{%- assign show_recents = "false" -%}
+{%- assign postsperpage = 9 -%}
+{%- assign columnsperrow = 3 -%}
+{%- assign thispage = page.this_page | default: 1 -%}
+{%- assign thispageminusone = thispage | minus: 1 -%}
+{%- assign postoffset = thispageminusone | times: postsperpage -%}
+{%- assign postlimit = postoffset | plus: postsperpage -%}
+{%- assign numarticles = desired_posts | size -%}
+{%- assign maxpages = numarticles | divided_by: postsperpage -%}
+{%- assign maxpages = maxpages | plus: 1 -%}
+{%- assign pagename = page.desired-tag | append: "s" -%}
+{%- if pagename == "publications" -%}
+{%- assign pagename = "articles-new" -%}
+{%- endif -%}
+
+{%- assign previouspage = thispage | minus: 1 -%}
+{%- if previouspage != 1 -%}
+{%- assign previouspagename = pagename | append: previouspage -%}
+{%- else -%}
+{%- assign previouspagename = pagename -%}
+{%- endif -%}
+
+{%- assign nextpage = thispage | plus: 1 -%}
+{%- assign nextpagename = pagename | append: nextpage -%}
+
+<section id="main-banner-page" class="position-relative page-header blog2-header section-nav-smooth" style="background-image: url('{{- sitec.baseurl -}}/assets/images/shutterstock_394634593-cropped.jpg')" data-parallaxie='{ "speed": -0.8 "size": "auto">, "offset": 100 }'>
+  <div class="overlay overlay-dark opacity-4 z-index-1"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+              <div class="page-titles whitecolor text-center padding_top">
+                  <h2 class="font-xlight">Information</h2>
+                  <h2 class="font-bold">YOU</h2>
+                  <h2 class="font-xlight">Can Use</h2>
+<!--                  <h3 class="font-light pt-2"></h3> -->
+              </div>
+          </div>
+      </div>
+      <div class="gradient-bg title-wrap">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 whitecolor">
+                  <h3 class="float-left">{{- page.desired-tag | capitalize -}}s</h3>
+                  <ul class="breadcrumb top10 bottom10 float-right">
+                      <li class="breadcrumb-item hover-light"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="our-blog" class="bglight padding">
+    <div class="container">
+        {%- assign columncounter = 1 -%}
+        {% for post in desired_posts offset:postoffset limit:postlimit %}
+        <!-- {{- columnscounter -}} -->
+        {% if columncounter == 1 %}
+        <div class="row">
+        {% endif %}
+            <div class="col-md">
+                <div class="news_item shadow text-center text-md-start">
+                    <a class="image" href="{{- site.baseurl -}}{{ post.url }}">
+                        {%- if post.headline-image -%}
+                        <img src="{{- site.baseurl -}}/assets/images/{{- post.headline-image -}}" alt="article main image" class="img-responsive">
+                        {%- elsif post.image -%}
+                        <img src="{{- site.baseurl -}}/assets/images/{{- post.image -}}" alt="article image" class="img-responsive">
+                        {%- endif -%}
+                    </a>
+                    <div class="news_desc">
+                        <h3 class="text-capitalize font-normal darkcolor"><a href="{{- site.baseurl -}}{{ post.url }}">{{- post.title -}}</a></h3>
+                        <ul class="meta-tags top20 bottom20">
+                            <li><a href="#."><i class="fas fa-calendar-alt"></i>{{- post.date | date_to_string -}}</a></li>
+                            {%- assign author = site.authors | where: 'short_name', post.author | first -%}
+                            {%- if author -%}
+                            <li><a href="#."> <i class="far fa-user"></i> {{ author.name -}}</a></li>
+                            {%- endif -%}
+                        </ul>
+                        <div class="top15 blog-article bottom15">
+                            {{ post.excerpt }}
+                        </div>
+                        <a class=" button btn-primary" href="{{- site.baseurl -}}{{ post.url }}">Read More</a>
+                    </div>
+                </div>
+            </div>
+        {% if columncounter == columnsperrow %}
+        </div>
+        {%- assign columncounter = 0 -%}
+        {%- endif -%}
+        {%- assign columncounter = columncounter | plus: 1 -%}
+        {% endfor %}
+        {% if columncounter > 1 %}
+        </div>
+        {%- endif -%}
+        <div class="row">
+            {% if maxpages > 1 %}
+            <ul class="pagination padding-bottom bottom40 justify-content-center justify-content-md-start top40">
+                <li class="page-item"><a class="page-link{% if thispage == 1 %}  disabled{% endif %}" href="{{- previouspagename -}}.html"><i class="fa fa-angle-left"></i></a></li>
+                {%- for pageloop in (1..maxpages) -%}
+                <li class="page-item{% if pageloop == thispage %} active{% endif %}"><a class="page-link" href="{{- pagename -}}{%- if pageloop != 1 -%}{{- pageloop -}}{%- endif -%}.html">{{ pageloop }}</a></li>
+                {%- endfor -%}
+                <li class="page-item"><a class="page-link{% if thispage == maxpages %}  disabled{% endif %}" href="{{- nextpagename -}}.html"><i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
