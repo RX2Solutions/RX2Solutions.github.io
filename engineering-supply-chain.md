@@ -7,9 +7,6 @@ sections:
   - name: Professional Engineering
     image: AdobeStock_264874512_hd.jpg
     text: With their expertise and knowledge, professional engineers play a crucial role in shaping the world of tomorrow. To build a better future, it's important to find the right people today. Whether you need someone for your plant, facility, or field work, we've got you covered.
-  - name: Procurement
-    image: AdobeStock_570183198_hd.jpeg
-    text: Procuring quality goods and services at the best price is your core competency and delivering top level talent is ours.  We can assist with all your needs in the office or warehouse including your planners, buyers, and procurement professionals.
   - name: Safety & Compliance
     image: AdobeStock_480815832_hd.jpg
     text: Safety and compliance are vital for the manufacturing industry to thrive. Organizations must prioritize meeting regulatory standards for their facilities, equipment, and processes to guarantee the safety of their employees and customers. Hiring the right personnel is the first step towards achieving this goal. With decades of experience in recruiting safe and compliance professionals, RX2 Solutions can assist you in finding that person.
