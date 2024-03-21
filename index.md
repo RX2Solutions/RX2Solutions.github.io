@@ -8,7 +8,7 @@ Talent Acquisition & Staff Augmentation from a Respectfully Professional Company
 {% endcapture %}
 {% assign hero_text_html = hero_text | markdownify %}
 
-{% include mainslider.html text-color="white" content=hero_text_html background="AdobeStock_517044161_720p.mp4" %}
+{% include mainslider.html text-color="white" content=hero_text_html background-video="AdobeStock_517044161_720p.mp4" %}
 
 {% include process.html %}
 

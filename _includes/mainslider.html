@@ -1,13 +1,11 @@
-{%- unless include.background -%}
-{%- assign include.background = "377.jpg" -%}
-{%- endunless -%}
-{%- unless include.opacity -%}
-{%- assign include.opacity = ".5" -%}
-{%- endunless -%}
+{%- if include.background-video and include.background-video != "" and include.background-video != nil -%}
 <section id="mainpagehero" class="min-vh-100 min-vw-100" style='background-size: cover'>
   <video autoplay muted loop id="video-background" class="position-absolute min-vh-100 min-vw-100">
-    <source src="{{- site.baseurl -}}/assets/images/{{- include.background -}}" type="video/mp4">
+    <source src="{{- site.baseurl -}}/assets/images/{{- include.background-video -}}" type="video/mp4">
   </video>
+{%- else -%}
+<section id="mainpagehero" class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("{{- baseurl -}}/assets/images/{{- include.background -}}")'>
+{%- endif -%}
   <div class="container">
     <div class="row min-vh-100 align-items-center" style='color:{{- include.text-color -}}'>
       <div class="col gutsContent">
@@ -18,5 +16,3 @@
     </div>
   </div>
 </section>
-
-<!-- background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url() -->
