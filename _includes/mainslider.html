@@ -4,8 +4,8 @@
 {%- unless include.opacity -%}
 {%- assign include.opacity = ".5" -%}
 {%- endunless -%}
-<section id="mainpagehero" class="min-vh-100" style='background-size: cover'>
-  <video autoplay muted loop id="video-background" class="position-absolute min-vh-100">
+<section id="mainpagehero" class="min-vh-100 min-vw-100" style='background-size: cover'>
+  <video autoplay muted loop id="video-background" class="position-absolute min-vh-100 min-vw-100">
     <source src="{{- site.baseurl -}}/assets/images/{{- include.background -}}" type="video/mp4">
   </video>
   <div class="container">
