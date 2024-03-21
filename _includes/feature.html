@@ -1,0 +1,22 @@
+<section id="our-feature" class="single-feature pt-5 pb-2 px-1">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+{% if include.layout == "right" %}
+            <div class="col">
+                <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}">
+            </div>
+{% endif %}
+            <div class="col text-sm-left text-center">
+                <div class="heading-title mb-2">
+                    <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
+                </div>
+                <p class="bottom35">{{- include.text -}}</p>
+            </div>
+{% if include.layout == "left" %}
+            <div class="col">
+                <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}">
+            </div>
+{% endif %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+{% include headers.html %}
+  <body>
+    {% include preloader.html %}
+    {% include navigation.html %}
+
+    {%- unless include.background -%}
+    {%- assign include.background = "377.jpg" -%}
+    {%- endunless -%}
+
+    {%- unless include.opacity -%}
+    {%- assign include.opacity = ".5" -%}
+    {%- endunless -%}
+
+<section id="mainpagehero" class="padding" style='background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("{{- site.baseurl -}}/assets/images/{{- page.background -}}")'>
+  <div class="container">
+    <div class="row align-items-center" style="color:{{- page.text-color -}}">
+        <div class="col gutsContent py-4 px-4">
+            <h1>{{ page.title }}</h1>
+            {{ page.content | markdownify }}
+        </div>
+    </div>
+  </div>
+</section>
+
+{% include why.html onlywhys="false" %}
+
+<section id="why" class="py-4">
+  <div class="container">
+
+{%- assign layout = "right" -%}
+{% for section in page.sections %}
+
+  {% include feature.html layout=layout name=section.name image=section.image text=section.text -color=page.text-color content=content background=page.background %}
+
+  {%- if layout == "right" -%}
+  {%- assign layout = "left" -%}
+  {%- else -%}
+  {%- assign layout = "right" -%}
+  {%- endif -%}
+{% endfor %}
+
+  </div>
+</section>
+
+{% include footer.html %}
+{% include endscripts.html %}
+</body>
+</html>

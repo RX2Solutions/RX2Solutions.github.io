@@ -9,22 +9,16 @@
     link: /team.html
 - name: Our Solutions
   subitems:
-  - name: Accounting & Finance
-    link: /accounting-finance.html
-  - name: Engineering & Manufacturing
-    link: /engineering-supplychain.html
-  - name: Sales & Marketing
-    link: /marketing-creative.html
+  - name: Engineering & Supply Chain
+    link: /engineering-supply-chain.html
+  - name: Professional Services
+    link: /professional-services.html
   - name: Scientific & Clinical
     link: /scientific-clinical.html
-  - name: Technology & Business
+  - name: Information Technology
     link: /information-technology.html
-- name: Blog
-  subitems:
-  - name: Publications
-    link: /articles.html
-  - name: Announcements
-    link: /announcements.html
+- name: Publications
+  link: /articles.html
 - name: Careers
   link: https://www2.jobdiva.com/portal/?a=cijdnw9w73bhqfje75wpvvzc07ysn8069dbi3soyngehzyv1icgwhz46b7vikwvp#/
 - name: Login

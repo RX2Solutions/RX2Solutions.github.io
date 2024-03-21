@@ -1298,7 +1298,7 @@ form.findus .select:after { content: "\f107"; font-family: "Font Awesome 5 Free"
 .totals form.findus .select:after { color: #A5A5A5; }
 
 @media (max-width: 768px) { .apply_coupon .btn_common { font-size: 10px; padding: 10px 1rem; } }
-.blog-article { font-size: large; }
+.blog-article { font-size: large; text-align: left; }
 
 .blog-article h1 { font-size: larger; margin-top: 10px; margin-bottom: 10px; }
 

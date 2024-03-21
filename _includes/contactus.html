@@ -1,43 +1,87 @@
+{%- assign show_map = "true" -%}
+
+<section id="main-banner-page" class="position-relative page-header blog2-header section-nav-smooth" style="background-image: url('{{- sitec.baseurl -}}/assets/images/shutterstock_394634593-cropped.jpg')">
+    <div class="overlay overlay-dark opacity-4 z-index-1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="page-titles whitecolor text-center padding_top">
+                    <h2 class="font-bold">Contact Us</h2>
+                    <br />
+                    <h3 class="font-xlight"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-bg title-wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 whitecolor">
+                    <h3 class="float-left">&nbsp; <!-- {{- page.title | capitalize -}} --></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Contact US -->
-<section id="stayconnect" class="bglight position-relative">
-  <div class="container">
-      <div class="contactus-wrapp">
-          <div class="row">
-              <div class="col-md-12 col-sm-12">
-                  <div class="heading-title wow fadeInUp text-center text-md-left" data-wow-delay="300ms">
-                      <h3 class="darkcolor bottom20">Stay Connected</h3>
-                  </div>
-              </div>
-              <div class="col-md-12 col-sm-12">
-                  <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
-                      <div class="row">
-                          <div class="col-md-12 col-sm-12" id="result"></div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="userName" class="d-none"></label>
-                                  <input class="form-control" type="text" placeholder="First Name:" required id="userName" name="userName">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="companyName" class="d-none"></label>
-                                  <input class="form-control" type="tel" placeholder="Company Name"  id="companyName" name="companyName">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="email" class="d-none"></label>
-                                  <input class="form-control" type="email" placeholder="Email:" required id="email" name="email">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <button type="submit" class="button gradient-btn w-100" id="submit_btn">subscribe</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
+<section id="stayconnect1" class="bglight position-relative padding noshadow">
+    <div class="container whitebox">
+        <div class="widget py-5">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeIn mt-n3" data-wow-delay="300ms">
+                    <h2 class="heading bottom30 darkcolor font-light2 pt-1">We'd Love to Hear From You.
+                        <span class="divider-center"></span>
+                    </h2>
+                    <div class="col-md-8 offset-md-2 bottom45">
+                        <p>Please give a brief description of your needs and we will get back to you as soon as possible.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 order-sm-2">
+                    <div class="contact-meta px-2 text-center text-md-start">
+                        <div class="heading-title">
+                            <h2 class="defaultcolor mb-3">RX2 Solutions</span>
+                        </div>
+                        <p class="bottom10">18 Campus Blvd Ste 100<br />Newtown Square, PA 19073</p>
+                        <p class="bottom10">+1-610-340-3490</p>
+                        <p class="bottom10"><a href="mailto:info@rx2solutions.com">info@rx2solutions.com</a></p>
+                        <p class="bottom10">Mon-Fri: 9am-5pm Eastern</p>
+                        <ul class="social-icons mt-4 mb-4 mb-sm-0 wow fadeInUp" data-wow-delay="300ms">
+                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i> </a> </li>
+                            <li><a href="javascript:void(0)"><i class="far fa-envelope"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="heading-title  wow fadeInUp" data-wow-delay="300ms">
+                        <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                            <div class="row px-2">
+                                <div class="col-md-12 col-sm-12" id="result1"></div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="name1" class="d-none"></label>
+                                        <input class="form-control" id="name1" type="text" placeholder="Name:" required  name="userName">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="email1" class="d-none"></label>
+                                        <input class="form-control" type="email" id="email1" placeholder="Email:" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="message1" class="d-none"></label>
+                                        <textarea class="form-control" id="message1" placeholder="Message:" required  name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <button type="submit" id="submit_btn1" class="button gradient-btn w-100">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Contact US ends -->
