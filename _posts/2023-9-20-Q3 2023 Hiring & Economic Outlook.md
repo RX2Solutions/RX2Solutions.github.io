@@ -3,7 +3,7 @@ layout: post
 title: RX2 Solutions Q4 2023 Hiring & Economic Outlook
 author: rx2solutions
 tags: publication
-thumbnail: Report 4x2.jpeg
+thumbnail: Report 4x3.jpeg
 excerpt_separator: <!--more-->
 ---
 **RX2 Solutions Q4 2023 Hiring & Economic Outlook**
