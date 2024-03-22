@@ -3,14 +3,14 @@ layout: post
 title: RX2 Solutions Q4 2023 Hiring & Economic Outlook
 author: rx2solutions
 tags: publication
-thumbnail: Report.jpg
+thumbnail: Report 4x2.jpg
 excerpt_separator: <!--more-->
 ---
 **RX2 Solutions Q4 2023 Hiring & Economic Outlook**
 
-Q4 looks like it will be similar to Q2 and Q3 with no dramatic changes.  With the end of Summer and the start of budget season, we have seen the demand for hiring increase across all of our lines of business.  <br>
+Q4 looks like it will be similar to Q2 and Q3 with no dramatic changes.  With the end of Summer and the start of budget season, we have seen the demand for hiring increase across all of our lines of business. <!--more--> <br>
 <br>
-More and more economists, including those at Bank of America, believe there will either be a soft landing or a minor recession<sup>i</sup>.  <!--more--><br>
+More and more economists, including those at Bank of America, believe there will either be a soft landing or a minor recession<sup>i</sup>. <br>
 <br>
 Interest rates have increased half a point since May, which demonstrates a slowdown of rate increases.  With three meetings remaining in 2023, the Fed has hinted that they may raise rates again, but they may not need to or want to if inflation continues to cool<sup>ii</sup>.  <br>
 <br>
