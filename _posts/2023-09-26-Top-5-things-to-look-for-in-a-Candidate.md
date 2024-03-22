@@ -3,7 +3,7 @@ layout: post
 title: Top 5 things to look for in a Candidate
 author: rx2solutions
 tags: publication
-thumbnail: hired.jpg
+thumbnail: topfive.jpg
 excerpt_separator: <!--more-->
 ---
 
