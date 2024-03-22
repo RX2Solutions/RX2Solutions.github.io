@@ -3,7 +3,7 @@ layout: post
 title: Unveiling the Top Interview Questions from a Hiring Manager's Perspective
 author: rx2solutions
 tags: publication
-thumbnail: questions.jpg
+thumbnail: questions.jpeg
 excerpt_separator: <!--more-->
 ---
 
