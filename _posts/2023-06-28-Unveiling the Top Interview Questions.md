@@ -3,13 +3,13 @@ layout: post
 title: Unveiling the Top Interview Questions from a Hiring Manager's Perspective
 author: rx2solutions
 tags: publication
-thumbnail: hired.jpg
+thumbnail: questions.jpg
 excerpt_separator: <!--more-->
 ---
 
 **Unveiling the Top Interview Questions from a Hiring Manager's Perspective**
 
-As a hiring manager, conducting interviews is crucial in finding the right candidate. It is essential to ask the right questions to understand candidates better and assess their suitability for the role. This article aims to shed light on the top interview questions from the perspective of a hiring manager, enabling you to evaluate potential candidates effectively. <!--more--> <br>
+As a hiring manager, conducting interviews is crucial in finding the right candidate. It is essential to ask the right questions to understand candidates better and assess their suitability for the role. <!--more--> This article aims to shed light on the top interview questions from the perspective of a hiring manager, enabling you to evaluate potential candidates effectively. <br>
 
 1. Can you walk me through your experience and qualifications related to this role? This question is a starting point, allowing candidates to showcase their relevant skills, experience, and qualifications. It helps you assess their suitability for the position and provides insight into their understanding of the role's requirements. <br>
 
