@@ -3,7 +3,7 @@ layout: post
 title: Fourth of July Activities
 author: rx2solutions
 tags: publication
-thumbnail: nightsky.jpg
+thumbnail: fireworks4x3.jpeg
 excerpt_separator: <!--more-->
 ---
 It's that time of year again when everyone is looking for Fun Family activities for the Fourth of July. Well, look no further, as RX2 Solutions 
