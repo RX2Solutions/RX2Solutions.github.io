@@ -3,12 +3,12 @@ layout: post
 title: Timeless Fourth of July Home Celebrations
 author: rx2solutions
 tags: publication
-thumbnail: sun.jpg
+thumbnail: sun43.jpg
 excerpt_separator: <!--more-->
 ---
 **Timeless Fourth of July Home Celebrations**
 
-The Fourth of July is a time-honored holiday in the United States, and while public gatherings and events are fantastic, celebrating the 4th at home with friends and family can be just as memorable and eventful! Here are five timeless Fourth of July home celebrations that you can enjoy with your family and friends at home:  <!--more--> <br>
+The Fourth of July is a time-honored holiday in the United States, and while public gatherings and events are fantastic, celebrating the 4th at home with friends and family can be just as memorable and eventful! <!--more-->Here are five timeless Fourth of July home celebrations that you can enjoy with your family and friends at home: <br>
 
 - **Backyard BBQ:** Fire up the grill and host a classic backyard barbecue! Prepare a feast of hamburgers, hot dogs, grilled corn, and barbecue chicken. Set up tables with patriotic décor; anything red, white, and blue will do!  Invite guests to bring their favorite side dishes or dessert to share. Enjoy great food, laughter, and the company of family and friends in the comfort of your backyard. 
 
