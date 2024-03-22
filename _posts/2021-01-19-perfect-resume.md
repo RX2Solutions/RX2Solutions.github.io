@@ -2,7 +2,7 @@
 layout: post
 title: I have the perfect resume, Now what?
 author: rx2solutions
-thumbnail: hired1.jpg
+thumbnail: hired1.jpeg
 tags: publication
 excerpt_separator: <!--more-->
 ---
