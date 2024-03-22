@@ -3,14 +3,14 @@ layout: post
 title: RX2 Solutions Q3 2023 Hiring & Economic Outlook
 author: rx2solutions
 tags: publication
-thumbnail: Report.jpg
+thumbnail: Report 4x3.jpeg
 excerpt_separator: <!--more-->
 ---
 **RX2 Solutions Q3 2023 Hiring & Economic Outlook**
 
 Despite what many news stations are reporting, the US economy is doing well, and we are still seeing strong demand 
-for staffing services.  Demand has gone down some from where it was in Q1 and Q2, and historically, we have 
-experienced a slowdown during the summer months.  <!--more--> This year, some of our clients are experiencing temporary 
+for staffing services.  <!--more--> Demand has gone down some from where it was in Q1 and Q2, and historically, we have 
+experienced a slowdown during the summer months. This year, some of our clients are experiencing temporary 
 hiring freezes in some departments as they wait and see what the economy will do, and fortunately, the 
 outlook is positive. <BR>
 <br>
