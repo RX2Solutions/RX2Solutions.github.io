@@ -1,5 +1,5 @@
 {%- if include.background-video and include.background-video != "" and include.background-video != nil -%}
-<section id="mainpagehero" class="min-vh-100 min-vw-100" style='background-size: cover'>
+<section id="mainpagehero" class="min-vh-100" style='background-size: cover; overflow: hidden'>
   <video autoplay muted loop id="video-background" class="position-absolute min-vh-100 min-vw-100">
     <source src="{{- site.baseurl -}}/assets/images/{{- include.background-video -}}" type="video/mp4">
   </video>
