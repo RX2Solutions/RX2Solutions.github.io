@@ -4,9 +4,10 @@ title: Coaching Now; Generation Z and the Art of the Compromise
 author: rx2solutions
 thumbnail: leadership43.jpeg
 tags: publication
+excerpt_separator: <!--more-->
 ---
 # Preface
-As a manager and team leader, you've been very successful in your career and you know what has worked for you. In a given situation, you've seen the scenario play out two-dozen times and you know that your way works to approach a given situation. You are managing a group of Millennials and Gen Z who are approaching this problem for the first time and surprise, surprise - you aren't seeing eye to eye with them. Maybe your way has been disrupted by new thinking or new technology. Maybe they don't have the same experience that you do, and they simply cannot see why your way is the best or why it will work. In any event, for the team to execute effectively, you all need to be on the same page, but how do you get there?
+As a manager and team leader, you've been very successful in your career and you know what has worked for you. In a given situation, you've seen the scenario play out two-dozen times and you know that your way works to approach a given situation. <!--more--> You are managing a group of Millennials and Gen Z who are approaching this problem for the first time and surprise, surprise - you aren't seeing eye to eye with them. Maybe your way has been disrupted by new thinking or new technology. Maybe they don't have the same experience that you do, and they simply cannot see why your way is the best or why it will work. In any event, for the team to execute effectively, you all need to be on the same page, but how do you get there?
 
 This article will detail my experience coaching Millennials and Generation Z and the lessons I've learned that are transferrable to the business world. I believe that much of the material that has been written about the subject is general in nature and this article will provide specific situations from my experience along with what I learned at the time.
 
