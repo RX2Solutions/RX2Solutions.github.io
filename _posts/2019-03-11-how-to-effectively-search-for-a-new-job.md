@@ -2,7 +2,7 @@
 layout: post
 title: How to Effectively Search for a New Job
 author: rx2solutions
-thumbnail: kelly-sikkema--1_RZL8BGBM-unsplash.jpg
+thumbnail: newjob43.jpeg
 tags: publication
 ---
 Job hunting is not an exact science, rather it's a process of steps that will allow you to increase your chances of finding the opportunity that you're looking for. Those who are the most successful in finding what they are looking for all have one trait in common, persistence.
