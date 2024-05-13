@@ -4,10 +4,10 @@ title: Negotiating Salary in Your Existing Role (Part 1 of 2)
 author: rx2solutions
 tags: publication
 thumbnail: nego43.jpeg
-
+excerpt_separator: <!--more-->
 ---
 # Deciding to Negotiate
-Maybe this sounds familiar: It’s the hottest job market in recent memory and your company is growing. Since unemployment is at 50-year lows, new members to your team are being brought in at a premium in order to attract top-level talent. Your 2-4% annual raise is being outpaced by the market leaving proven contributors who have already been in the trenches to feel alienated, underpaid and underappreciated. After thinking about the salary for weeks or months, it’s time to ask for a raise. So now what? 
+Maybe this sounds familiar: It’s the hottest job market in recent memory and your company is growing. Since unemployment is at 50-year lows, new members to your team are being brought in at a premium in order to attract top-level talent. <!--more--> Your 2-4% annual raise is being outpaced by the market leaving proven contributors who have already been in the trenches to feel alienated, underpaid and underappreciated. After thinking about the salary for weeks or months, it’s time to ask for a raise. So now what? 
 
 # Negotiation Prep Work
 Never negotiate anything unless you are prepared to walk away. Before you go down the road of asking for a raise, you need to figure out what you’ll do if the conversation doesn’t go the way you want.
