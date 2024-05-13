@@ -3,7 +3,7 @@ layout: post
 title: 'Resume Writing: Best Practices'
 author: rx2solutions
 tags: publication
-thumbnail: pexels-pixabay-355952.jpg
+thumbnail: resume writing.jpeg
 excerpt_separator: <!--more-->
 ---
 Whether you are gainfully employed and looking for a better opportunity, a recent college grad, or someone who was laid off due to COVID after being at the same company for 10-years, having a strong resume will help you find the opportunity that you want.
