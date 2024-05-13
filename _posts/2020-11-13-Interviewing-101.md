@@ -3,7 +3,7 @@ layout: post
 title: Interviewing 101
 author: rx2solutions
 tags: publication
-thumbnail: resume101.jpg
+thumbnail: interviewing.jpeg
 excerpt_separator: <!--more-->
 ---
 
