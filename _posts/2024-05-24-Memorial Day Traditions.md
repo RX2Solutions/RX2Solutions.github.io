@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 **Memorial Day Traditions**
 
-Memorial Day, observed on the last Monday of May, is a solemn day dedicated to honoring and remembering the men and women who have died serving in the United States Armed Forces. Over the years, it has also evolved to mark the unofficial beginning of summer, with people across the country participating in various traditions to commemorate this day. <!--more--> Here are some of the most notable Memorial Day traditions that reflect the spirit of remembrance and community.
+Memorial Day, observed on the last Monday of May, is a solemn day dedicated to honoring and remembering the men and women who have died serving in the United States Armed Forces. <!--more--> Over the years, it has also evolved to mark the unofficial beginning of summer, with people across the country participating in various traditions to commemorate this day. Here are some of the most notable Memorial Day traditions that reflect the spirit of remembrance and community.
 
 **Commemorative Events**
 Philadelphia is home to several significant historical sites. Philadelphia’s role in creating and signing the Constitution cemented its place in American history as a city where foundational principles of democracy and governance were debated and established. Today, Independence Hall and the Liberty Bell stand as enduring symbols of the struggle for freedom and the birth of a nation built on the ideals of liberty, justice, and equality. 
