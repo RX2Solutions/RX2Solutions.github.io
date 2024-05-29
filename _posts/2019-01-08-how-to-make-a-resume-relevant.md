@@ -3,7 +3,7 @@ layout: post
 title: How to Make a Resume Relevant
 author: rx2solutions
 tags: publication
-thumbnail: Report 4x3.jpeg
+thumbnail: managinggaps43.jpeg
 excerpt_separator: <!--more-->
 ---
 For most people one of the most difficult things to do is talk about themselves. How do I express my achievements? What work experience is relevant? How do I tailor my resume to a specific job? Here are several best practices:
