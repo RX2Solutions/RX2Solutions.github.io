@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 **Celebrating Independence Day in Philadelphia: A Journey Through History and Festivity**
 
-Philadelphia, the cradle of American democracy, holds a special place in the heart of every American, especially when it comes to celebrating Independence Day. Known as the birthplace of the United States, <!--more--> where the Declaration of Independence was adopted on July 4, 1776, the city transforms into a vibrant tableau of history, culture, and patriotism every Fourth of July. 
+Philadelphia, the cradle of American democracy, holds a special place in the heart of every American, especially when it comes to celebrating Independence Day. <!--more--> Known as the birthplace of the United States, where the Declaration of Independence was adopted on July 4, 1776, the city transforms into a vibrant tableau of history, culture, and patriotism every Fourth of July. 
 
 **A Historical Backdrop**
 
