@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating the Complex Landscape: Hiring Professionals
+title: Navigating the Complex Landscape - Hiring Professionals
 author: rx2solutions
 tags: publication
 thumbnail: top5h.jpeg
