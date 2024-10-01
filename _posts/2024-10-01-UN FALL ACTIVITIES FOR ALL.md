@@ -3,7 +3,7 @@ layout: post
 title:  FUN FALL ACTIVITIES FOR ALL
 author: rx2solutions
 tags: publication
-thumbnail: fall43.jpeg
+thumbnail: Fall43.jpeg
 excerpt_separator: <!--more-->
 ---
 
