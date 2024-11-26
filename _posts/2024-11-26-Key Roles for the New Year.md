@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The Most In-Demand Careers for 2024 Key Roles for the New Year
+title:  The Most In-Demand Careers for 2024
 author: rx2solutions
 tags: publication
 thumbnail: winter2443.jpeg
