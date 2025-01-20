@@ -1,22 +1,30 @@
 <section id="our-feature" class="single-feature pt-5 pb-2 px-1">
     <div class="container">
-        <div class="row d-flex align-items-center">
-{% if include.layout == "right" %}
-            <div class="col">
-                <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}">
+      <div class="row d-flex align-items-center">
+        {% if include.layout == "right" %}
+          <!-- Layout = right (image on the right on large screens) -->
+          <div class="col-12 col-lg-6 text-sm-left text-center order-2 order-lg-1">
+            <div class="heading-title mb-2">
+              <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
             </div>
-{% endif %}
-            <div class="col text-sm-left text-center">
-                <div class="heading-title mb-2">
-                    <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
-                </div>
-                <p class="bottom35">{{- include.text -}}</p>
+            <p class="bottom35">{{- include.text -}}</p>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}" />
+          </div>
+  
+        {% elsif include.layout == "left" %}
+          <!-- Layout = left (image on the left on large screens) -->
+          <div class="col-12 col-lg-6 order-1 order-lg-1">
+            <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}" />
+          </div>
+          <div class="col-12 col-lg-6 text-sm-left text-center order-2 order-lg-2">
+            <div class="heading-title mb-2">
+              <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
             </div>
-{% if include.layout == "left" %}
-            <div class="col">
-                <img class="img-fluid" src="{{- site.baseurl -}}/assets/images/{{- include.image -}}">
-            </div>
-{% endif %}
-        </div>
+            <p class="bottom35">{{- include.text -}}</p>
+          </div>
+        {% endif %}
+      </div>
     </div>
-</section>
+  </section>
