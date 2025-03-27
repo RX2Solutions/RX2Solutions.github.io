@@ -9,6 +9,7 @@ excerpt_separator: <!--more-->
 
 <h2><b></b>Balancing Tech and Touch: How AI Is Shaping the Modern Job Search</h2>
 
+<br>
 The job search process has seen rapid change in recent years, driven in large part by advances in artificial intelligence (AI). From resume screening tools to tailored job recommendations,<!--more--> AI has introduced new levels of speed and efficiency across hiring workflows. But even as technology becomes more embedded in the job market, the human element—connection, conversation, and community—remains central to successful outcomes for job seekers.
 
 <br>
