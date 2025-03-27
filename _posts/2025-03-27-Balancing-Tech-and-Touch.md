@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Balancing Tech and Touch How AI Is Shaping the Modern Job Search
+title: Balancing Tech and Touch: How AI Is Shaping the Modern Job Search
 author: rx2solutions
 tags: publication
 thumbnail: robot.jpeg
