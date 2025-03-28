@@ -38,4 +38,4 @@ _“What goes on the internet stays on the internet”_
 - 	Attend networking events in your chosen field and become known in the community.  You never know when a connection of a connection will be the next person to hire you.
 - 	Send out a newsletter to your growing network about how your search is shaping up.  This is a great way of staying in touch and letting those who want to help you know how you’re doing and what they can do to help.
 
-RX2 Solutions provides HR Outsourcing, Executive Search and Strategic staffing services on a National Basis.  If you want to discuss working with a proactive company that provides customized solutions while listening and treating people the way we want to be treated, feel free to reach out.  Info@rx2solutions.com 
+RX2 Solutions provides HR Outsourcing, Executive Search and Strategic staffing services on a National Basis.  If you want to discuss working with a proactive company that provides customized solutions while listening and treating people the way we want to be treated, feel free to reach out [info@rx2solutions.com](mailto:info@rx2solutions.com).
