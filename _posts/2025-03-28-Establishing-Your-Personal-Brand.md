@@ -7,7 +7,7 @@ thumbnail: personalbrand.jpeg
 excerpt_separator: <!--more-->
 ---
 
-<h2>Establishing Your Personal Brand as a Job Seeker </h2>
+<h2>**Establishing Your Personal Brand as a Job Seeker**</h2>
 
 Over the past few years, the job market has shifted.  If you look at this market as a horizontal line with employers on one side and job seekers on the others, the pendulum has swung post-Covid from completely in favor of job seekers to mostly in favor of employers.,<!--more--> 
 
