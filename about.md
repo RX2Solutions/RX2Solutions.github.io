@@ -2,7 +2,7 @@
 layout: hero
 title: Why RX2 Solutions?
 text-color: white
-background: AdobeStock_549292486_hd.jpg
+background: AdobeStock_670676254.jpeg
 ---
 # {{ page.title }}
 
