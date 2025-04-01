@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+{% include headers.html %}
+  <body>
+    {% include preloader.html %}
+    {% include navigation.html %}
+
+<section id="our-team" class="padding_top bgdarker min-vh-100">
+    <div class="container min-vh-100">
+        <div class="row my-4">
+            <div class="col-lg-6 col-sm-12">
+                <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+                    <span class="defaultcolor text-center text-md-left"></span>
+                    <h2 class="defaultcolor font-normal text-center text-md-left">{{- page.title -}}</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <p class="mt-3 mt-sm-0 mb-0 text-center text-md-left">
+                    {{- page.content | markdownify -}}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 px-5 mb-4 teamhr">
+                <hr />
+            </div>
+        </div>
+
+        {%- assign layout = "left1" -%}
+        {% for section in page.sections %}
+          {% include team-member.html layout=layout name=section.name linkedin=section.linkedin email=section.email image=section.image text=section.text %}
+          {%- if layout == "left1" or layout == "left" -%}
+          {%- assign layout = "right" -%}
+          {%- else -%}
+          {%- assign layout = "left" -%}
+          {%- endif -%}
+        {% endfor %}
+        {%- if layout == "right" -%}
+          {% include team-member.html layout=empty %}
+        {%- endif -%}
+      
+    </div>
+</section>
+
+{% include footer.html %}
+{% include endscripts.html %}
+</body>
+</html>

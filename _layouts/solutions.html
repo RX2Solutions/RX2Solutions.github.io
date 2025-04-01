@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+{% include headers.html %}
+  <body>
+    {% include preloader.html %}
+    {% include navigation.html %}
+
+    {%- unless include.background -%}
+    {%- assign include.background = "377.jpg" -%}
+    {%- endunless -%}
+
+    {%- unless include.opacity -%}
+    {%- assign include.opacity = ".5" -%}
+    {%- endunless -%}
+
+<section id="mainpagehero" class="padding" style='background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("{{- site.baseurl -}}/assets/images/{{- page.background -}}")'>
+  <div class="container">
+    <div class="row align-items-center" style="color: {{- page.text-color -}}">
+        <div class="col gutsContent py-4 px-4">
+            <h1>{{ page.title }}</h1>
+            {{ page.content | markdownify }}
+        </div>
+    </div>
+  </div>
+</section>
+
+{%- if page.whys == true -%}
+  {% include why.html onlywhys="false" %}
+{%- endif -%}
+
+<section id="our-services" class="py-4">
+  <div class="container">
+
+  {% if page.front-text and page.front-text != "" and page.front-text != nil %}
+    <div class="row align-items-center py-1 text-center">
+      <div class="col text-center">
+          <div class="text-center heading-title bottom30 wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+              <span class="defaultcolor text-center text-md-left"></span>
+              <h2 class="darkcolor font-normal text-center">{{- page.front-title -}}</h2>
+              <p class="text-center">
+                  {{- page.front-text | markdownify -}}
+              </p>
+          </div>
+      </div>
+  </div>
+  {%- endif -%}
+
+      <div class="row d-flex " id="app-feature">
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="text-center text-md-left">
+                {% for section in page.leftsections %}
+                  <div class="feature-item mt-5" style="visibility: visible;">
+                      <div class="icon"><i class="fas fa-dpaint-brush"></i></div>
+                      <div class="text">
+                          <h3 class="bottom15">
+                              <span class="d-inline-block">
+                                {%- if section.link and section.link != "" and section.link != nil -%}
+                                <a href="{{- site.baseurl -}}/{{- section.link -}}">
+                                {%- endif -%}
+                                  {{- section.name -}}
+                                {%- if section.link and section.link != "" and section.link != nil -%}
+                                </a>
+                                {%- endif -%}
+                              </span>
+                          </h3>
+                          <p>{{- section.text -}}</p>
+                      </div>
+                  </div>
+                {% endfor %}
+              </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+              <div class="app-image top30">
+                  <img src="{{- site.baseurl -}}/assets/images/{{- page.breakimage -}}" alt="image">
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="text-center text-md-left">
+              {% for section in page.rightsections %}
+                <div class="feature-item mt-5" style="visibility: visible;">
+                  <div class="icon"><i class="fas fa-dcog"></i></div>
+                  <div class="text">
+                    <h3 class="bottom15">
+                      <span class="d-inline-block">
+                        {%- if section.link and section.link != "" and section.link != nil -%}
+                        <a href="{{- site.baseurl -}}/{{- section.link -}}">
+                        {%- endif -%}
+                          {{- section.name -}}
+                        {%- if section.link and section.link != "" and section.link != nil -%}
+                        </a>
+                        {%- endif -%}
+                      </span>
+            </h3>
+                    <p>{{- section.text -}}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% if page.trailer-text and page.trailer-text != "" and page.trailer-text != nil %}
+  {% include trailer-text.html %}
+{%- endif -%}
+
+{%- if page.contact == true -%}
+  {% include contact-footer.html %}
+{%- endif -%}
+
+{% include footer.html %}
+{% include endscripts.html %}
+</body>
+</html>

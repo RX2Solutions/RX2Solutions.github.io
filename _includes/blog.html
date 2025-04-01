@@ -5,7 +5,7 @@
 {%- assign thispage = page.this_page | default: 1 -%}
 {%- assign thispageminusone = thispage | minus: 1 -%}
 {%- assign postoffset = thispageminusone | times: postsperpage -%}
-{%- assign postlimit = postoffset | plus: postsperpage -%}
+{%- assign postlimit = postsperpage -%}
 {%- assign numarticles = desired_posts | size -%}
 {%- assign maxpages = numarticles | divided_by: postsperpage -%}
 {%- assign maxpages = maxpages | plus: 1 -%}

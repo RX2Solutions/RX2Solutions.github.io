@@ -24,16 +24,21 @@
   </div>
 </section>
 
-{% include why.html onlywhys="false" %}
+{%- if page.whys == true -%}
+  {% include why.html onlywhys="false" %}
+{%- endif -%}
 
-<section id="why" class="py-4">
+<section id="features" class="py-4">
   <div class="container">
+
+{% if page.front-text and page.front-text != "" and page.front-text != nil %}
+  {% include front-text.html %}
+{%- endif -%}
+
 
 {%- assign layout = "right" -%}
 {% for section in page.sections %}
-
-  {% include feature.html layout=layout name=section.name image=section.image text=section.text -color=page.text-color content=content background=page.background %}
-
+  {% include feature.html layout=layout name=section.name link=section.link image=section.image text=section.text %}
   {%- if layout == "right" -%}
   {%- assign layout = "left" -%}
   {%- else -%}
@@ -43,6 +48,14 @@
 
   </div>
 </section>
+
+{% if page.trailer-text and page.trailer-text != "" and page.trailer-text != nil %}
+  {% include trailer-text.html %}
+{%- endif -%}
+
+{%- if page.contact == true -%}
+  {% include contact-footer.html %}
+{%- endif -%}
 
 {% include footer.html %}
 {% include endscripts.html %}

@@ -1,0 +1,85 @@
+<!-- Contact US -->
+<section id="stayconnect" class="bglight position-relative">
+    <div class="container">
+        <div class="contactus-wrapp">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="heading-title wow fadeInUp text-left text-md-start" data-wow-delay="300ms">
+                        <h3 class="darkcolor top20 bottom20">Let's Get Started!</h3>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms"  id="contactForm">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" id="result"></div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="userName" class="d-none"></label>
+                                    <input class="form-control" type="text" placeholder="First Name" required id="userName" name="userName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="companyName" class="d-none"></label>
+                                    <input class="form-control" type="tel" placeholder="Company Name"  id="companyName" name="companyName">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="form-group">
+                                    <label for="email" class="d-none"></label>
+                                    <input class="form-control" type="email" placeholder="Email" required id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <button type="submit" class="button gradient-btn w-100" id="submit_btn">contact me</button>
+                            </div>
+                        </div>
+                        <div id="formMessages" style="margin-bottom: 10px; font-weight: bold;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact US ends -->
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async (event) => {
+        event.preventDefault();
+    
+        const form = event.target;
+        const formData = new FormData(form);
+    
+        // Convert form data to JSON
+        const json = {};
+        formData.forEach((value, key) => {
+            json[key] = value;
+        });
+    
+        // Update the form messages
+        const formMessages = document.getElementById("formMessages");
+        formMessages.style.color = "blue"; // Info color
+        formMessages.textContent = "Sending message...";
+    
+        try {
+            // Send the POST request
+            const response = await fetch("https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(json),
+            });
+    
+            if (response.ok) {
+                formMessages.style.color = "green"; // Success color
+                formMessages.textContent = "Message successfully sent!";
+            } else {
+                formMessages.style.color = "red"; // Error color
+                formMessages.textContent = "Failed to send message. Please try again.";
+            }
+        } catch (error) {
+            console.error("Error submitting the form:", error);
+            formMessages.style.color = "red"; // Error color
+            formMessages.textContent = "An error occurred. Please try again.";
+        }
+    });
+    </script>

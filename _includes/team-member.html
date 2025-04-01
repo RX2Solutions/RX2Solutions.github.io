@@ -1,0 +1,58 @@
+{% if include.layout == "left1" %}
+<div class="row">
+{% elsif include.layout == "left" %}
+<div class="row py-2">
+{% endif %}
+{% if include.layout == "left1" or include.layout == "left" %}
+    <div class="col-lg-3 col-sm-6">
+        <div class="item">
+            <div class="team-box">
+                <div class="image">
+                    <img src="{{- site.baseurl }}/assets/images/{{- section.image -}}" alt="">
+                </div>
+                <div class="team-content">
+                    <h4 class="darkcolor">{{- section.name -}}</h4>
+                    <p>{{- section.jobtitle -}}</p>
+                    <ul class="social-icons-simple">
+                        <li><a class="linkedin" href="{{- section.linkedin -}}"><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a class="email" href="mailto:{{- section.email -}}"><i class="fas fa-envelope"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 team-article mb-5">
+        {{- section.text | markdownify -}}
+    </div>
+{% elsif include.layout == "right" %}
+    <div class="col-lg-3 col-sm-6">
+        <div class="item">
+            <div class="team-box">
+                <div class="image">
+                    <img src="{{- site.baseurl }}/assets/images/{{- section.image -}}" alt="">
+                </div>
+                <div class="team-content">
+                    <h4 class="darkcolor">{{- section.name -}}</h4>
+                    <p>{{- section.jobtitle -}}</p>
+                    <ul class="social-icons-simple">
+                        <li><a class="linkedin" href="{{- section.linkedin -}}"><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a class="email" href="mailto:info@rx2solutions.com"><i class="fas fa-envelope"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 team-article mb-5">
+        {{- section.text | markdownify -}}
+    </div>
+</div>
+{% elsif include.layout == "empty" %}
+    <div class="col-lg-3 col-sm-6">
+        <div class="item">
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 team-article mb-5">
+        <p></p>
+    </div>
+</div>
+{% endif %}

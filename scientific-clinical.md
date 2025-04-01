@@ -3,6 +3,7 @@ layout: leftright
 title: Scientific & Clinical
 text-color: white
 background: AdobeStock_668870479_hd.jpg
+whys: true
 sections:
   - name: Clinical Trials
     image: AdobeStock_649801569_hd.jpg

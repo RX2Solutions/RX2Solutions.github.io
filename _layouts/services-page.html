@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+{% include headers.html %}
+  <body>
+    {% include preloader.html %}
+    {% include navigation.html %}
+
+    <section id="rpp" class="padding bgdarker ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 text-center heading_space wow fadeIn" data-wow-delay="300ms">
+            <h2 class="heading bottom30 darkcolor font-light2"><span
+                class="font-weight-light">{{ page.title }}</span>
+              <span class="divider-center"></span>
+            </h2>
+            <div class="col-md-8 offset-md-2">
+              <p class="mb-n3">
+                {{ page.content | markdownify }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="services-measonry" class="cbp">
+          {% for section in page.sections %}
+            {% include services-section.html link=section.link name=section.name image=section.image text=section.text %}
+          {% endfor %}
+        </div>
+    </div>
+    </section>
+
+{% if page.trailer-text and page.trailer-text != "" and page.trailer-text != nil %}
+  {% include trailer-text.html %}
+{%- endif -%}
+
+{%- if page.contact == true -%}
+  {% include contact-footer.html %}
+{%- endif -%}
+
+{% include footer.html %}
+{% include endscripts.html %}
+</body>
+</html>

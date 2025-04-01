@@ -3,6 +3,7 @@ layout: leftright
 title: Engineering & Supply Chain
 text-color: white
 background: AdobeStock_551608755_hd.jpg
+whys: true
 sections:
   - name: Professional Engineering
     image: AdobeStock_264874512_hd.jpg

@@ -9,14 +9,21 @@
     link: /team.html
 - name: Our Solutions
   subitems:
-  - name: Engineering & Supply Chain
-    link: /engineering-supply-chain.html
-  - name: Professional Services
-    link: /professional-services.html
-  - name: Scientific & Clinical
-    link: /scientific-clinical.html
-  - name: Information Technology
-    link: /information-technology.html
+  - name: Human Resource Outsourcing
+    link: /human-resource-outsourcing.html
+  - name: Executive Search
+    link: /executive-search.html
+  - name: Strategic Staffing
+    link: /strategic-staffing.html
+    subitems:
+    - name: Engineering & Supply Chain
+      link: /engineering-supply-chain.html
+    - name: Professional Services
+      link: /professional-services.html
+    - name: Scientific & Clinical
+      link: /scientific-clinical.html
+    - name: Information Technology
+      link: /information-technology.html
 - name: Publications
   link: /articles.html
 - name: Contact Us

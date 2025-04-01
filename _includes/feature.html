@@ -5,7 +5,13 @@
           <!-- Layout = right (image on the right on large screens) -->
           <div class="col-12 col-lg-6 text-sm-left text-center order-2 order-lg-1">
             <div class="heading-title mb-2">
-              <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
+              {% if include.link and include.link != "" and include.link != nil %}
+                <a href="{{- include.link -}}">
+                  <h2 class="lightcolor font-normal bottom30">{{- include.name -}}</h2>
+                </a>
+              {% else %}
+                <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
+              {% endif %}
             </div>
             <p class="bottom35">{{- include.text -}}</p>
           </div>
@@ -20,7 +26,13 @@
           </div>
           <div class="col-12 col-lg-6 text-sm-left text-center order-2 order-lg-2">
             <div class="heading-title mb-2">
-              <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
+              {% if include.link and include.link != "" and include.link != nil %}
+                <a href="{{- include.link -}}">
+                  <h2 class="lightcolor font-normal bottom30">{{- include.name -}}</h2>
+                </a>
+              {% else %}
+                <h2 class="darkcolor font-normal bottom30">{{- include.name -}}</h2>
+              {% endif %}
             </div>
             <p class="bottom35">{{- include.text -}}</p>
           </div>

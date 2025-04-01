@@ -13,7 +13,16 @@
                         <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{- item.name -}}</a>
                         <div class="dropdown-menu">
                             {% for subitem in item.subitems %}
-                                <a class="dropdown-item{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{- subitem.name -}}</a>
+                                {% if subitem.subitems[0] %}
+                                    <a class="dropdown-item{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{- subitem.name -}}</a>
+                                    {% for subsubitem in subitem.subitems %}
+                                        <a class="dropdown-item{% if page.url == subsubitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subsubitem.link -}}">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;{{- subsubitem.name -}}
+                                        </a>
+                                    {% endfor %}
+                                {% else %}
+                                    <a class="dropdown-item{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{- subitem.name -}}</a>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </li>
@@ -56,7 +65,20 @@
                         <div id="sideNavPages{{- step -}}" class="collapse sideNavPages">
                             <ul class="navbar-nav mt-2">
                                 {% for subitem in item.subitems %}
-                                <li class="nav-item"><a class="nav-link{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{ subitem.name}}</a></li>
+                                    {% if subitem.subitems[0] %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{ subitem.name}}</a>
+                                    </li>
+                                    {% for subsubitem in subitem.subitems %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if page.url == subsubitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subsubitem.link -}}">&nbsp;&nbsp;&nbsp;&nbsp;{{ subsubitem.name}}</a>
+                                    </li>
+                                    {% endfor %}
+                                    {% else %}
+                                    <li class="nav-item">
+                                        <a class="nav-link{% if page.url == subitem.link %} active{%- endif -%}" href="{{- site.baseurl -}}{{- subitem.link -}}">{{ subitem.name}}</a>
+                                    </li>
+                                    {% endif %}
                                 {% endfor %}
                             </ul>
                         </div>

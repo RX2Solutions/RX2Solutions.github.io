@@ -3,6 +3,7 @@ layout: leftright
 title: Information Technology
 text-color: white
 background: AdobeStock_668870468.jpg
+whys: true
 sections:
   - name: AI
     image: AdobeStock_170135489_hd.jpg
