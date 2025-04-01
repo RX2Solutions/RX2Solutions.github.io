@@ -4,7 +4,7 @@ title: RX2 Solutions
 ---
 {% capture hero_text %}
 # Discover the Difference
-Talent Acquisition & Staff Augmentation from a Respectfully Professional Company.
+of Human Resource Solutions from a Respectfully Professional People Company.
 {% endcapture %}
 {% assign hero_text_html = hero_text | markdownify %}
 
