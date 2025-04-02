@@ -67,9 +67,9 @@ sections:
     linkedin: https://www.linkedin.com/in/brian-brown-09
     email: info@rx2solutions.com
     image: Brian BW.jpeg
-    text: Brian Brown earned his Bachelor's Degree in Sports Management from North Carolina State University, where he excelled as a student-athlete on the baseball team. Drafted in the 9th round, Brian played two seasons in the Boston Red Sox minor league system.
+    text: Brian Brown earned his bachelor’s degree in Sports Management from North Carolina State University before being selected in the 9th round of the MLB Draft. He went on to spend two seasons competing in the Boston Red Sox minor league system.
       <br /><br />
-      With over three years of experience in recruiting across diverse industries such as Information Technology, Manufacturing, and Accounting & Finance, Brian is known for his strong relationship-building skills and keen attention to detail.
+       With roughly five years of recruiting experience across industries including Information Technology, Manufacturing, and Accounting & Finance, Brian is recognized for his ability to build lasting relationships and his sharp attention to detail.
       <br ><br />
       A passionate Philadelphia sports fan, Brian enjoys attending games, traveling, and spending quality time with friends and family.
 ---
