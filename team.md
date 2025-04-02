@@ -69,7 +69,7 @@ sections:
     image: Brian BW.jpeg
     text: Brian Brown earned his bachelor’s degree in Sports Management from North Carolina State University before being selected in the 9th round of the MLB Draft. He went on to spend two seasons competing in the Boston Red Sox minor league system.
       <br /><br />
-       With roughly five years of recruiting experience across industries including Information Technology, Manufacturing, and Accounting & Finance, Brian is recognized for his ability to build lasting relationships and his sharp attention to detail.
+       With roughly five years of recruiting experience and is recognized for his ability to build lasting relationships and his sharp attention to detail.
       <br ><br />
       A passionate Philadelphia sports fan, Brian enjoys attending games, traveling, and spending quality time with friends and family.
 ---
