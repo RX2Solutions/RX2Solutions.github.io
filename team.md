@@ -67,9 +67,11 @@ sections:
     linkedin: https://www.linkedin.com/in/brian-brown-09
     email: info@rx2solutions.com
     image: Brian BW.jpeg
-    text: Brian Brown received his Bachelor's Degree in Business Administration from Penn State University. He has experience working with a military supplier and contractor to the U.S. Government. Brian prides himself on his communication skills and his ability to build strong relationships with clients and candidates.
+    text: Brian Brown earned his Bachelor's Degree in Sports Management from North Carolina State University, where he excelled as a student-athlete on the baseball team. Drafted in the 9th round, Brian played two seasons in the Boston Red Sox minor league system.
       <br /><br />
-      Brian enjoys playing sports, working out, and spends time with his family.
+      With over three years of experience in recruiting across diverse industries such as Information Technology, Manufacturing, and Accounting & Finance, Brian is known for his strong relationship-building skills and keen attention to detail.
+      <br></br>
+      A passionate Philadelphia sports fan, Brian enjoys attending games, traveling, and spending quality time with friends and family.
 ---
 Our team of respectful professionals is here to ensure success for our clients and candidates.
 We bring a wealth of multi-disciplinary experience and a unique approach to our work - the Respectfully Professional Process.
