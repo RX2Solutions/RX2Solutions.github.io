@@ -17,7 +17,7 @@ sections:
     linkedin: https://www.linkedin.com/in/ross-rosner-mba-ba26377
     email: info@rx2solutions.com
     image: Rosner Bio Picture2.jpg
-    text: Ross Rosner grew up in Philadelphia and is a four for four Philly sports fan.He followed in the footsteps of his father and three grandparents, receiving his MBA from Temple University.
+    text: Ross Rosner grew up in Philadelphia and is a four for four Philly sports fan. He followed in the footsteps of his father and three grandparents, receiving his MBA from Temple University.
       <br /><br />
       He joined the organization in order to create and shape a Respectfully Professional Company that values quality over quantity and relationships over transactions. Ross brings 10 years of recruiting experience and almost 20 years of business development with a focus on customer service.
       <br /><br />
