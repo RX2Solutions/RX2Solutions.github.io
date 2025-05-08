@@ -18,8 +18,8 @@ From a combined 40-years of professional experience helping job seekers find new
  1. What’s in it for me (from the employer’s perspective)
  1. Write the resume for the job that you WANT, not for the jobs that you’ve HAD
   - It's OK to have multiple versions of your resume if you are open to multiple types of opportunities
- 3. Put the responsibilities with the biggest impact at the TOP of each opportunity – don’t make me fish through fluff to find the good stuff…tell me up front.
- 3. Less is more. If you can say something in five words instead of ten, say it in five.  If you can combine two bullet points into one, then do it.  The fewer words and fewer pages of a resume, the better!
+ 1. Put the responsibilities with the biggest impact at the TOP of each opportunity – don’t make me fish through fluff to find the good stuff…tell me up front.
+ 1. Less is more. If you can say something in five words instead of ten, say it in five.  If you can combine two bullet points into one, then do it.  The fewer words and fewer pages of a resume, the better!
 - **Words never to use in a resume:** I, We, Responsible (for).  This is your resume, so its assumed that everything in here is about you and that you were responsible for everything in the resume.  Saying these words is redundant and not necessary
 - **The top of the resume should include:** your Full Name, City, State, and Zip Code you live in (not your full address), phone number and email address.
  1. Make the email address professional and easy. Ideally, it should be some version of your name and a simple number.
