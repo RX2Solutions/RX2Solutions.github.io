@@ -6,7 +6,7 @@ sections:
     jobtitle: Managing Partner / Cofounder
     linkedin: https://www.linkedin.com/in/rbgraham
     email: info@rx2solutions.com
-    image: RG25.jpeg
+    image: RGS.jpeg
     text: Robert Graham brings roughly two decades of experience creating Human Capital and Talent Acquisition Strategies for Technology and Life Science Companies. Robert's unique perspective on Staff Augmentation is leveraging technology to provide a customized, efficient solution. Robert is a technologist at heart who understands how to build highly functioning and dynamic teams.
       <br /><br />
       Robert has a BA in History, an MBA in Organizational Leadership, and is a Certified Scrum Master.
