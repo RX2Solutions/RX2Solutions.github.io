@@ -3,7 +3,7 @@ layout: post
 title: When Founders Run HR - What Gets Missed?
 author: rx2solutions
 tags: publication
-thumbnail: Founders.jpeg
+thumbnail: Founder.jpeg
 excerpt_separator: <!--more-->
 ---
 
