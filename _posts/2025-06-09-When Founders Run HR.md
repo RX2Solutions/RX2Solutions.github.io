@@ -9,9 +9,9 @@ excerpt_separator: <!--more-->
 
 <h1>When Founders Run HR: What Gets Missed?</h1>
 
-In the beginning, founders do it all: build the product, pitch the vision, raise capital, and, somewhere along the way, become HR. <!--more-->
+In the beginning, founders do it all: build the product, pitch the vision, raise capital, and, somewhere along the way, become HR. 
 
-It’s a natural part of the startup lifecycle. But here’s the truth no one tells you early enough: key things get missed when HR is squeezed into a founder’s already overflowing plate. Over time, those blind spots don’t just appear in process; they show up in people, performance, and retention.
+It’s a natural part of the startup lifecycle. But here’s the truth no one tells you early enough: key things get missed when HR is squeezed <!--more-->into a founder’s already overflowing plate. Over time, those blind spots don’t just appear in process; they show up in people, performance, and retention.
 
 <BR>
 
