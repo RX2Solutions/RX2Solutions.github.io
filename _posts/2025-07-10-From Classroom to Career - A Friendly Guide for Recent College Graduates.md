@@ -10,21 +10,22 @@ excerpt_separator: <!--more-->
 
 At **RX2 Solutions**, we’ve seen a growing number of friends, clients, and colleagues asking the same thing:
 
-> *“My son just graduated and can’t find a job, can you help?”*<!--more-->
+> *“My son just graduated and can’t find a job, can you help?”* <!--more-->
 
 The truth? These grads are smart, capable, and motivated, but they’re stepping into a job market that’s anything but straightforward.  
 
-If that sounds familiar, know this: you’re not alone. And *there is* a way forward.
+If that sounds familiar, know this: you’re not alone. And *there is* a way forward. 
 
-<BR>
+
+
+---
+
 
 ## The Job Market Is Competitive, Not Closed
 
 A recent Yahoo! Finance report revealed that the unemployment rate for college grads has ticked above the national average for the first time in decades. It’s a challenge, no doubt. But it’s not a permanent one.
 
-The right approach especially early on—can open doors faster than you think.
-
-<BR>
+The right approach, especially early on can open doors faster than you think.
 
 ## What Hiring Managers Actually Care About
 
@@ -36,13 +37,12 @@ They’re quietly asking themselves:
 > *“Will this person make things easier, or harder?”*
 
 To make the right impression, you don’t need years of experience. You need to:
-- Show up prepared
-- Communicate your interest with confidence
-- Articulate why this role makes sense for you
+
+&nbsp;&nbsp;&nbsp;&nbsp;- Show up prepared  
+&nbsp;&nbsp;&nbsp;&nbsp;- Communicate your interest with confidence  
+&nbsp;&nbsp;&nbsp;&nbsp;- Articulate why this role makes sense for you  
 
 Keep it simple, honest, and focused.
-
-<BR>
 
 ## Still Figuring It Out? That’s Okay.
 
@@ -52,52 +52,54 @@ That kind of range is exciting, but in an interview, it creates confusion.
 The key is to get specific. And if you’re not sure yet, that’s normal.  
 You don’t have to have it all figured out, you just need a place to start.
 
-<BR>
-
 ## Try This: Elimination Over Perfection
 
 You don’t need a dream job on day one. You need a direction. Here’s one way to find it:
 
-1. Start with a list of common careers, plenty are online.
-2. Cross off anything that clearly doesn’t fit your interests or lifestyle.
-3. Read up on unfamiliar roles, just a paragraph or two.
-4. Sort what’s left into themes: business, healthcare, tech, etc.
-5. Watch a few “day in the life” videos for roles that interest you.
-6. Compare each path to what *you* want income, work-life balance, purpose.
-7. Ask around. A short call with someone in the field can give real clarity.
-8. If possible, take a course or try an internship, there’s no better teacher than doing.
+&nbsp;&nbsp;&nbsp;&nbsp;1. Start with a list of common careers, plenty are online.  
+&nbsp;&nbsp;&nbsp;&nbsp;2. Cross off anything that clearly doesn’t fit your interests or lifestyle.  
+&nbsp;&nbsp;&nbsp;&nbsp;3. Read up on unfamiliar roles, just a paragraph or two.  
+&nbsp;&nbsp;&nbsp;&nbsp;4. Sort what’s left into themes: business, healthcare, tech, etc.  
+&nbsp;&nbsp;&nbsp;&nbsp;5. Watch a few “day in the life” videos for roles that interest you.  
+&nbsp;&nbsp;&nbsp;&nbsp;6. Compare each path to what *you* want, income, work-life balance, purpose.  
+&nbsp;&nbsp;&nbsp;&nbsp;7. Ask around. A short call with someone in the field can give real clarity.  
+&nbsp;&nbsp;&nbsp;&nbsp;8. If possible, take a course or try an internship, there’s no better teacher than doing.  
 
 You don’t need to chase perfection. You just need a process that moves you forward.
 
-<BR>
+---
 
 ## Not Landing Interviews? Or Offers?
 
 If you’re stuck in the job search, odds are the issue falls into one of two buckets:
 
 ### 1. **No Interviews?**  
+
 Your resume might be the issue. Even high-potential candidates get overlooked when their documents aren’t dialed in.
 
 Ask yourself:
-- Is your resume tailored to the roles you’re targeting?
-- Are you using language that resonates with the industry?
-- Is there a clear story of *why* you’re a fit?
+
+&nbsp;&nbsp;&nbsp;&nbsp;- Is your resume tailored to the roles you’re targeting?  
+&nbsp;&nbsp;&nbsp;&nbsp;- Are you using language that resonates with the industry?  
+&nbsp;&nbsp;&nbsp;&nbsp;- Is there a clear story of *why* you’re a fit?  
 
 If your degree doesn’t match your target field, that’s okay—but you’ll need to bridge the gap through coursework, certifications, or related experience.
 
 ### 2. **Interviews, But No Offers?**  
+
 That usually signals a presentation gap. Most companies won’t give direct feedback, so reflection is key.
 
 Try this:
-- Write down what worked and what didn’t after each interview.
-- Practice out loud. Better yet, ask someone to run a mock interview with you.
-- Get clear on your “why.” That’s your anchor.
 
-<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;- Write down what worked and what didn’t after each interview.  
+&nbsp;&nbsp;&nbsp;&nbsp;- Practice out loud. Better yet, ask someone to run a mock interview with you.  
+&nbsp;&nbsp;&nbsp;&nbsp;- Get clear on your “why.” That’s your anchor.
+
+---
 
 ## Your Story Matters, Tell It Well
 
-One of the most common and most important questions is:
+One of the most common—and most important—questions is:
 
 > **“Why this field?”**
 
@@ -109,18 +111,17 @@ It doesn’t have to be dramatic. It just has to be yours.
 
 Hiring managers connect with *genuine* stories. Make yours count.
 
-<BR>
+---
 
 ## Let’s Recap
 
 Here’s what we tell the recent grads who come to us:
 
-- Employers value clarity, curiosity, and composure over perfection.
-- Not knowing your path is fine—just start narrowing the field.
-- Get strategic with your resume and interview prep. That’s your foot in the door.
-- Own your “why.” Your story is your edge.
+&nbsp;&nbsp;&nbsp;&nbsp;- Employers value clarity, curiosity, and composure over perfection.  
+&nbsp;&nbsp;&nbsp;&nbsp;- Not knowing your path is fine—just start narrowing the field.  
+&nbsp;&nbsp;&nbsp;&nbsp;- Get strategic with your resume and interview prep. That’s your foot in the door.  
+&nbsp;&nbsp;&nbsp;&nbsp;- Own your “why.” Your story is your edge.
 
-<BR>
 
 ## Know Someone Who Needs This?
 
