@@ -60,14 +60,14 @@ You don’t have to have it all figured out, you just need a place to start.
 
 You don’t need a dream job on day one. You need a direction. Here’s one way to find it:
 
-1. Start with a list of common careers; plenty are online.
-2. Cross off anything that clearly doesn’t fit your interests or lifestyle.
-3. Read up on unfamiliar roles, just a paragraph or two.
-4. Sort what’s left into themes: business, healthcare, tech, etc.
-5. Watch a few “day in the life” videos for roles that interest you.
-6. Compare each path to what *you* want, income, work-life balance, purpose.
-7. Ask around. A short call with someone in the field can give real clarity.
-8. If possible, take a course or try an internship, there’s no better teacher than doing.
+- Start with a list of common careers; plenty are online.
+- Cross off anything that clearly doesn’t fit your interests or lifestyle.
+- Read up on unfamiliar roles, just a paragraph or two.
+- Sort what’s left into themes: business, healthcare, tech, etc.
+- Watch a few “day in the life” videos for roles that interest you.
+- Compare each path to what *you* want, income, work-life balance, purpose.
+- Ask around. A short call with someone in the field can give real clarity.
+- If possible, take a course or try an internship, there’s no better teacher than doing.
 
 You don’t need to chase perfection. You just need a process that moves you forward.
 
@@ -77,7 +77,7 @@ You don’t need to chase perfection. You just need a process that moves you for
 
 If you’re stuck in the job search, odds are the issue falls into one of two buckets:
 
-### **No Interviews?**
+## **No Interviews?**
 
 Your resume might be the issue. Even high-potential candidates get overlooked when their documents aren’t dialed in.
 
@@ -89,7 +89,7 @@ Ask yourself:
 
 If your degree doesn’t match your target field, that’s okay—but you’ll need to bridge the gap through coursework, certifications, or related experience.
 
-### **Interviews, But No Offers?**
+**Interviews, But No Offers?**
 
 That usually signals a presentation gap. Most companies won’t give direct feedback, so reflection is key.
 
@@ -101,7 +101,7 @@ Try this:
 
 ---
 
-## Your Story Matters, Tell It Well
+**Your Story Matters, Tell It Well**
 
 One of the most common, and most important, questions is:
 
