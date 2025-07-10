@@ -77,7 +77,7 @@ You don’t need to chase perfection. You just need a process that moves you for
 
 If you’re stuck in the job search, odds are the issue falls into one of two buckets:
 
-### 1. **No Interviews?**
+### **No Interviews?**
 
 Your resume might be the issue. Even high-potential candidates get overlooked when their documents aren’t dialed in.
 
@@ -89,7 +89,7 @@ Ask yourself:
 
 If your degree doesn’t match your target field, that’s okay—but you’ll need to bridge the gap through coursework, certifications, or related experience.
 
-### 2. **Interviews, But No Offers?**
+### **Interviews, But No Offers?**
 
 That usually signals a presentation gap. Most companies won’t give direct feedback, so reflection is key.
 
@@ -130,8 +130,7 @@ Here’s what we tell the recent grads who come to us:
 
 ## Know Someone Who Needs This?
 
-Whether it’s your child, your sibling, or someone in your circle, you don’t have to figure this out alone.  
-We’ve helped countless early career professionals find traction, direction, and opportunity.
+Whether it’s your child, your sibling, or someone in your circle, you don’t have to figure this out alone. We’ve helped countless early career professionals find traction, direction, and opportunity.
 
 Let’s make sure potential doesn’t go untapped.
 
