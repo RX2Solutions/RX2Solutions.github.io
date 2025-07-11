@@ -13,6 +13,7 @@ excerpt_separator: <!--more-->
 
 ### Macroeconomic Overview: Navigating a Complex Landscape
 
+<br>
 As we step deeper into Q3 2025, the U.S. economy is projecting stability, not without its headwinds. The GDP is anticipated to grow at an annualized rate of **2.1%** for the latter half of the year, <!--more--> a modest yet steady climb that reflects a recalibrated post-pandemic economy.
 
 Meanwhile, core inflation appears to be cooling, and the Federal Reserve is maintaining interest rates** as it closely monitors inflationary pressure and consumer confidence.
@@ -23,6 +24,7 @@ Meanwhile, core inflation appears to be cooling, and the Federal Reserve is main
 
 ### Labor Market Dynamics: Stability with a Side of Unease
 
+<br>
 National unemployment remains low at 4.2%, yet recent graduates and entry-level professionals are encountering growing friction, highlighted by a youth unemployment rate now above 5.8%, the highest since 2021.
 
 This divide signals a broader challenge: **demand for specific, market-ready skillsets is outpacing supply**.
@@ -33,6 +35,7 @@ This divide signals a broader challenge: **demand for specific, market-ready ski
 
 ### Sector-Specific Insights: Opportunities and Challenges
 
+<br>
 ## **Information Technology**
 - Net Employment Outlook: **36%**
 - Skill gaps in data architecture, DevOps, and AI applications are fueling demand for both **contract** and **permanent** roles.
@@ -58,6 +61,7 @@ This divide signals a broader challenge: **demand for specific, market-ready ski
 
 ### What to Expect in the Remainder of 2025
 
+<br>
 The final two quarters are expected to follow a path of **cautious expansion**. If inflation cools and consumer spending holds, **hiring momentum may accelerate**, particularly in:
 
 - Tech  
@@ -67,9 +71,13 @@ The final two quarters are expected to follow a path of **cautious expansion**. 
 However, organizations are likely to remain pragmatic, balancing growth with efficiency.
 
 ### We Anticipate:
+
+<br>
+
+
 - **Continued Rise in Contract and Project-Based Work**  
   Employers are hedging long-term commitments with interim talent.
-
+  
 - **Upskilling Initiatives Will Surge**  
   Companies will invest more in growing internal capabilities.
 
