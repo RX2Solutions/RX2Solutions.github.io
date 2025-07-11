@@ -11,27 +11,27 @@ excerpt_separator: <!--more-->
 
 ---
 
-## Macroeconomic Overview: Navigating a Complex Landscape
+### Macroeconomic Overview: Navigating a Complex Landscape
 
 As we step deeper into Q3 2025, the U.S. economy is projecting stability, not without its headwinds. The GDP is anticipated to grow at an annualized rate of **2.1%** for the latter half of the year, <!--more--> a modest yet steady climb that reflects a recalibrated post-pandemic economy.
 
-Meanwhile, core inflation appears to be cooling, with the **Federal Reserve maintaining interest rates** as it closely monitors both inflationary pressure and consumer confidence.
+Meanwhile, core inflation appears to be cooling, and the Federal Reserve is maintaining interest rates** as it closely monitors inflationary pressure and consumer confidence.
 
 > Geopolitical dynamics, global supply chain volatility, and emerging technology sectors continue to impact capital investment and operational planning across industries.
 
 ---
 
-## Labor Market Dynamics: Stability with a Side of Unease
+### Labor Market Dynamics: Stability with a Side of Unease
 
-National unemployment remains low at **4.2%**, yet **recent graduates and entry-level professionals** are encountering growing friction, highlighted by a youth unemployment rate now above **5.8%**, the highest since 2021.
+National unemployment remains low at 4.2%, yet recent graduates and entry-level professionals are encountering growing friction, highlighted by a youth unemployment rate now above 5.8%, the highest since 2021.
 
 This divide signals a broader challenge: **demand for specific, market-ready skillsets is outpacing supply**.
 
-> Hiring trends are shifting more decisively toward **skill-first strategies**, with employers prioritizing practical experience and technical fluency—especially in sectors like **tech, healthcare, and sustainability**.
+> Hiring trends are shifting more decisively toward skill-first strategies, with employers prioritizing practical experience and technical fluency, especially in sectors like tech, healthcare, and sustainability.
 
 ---
 
-## Sector-Specific Insights: Opportunities and Challenges
+### Sector-Specific Insights: Opportunities and Challenges
 
 ## **Information Technology**
 - Net Employment Outlook: **36%**
@@ -56,7 +56,7 @@ This divide signals a broader challenge: **demand for specific, market-ready ski
 
 ---
 
-## What to Expect in the Remainder of 2025
+### What to Expect in the Remainder of 2025
 
 The final two quarters are expected to follow a path of **cautious expansion**. If inflation cools and consumer spending holds, **hiring momentum may accelerate**, particularly in:
 
@@ -66,7 +66,7 @@ The final two quarters are expected to follow a path of **cautious expansion**. 
 
 However, organizations are likely to remain pragmatic, balancing growth with efficiency.
 
-## We Anticipate:
+### We Anticipate:
 - **Continued Rise in Contract and Project-Based Work**  
   Employers are hedging long-term commitments with interim talent.
 
