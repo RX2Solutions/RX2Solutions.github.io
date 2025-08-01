@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 
 # **More Than a Recruiter: The Anatomy of a Strategic Staffing Partner**
 
-Traditional staffing vendors have long been viewed as mere résumé brokers—firms that sling CVs and fill seats with little regard for long-term fit or business impact. Breaking the “résumé vendor” stereotype is the first step toward <!--more--> understanding what makes a staffing partner truly strategic. 
+Traditional staffing vendors have long been viewed as mere résumé brokers firms that sling CVs and fill seats with little regard for long-term fit or business impact. Breaking the “résumé vendor” stereotype is the first step toward <!--more--> understanding what makes a staffing partner truly strategic. 
 
 A strategic staffing partner acts not as a simple supplier, but as an extension of your internal team; invested in your goals, culture, and success. The right partner operates as a performance partner, not just a résumé vendor, helping you meet delivery goals, maintain agility, and find talent that sticks. This means moving beyond a mentality of “send over candidates ASAP” to one of consultative collaboration.
 
