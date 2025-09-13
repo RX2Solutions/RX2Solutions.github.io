@@ -1,7 +1,9 @@
 # rx2solutions-com
-Rx2Solutions Website - served via github pages
-- Plan is to use github pages with Jekyll template engine
-- converting the html5up.net "zerofour" template to look like the trax template from themesindustry.com
+RX2 Solutions website — GitHub Pages + Jekyll.
+- Actively uses Jekyll blog features (`_posts/`).
+- Theme: Trax (ThemeForest), hand‑converted from HTML to Jekyll layouts/includes as needed.
+- Local build: `bundle exec jekyll build`.
+- Note: GitHub Pages pins gem versions; use the `github-pages` gem for local parity.
 
 ## Manual Blog Pagination (Important)
 
