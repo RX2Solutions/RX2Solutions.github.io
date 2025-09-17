@@ -1,4 +1,5 @@
-{%- assign desired_posts = site.posts | where: "tags", page.desired-tag -%}
+{% assign desired_tag = page["desired-tag"] %}
+{% assign desired_posts = site.posts | where_exp: "p", "p.tags contains desired_tag" %}
 {%- assign show_recents = "false" -%}
 {%- assign postsperpage = 9 -%}
 {%- assign columnsperrow = 3 -%}
@@ -9,7 +10,7 @@
 {%- assign numarticles = desired_posts | size -%}
 {%- assign maxpages = numarticles | divided_by: postsperpage -%}
 {%- assign maxpages = maxpages | plus: 1 -%}
-{%- assign pagename = page.desired-tag | append: "s" -%}
+{%- assign pagename = desired_tag | append: "s" -%}
 {%- if pagename == "publications" -%}
 {%- assign pagename = "articles" -%}
 {%- endif -%}
@@ -42,7 +43,7 @@
         <div class="gradient-bg title-wrap">
             <div class="row">
                 <div class="col-lg-12 col-md-12 whitecolor">
-                    <h3 class="float-left">{{- page.desired-tag | capitalize -}}s</h3>
+                    <h3 class="float-left">{{- desired_tag | capitalize -}}s</h3>
                 </div>
             </div>
         </div>

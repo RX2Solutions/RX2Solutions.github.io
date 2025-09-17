@@ -1,9 +1,11 @@
 ---
 layout: post
-published: false
 title: Winning with Strategic Staffing in Times of Change
 author: rx2solutions
-tags: publication, Recruitment Best Practices, HR Leadership
+tags:
+  - publication
+  - Recruitment Best Practices
+  - HR Leadership
 thumbnail: Change.jpeg
 excerpt_separator: <!--more-->
 ---

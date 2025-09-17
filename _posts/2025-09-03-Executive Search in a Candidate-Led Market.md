@@ -1,9 +1,11 @@
 ---
 layout: post
-published: true
 title: Executive Search in a Candidate-Led Market
 author: rx2solutions
-tags: publication, Recruitment Best Practices, HR Leadership
+tags:
+  - publication
+  - Recruitment Best Practices
+  - HR Leadership
 thumbnail: ES1.jpeg
 excerpt_separator: <!--more-->
 ---

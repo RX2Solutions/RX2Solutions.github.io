@@ -1,0 +1,28 @@
+name: Scheduled Pages Rebuild
+
+on:
+  schedule:
+    # Run shortly after the top of every hour so newly due posts go live without manual commits
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  trigger-pages-build:
+    name: Trigger GitHub Pages build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request Pages rebuild
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            core.info('Requesting GitHub Pages rebuild for future-dated posts check')
+            await github.request('POST /repos/{owner}/{repo}/pages/builds', {
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            })
+            core.info('GitHub Pages rebuild requested successfully')
