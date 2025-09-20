@@ -1,6 +1,9 @@
 collections:
   authors:
     output: true
+  landing_pages:
+    output: true
+    permalink: /landing/:title/
 
 defaults:
   - scope:
@@ -13,6 +16,14 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "landing_pages"
+    values:
+      layout: "landing"
+      sticky_cta_label: "Get the Hiring Playbook"
+      offer_download_title: "Level Up Your Talent Strategy"
+      offer_asset_highlight: "Includes editable frameworks and scorecards ready for your team."
   - scope:
       path: ""
     values:

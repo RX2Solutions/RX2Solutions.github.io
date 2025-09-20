@@ -1,0 +1,62 @@
+{% assign section = include.section %}
+{% assign type = section.type | default: 'content' %}
+{% assign has_image = section.image %}
+{% assign image_position = section.image_position | default: 'right' %}
+{% assign image_caption = section.image_caption %}
+{% assign alt_text = section.image_alt | default: section.heading %}
+<section class="lp-section lp-section--{{ type | replace: '_', '-' }}{% if has_image %} lp-section--with-image lp-section--image-{{ image_position }}{% endif %}">
+  <div class="lp-section-grid">
+    <div class="lp-section-copy">
+      {% if section.heading %}
+      <h2>{{ section.heading }}</h2>
+      {% endif %}
+      {% case type %}
+      {% when 'content' %}
+        {% if section.body %}
+        <div class="lp-section-body">{{ section.body | markdownify }}</div>
+        {% endif %}
+      {% when 'checklist' %}
+        {% if section.body %}
+        <div class="lp-section-body">{{ section.body | markdownify }}</div>
+        {% endif %}
+        {% if section.bullets %}
+        <ul class="lp-checklist">
+          {% for item in section.bullets %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      {% when 'bullets' %}
+        {% if section.bullets %}
+        <ul class="lp-bullet-list">
+          {% for item in section.bullets %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if section.body %}
+        <div class="lp-section-body">{{ section.body | markdownify }}</div>
+        {% endif %}
+      {% when 'quote' %}
+        {% if section.quote %}
+        <blockquote class="lp-inline-quote">&ldquo;{{ section.quote }}&rdquo;</blockquote>
+        {% endif %}
+        {% if section.attribution %}
+        <p class="lp-quote-attribution">{{ section.attribution }}</p>
+        {% endif %}
+      {% else %}
+        {% if section.body %}
+        <div class="lp-section-body">{{ section.body | markdownify }}</div>
+        {% endif %}
+      {% endcase %}
+    </div>
+    {% if has_image %}
+    <figure class="lp-section-media">
+      <img src="{{ section.image | relative_url }}" alt="{{ alt_text }}">
+      {% if image_caption %}
+      <figcaption>{{ image_caption }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
+  </div>
+</section>

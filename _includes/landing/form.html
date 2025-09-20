@@ -1,0 +1,20 @@
+{% assign form_id = include.id | default: 'lp-optin-form' %}
+{% assign endpoint = include.endpoint | default: '#' %}
+{% assign heading = include.heading | default: 'Get the Playbook' %}
+{% assign submit_label = include.submit_label | default: 'Send Me the Playbook' %}
+<form id="{{ form_id }}" class="lp-form" method="post" action="{{ endpoint }}" data-page-name="{{ page.title | slugify }}">
+  <h3>{{ heading }}</h3>
+  {% if include.asset %}
+  <p class="lp-form-highlight">{{ include.asset }}</p>
+  {% endif %}
+  <div class="lp-form-group">
+    <label class="sr-only" for="{{ form_id }}-email">Email</label>
+    <input type="email" id="{{ form_id }}-email" name="email" placeholder="you@company.com" required>
+  </div>
+  <div class="lp-form-group lp-hidden-field">
+    <label for="{{ form_id }}-confirm" class="sr-only">Leave this field blank</label>
+    <input type="text" id="{{ form_id }}-confirm" name="confirm_email" tabindex="-1" autocomplete="off">
+  </div>
+  <button type="submit">{{ submit_label }}</button>
+  <p class="lp-form-consent">{{ include.consent | default: 'By submitting, you agree to receive hiring strategy insights from RX2 Solutions.' }}</p>
+</form>
