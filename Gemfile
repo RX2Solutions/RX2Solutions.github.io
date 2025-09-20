@@ -19,3 +19,7 @@ group :jekyll_plugins do
 end
 
 gem "webrick", "~> 1.8"
+
+# Ruby 3.x stopped bundling REXML by default, but older github-pages builds
+# still expect it to be available. Keep it explicit so local builds stay in sync.
+gem "rexml", "~> 3.2"
