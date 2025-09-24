@@ -44,8 +44,8 @@ The power of *Respectfully Professional* lies in the balance. Respect alone, wit
 
 When combined, the two create an environment where leaders feel heard, candidates feel valued, and results speak for themselves. For example:
 
-- **For clients**, it’s the confidence that when we say we’ll deliver, we will—without cutting corners.
-- **For candidates**, it’s being treated like people, not placeholders—receiving honest feedback and real communication.
+- **For clients**, it’s the confidence that when we say we’ll deliver, we will, without cutting corners.
+- **For candidates**, it’s being treated like people, not placeholders, receiving honest feedback and real communication.
 - **For our team**, it’s collaboration built on trust, accountability, and the shared goal of doing right by both sides of the hiring equation.
 
 That balance is why clients don’t just see us as vendors, but as consultative partners invested in their success.
@@ -56,7 +56,7 @@ That balance is why clients don’t just see us as vendors, but as consultative 
 
 The hiring landscape has never been more complex. Skills are scarce. Competition is fierce. And culture, the fit between people and organizations often outweighs compensation in driving long-term retention.
 
-In this environment, *Respectfully Professional* is more than a brand promise. It’s a differentiator. It ensures speed without sacrificing quality. It keeps processes structured while staying human. And most importantly, it reminds everyone involved—clients, candidates, and consultants—that HR isn’t just about transactions. It’s about people.
+In this environment, *Respectfully Professional* is more than a brand promise. It’s a differentiator. It ensures speed without sacrificing quality. It keeps processes structured while staying human. And most importantly, it reminds everyone involved; clients, candidates, and consultants. HR isn’t just about transactions, it’s about people.
 
 That perspective matters. Because people are what move businesses forward.
 
@@ -66,9 +66,7 @@ That perspective matters. Because people are what move businesses forward.
 
 At RX2 Solutions, being *Respectfully Professional* isn’t optional, it’s the standard that guides us every day. It’s why clients trust us with their most important decisions, why candidates come back years later to re-engage, and why our team culture thrives.
 
-It’s a reminder that in HR, professionalism sets the floor. Respect raises the ceiling.
-
-And together, they’re how organizations grow—not just in numbers, but in strength.
+It’s a reminder that in HR, professionalism sets the floor. Respect raises the ceiling. And together, they’re how organizations grow not just in numbers, but in strength.
 
 ---
 ## Contact RX2 Solutions
