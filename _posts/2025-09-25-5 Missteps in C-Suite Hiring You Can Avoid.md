@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Winning with Strategic Staffing in Times of Change
+title: Missteps in C-Suite Hiring You Can Avoid
 author: rx2solutions
 tags:
   - publication
