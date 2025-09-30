@@ -36,7 +36,7 @@
               <aside class="sidebar whitebox mt-5 mt-md-0">
                   <div class="widget heading_space shadow wow fadeIn" data-wow-delay="350ms">
                       <h4 class="text-capitalize darkcolor bottom20 text-center text-md-left">Recent Posts</h4>
-                      {% for post in site.posts %}
+                      {% for post in site.posts limit:12 %}
                       <div class="single_post bottom15">
                         {%- if post.thumbnail -%}
                           <a href="{{- site.baseurl -}}{{ post.url }}" class="post"><img src="{{- site.baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
