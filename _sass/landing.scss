@@ -186,6 +186,13 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.lp-form[data-loading='true'] button,
+.lp-dialog-form[data-loading='true'] button {
+  opacity: 0.65;
+  pointer-events: none;
+  cursor: wait;
+}
+
 .lp-form button:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 28px rgba(247, 201, 72, 0.35);
@@ -200,6 +207,22 @@
 
 .lp-hidden-field {
   display: none;
+}
+
+.lp-form-message {
+  min-height: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.35rem 0 0.85rem;
+  color: #4a4036;
+}
+
+.lp-form-message.is-error {
+  color: #b53a24;
+}
+
+.lp-form-message.is-success {
+  color: #1f6b3b;
 }
 
 .lp-main {
@@ -437,6 +460,143 @@
   white-space: nowrap;
 }
 
+body.lp-dialog-open {
+  overflow: hidden;
+}
+
+.lp-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(18, 11, 6, 0.68);
+  z-index: 1300;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.lp-dialog-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lp-dialog {
+  width: 100%;
+  max-width: 520px;
+}
+
+.lp-dialog-inner {
+  position: relative;
+  background: linear-gradient(180deg, #fffdfa 0%, #f7efe4 100%);
+  border-radius: 22px;
+  border: 1px solid #ede2d2;
+  box-shadow: 0 45px 90px rgba(18, 11, 6, 0.32);
+  padding: 2.75rem;
+}
+
+.lp-dialog-close {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  border: none;
+  background: none;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: #837363;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.lp-dialog-close:hover,
+.lp-dialog-close:focus {
+  color: #3a2f24;
+  outline: none;
+}
+
+.lp-dialog-content h2 {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 2.15rem;
+  color: #120d09;
+  margin-bottom: 0.75rem;
+}
+
+.lp-dialog-subhead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #483f36;
+  margin-bottom: 1.9rem;
+}
+
+.lp-dialog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lp-dialog-form .lp-form-group {
+  margin-bottom: 1rem;
+}
+
+.lp-dialog-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #3f372f;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.lp-dialog-form input[type='text'],
+.lp-dialog-form input[type='url'] {
+  width: 100%;
+  padding: 0.9rem 1.05rem;
+  border-radius: 10px;
+  border: 1px solid #d9cfc6;
+  background: #fffdfb;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lp-dialog-form input[type='text']:focus,
+.lp-dialog-form input[type='url']:focus {
+  outline: none;
+  border-color: #d06f2d;
+  box-shadow: 0 0 0 2px rgba(208, 111, 45, 0.25);
+}
+
+.lp-dialog-form button {
+  margin-top: 0.25rem;
+}
+
+.lp-dialog-note {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: #5a5149;
+  text-align: center;
+}
+
+.lp-dialog-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.95rem 1.2rem;
+  border-radius: 999px;
+  background: #f7c948;
+  color: #1d1a16;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lp-dialog-submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(247, 201, 72, 0.35);
+}
+
 @media (max-width: 1100px) {
   .lp-sticky-cta {
     right: 1rem;
@@ -509,5 +669,17 @@
 
   .lp-section-media figcaption {
     padding: 0.85rem 1.1rem;
+  }
+
+  .lp-dialog-inner {
+    padding: 2.2rem 1.6rem;
+  }
+
+  .lp-dialog-content h2 {
+    font-size: 1.85rem;
+  }
+
+  .lp-dialog-subhead {
+    font-size: 0.95rem;
   }
 }

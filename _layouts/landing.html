@@ -11,6 +11,9 @@
     {% assign bottom_submit_label = page.footer_submit_label | default: 'Email Me the Frameworks' %}
     {% assign footer_heading = page.footer_offer_title | default: page.offer_download_title %}
     {% assign footer_asset = page.footer_offer_asset | default: page.offer_asset_highlight %}
+    {% assign dialog_heading = page.dialog_heading | default: "Let's finish your profile" %}
+    {% assign dialog_subheading = page.dialog_subheading | default: 'Add a couple of details so we can deliver the frameworks and supporting resources.' %}
+    {% assign dialog_submit_label = page.dialog_submit_label | default: 'Access the Frameworks' %}
     <div class="lp-wrapper">
       <header class="lp-hero">
         <div class="container">
@@ -92,5 +95,7 @@
         </div>
       </footer>
     </div>
+    {% include landing/profile-dialog.html id="lp-profile-dialog" endpoint=page.api_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label %}
+    <script src="{{ '/assets/js/landing-optin.js' | relative_url }}"></script>
   </body>
 </html>

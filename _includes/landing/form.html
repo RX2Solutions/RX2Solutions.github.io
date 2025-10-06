@@ -2,7 +2,9 @@
 {% assign endpoint = include.endpoint | default: '#' %}
 {% assign heading = include.heading | default: 'Get the Playbook' %}
 {% assign submit_label = include.submit_label | default: 'Send Me the Playbook' %}
-<form id="{{ form_id }}" class="lp-form" method="post" action="{{ endpoint }}" data-page-name="{{ page.title | slugify }}">
+{% assign content_url = include.content_url | default: page.content_url | default: '' %}
+{% assign simulate_api = include.simulate_api | default: page.simulate_api | default: false %}
+<form id="{{ form_id }}" class="lp-form" method="post" action="{{ endpoint }}" data-page-name="{{ page.title | slugify }}" data-content-url="{{ content_url }}" data-simulate-api="{{ simulate_api }}">
   <h3>{{ heading }}</h3>
   {% if include.asset %}
   <p class="lp-form-highlight">{{ include.asset }}</p>
@@ -15,6 +17,7 @@
     <label for="{{ form_id }}-confirm" class="sr-only">Leave this field blank</label>
     <input type="text" id="{{ form_id }}-confirm" name="confirm_email" tabindex="-1" autocomplete="off">
   </div>
+  <div class="lp-form-message" role="status" aria-live="polite"></div>
   <button type="submit">{{ submit_label }}</button>
   <p class="lp-form-consent">{{ include.consent | default: 'By submitting, you agree to receive hiring strategy insights from RX2 Solutions.' }}</p>
 </form>

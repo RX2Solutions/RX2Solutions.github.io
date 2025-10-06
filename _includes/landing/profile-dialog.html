@@ -1,0 +1,38 @@
+{% assign dialog_id = include.id | default: 'lp-profile-dialog' %}
+{% assign heading = include.heading | default: "Let's finish your profile" %}
+{% assign subheading = include.subheading | default: 'Tell us a bit more so we can personalize your download experience.' %}
+{% assign submit_label = include.submit_label | default: 'Access the Frameworks' %}
+{% assign endpoint = include.endpoint | default: '#' %}
+{% assign content_url = include.content_url | default: page.content_url | default: '' %}
+{% assign simulate_api = include.simulate_api | default: page.simulate_api | default: false %}
+<div class="lp-dialog-backdrop" data-lp-dialog hidden>
+  <div class="lp-dialog" role="dialog" aria-modal="true" aria-labelledby="{{ dialog_id }}-title">
+    <div class="lp-dialog-inner">
+      <button type="button" class="lp-dialog-close" data-lp-dialog-close aria-label="Close dialog">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="lp-dialog-content">
+        <h2 id="{{ dialog_id }}-title">{{ heading }}</h2>
+        <p class="lp-dialog-subhead">{{ subheading }}</p>
+        <form class="lp-dialog-form" novalidate data-lp-dialog-form data-endpoint="{{ endpoint }}" data-content-url="{{ content_url }}" data-simulate-api="{{ simulate_api }}">
+          <input type="hidden" name="email" data-lp-dialog-email>
+          <div class="lp-form-group">
+            <label for="{{ dialog_id }}-name">Full name</label>
+            <input type="text" id="{{ dialog_id }}-name" name="full_name" placeholder="Jordan Rivera" autocomplete="name" required>
+          </div>
+          <div class="lp-form-group">
+            <label for="{{ dialog_id }}-linkedin">LinkedIn URL</label>
+            <input type="url" id="{{ dialog_id }}-linkedin" name="linkedin_url" placeholder="https://www.linkedin.com/in/yourprofile" inputmode="url" required>
+          </div>
+          <div class="lp-form-group lp-hidden-field">
+            <label for="{{ dialog_id }}-confirm" class="sr-only">Leave this field blank</label>
+            <input type="text" id="{{ dialog_id }}-confirm" name="confirm_email" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="lp-form-message" role="status" aria-live="polite"></div>
+          <button type="submit" class="lp-dialog-submit">{{ submit_label }}</button>
+          <p class="lp-dialog-note">We’ll use this to tailor what we send and share the download link instantly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
