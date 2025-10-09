@@ -5,6 +5,9 @@ collections:
     output: true
     permalink: /landing/:title/
 
+exclude:
+  - lambda
+
 defaults:
   - scope:
       path: ""
