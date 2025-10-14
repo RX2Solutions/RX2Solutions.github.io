@@ -1,1 +1,7 @@
 _site/
+.DS_Store
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+lambda/**/node_modules/

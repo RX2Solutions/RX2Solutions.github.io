@@ -1,115 +1,203 @@
-# Infrastructure Capture and Redeployment Guide
+# Infrastructure Capture & Redeployment Guide
 
-This guide walks through capturing the existing AWS API Gateway and Lambda configuration so you can version it alongside the site and redeploy it reproducibly.
+These instructions walk you through pulling your existing AWS Lambda + API Gateway stack into Terraform so it lives beside the site and can be redeployed without console clicks.
+
+---
 
 ## Prerequisites
-- AWS CLI v2 configured with an IAM user/role that can read and update API Gateway, Lambda, IAM, and CloudWatch Logs.
-- Terraform (>= 1.5) or AWS SAM/CloudFormation CLI if you prefer. This document focuses on Terraform because it can import existing resources easily.
-- jq (optional) for prettifying JSON output during discovery.
+- **AWS CLI v2** authenticated as a user/role that can manage Lambda, API Gateway, IAM, CloudWatch Logs, S3, and DynamoDB.
+- **Terraform ≥ 1.5** installed locally (`terraform -v` to verify).
+- **jq** (optional) for formatting JSON during discovery.
 
-## Directory layout
+> Terminology: anything shown as `<placeholder>` means “replace the whole thing (including the brackets) with your real value.”
+
+---
+
+## Directory Layout
 ```
 lambda/
   infrastructure/
-    main.tf          # Terraform configuration (to be committed)
-    variables.tf     # Optional variables file
-    terraform.tfvars # Workspace-specific values, keep out of version control
+    main.tf          # Terraform configuration (checked in)
+    variables.tf     # Input variables (checked in)
+    terraform.tfvars # Your local values (keep out of git)
     README.md        # This file
 ```
 
-## Step 1 – Create a Terraform skeleton
-1. Initialise the Terraform working directory:
-   ```bash
-   cd lambda/infrastructure
-   terraform init
-   ```
-2. Create a minimal `main.tf` describing the AWS provider and backend (S3/DynamoDB recommended for state). Example:
-   ```hcl
-   terraform {
-     required_version = ">= 1.5"
-     required_providers {
-       aws = {
-         source  = "hashicorp/aws"
-         version = "~> 5.0"
-       }
-     }
-     backend "s3" {}
-   }
+---
 
-   provider "aws" {
-     region = var.aws_region
-   }
-   ```
-3. Define `variables.tf` with `aws_region` and any naming prefixes.
+## Step 1 – Prepare Remote State (recommended)
+Terraform needs a place to store its state file. You can keep it local, but S3 + DynamoDB gives you locking and history.
 
-## Step 2 – Import existing Lambda functions
-For each Lambda function you have (e.g., `contact`), run:
 ```bash
-terraform import aws_lambda_function.contact <function-name>
+# 1. Pick a globally unique bucket name
+STATE_BUCKET="rx2solutions-terraform-state-prod"
+STATE_REGION="us-east-1"
+LOCK_TABLE="terraform-locks"
+
+# 2. Create the S3 bucket (omit LocationConstraint for us-east-1)
+aws s3api create-bucket \
+  --bucket "$STATE_BUCKET" \
+  --region "$STATE_REGION"
+
+# 3. Enable bucket versioning so you can recover older states
+aws s3api put-bucket-versioning \
+  --bucket "$STATE_BUCKET" \
+  --versioning-configuration Status=Enabled
+
+# 4. Create the DynamoDB lock table
+aws dynamodb create-table \
+  --table-name "$LOCK_TABLE" \
+  --attribute-definitions AttributeName=LockID,AttributeType=S \
+  --key-schema AttributeName=LockID,KeyType=HASH \
+  --billing-mode PAY_PER_REQUEST
 ```
-Terraform will create a stub in your state. Run `terraform plan` to have Terraform show the attributes it discovered. Copy the displayed block into `main.tf`, removing read-only attributes (ARNs, timestamps). Repeat for each function. Remember to:
-- Capture `filename`/`s3_bucket` references for the deployment package.
-- Add `environment` blocks for variables.
-- Reference IAM roles via separate `aws_iam_role` resources (import them similarly).
 
-> Tip: Store Lambda source code in the appropriate subdirectory (e.g., `lambda/contact/`) and point Terraform at a zipped artifact created by a build script.
+Update `main.tf` with the backend details (replace placeholders with the actual values you chose):
 
-## Step 3 – Import the API Gateway
-1. Export the current HTTP API or REST API definition:
+```hcl
+terraform {
+  backend "s3" {
+    bucket         = "rx2solutions-terraform-state-prod"
+    key            = "lambda/infrastructure/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+    encrypt        = true
+  }
+}
+```
+
+> Need to move fast? Use `backend "local" {}` for now, then switch to S3 later.
+
+---
+
+## Step 2 – Configure Variables
+`variables.tf` already defines:
+
+- `aws_region`
+- `environment`
+- `project_prefix`
+- `default_tags`
+
+Create a local `terraform.tfvars` (never commit it) with the values you use most:
+
+```hcl
+aws_region     = "us-east-1"
+environment    = "prod"
+project_prefix = "rx2"
+default_tags = {
+  Project   = "RX2 Solutions"
+  ManagedBy = "terraform"
+}
+```
+
+---
+
+## Step 3 – Initialise & Validate Terraform
+```bash
+cd lambda/infrastructure
+terraform init     # Downloads providers + connects to remote state
+terraform fmt      # Optional: keeps files tidy
+terraform validate # Confirms the syntax is sound
+```
+
+If `init` complains about the backend, double-check the section above or temporarily switch to the local backend.
+
+---
+
+## Step 4 – Import Existing Lambda Functions
+
+1. **Create a stub resource** in `main.tf` for each Lambda you plan to import. The block can be empty to start, but the name inside Terraform must be lowercase with underscores. Example:
+   ```hcl
+   resource "aws_lambda_function" "rx2_submit_contact_form" {}
+   ```
+
+2. **Import the function** by replacing the placeholders with your resource names. In zsh (and bash) brackets are interpreted, so type the real name with no `<` or `>`:
    ```bash
+   terraform import \
+     aws_lambda_function.rx2_submit_contact_form \
+     rx2SubmitContactForm
+   ```
+   - `aws_lambda_function.rx2_submit_contact_form` → the resource address from step 1.
+   - `rx2SubmitContactForm` → the exact Lambda function name in AWS.
+   - Quoting the second argument is fine if your function name has spaces (rare): `"My Function"`.
+
+3. **Inspect what was imported**:
+   ```bash
+   terraform state show aws_lambda_function.rx2_submit_contact_form
+   ```
+   Copy the attributes Terraform displays into your `main.tf`, removing read-only fields (ARNs, timestamps, `last_modified`, etc.). Once the block matches reality, future `plan` runs will be clean.
+
+4. **Repeat** for every Lambda. Resource names must be unique per file, so use predictable suffixes (e.g., `_handler`, `_processor`).
+
+---
+
+## Step 5 – Import API Gateway Resources
+
+1. **Discover your APIs**:
+   ```bash
+   aws apigateway get-rest-apis           # For REST (v1)
+   aws apigatewayv2 get-apis              # For HTTP/WebSocket (v2)
+   ```
+
+2. **Export the definition** (choose the command that matches your API type):
+   ```bash
+   # REST API (v1)
    aws apigateway get-export \
      --parameters extensions='integrations' \
-     --rest-api-id <api-id> \
-     --stage-name <stage> \
+     --rest-api-id a1b2c3d4 \
+     --stage-name prod \
      --export-type oas30 \
      api-gateway-export.json
+
+   # HTTP API (v2)
+   aws apigatewayv2 get-api --api-id a1b2c3d4 > api-gateway-v2.json
+   aws apigatewayv2 get-integrations --api-id a1b2c3d4 | jq '.' > api-gateway-v2-integrations.json
    ```
-   or, for API Gateway v2 (HTTP/ WebSocket):
+
+3. **Add Terraform resources** using either:
+   - A single `aws_api_gateway_rest_api` block that loads the OpenAPI file, or
+   - Individual resources (`aws_api_gateway_resource`, `aws_api_gateway_method`, etc.) if you prefer to model them manually.
+
+4. **Import each resource** with the IDs from AWS:
    ```bash
-   aws apigatewayv2 get-apis
-   aws apigatewayv2 get-api --api-id <api-id> > api-gateway-v2.json
-   aws apigatewayv2 get-integrations --api-id <api-id> | jq '.' > api-gateway-v2-integrations.json
+   terraform import aws_api_gateway_rest_api.primary a1b2c3d4
+   terraform import aws_api_gateway_stage.prod        a1b2c3d4/prod
    ```
-2. Convert the exported OpenAPI spec into Terraform resources. You can either:
-   - Use `aws_api_gateway_rest_api` with the `body` attribute pointing to the exported spec file, or
-   - Model resources/methods individually. The spec-backed approach is faster for existing APIs.
-3. Import the API and stages:
-   ```bash
-   terraform import aws_api_gateway_rest_api.primary <api-id>
-   terraform import aws_api_gateway_stage.prod <api-id>/<stage-name>
-   ```
-4. Import any `aws_api_gateway_deployment`, `aws_api_gateway_integration`, or `aws_lambda_permission` resources required so Terraform manages them going forward.
 
-## Step 4 – Capture IAM and supporting resources
-- Import IAM roles, policies, and CloudWatch log groups used by the Lambdas.
-- Document secrets or parameter values stored in SSM Parameter Store/Secrets Manager (never commit secrets; reference them via Terraform data sources).
+5. **Bring in supporting pieces** (`aws_api_gateway_deployment`, `aws_api_gateway_integration`, `aws_lambda_permission`, etc.) the same way: create a stub, run `terraform import`, then copy the arguments that Terraform discovered.
 
-## Step 5 – Document deployment workflow
-Create a `DEPLOY.md` (example below) describing how to:
-1. Package Lambda code (e.g., `zip -r ../artifacts/contact.zip .`).
-2. Upload artifacts (S3 bucket or direct file reference).
-3. Run `terraform plan` and `terraform apply` to deploy infrastructure.
-4. Update API Gateway stages (if necessary).
+---
 
-## Step 6 – Version control and automation
-- Commit Terraform configuration files and this documentation.
-- Exclude `terraform.tfstate` and `.terraform/` directories via `.gitignore`.
-- Optionally configure a CI workflow to run `terraform validate` and `terraform plan` on pull requests.
+## Step 6 – Capture IAM, Logs, and Other Dependencies
+- **IAM Roles/Policies**: import any execution roles and inline policies the Lambdas reference.
+- **CloudWatch Log Groups**: import existing `/aws/lambda/<function-name>` groups.
+- **Secrets/Parameters**: document SSM Parameter Store or Secrets Manager entries and reference them via Terraform data sources (never commit actual secrets).
 
-## Appendix – Quick reference commands
+---
+
+## Step 7 – Document How to Deploy
+Create `lambda/infrastructure/DEPLOY.md` with:
+1. Commands to build and zip each Lambda (`zip -r ../artifacts/contact.zip .`).
+2. How artifacts get to S3 (if applicable).
+3. The Terraform workflow (`terraform plan`, review, then `terraform apply`).
+4. Post-deploy verification steps (e.g., hit healthcheck endpoints, tail logs).
+
+---
+
+## Appendix – Quick Reference
 ```bash
 # List Lambda functions
 aws lambda list-functions
 
-# Show a specific function's configuration
-aws lambda get-function-configuration --function-name <function-name>
+# Show configuration for one function
+aws lambda get-function-configuration --function-name rx2SubmitContactForm
 
-# Tail logs
-aws logs tail /aws/lambda/<function-name> --since 1h --follow
+# Tail Lambda logs (Ctrl+C to stop)
+aws logs tail /aws/lambda/rx2SubmitContactForm --since 1h --follow
 
-# Package Lambda (example for Node.js)
+# Package a Node.js Lambda (run from the function directory)
 npm install
-zip -r ../artifacts/contact.zip . -x "*.git*"
+zip -r ../artifacts/rx2SubmitContactForm.zip . -x "*.git*"
 ```
 
-By keeping both the infrastructure code and deployment notes in this directory, you can rebuild the API Gateway and Lambda stack without manual console work.
+Keep iterating on the Terraform files until `terraform plan` reports “No changes.” That’s your signal that the configuration accurately represents what’s running in AWS. Once you reach that baseline, future changes can be made safely through code.
