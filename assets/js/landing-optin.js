@@ -131,12 +131,21 @@
 
     const formData = new FormData(form);
     formData.append('submission_stage', 'opt_in');
+    if (form.dataset && form.dataset.pageName) {
+      formData.set('page_name', form.dataset.pageName);
+    }
+    if (form.dataset && form.dataset.contentUrl) {
+      formData.set('content_url', form.dataset.contentUrl);
+    }
+
+    const payload = formDataToJson(formData);
 
     fetch(endpoint, {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify(payload),
       headers: {
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
       },
       redirect: 'follow',
       credentials: 'omit'
@@ -210,17 +219,24 @@
     formData.append('submission_stage', 'profile_completion');
 
     if (activeForm && activeForm.dataset.pageName) {
-      formData.append('page_name', activeForm.dataset.pageName);
+      formData.set('page_name', activeForm.dataset.pageName);
+    }
+
+    if (dialogForm.dataset && dialogForm.dataset.contentUrl) {
+      formData.set('content_url', dialogForm.dataset.contentUrl);
     }
 
     setMessage(dialogMessage, '');
     setLoading(dialogForm, true, 'Saving...');
 
+    const payload = formDataToJson(formData);
+
     fetch(endpoint, {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify(payload),
       headers: {
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
       },
       redirect: 'follow',
       credentials: 'omit'
@@ -466,5 +482,29 @@
     window.setTimeout(function () {
       closeDialog();
     }, 1600);
+  }
+
+  function formDataToJson(formData) {
+    const payload = {};
+    if (!formData) {
+      return payload;
+    }
+    formData.forEach(function (value, key) {
+      if (typeof File !== 'undefined' && value instanceof File) {
+        return;
+      }
+      const stringValue = typeof value === 'string' ? value : (value != null ? value.toString() : '');
+      if (Object.prototype.hasOwnProperty.call(payload, key)) {
+        const current = payload[key];
+        if (Array.isArray(current)) {
+          current.push(stringValue);
+        } else {
+          payload[key] = [current, stringValue];
+        }
+      } else {
+        payload[key] = stringValue;
+      }
+    });
+    return payload;
   }
 })();

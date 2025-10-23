@@ -24,6 +24,7 @@ defaults:
       type: "landing_pages"
     values:
       layout: "landing"
+      api_endpoint: "{{ site.landing_opt_in_endpoint }}"
       sticky_cta_label: "Get the Hiring Playbook"
       offer_download_title: "Level Up Your Talent Strategy"
       offer_asset_highlight: "Includes editable frameworks and scorecards ready for your team."
@@ -35,3 +36,4 @@ defaults:
 future: false
 
 logo: /assets/images/RX2+Solutions-01+grey+text+added+2.png
+landing_opt_in_endpoint: https://your-api-id.execute-api.us-east-1.amazonaws.com/landingOptIn

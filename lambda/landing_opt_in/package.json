@@ -1,0 +1,16 @@
+{
+  "name": "@rx2solutions/landing-opt-in",
+  "version": "0.1.0",
+  "description": "Lambda handler that orchestrates RX2 landing page opt-in submissions.",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "package": "npm install --omit=dev && zip -r ../artifacts/rx2LandingOptIn.zip . -x \"../artifacts/*\" \"package-lock.json\" \".npmignore\" \".DS_Store\""
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.609.0",
+    "@aws-sdk/client-ssm": "^3.609.0",
+    "@aws-sdk/lib-dynamodb": "^3.609.0",
+    "@notionhq/client": "^2.2.15"
+  }
+}
