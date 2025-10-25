@@ -30,10 +30,14 @@ variable "default_tags" {
   }
 }
 
-variable "landing_opt_in_allowed_origin" {
-  type        = string
-  description = "Allowed CORS origin for landing opt-in submissions."
-  default     = "https://rx2solutions.com"
+variable "landing_opt_in_allowed_origins" {
+  type        = list(string)
+  description = "List of allowed CORS origins for landing opt-in submissions."
+  default = [
+    "https://rx2solutions.com",
+    "https://www.rx2solutions.com",
+    "http://localhost:4000",
+  ]
 }
 
 variable "landing_opt_in_table_name" {
@@ -57,6 +61,7 @@ variable "notion_api_key_parameter_name" {
 variable "notion_database_id" {
   type        = string
   description = "Notion database ID that stores landing opt-in submissions."
+  default     = "297fc5bb792a805396ebe1b7c78e85a9"
 }
 
 variable "notion_email_property" {

@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.mjs",
   "scripts": {
-    "package": "npm install --omit=dev && zip -r ../artifacts/rx2LandingOptIn.zip . -x \"../artifacts/*\" \"package-lock.json\" \".npmignore\" \".DS_Store\""
+    "package": "npm install --omit=dev && zip -rq ../artifacts/rx2LandingOptIn.zip . -x \"../artifacts/*\" \"package-lock.json\" \".npmignore\" \".DS_Store\""
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.609.0",

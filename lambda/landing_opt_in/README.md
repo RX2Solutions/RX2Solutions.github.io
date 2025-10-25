@@ -15,7 +15,7 @@ The Terraform module injects the required variables; below is the canonical list
 | Variable | Purpose |
 | --- | --- |
 | `DYNAMO_TABLE_NAME` | Target table for persisting submissions. |
-| `ALLOWED_ORIGIN` | Domain allowed for CORS replies (defaults to `https://rx2solutions.com`). |
+| `ALLOWED_ORIGINS` | Comma-separated list of domains allowed for CORS replies (defaults to `https://rx2solutions.com,https://www.rx2solutions.com,http://localhost:4000`). |
 | `NOTION_API_KEY_PARAMETER` | SSM parameter name that stores the Notion integration secret. |
 | `NOTION_DATABASE_ID` | Destination Notion database ID. |
 | `NOTION_TITLE_PROPERTY` | Notion title property (e.g. `Name`). |
@@ -49,11 +49,11 @@ You can invoke the handler with an AWS-style event JSON. Example (fake values â€
 ```bash
 AWS_REGION=us-east-1 \
 DYNAMO_TABLE_NAME=rx2LandingOptIn \
-ALLOWED_ORIGIN=http://localhost:4000 \
+ALLOWED_ORIGINS="http://localhost:4000,https://rx2solutions.com" \
 NOTION_API_KEY_PARAMETER=/rx2/landing/notion/api_key \
 NOTION_DATABASE_ID=<notion-db-id> \
 node --loader ts-node/esm \
-  -e 'import("./src/index.mjs").then(({ handler }) => handler({ requestContext: { http: { method: "POST" } }, body: JSON.stringify({ email: "optin@example.com", submission_stage: "opt_in" }) })).then(console.log)'
+  -e 'import("./src/index.mjs").then(({ handler }) => handler({ requestContext: { http: { method: "POST" }, headers: { origin: "http://localhost:4000" } }, body: JSON.stringify({ email: "optin@example.com", submission_stage: "opt_in" }) })).then(console.log)'
 ```
 
 For more realistic end-to-end verification, deploy with Terraform and hit the HTTP API using `curl` or the landing page UI.

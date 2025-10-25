@@ -14,6 +14,7 @@
     {% assign dialog_heading = page.dialog_heading | default: "Let's finish your profile" %}
     {% assign dialog_subheading = page.dialog_subheading | default: 'Add a couple of details so we can deliver the frameworks and supporting resources.' %}
     {% assign dialog_submit_label = page.dialog_submit_label | default: 'Access the Frameworks' %}
+    {% assign landing_endpoint = page.api_endpoint | default: site.landing_opt_in_endpoint %}
     <div class="lp-wrapper">
       <header class="lp-hero">
         <div class="container">
@@ -36,7 +37,7 @@
               {% endif %}
             </div>
             <div class="lp-hero-form">
-              {% include landing/form.html id="lp-optin-top" endpoint=page.api_endpoint heading=page.offer_download_title asset=page.offer_asset_highlight submit_label=top_submit_label %}
+              {% include landing/form.html id="lp-optin-top" endpoint=landing_endpoint heading=page.offer_download_title asset=page.offer_asset_highlight submit_label=top_submit_label %}
             </div>
           </div>
         </div>
@@ -90,12 +91,12 @@
 
       <footer class="lp-footer">
         <div class="container">
-          {% include landing/form.html id="lp-optin-bottom" endpoint=page.api_endpoint heading=footer_heading asset=footer_asset submit_label=bottom_submit_label %}
+          {% include landing/form.html id="lp-optin-bottom" endpoint=landing_endpoint heading=footer_heading asset=footer_asset submit_label=bottom_submit_label %}
           <p class="lp-consent">{{ page.consent_copy | default: 'We send practical hiring insights once a week. Unsubscribe anytime.' }}</p>
         </div>
       </footer>
     </div>
-    {% include landing/profile-dialog.html id="lp-profile-dialog" endpoint=page.api_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label %}
+    {% include landing/profile-dialog.html id="lp-profile-dialog" endpoint=landing_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label %}
     <script src="{{ '/assets/js/landing-optin.js' | relative_url }}"></script>
   </body>
 </html>

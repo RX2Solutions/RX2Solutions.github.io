@@ -36,7 +36,7 @@ resource "aws_lambda_function" "rx2_submit_contact_form" {
   filename         = "${path.module}/../artifacts/rx2SubmitContactForm.zip"
   source_code_hash = filebase64sha256("${path.module}/../artifacts/rx2SubmitContactForm.zip")
   function_name    = "rx2SubmitContactForm"
-  handler          = "index.handler"
+  handler          = "src/index.handler"
   memory_size      = 128
   package_type     = "Zip"
   role             = "arn:aws:iam::642038304273:role/rx2LambdaContactFormRole"
@@ -186,7 +186,7 @@ resource "aws_lambda_function" "landing_opt_in" {
   filename         = "${path.module}/../artifacts/rx2LandingOptIn.zip"
   source_code_hash = filebase64sha256("${path.module}/../artifacts/rx2LandingOptIn.zip")
   function_name    = "${var.project_prefix}LandingOptIn"
-  handler          = "index.handler"
+  handler          = "src/index.handler"
   memory_size      = 256
   package_type     = "Zip"
   role             = aws_iam_role.landing_opt_in.arn
@@ -195,7 +195,7 @@ resource "aws_lambda_function" "landing_opt_in" {
 
   environment {
     variables = {
-      ALLOWED_ORIGIN                = var.landing_opt_in_allowed_origin
+      ALLOWED_ORIGINS               = join(",", var.landing_opt_in_allowed_origins)
       DYNAMO_TABLE_NAME             = aws_dynamodb_table.landing_opt_in.name
       NOTION_API_KEY_PARAMETER      = var.notion_api_key_parameter_name
       NOTION_DATABASE_ID            = var.notion_database_id

@@ -4,7 +4,7 @@ import { SSMClient, GetParameterCommand } from "@aws-sdk/client-ssm";
 import { Client as NotionClient } from "@notionhq/client";
 
 const tableName = process.env.DYNAMO_TABLE_NAME;
-const allowedOrigin = process.env.ALLOWED_ORIGIN || "*";
+const allowedOrigins = parseAllowedOrigins(process.env.ALLOWED_ORIGINS || process.env.ALLOWED_ORIGIN || "*");
 const notionDatabaseId = process.env.NOTION_DATABASE_ID;
 const emailProperty = process.env.NOTION_EMAIL_PROPERTY;
 const nameProperty = process.env.NOTION_NAME_PROPERTY;
@@ -30,13 +30,14 @@ const STAGE_PROFILE_COMPLETION = "profile_completion";
 
 export const handler = async (event) => {
   const method = event?.requestContext?.http?.method || event?.httpMethod || "GET";
+  const requestOrigin = getRequestOrigin(event?.headers);
 
   if (method === "OPTIONS") {
-    return buildResponse(200, null, { allowCredentials: false });
+    return buildResponse(200, null, { allowCredentials: false }, requestOrigin);
   }
 
   if (method !== "POST") {
-    return buildResponse(405, { error: "Method Not Allowed" });
+    return buildResponse(405, { error: "Method Not Allowed" }, {}, requestOrigin);
   }
 
   try {
@@ -46,12 +47,12 @@ export const handler = async (event) => {
     const submissionStage = normaliseStage(payload.submission_stage);
 
     if (payload.confirm_email && payload.confirm_email.trim().length > 0) {
-      return buildResponse(204, null);
+      return buildResponse(204, null, {}, requestOrigin);
     }
 
     const email = normaliseEmail(payload.email);
     if (!email) {
-      return buildResponse(400, { error: "A valid email address is required." });
+      return buildResponse(400, { error: "A valid email address is required." }, {}, requestOrigin);
     }
 
     const pageName = normaliseText(payload.page_name, 128);
@@ -83,18 +84,18 @@ export const handler = async (event) => {
 
       return buildResponse(200, {
         message: "You're on the list. Check your inbox for the download link shortly.",
-      });
+      }, {}, requestOrigin);
     }
 
     const fullName = normaliseText(payload.full_name, 128);
     const linkedinUrl = normaliseLinkedInUrl(payload.linkedin_url);
 
     if (!fullName) {
-      return buildResponse(400, { error: "Full name is required to unlock the download." });
+      return buildResponse(400, { error: "Full name is required to unlock the download." }, {}, requestOrigin);
     }
 
     if (!linkedinUrl) {
-      return buildResponse(400, { error: "Please provide a valid LinkedIn profile URL." });
+      return buildResponse(400, { error: "Please provide a valid LinkedIn profile URL." }, {}, requestOrigin);
     }
 
     const record = await updateSubscriberRecord({
@@ -132,7 +133,7 @@ export const handler = async (event) => {
       responsePayload.redirectUrl = contentUrl;
     }
 
-    return buildResponse(200, responsePayload);
+    return buildResponse(200, responsePayload, {}, requestOrigin);
   } catch (error) {
     console.error("Landing opt-in handler failure", {
       message: error?.message,
@@ -141,19 +142,21 @@ export const handler = async (event) => {
 
     return buildResponse(500, {
       error: "We could not save your submission. Please try again in a few minutes.",
-    });
+    }, {}, requestOrigin);
   }
 };
 
-function buildResponse(statusCode, body, options = {}) {
+function buildResponse(statusCode, body, options = {}, requestOrigin = "") {
   const headers = {
-    "Access-Control-Allow-Origin": allowedOrigin,
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, Authorization",
     "Access-Control-Max-Age": "86400",
   };
 
-  if (options.allowCredentials) {
+  const resolvedOrigin = resolveAllowedOrigin(requestOrigin);
+  headers["Access-Control-Allow-Origin"] = resolvedOrigin;
+
+  if (options.allowCredentials && resolvedOrigin !== "*") {
     headers["Access-Control-Allow-Credentials"] = "true";
   }
 
@@ -170,6 +173,48 @@ function buildResponse(statusCode, body, options = {}) {
   };
 }
 
+function parseAllowedOrigins(rawOrigins) {
+  if (!rawOrigins) {
+    return ["*"];
+  }
+  return rawOrigins
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter((origin) => origin.length > 0);
+}
+
+function getRequestOrigin(headers) {
+  const originHeader = pickHeader(headers, "origin");
+  if (originHeader) {
+    return originHeader;
+  }
+  const refererHeader = pickHeader(headers, "referer");
+  if (!refererHeader) {
+    return "";
+  }
+  try {
+    return new URL(refererHeader).origin;
+  } catch (error) {
+    return "";
+  }
+}
+
+function resolveAllowedOrigin(requestOrigin) {
+  if (!allowedOrigins.length) {
+    return "*";
+  }
+  if (allowedOrigins.includes("*")) {
+    return "*";
+  }
+  if (requestOrigin) {
+    const match = allowedOrigins.find((origin) => origin.toLowerCase() === requestOrigin.toLowerCase());
+    if (match) {
+      return match;
+    }
+  }
+  return allowedOrigins[0];
+}
+
 async function parseEventBody(event) {
   if (!event || typeof event !== "object") {
     return {};
@@ -183,7 +228,7 @@ async function parseEventBody(event) {
     ? Buffer.from(event.body, "base64").toString("utf8")
     : event.body;
 
-  const contentType = pickHeader(event.headers, "content-type");
+  const contentType = pickHeader(event.headers, "content-type").toLowerCase();
 
   if (contentType && contentType.includes("application/json")) {
     return JSON.parse(rawBody);
@@ -212,7 +257,7 @@ function pickHeader(headers, headerName) {
   const target = headerName.toLowerCase();
   for (const [key, value] of Object.entries(headers)) {
     if (key && key.toLowerCase() === target) {
-      return typeof value === "string" ? value.toLowerCase() : "";
+      return typeof value === "string" ? value : "";
     }
   }
   return "";
