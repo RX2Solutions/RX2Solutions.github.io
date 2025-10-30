@@ -18,8 +18,7 @@ simulate_api: false
 testimonials:
   - quote: " Highly recommend RX2 Solutions! Professional and great to work with, they offered valuable insights regarding job-hunting strategy and placed me into a position I love. Good to have in your corner!"
     name: Jim G., Project Manager
-  - quote: "RX2 Solutions is very helpful, advising on being in transition and job hunting strategies for my daughter. I recommend them 
-                                    to anyone seeking recruitment services."
+  - quote: "RX2 Solutions is very helpful, advising on being in transition and job hunting strategies for my daughter. I recommend them to anyone seeking recruitment services."
     name: Paul M., Sports App Founder
 sections:
   - type: content
