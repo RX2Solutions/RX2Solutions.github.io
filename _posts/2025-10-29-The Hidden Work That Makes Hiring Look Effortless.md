@@ -166,8 +166,6 @@ Because in the end, that’s what defines a **Respectfully Professional** partne
 
 ---
 
----
-
 ## Contact RX2 Solutions
 
 - 📞 **Phone:** 610.340.3490
