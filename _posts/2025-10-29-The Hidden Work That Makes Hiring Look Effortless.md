@@ -7,7 +7,7 @@ tags:
   - Recruitment Best Practices
   - HR Leadership
   - Executive Search
-thumbnail: Tech Process.jpeg
+thumbnail: Process.jpeg
 excerpt_separator: <!--more-->
 ---
 
