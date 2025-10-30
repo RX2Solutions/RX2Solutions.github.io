@@ -13,7 +13,7 @@ sections:
       <br /><br />
       With a BA in History, an MBA in Organizational Leadership, and certification as a Scrum Master, he bridges the space where business meets possibility.
       <br /><br />
-      When he steps away from work, he focuses on what fuels him most: family, the ocean, and behind the wheel chasing speed and clarity.
+      When he steps away from work, he focuses on what fuels him most; family, the ocean, and behind the wheel chasing speed and clarity.
   - name: Ross Rosner
     jobtitle: Managing Partner / Cofounder
     linkedin: https://www.linkedin.com/in/ross-rosner-mba-ba26377
