@@ -25,7 +25,7 @@ sections:
     heading: Your Career, Elevated.
     body: >-
       You’ve done the hard work. Let’s make sure it shows. Download the RX2 Interview Prep Guide today and walk into your next conversation prepared, confident, and authentically you.
-    image: "/assets/images/5 Ways to Optimize Your Hiring Process - 43.jpeg"
+    image: "/assets/images/assets/images/Alignment.jpeg"
     image_alt: Recruiters reviewing a hiring scorecard during a workshop
     image_position: right
     image_caption: The Talent Decision Grid keeps every interviewer aligned on outcomes, not gut feel.
