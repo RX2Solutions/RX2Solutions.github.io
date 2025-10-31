@@ -28,7 +28,7 @@ sections:
     image: "/assets/images/HR1.jpeg"
     image_alt: Recruiters reviewing a hiring scorecard during a workshop
     image_position: right
-    image_caption: Interviews aren’t about guessing, they’re about alignment. The RX2 Interview Prep Guide helps you connect the right pieces: preparation, presence, and purpose.
+    image_caption: Interviews aren’t about guessing, they’re about alignment. The RX2 Interview Prep Guide helps you connect the right pieces - preparation, presence, and purpose.
   - type: checklist
     heading: Why It Works
     body: >-
