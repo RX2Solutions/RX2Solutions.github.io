@@ -25,10 +25,10 @@ sections:
     heading: Your Career, Elevated.
     body: >-
       You’ve done the hard work. Let’s make sure it shows. Download the RX2 Interview Prep Guide today and walk into your next conversation prepared, confident, and authentically you.
-    image: "/assets/images/assets/images/HR1.jpeg"
+    image: "/assets/images/HR1.jpeg"
     image_alt: Recruiters reviewing a hiring scorecard during a workshop
     image_position: right
-    image_caption: The Talent Decision Grid keeps every interviewer aligned on outcomes, not gut feel.
+    image_caption: Interviews aren’t about guessing, they’re about alignment. The RX2 Interview Prep Guide helps you connect the right pieces: preparation, presence, and purpose.
   - type: checklist
     heading: Why It Works
     body: >-
@@ -42,7 +42,7 @@ sections:
     image: "/assets/images/Strat Staffing.jpeg"
     image_alt: Recruiter leading a whiteboard session on pipeline health
     image_position: left
-    image_caption: Use the funnel check to spotlight where momentum stalls before requisitions go cold.
+    image_caption: Connecting people, priorities, and potential — one interview at a time.
   - type: content
     heading: About RX2 Solutions
     body: >-
