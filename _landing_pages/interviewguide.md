@@ -50,22 +50,22 @@ sections:
 faq:
   - question: "What's inside the PDF?"
     answer: >-
-      Three customizable frameworks, facilitator instructions, and fill-in-the-blank reporting slides you can reuse with any business unit.
+      Practical frameworks, question strategies, and prep checklists designed to help you approach every interview with confidence. Inside, you’ll find guidance on research, communication, body language, and the closing conversation that leaves a lasting impression.
   - question: "Who should download this?"
     answer: >-
-      HR, Talent Acquisition, and People Ops leaders who need leverage across multiple business units and want sharper hiring analytics.
+      Professionals preparing for interviews at any level—especially those looking to sharpen their communication, structure their answers, and stand out for the right reasons. Whether you’re re-entering the market or advancing your career, this guide was built for you.
   - question: "How quickly will I get it?"
     answer: >-
-      You'll receive the PDF instantly by email plus a five-day mini-course to help you implement with your team.
+      You’ll receive the guide within 24 hours after signing up, ready to read, apply, and revisit before your next interview.
 consent_copy: We send actionable hiring insights once a week. Unsubscribe anytime.
 ---
-Our readers walk into interviews sharper, calmer, and more confident, ready to turn conversation into opportunity. This guide distills the same preparation frameworks we use with top professionals across technology, engineering, and professional services.
+Our readers walk into interviews sharper, calmer, and more confident—ready to turn conversation into opportunity. This guide distills the same preparation frameworks we use with top professionals across technology, engineering, and professional services.
 
 Inside the full guide, you’ll find:
 
-- - The Interview Roadmap we coach every candidate through.
-- - A STAR-based framework that makes your experience easy to explain.
-- - The five fastest ways to get rejected—and how to avoid them.
-- - Real-world examples of smart questions that make lasting impressions
+- The Interview Roadmap we coach every candidate through  
+- A STAR-based framework that makes your experience easy to explain  
+- The five fastest ways to get rejected—and how to avoid them  
+- Real-world examples of smart questions that make lasting impressions  
 
 Want a quick win? Start with “How to Answer Questions.” It’s a 10-minute reset that can completely change how you present your experience.
