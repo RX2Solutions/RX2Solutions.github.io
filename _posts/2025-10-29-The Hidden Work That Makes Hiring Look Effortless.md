@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Smarter Technical Teams - The New Standard for Staffing Partnerships
+title: The Hidden Work That Makes Hiring Look Effortless
 author: rx2solutions
 tags:
   - publication
