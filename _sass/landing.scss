@@ -240,6 +240,32 @@
   margin-bottom: 2.75rem;
 }
 
+.lp-intro ul {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.lp-intro li {
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #231f1b;
+}
+
+.lp-intro li::before {
+  content: '';
+  position: absolute;
+  left: 0.7rem;
+  top: 0.45rem;
+  width: 0.55rem;
+  height: 0.95rem;
+  border: solid #d06f2d;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
 .lp-section-grid {
   display: flex;
   flex-direction: column;
