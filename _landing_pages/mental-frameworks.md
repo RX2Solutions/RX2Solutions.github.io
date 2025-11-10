@@ -1,6 +1,7 @@
 ---
 title: 7 Mental Frameworks Every Talent Leader Needs
 description: Transform how your team recruits, closes, and retains high-impact hires with tools built from 500+ enterprise searches.
+colorway: sage
 hero_eyebrow: Playbook for HR Leaders
 hero_heading: Rethink Talent Velocity
 hero_subheading: A field-tested guide to help HR leaders move faster without sacrificing candidate quality.

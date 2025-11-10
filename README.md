@@ -5,6 +5,27 @@ RX2 Solutions website — GitHub Pages + Jekyll.
 - Local build: `bundle exec jekyll build`.
 - Note: GitHub Pages pins gem versions; use the `github-pages` gem for local parity.
 
+## Landing Page Colorways
+
+Landing pages (`_landing_pages/*` rendered with `_layouts/landing.html`) now support six curated colorways. Set `colorway` in the page front matter to swap palettes; omit it to use the default `cream`.
+
+Available options:
+1. `cream` – current beige/amber palette.
+2. `sage` – soft green base with gold CTAs.
+3. `dusk` – muted indigo with warm accent buttons.
+4. `slate` – cool gray-blue with bold cobalt accents.
+5. `ember` – warm terracotta with saffron CTAs.
+6. `ocean` – airy teal with sunshine button highlights.
+
+Example:
+
+```yaml
+---
+title: Example Landing Page
+colorway: sage
+---
+```
+
 ## Manual Blog Pagination (Important)
 
 This site intentionally avoids non-whitelisted plugins so it builds on GitHub Pages without Actions. As a result, blog pagination is implemented manually in `_includes/blog.html` and by maintaining numbered index pages for each tag we display:
