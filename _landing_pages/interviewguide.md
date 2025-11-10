@@ -60,7 +60,7 @@ faq:
 consent_copy: We send actionable hiring insights once a week. Unsubscribe anytime.
 
 ---
-Our readers walk into interviews sharper, calmer, more confident, and ready to turn conversation into opportunity. This guide distills the same preparation frameworks we use with top professionals across technology, engineering, and professional services.
+**Our readers walk into interviews sharper, calmer, more confident, and ready to turn conversation into opportunity. This guide distills the same preparation frameworks we use with top professionals across technology, engineering, and professional services.**
 
 - The Interview Roadmap we coach every candidate through
 - A STAR-based framework that makes your experience easy to explain
