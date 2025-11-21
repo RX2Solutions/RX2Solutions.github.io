@@ -44,7 +44,7 @@ sections:
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
-  faq:
+faq:
   - question: What's inside the PDF?
     answer: >-
       A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
