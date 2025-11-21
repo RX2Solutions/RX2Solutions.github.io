@@ -44,6 +44,10 @@ sections:
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
+ - type: content
+    heading: About RX2 Solutions
+    body: >-
+      We’re a national HR solutions firm specializing in Executive Search, Staff Augmentation, and Outsourced HR. Our mission is simple: to help organizations grow and people thrive, through thoughtfully tailored human capital strategies that are always Respectfully Professional.
 faq:
   - question: What's inside the PDF?
     answer: >-
