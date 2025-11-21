@@ -30,16 +30,6 @@ sections:
     image_alt: Executives aligning people strategy with business roadmap
     image_position: right
     image_caption: Turn workforce planning into a strategic alignment exercise, not an annual review.
-  faq:
-  - question: What's inside the PDF?
-    answer: >-
-      A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
-  - question: Who should download this?
-    answer: >-
-      HR, People, and Business leaders who want to elevate workforce planning from an administrative exercise to an executive strategy conversation.
-  - question: How quickly will I get it?
-    answer: >-
-      You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
   - type: checklist
     heading: The 10-Minute Year-End Readiness Check
     body: >-
@@ -54,7 +44,16 @@ sections:
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
-
+  faq:
+  - question: What's inside the PDF?
+    answer: >-
+      A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
+  - question: Who should download this?
+    answer: >-
+      HR, People, and Business leaders who want to elevate workforce planning from an administrative exercise to an executive strategy conversation.
+  - question: How quickly will I get it?
+    answer: >-
+      You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
 consent_copy: We send one thoughtful HR insight each week. Unsubscribe anytime.
 ---
 In today’s fast-moving business environment, organizational readiness defines competitive edge. The **RX2 HR Year-End Playbook** centers on three imperatives that elevate workforce strategy from reactive to predictive. These principles empower leaders to anticipate change, strengthen continuity, and sustain performance through every market shift.
