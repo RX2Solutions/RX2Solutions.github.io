@@ -26,10 +26,20 @@ sections:
     heading: Start With Strategy, Not Headcount
     body: >-
       Too many planning cycles begin with reports instead of vision. The smartest HR leaders start with the business. This playbook helps you translate next year's goals into the capabilities required to achieve them, so your workforce plan becomes a business plan, not an operational checklist.
-    image: "/assets/images/5 Ways to Optimize Your Hiring Process - 43.jpeg"
+    image: "/assets/images/people2.jpeg"
     image_alt: Executives aligning people strategy with business roadmap
     image_position: right
     image_caption: Turn workforce planning into a strategic alignment exercise, not an annual review.
+  faq:
+  - question: What's inside the PDF?
+    answer: >-
+      A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
+  - question: Who should download this?
+    answer: >-
+      HR, People, and Business leaders who want to elevate workforce planning from an administrative exercise to an executive strategy conversation.
+  - question: How quickly will I get it?
+    answer: >-
+      You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
   - type: checklist
     heading: The 10-Minute Year-End Readiness Check
     body: >-
@@ -40,20 +50,11 @@ sections:
       - Have you mapped the skills required for upcoming priorities?
       - Do you have measurable readiness for critical and leadership roles?
       - Are you proactively forecasting turnover risk by segment?
-    image: "/assets/images/Strat Staffing.jpeg"
+    image: "/assets/images/balloons.jpeg"
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
-faq:
-  - question: What's inside the PDF?
-    answer: >-
-      A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
-  - question: Who should download this?
-    answer: >-
-      HR, People, and Business leaders who want to elevate workforce planning from an administrative exercise to an executive strategy conversation.
-  - question: How quickly will I get it?
-    answer: >-
-      You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
+
 consent_copy: We send one thoughtful HR insight each week. Unsubscribe anytime.
 ---
 In today’s fast-moving business environment, organizational readiness defines competitive edge. The **RX2 HR Year-End Playbook** centers on three imperatives that elevate workforce strategy from reactive to predictive. These principles empower leaders to anticipate change, strengthen continuity, and sustain performance through every market shift.
