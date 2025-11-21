@@ -44,18 +44,6 @@ sections:
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
-  - type: content
-    heading: Build Bench Strength Before You Need It
-    body: >-
-      Leadership continuity is a competitive advantage. This playbook includes a succession and readiness tracker to help you identify gaps, assess potential, and develop next-generation talent before business performance is at risk.
-  - type: content
-    heading: Plan Retention Like a Growth Strategy
-    body: >-
-      Retention is not reactive when it is intentional. Segment your must-keep talent, empower managers to lead development conversations, and build an internal mobility rhythm that protects engagement while fueling business growth.
-  - type: content
-    heading: Design for Agility
-    body: >-
-      The most successful organizations do not scale headcount, they scale adaptability. Use RX2's workforce modeling tools to shape your structure around flexibility, redeployment, and future skills rather than static titles.
 faq:
   - question: What's inside the PDF?
     answer: >-
@@ -68,3 +56,7 @@ faq:
       You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
 consent_copy: We send one thoughtful HR insight each week. Unsubscribe anytime.
 ---
+In today’s fast-moving business environment, organizational readiness defines competitive edge. The **RX2 HR Year-End Playbook** centers on three imperatives that elevate workforce strategy from reactive to predictive. These principles empower leaders to anticipate change, strengthen continuity, and sustain performance through every market shift.
+- Build Bench Strength Before You Need It: Leadership continuity is a competitive advantage. This playbook includes a succession and readiness tracker to help you identify gaps, assess potential, and develop next-generation talent before business performance is at risk.
+- Plan Retention Like a Growth Strategy: Retention is not reactive when it is intentional. Segment your must-keep talent, empower managers to lead development conversations, and build an internal mobility rhythm that protects engagement while fueling business growth.
+- Design for Agility: The most successful organizations do not scale headcount, they scale adaptability. Use RX2's workforce modeling tools to shape your structure around flexibility, redeployment, and future skills rather than static titles.
