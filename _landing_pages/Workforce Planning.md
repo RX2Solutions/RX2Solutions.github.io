@@ -1,5 +1,5 @@
 ---
-title: The HR Playbook for Year-End Workforce Planning
+title: The HR Playbook for Year End Workforce Planning
 description: Close the year strong and launch the next with confidence. This guide helps HR leaders align strategy, people, and performance to the business you’ll need next year, not the one you had this year.
 colorway: sage
 hero_eyebrow: Playbook for HR Leaders
