@@ -1,69 +1,79 @@
 ---
-title: End of Year HR Playbook
-description: Transform how your team recruits, closes, and retains high-impact hires with tools built from 500+ enterprise searches.
+title: The HR Playbook for Year End Workforce Planning
+description: Close the year strong and launch the next with confidence. This guide helps HR leaders align strategy, people, and performance to the business you’ll need next year, not the one you had this year.
 colorway: sage
 hero_eyebrow: Playbook for HR Leaders
-hero_heading: Rethink Talent Velocity
-hero_subheading: A field-tested guide to help HR leaders move faster without sacrificing candidate quality.
+hero_heading: Redefine Year-End Readiness
+hero_subheading: A leadership guide to help HR and business executives move from workforce review to workforce foresight.
 hero_bullets:
-  - Diagnose hidden friction inside your hiring funnels
-  - Coach stakeholders to say "yes" to better talent in less time
-  - Build rituals that turn recruiters into strategic advisors
-hero_submit_label: Email Me the Frameworks
-footer_submit_label: Send Me the Frameworks
-sticky_cta_label: Get the Hiring Frameworks
-offer_download_title: Download the 18-Page Framework Playbook
-offer_asset_highlight: Includes editable scorecards, debrief prompts, and executive-ready reporting templates.
-footer_offer_title: Grab the PDF + Mini-Course
+  - Align workforce design directly to next-year business priorities
+  - Build bench strength, retention, and readiness across teams
+  - Use real data to forecast skills, structure, and leadership needs
+hero_submit_label: Email Me the Playbook
+footer_submit_label: Send Me the Playbook
+sticky_cta_label: Get the 2026 HR Playbook
+offer_download_title: Download the 2026 RX2 HR Playbook
+offer_asset_highlight: Includes alignment templates, succession dashboards, and readiness scorecards built for executive planning.
+footer_offer_title: Get the PDF + Planning Toolkit
 simulate_api: false
 testimonials:
-  - quote: "We cut cycle time by 32% while improving our close rate on director-level searches."
-    name: Dana Li, VP Talent, Series C SaaS
-  - quote: "The frameworks finally aligned our executives on what 'great' looks like and where to flex."
-    name: Marcus Feld, CHRO, Global Logistics Group
+  - quote: "We used RX2’s framework to align HR and Finance in one afternoon. It brought clarity and urgency to our planning cycle."
+    name: Sarah M., VP People Strategy, National Healthcare Group
+  - quote: "The RX2 Playbook reframed workforce planning as a leadership exercise, not an HR task. Our executives finally saw the connection."
+    name: Mark T., COO, Advanced Manufacturing Firm
 sections:
   - type: content
-    heading: Start With Clarity
+    heading: Start With Strategy, Not Headcount
     body: >-
-      The fastest way to accelerate hiring is to eliminate misalignment. Use our Talent Decision Grid to map *must-have* capabilities, supporting behaviors, and the deal-breakers that quietly derail offers. When every interviewer grades against the same rubric, you spot signal faster and avoid the fire drills that burn out recruiters.
+      Too many planning cycles begin with reports instead of vision. The smartest HR leaders start with the business. This playbook helps you translate next year’s goals into the capabilities required to achieve them—so your workforce plan becomes a business plan, not an operational checklist.
     image: "/assets/images/5 Ways to Optimize Your Hiring Process - 43.jpeg"
-    image_alt: Recruiters reviewing a hiring scorecard during a workshop
+    image_alt: Executives aligning people strategy with business roadmap
     image_position: right
-    image_caption: The Talent Decision Grid keeps every interviewer aligned on outcomes, not gut feel.
+    image_caption: Turn workforce planning into a strategic alignment exercise, not an annual review.
   - type: checklist
-    heading: Diagnose Your Funnel in 10 Minutes
+    heading: The 10-Minute Year-End Readiness Check
     body: >-
-      Run this quick audit with your recruiting leads and hiring managers. It surfaces the friction you can solve in a single sprint.
+      Use this short audit with your leadership team. It quickly shows where alignment breaks down—and where your next opportunity lies.
     bullets:
-      - Measure acceptance-to-offer ratios by hiring manager to reveal coaching opportunities.
-      - Track sourcing yield against role-critical competencies instead of resumes submitted.
-      - Audit candidate feedback for pattern language you can use to reset expectations sooner.
+      - Is your workforce plan anchored in the company’s 12–24 month strategy?
+      - Do you know which 20% of roles drive 80% of your business impact?
+      - Have you mapped the skills required for upcoming priorities?
+      - Do you have measurable readiness for critical and leadership roles?
+      - Are you proactively forecasting turnover risk by segment?
     image: "/assets/images/Strat Staffing.jpeg"
-    image_alt: Recruiter leading a whiteboard session on pipeline health
+    image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
-    image_caption: Use the funnel check to spotlight where momentum stalls before requisitions go cold.
-  - type: content
-    heading: Coach Stakeholders to Yes
+    image_caption: Spot friction early so you can plan with clarity and precision.
+- type: content
+    heading: Build Bench Strength Before You Need It
     body: >-
-      Great hiring teams win because they manage stakeholders, not candidates. The playbook includes conversation scripts, "go/no-go" checkpoints, and a cadence template that keeps executives engaged without the weekly chasing.
+      Leadership continuity is a competitive advantage. This playbook includes a succession and readiness tracker to help you identify gaps, assess potential, and develop next-generation talent before business performance is at risk.
+  - type: content
+    heading: Plan Retention Like a Growth Strategy
+    body: >-
+      Retention isn’t reactive when it’s intentional. Segment your must-keep talent, empower managers to lead development conversations, and build an internal mobility rhythm that protects engagement while fueling business growth.
+  - type: content
+    heading: Design for Agility
+    body: >-
+      The most successful organizations don’t scale headcount—they scale adaptability. Use RX2’s workforce modeling tools to shape your structure around flexibility, redeployment, and future skills rather than static titles.
 faq:
-  - question: What's inside the PDF?
+  - question: What’s inside the PDF?
     answer: >-
-      Three customizable frameworks, facilitator instructions, and fill-in-the-blank reporting slides you can reuse with any business unit.
+      A comprehensive 25-page playbook with alignment frameworks, readiness dashboards, and facilitator prompts to guide year-end planning sessions.
   - question: Who should download this?
     answer: >-
-      HR, Talent Acquisition, and People Ops leaders who need leverage across multiple business units and want sharper hiring analytics.
+      HR, People, and Business leaders who want to elevate workforce planning from an administrative exercise to an executive strategy conversation.
   - question: How quickly will I get it?
     answer: >-
-      You'll receive the PDF instantly by email plus a five-day mini-course to help you implement with your team.
-consent_copy: We send actionable hiring insights once a week. Unsubscribe anytime.
+      You’ll receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
+consent_copy: We send one thoughtful HR insight each week. Unsubscribe anytime.
 ---
-Our subscribers cut time-to-fill, elevate candidate experience, and earn a louder voice in the boardroom. This landing page previews the mental models we rely on every day with growth-stage and enterprise clients alike.
+Our partners use this framework to close the year strong, align leaders, and launch with precision.
 
-Inside the full playbook you'll also find:
+Inside the full playbook you’ll also find:
 
-- The Debrief Ladder that keeps interviewers honest without slowing them down
-- A candidate "decision memo" template executives will actually read
-- The momentum scorecard we use to flag stalled searches before they burn headcount plans
+- The Executive Alignment Summary that connects business goals to workforce design  
+- The Bench Strength Tracker to measure readiness and risk in real time  
+- The Workforce Health Dashboard for visibility across mobility, retention, and agility  
 
-Want a quick win? After you download, start with Module 2. It's a 15-minute reset for any requisition that feels stuck.
+Want a quick win? After downloading, start with the **Year-End Readiness Check**—it’s a 15-minute exercise that aligns your leadership team around what matters most for 2026.
