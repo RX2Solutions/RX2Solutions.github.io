@@ -11,7 +11,7 @@ thumbnail: hb.jpeg
 excerpt_separator: <!--more-->
 ---
 
-# The HR Year-End Playbook: Best Practices for Workforce Strategy in Motion
+# Best Practices for Workforce Strategy in Motion
 
 As the fiscal year winds down, many organizations shift their focus to budgets, forecasting, and performance reviews. But for forward-thinking HR leaders, this season is about something far more strategic: **re-engineering the workforce to match the business you’ll need next year, <!--more-->  not the one you had this year.**
 
