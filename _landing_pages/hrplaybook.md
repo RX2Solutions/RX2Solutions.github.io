@@ -21,6 +21,7 @@ testimonials:
     name: Sarah M., VP People Strategy, National Healthcare Group
   - quote: "The RX2 Playbook reframed workforce planning as a leadership exercise, not an HR task. Our executives finally saw the connection."
     name: Mark T., COO, Advanced Manufacturing Firm
+
 sections:
   - type: content
     heading: Start With Strategy, Not Headcount
@@ -30,6 +31,7 @@ sections:
     image_alt: Executives aligning people strategy with business roadmap
     image_position: right
     image_caption: Turn workforce planning into a strategic alignment exercise, not an annual review.
+
   - type: checklist
     heading: The 10-Minute Year-End Readiness Check
     body: >-
@@ -44,10 +46,12 @@ sections:
     image_alt: Leaders reviewing a workforce strategy checklist together
     image_position: left
     image_caption: Spot friction early so you can plan with clarity and precision.
- - type: content
+
+  - type: content
     heading: About RX2 Solutions
     body: >-
       We’re a national HR solutions firm specializing in Executive Search, Staff Augmentation, and Outsourced HR. Our mission is simple: to help organizations grow and people thrive, through thoughtfully tailored human capital strategies that are always Respectfully Professional.
+
 faq:
   - question: What's inside the PDF?
     answer: >-
@@ -58,6 +62,7 @@ faq:
   - question: How quickly will I get it?
     answer: >-
       You will receive the PDF instantly by email, along with a five-day quick-start series to help you implement each pillar with your team.
+
 consent_copy: We send one thoughtful HR insight each week. Unsubscribe anytime.
 ---
 In today’s fast-moving business environment, organizational readiness defines competitive edge. The **RX2 HR Year-End Playbook** centers on three imperatives that elevate workforce strategy from reactive to predictive. These principles empower leaders to anticipate change, strengthen continuity, and sustain performance through every market shift.
