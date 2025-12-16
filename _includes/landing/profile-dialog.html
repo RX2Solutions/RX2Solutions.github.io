@@ -5,6 +5,8 @@
 {% assign endpoint = include.endpoint | default: '#' %}
 {% assign content_url = include.content_url | default: page.content_url | default: '' %}
 {% assign simulate_api = include.simulate_api | default: page.simulate_api | default: false %}
+{% assign default_topic = include.topic_of_interest | default: page.topic_of_interest | default: '' %}
+{% assign topics = include.topics | default: 'HRO|Business Leadership|Accounting &amp; Finance|Information Technology|Trade Shows|Podcast|Executive Search' | split: '|' %}
 <div class="lp-dialog-backdrop" data-lp-dialog hidden>
   <div class="lp-dialog" role="dialog" aria-modal="true" aria-labelledby="{{ dialog_id }}-title">
     <div class="lp-dialog-inner">
@@ -18,11 +20,27 @@
           <input type="hidden" name="email" data-lp-dialog-email>
           <div class="lp-form-group">
             <label for="{{ dialog_id }}-name">Full name</label>
-            <input type="text" id="{{ dialog_id }}-name" name="full_name" placeholder="Jordan Rivera" autocomplete="name" required>
+            <input type="text" id="{{ dialog_id }}-name" name="full_name" placeholder="First Last" autocomplete="name" required>
+          </div>
+          <div class="lp-form-group">
+            <label for="{{ dialog_id }}-phone">Phone number</label>
+            <input type="tel" id="{{ dialog_id }}-phone" name="phone_number" placeholder="(555) 123-4567" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,}$" required>
           </div>
           <div class="lp-form-group">
             <label for="{{ dialog_id }}-linkedin">LinkedIn URL</label>
-            <input type="url" id="{{ dialog_id }}-linkedin" name="linkedin_url" placeholder="https://www.linkedin.com/in/yourprofile" inputmode="url" required>
+            <input type="url" id="{{ dialog_id }}-linkedin" name="linkedin_url" placeholder="https://www.linkedin.com/in/yourprofile" inputmode="url">
+          </div>
+          <div class="lp-form-group lp-topics-group">
+            <span class="lp-topics-label">Topics of interest</span>
+            <div class="lp-topics-options">
+              {% for topic in topics %}
+              {% assign topic_id = dialog_id | append: '-topic-' | append: forloop.index %}
+              <label class="lp-checkbox" for="{{ topic_id }}">
+                <input type="checkbox" id="{{ topic_id }}" name="topics_of_interest" value="{{ topic }}" {% if topic == default_topic %}checked{% endif %}>
+                <span>{{ topic }}</span>
+              </label>
+              {% endfor %}
+            </div>
           </div>
           <div class="lp-form-group lp-hidden-field">
             <label for="{{ dialog_id }}-confirm" class="sr-only">Leave this field blank</label>

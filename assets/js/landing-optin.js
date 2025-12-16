@@ -8,6 +8,7 @@
   const dialogEmailField = dialogBackdrop ? dialogBackdrop.querySelector('[data-lp-dialog-email]') : null;
   const dialogMessage = dialogForm ? dialogForm.querySelector('.lp-form-message') : null;
   const dialogFirstInput = dialogForm ? dialogForm.querySelector('input[name="full_name"]') : null;
+  const dialogPhoneField = dialogForm ? dialogForm.querySelector('input[name="phone_number"]') : null;
 
   if (!forms.length) {
     return;
@@ -183,10 +184,20 @@
       return;
     }
 
+    setMessage(dialogMessage, '');
+
     if (typeof dialogForm.checkValidity === 'function' && !dialogForm.checkValidity()) {
       if (typeof dialogForm.reportValidity === 'function') {
         dialogForm.reportValidity();
       }
+      return;
+    }
+
+    const phoneField = dialogPhoneField || dialogForm.querySelector('input[name="phone_number"]');
+    const phoneValue = phoneField ? phoneField.value.trim() : '';
+    if (phoneField && !isValidPhone(phoneValue)) {
+      setMessage(dialogMessage, 'Please enter a valid phone number so we can follow up if needed.', 'is-error');
+      phoneField.focus();
       return;
     }
 
@@ -506,5 +517,13 @@
       }
     });
     return payload;
+  }
+
+  function isValidPhone(phone) {
+    if (!phone) {
+      return false;
+    }
+    const digitsOnly = phone.replace(/\D/g, '');
+    return digitsOnly.length >= 10;
   }
 })();

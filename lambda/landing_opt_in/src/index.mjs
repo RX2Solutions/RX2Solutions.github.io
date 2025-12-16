@@ -13,6 +13,8 @@ const linkedinProperty = process.env.NOTION_LINKEDIN_PROPERTY;
 const stageProperty = process.env.NOTION_STAGE_PROPERTY;
 const pageNameProperty = process.env.NOTION_PAGE_NAME_PROPERTY;
 const contentUrlProperty = process.env.NOTION_CONTENT_URL_PROPERTY;
+const phoneProperty = process.env.NOTION_PHONE_PROPERTY;
+const topicsProperty = process.env.NOTION_TOPICS_PROPERTY;
 const stageOptInValue = process.env.NOTION_STAGE_OPT_IN_VALUE || "Opt-In";
 const stageProfileCompleteValue = process.env.NOTION_STAGE_PROFILE_COMPLETE || "Profile Complete";
 const notionApiKeyParameter = process.env.NOTION_API_KEY_PARAMETER;
@@ -89,13 +91,20 @@ export const handler = async (event) => {
 
     const fullName = normaliseText(payload.full_name, 128);
     const linkedinUrl = normaliseLinkedInUrl(payload.linkedin_url);
+    const linkedinProvided = typeof payload.linkedin_url === "string" && payload.linkedin_url.trim().length > 0;
+    const phoneNumber = normalisePhone(payload.phone_number);
+    const topicsOfInterest = normaliseTopics(payload.topics_of_interest);
 
     if (!fullName) {
       return buildResponse(400, { error: "Full name is required to unlock the download." }, {}, requestOrigin);
     }
 
-    if (!linkedinUrl) {
+    if (linkedinProvided && !linkedinUrl) {
       return buildResponse(400, { error: "Please provide a valid LinkedIn profile URL." }, {}, requestOrigin);
+    }
+
+    if (!phoneNumber) {
+      return buildResponse(400, { error: "Please provide a valid phone number so we can follow up if needed." }, {}, requestOrigin);
     }
 
     const record = await updateSubscriberRecord({
@@ -103,6 +112,8 @@ export const handler = async (event) => {
       stage: submissionStage,
       fullName,
       linkedinUrl,
+      phoneNumber,
+      topicsOfInterest,
       pageName,
       contentUrl,
     });
@@ -112,6 +123,8 @@ export const handler = async (event) => {
       stage: submissionStage,
       fullName,
       linkedinUrl,
+      phoneNumber,
+      topicsOfInterest,
       pageName,
       contentUrl,
       existingNotionPageId: record?.notionPageId,
@@ -331,11 +344,43 @@ function normaliseLinkedInUrl(value) {
   }
 }
 
+function normalisePhone(value) {
+  if (typeof value !== "string" || value.trim().length === 0) {
+    return "";
+  }
+  const digits = value.replace(/\D/g, "");
+  if (digits.length < 10) {
+    return "";
+  }
+  return digits;
+}
+
+function normaliseTopics(raw) {
+  if (!raw) {
+    return [];
+  }
+  const values = Array.isArray(raw) ? raw : [raw];
+  const cleaned = values
+    .map((value) => normaliseText(value, 64))
+    .filter((value) => value.length > 0);
+
+  const unique = [];
+  for (const entry of cleaned) {
+    if (!unique.includes(entry)) {
+      unique.push(entry);
+    }
+  }
+
+  return unique;
+}
+
 async function updateSubscriberRecord({
   email,
   stage,
   fullName,
   linkedinUrl,
+  phoneNumber,
+  topicsOfInterest,
   pageName,
   contentUrl,
   notionPageId,
@@ -389,6 +434,16 @@ async function updateSubscriberRecord({
     values[":pageName"] = pageName;
   }
 
+  if (phoneNumber) {
+    expressions.push("phoneNumber = :phoneNumber");
+    values[":phoneNumber"] = phoneNumber;
+  }
+
+  if (Array.isArray(topicsOfInterest) && topicsOfInterest.length) {
+    expressions.push("topicsOfInterest = :topicsOfInterest");
+    values[":topicsOfInterest"] = topicsOfInterest;
+  }
+
   if (contentUrl) {
     expressions.push("contentUrl = :contentUrl");
     values[":contentUrl"] = contentUrl;
@@ -418,6 +473,8 @@ async function syncNotion({
   stage,
   fullName,
   linkedinUrl,
+  phoneNumber,
+  topicsOfInterest,
   pageName,
   contentUrl,
   existingNotionPageId,
@@ -451,7 +508,7 @@ async function syncNotion({
 
   if (stageProperty && stageValue) {
     properties[stageProperty] = {
-      select: { name: stageValue },
+      multi_select: [{ name: stageValue }],
     };
   }
 
@@ -467,6 +524,18 @@ async function syncNotion({
 
   if (linkedinProperty && linkedinUrl) {
     properties[linkedinProperty] = { url: linkedinUrl };
+  }
+
+  if (phoneProperty && phoneNumber) {
+    properties[phoneProperty] = {
+      phone_number: phoneNumber,
+    };
+  }
+
+  if (topicsProperty && Array.isArray(topicsOfInterest) && topicsOfInterest.length) {
+    properties[topicsProperty] = {
+      multi_select: topicsOfInterest.map((topic) => ({ name: topic })),
+    };
   }
 
   if (pageNameProperty && pageName) {

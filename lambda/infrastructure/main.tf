@@ -203,6 +203,8 @@ resource "aws_lambda_function" "landing_opt_in" {
       NOTION_NAME_PROPERTY          = var.notion_name_property
       NOTION_TITLE_PROPERTY         = var.notion_title_property
       NOTION_LINKEDIN_PROPERTY      = var.notion_linkedin_property
+      NOTION_PHONE_PROPERTY         = var.notion_phone_property
+      NOTION_TOPICS_PROPERTY        = var.notion_topics_property
       NOTION_STAGE_PROPERTY         = var.notion_stage_property
       NOTION_STAGE_OPT_IN_VALUE     = var.notion_stage_opt_in_value
       NOTION_STAGE_PROFILE_COMPLETE = var.notion_stage_profile_complete_value

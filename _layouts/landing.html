@@ -96,7 +96,7 @@
         </div>
       </footer>
     </div>
-    {% include landing/profile-dialog.html id="lp-profile-dialog" endpoint=landing_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label %}
+    {% include landing/profile-dialog.html id="lp-profile-dialog" endpoint=landing_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label topic_of_interest=page.topic_of_interest %}
     <script src="{{ '/assets/js/landing-optin.js' | relative_url }}"></script>
   </body>
 </html>

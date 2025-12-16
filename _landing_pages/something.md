@@ -14,6 +14,7 @@ sticky_cta_label: Get the Hiring Frameworks
 offer_download_title: Download the 18-Page Framework Playbook
 offer_asset_highlight: Includes editable scorecards, debrief prompts, and executive-ready reporting templates.
 footer_offer_title: Grab the PDF + Mini-Course
+topic_of_interest: HRO
 simulate_api: false
 testimonials:
   - quote: "We cut cycle time by 32% while improving our close rate on director-level searches."

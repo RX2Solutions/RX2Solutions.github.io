@@ -61,7 +61,7 @@ variable "notion_api_key_parameter_name" {
 variable "notion_database_id" {
   type        = string
   description = "Notion database ID that stores landing opt-in submissions."
-  default     = "297fc5bb792a805396ebe1b7c78e85a9"
+  default     = "29bfc5bb792a80e89e42cbf85f09fa3a"
 }
 
 variable "notion_email_property" {
@@ -72,8 +72,8 @@ variable "notion_email_property" {
 
 variable "notion_name_property" {
   type        = string
-  description = "Notion property name that stores the subscriber's full name."
-  default     = "Full Name"
+  description = "Optional Notion property name that stores the subscriber's full name (leave blank to skip)."
+  default     = ""
 }
 
 variable "notion_title_property" {
@@ -86,6 +86,18 @@ variable "notion_linkedin_property" {
   type        = string
   description = "Notion property name that stores the LinkedIn URL."
   default     = "LinkedIn"
+}
+
+variable "notion_phone_property" {
+  type        = string
+  description = "Notion property name that stores the phone number."
+  default     = "Phone"
+}
+
+variable "notion_topics_property" {
+  type        = string
+  description = "Notion property name that stores topics of interest."
+  default     = "Topics"
 }
 
 variable "notion_stage_property" {
