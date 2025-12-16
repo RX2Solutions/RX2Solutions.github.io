@@ -7,11 +7,11 @@ sections:
     linkedin: https://www.linkedin.com/in/rbgraham
     email: info@rx2solutions.com
     image: RGS.jpeg
-    text: Robert Graham brings roughly two decades of experience creating Human Capital and Talent Acquisition Strategies for Technology and Life Science Companies. Robert's unique perspective on Staff Augmentation is leveraging technology to provide a customized, efficient solution. Robert is a technologist at heart who understands how to build highly functioning and dynamic teams.
+    text: Robert Graham believes people are the true technology. For twenty years, he has helped companies in technology, manufacturing, and life sciences unlock their greatest advantage; their people. His approach blends innovation with intuition, using technology not to replace the human touch but to amplify it.
       <br /><br />
-      Robert has a BA in History, an MBA in Organizational Leadership, and is a Certified Scrum Master.
+      Robert is a builder of teams, cultures, and momentum. An entrepreneur at heart, he understands that great organizations are not managed into existence; they are designed.
       <br /><br />
-      In his spare time, Robert enjoys spending time with his family, going to the beach, and tinkering with technology.
+      When he steps away from work, he focuses on what fuels him most; family, the ocean, and behind the wheel chasing speed and clarity.
   - name: Ross Rosner
     jobtitle: Managing Partner / Cofounder
     linkedin: https://www.linkedin.com/in/ross-rosner-mba-ba26377

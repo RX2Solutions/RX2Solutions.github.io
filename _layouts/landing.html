@@ -3,7 +3,8 @@
 <!doctype html>
 <html lang="en">
   {% include headers.html %}
-  <body class="landing-page">
+  {% assign landing_colorway = page.colorway | default: 'cream' | slugify %}
+  <body class="landing-page landing-theme-{{ landing_colorway }}">
     {% assign sticky_target = page.sticky_cta_target | default: 'lp-optin-top' %}
     {% assign sticky_href = '#' | append: sticky_target %}
     {% assign sticky_label = page.sticky_cta_label | default: 'Get the Hiring Playbook' %}
@@ -48,7 +49,7 @@
       <main class="lp-main">
         <div class="container">
           {% if content %}
-          <section class="lp-section lp-intro">{{ content }}</section>
+          <section class="lp-section lp-intro">{{ content | markdownify }}</section>
           {% endif %}
 
           {% if page.sections %}
