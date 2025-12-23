@@ -18,7 +18,7 @@ excerpt_separator: <!--more-->
 
 ## Introduction: From Chaos to Opportunity
 
-Every business faces turbulent times, but the past year has tested leadership in unprecedented ways. Economic whiplash, a volatile stock market, and rapid technological shifts (like the rise of generative AI) created an environment where uncertainty became the norm. Companies slashed budgets mid-course and scrambled to adapt workflows virtually overnight. Many leaders found themselves in perpetual reaction mode, fighting fires and making knee-jerk decisions just to keep afloat. The result? Organizational fatigue, frayed trust, and strategic drift.
+Every business faces turbulent times, but the past year has tested leadership in unprecedented ways. <!--more-->Economic whiplash, a volatile stock market, and rapid technological shifts (like the rise of generative AI) created an environment where uncertainty became the norm. Companies slashed budgets mid-course and scrambled to adapt workflows virtually overnight. Many leaders found themselves in perpetual reaction mode, fighting fires and making knee-jerk decisions just to keep afloat. The result? Organizational fatigue, frayed trust, and strategic drift.
 
 Now, as the dust settles, smart companies recognize the need for a leadership reset. This reset is about moving from reaction to intention, deliberately rebuilding the foundations that will carry the business forward with clarity, discipline, and purpose.
 
