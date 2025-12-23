@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Clear Look Back at a Year of Evolution, Impact, and Shared Success
+title: Turning Turbulence Into Leadership Advantage
 author: rx2solutions
 tags:
   - publication
