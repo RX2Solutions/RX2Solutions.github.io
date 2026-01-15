@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RX2 Solutions Q4 2025 Hiring & Economic Outlook
+title: RX2 Solutions Q1 2026 Hiring & Economic Outlook
 author: rx2solutions
 tags: publication
 thumbnail: EConOutlook.jpeg
