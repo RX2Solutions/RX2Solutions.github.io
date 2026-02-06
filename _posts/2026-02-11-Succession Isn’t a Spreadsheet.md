@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Succession Isn’t a Spreadsheet: How Organizations Actually Prepare Future Leaders
