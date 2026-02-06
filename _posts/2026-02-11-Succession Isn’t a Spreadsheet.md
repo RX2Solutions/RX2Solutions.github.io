@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Succession Isn’t a Spreadsheet: How Organizations Actually Prepare Future Leaders
+title: Succession Isn’t a Spreadsheet - How Organizations Actually Prepare Future Leaders
 author: rx2solutions
 tags: publication
 thumbnail: sucession.jpeg
