@@ -3,7 +3,7 @@ layout: post
 title: The Leadership Miss No One Wants to Own
 author: rx2solutions
 tags: publication
-thumbnail: Exec.jpeg
+thumbnail: Board.jpeg
 excerpt_separator: <!--more-->
 ---
 
