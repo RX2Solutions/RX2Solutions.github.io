@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: HR as a Strategic Operator
