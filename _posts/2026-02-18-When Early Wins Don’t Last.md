@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: When Early Wins Don’t Last
