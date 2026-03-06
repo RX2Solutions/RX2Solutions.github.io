@@ -1,0 +1,55 @@
+name: Deploy Staging Site
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Git ref to deploy (branch, tag, or SHA)
+        required: false
+        default: main
+      invalidation_paths:
+        description: CloudFront invalidation paths
+        required: false
+        default: '/*'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-staging:
+    name: Build and Deploy to Staging
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ secrets.AWS_STAGING_REGION }}
+      STAGING_S3_BUCKET: ${{ secrets.AWS_STAGING_S3_BUCKET }}
+      STAGING_CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.AWS_STAGING_CLOUDFRONT_DISTRIBUTION_ID }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build Jekyll site (staging config)
+        run: bundle exec jekyll build --config _config.yml,_config.staging.yml
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_STAGING_ROLE_ARN }}
+          role-session-name: rx2-staging-deploy
+
+      - name: Sync site to S3
+        run: aws s3 sync _site/ s3://${{ env.STAGING_S3_BUCKET }}/ --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ env.STAGING_CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "${{ github.event.inputs.invalidation_paths }}"

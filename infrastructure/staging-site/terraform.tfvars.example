@@ -1,0 +1,13 @@
+aws_region       = "us-east-1"
+environment      = "staging"
+project_prefix   = "rx2"
+domain_name      = "rx2solutions-staging.instantbrains.com"
+hosted_zone_name = "instantbrains.com"
+
+# Optional: override if you want an exact bucket name instead of the derived default.
+# bucket_name = "rx2solutions-staging-instantbrains-com-642038304273"
+
+default_tags = {
+  Project   = "rx2solutions"
+  ManagedBy = "terraform"
+}

@@ -7,3 +7,5 @@ terraform.tfvars
 lambda/**/node_modules/
 lambda/infrastructure/discovery/
 lambda/discovery/
+.env.staging.local
+.env.staging.local.*

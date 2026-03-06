@@ -1,0 +1,8 @@
+# Staging overrides layered on top of _config.yml.
+# Build with: bundle exec jekyll build --config _config.yml,_config.staging.yml
+
+url: https://rx2solutions-staging.instantbrains.com
+baseurl: ""
+
+# Keep the staging host metadata explicit so templates can reference it if needed.
+environment_name: staging
