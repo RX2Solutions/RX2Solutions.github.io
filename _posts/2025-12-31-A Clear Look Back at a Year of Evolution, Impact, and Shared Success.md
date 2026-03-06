@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 # RX2 Solutions | A Look Back at 2025  
 ### A Year of Progress, Partnership, and Purpose
 
-Every organization experiences years that leave a lasting mark on its identity. For RX2 Solutions, 2025 was that kind of year. It was a year defined by steady momentum, thoughtful decision-making, and meaningful collaboration. It was a year where teams embraced clarity, leaders embraced intention, and partnerships shaped outcomes that will carry forward for years to come.
+Every organization experiences years that leave a lasting mark on its identity. For RX2 Solutions, 2025 was that kind of year. It was a year defined by steady momentum, thoughtful decision-making, and meaningful collaboration. It was a year where teams embraced clarity, leaders embraced intention, and partnerships shaped outcomes that will carry forward for years to come. <!--more-->
 
 Looking back, the story of 2025 is not one of rapid shifts or reactive change. It is a story of aligned progress. A story of organizations choosing to invest in the right people for the right reasons. A story of candidates trusting the process and finding roles that matched both their strengths and their goals. A story of teams stepping with purpose rather than pressure.
 
