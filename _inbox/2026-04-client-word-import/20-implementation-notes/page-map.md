@@ -31,7 +31,10 @@ Planned updates:
 - Update hero copy to the new positioning:
   - "People First. Respectfully Professional, Always."
   - "HR Outsourcing. Executive Search. Strategic Staffing - Delivered Nationwide."
-- Refresh the "Our Solutions" section with the new three-service copy in `full-export.md`.
+- Remove the current "Respectfully Prefessional Process" section (include of `/_includes/process.html`)
+- Update "Our Solutions" section:
+  - Refresh the "Our Solutions" section with the new three-service copy in `full-export.md`.
+  - Remove the "trampstamp" image found in the "Our Solutions" - adjust layout for three bullets instead of text on weither side of image.
 - Add or adapt a section for:
   - "One Partner. One Contact. Fully Integrated."
   - "What Respectfully Professional Means"
