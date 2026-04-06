@@ -5,6 +5,29 @@ RX2 Solutions website — GitHub Pages + Jekyll.
 - Local build: `bundle exec jekyll build`.
 - Note: GitHub Pages pins gem versions; use the `github-pages` gem for local parity.
 
+## Client Content Inbox
+
+Client source material and intermediate conversions should live under `_inbox/`. The directory is tracked in git for collaboration and history, and excluded from Jekyll builds in `_config.yml` so it does not ship to production or staging.
+
+Recommended workflow:
+- Put the untouched Word file in `_inbox/<batch>/00-source/`.
+- If the document contains tracked changes, keep the original and also save an accepted-changes copy in the same folder when the implementation target is final copy.
+- Convert the accepted `.docx` to Markdown into `_inbox/<batch>/10-converted/`.
+- Create or update `_inbox/<batch>/20-implementation-notes/page-map.md` with page-by-page instructions for what should change in the site.
+
+Suggested `pandoc` command:
+
+```bash
+pandoc "_inbox/2026-04-client-word-import/00-source/client-accepted.docx" \
+  -f docx \
+  -t gfm \
+  --wrap=none \
+  --extract-media="_inbox/2026-04-client-word-import/10-converted/media" \
+  -o "_inbox/2026-04-client-word-import/10-converted/full-export.md"
+```
+
+The raw conversion is useful as a source artifact, but `page-map.md` is the main implementation handoff because it separates actual page changes from Word formatting noise.
+
 ## Staging Deploy (AWS S3 + CloudFront)
 
 Production deploy behavior remains unchanged:
