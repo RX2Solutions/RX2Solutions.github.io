@@ -73,7 +73,7 @@ Below is what current demand data suggests by sector, using payroll trends and j
 
 <BR>
 
-###Life sciences and healthcare###: durable demand, steady churn. Health care and social assistance had roughly 1.279M job openings in February 2026. Recent payroll gains in health care were also substantial. For employers, this is a quarter to assume continued competition for clinical, patient-facing, and operations-critical roles, with retention and scheduling flexibility shaping acceptance decisions.
+###Life sciences and healthcare### : durable demand, steady churn. Health care and social assistance had roughly 1.279M job openings in February 2026. Recent payroll gains in health care were also substantial. For employers, this is a quarter to assume continued competition for clinical, patient-facing, and operations-critical roles, with retention and scheduling flexibility shaping acceptance decisions.
 
 ###Engineering and manufacturing###: selective growth, skills-specific competition. Manufacturing had about 439,000 job openings in February 2026, while construction was about 202,000. Construction payrolls also increased in March. The signal is targeted demand: roles tied to throughput, quality, maintenance, process improvement, and safety remain high value, even when overall headcount stays flat.
 
@@ -115,7 +115,8 @@ Base case: stable growth, balanced labor conditions, selective hiring. The Feder
 
 <BR>
 
-###RX2 Solutions perspective###
+###RX2 Solutions Perspective###
+
 Q2 2026 is a quarter for disciplined optimism. The data supports continued expansion, inflation has improved, and the labor market is more workable than it was earlier in the cycle. Employers that act with speed and clarity, especially in high-demand skill areas, will hire better and waste fewer cycles. We remain ready to support organizations with Work Force Solutionis: HRO, Strategic Staffing, Executive Search, and workforce planning aligned to today’s realities and tomorrow’s growth.
 
 <BR>
