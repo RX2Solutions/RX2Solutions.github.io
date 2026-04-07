@@ -73,9 +73,9 @@ Below is what current demand data suggests by sector, using payroll trends and j
 
 <BR>
 
-**Life sciences and healthcare**: durable demand, steady churn. Health care and social assistance had roughly 1.279M job openings in February 2026. Recent payroll gains in health care were also substantial. For employers, this is a quarter to assume continued competition for clinical, patient-facing, and operations-critical roles, with retention and scheduling flexibility shaping acceptance decisions.
+**Life sciences and Healthcare**: durable demand, steady churn. Health care and social assistance had roughly 1.279M job openings in February 2026. Recent payroll gains in health care were also substantial. For employers, this is a quarter to assume continued competition for clinical, patient-facing, and operations-critical roles, with retention and scheduling flexibility shaping acceptance decisions.
 
-**Engineering and manufacturing**: selective growth, skills-specific competition. Manufacturing had about 439,000 job openings in February 2026, while construction was about 202,000. Construction payrolls also increased in March. The signal is targeted demand: roles tied to throughput, quality, maintenance, process improvement, and safety remain high value, even when overall headcount stays flat.
+**Engineering and Manufacturing**: selective growth, skills-specific competition. Manufacturing had about 439,000 job openings in February 2026, while construction was about 202,000. Construction payrolls also increased in March. The signal is targeted demand: roles tied to throughput, quality, maintenance, process improvement, and safety remain high value, even when overall headcount stays flat.
 
 **Professional Services**: steady demand for billable and advisory talent. Professional and business services posted about 1.260M job openings in February 2026. Longer-term projections also indicate continued growth in professional, scientific, and technical services, reinforcing the sector’s structural demand beyond any single quarter. In practice, Q2 hiring often favors client-facing delivery, revenue operations, and specialized advisory skill sets.
 
