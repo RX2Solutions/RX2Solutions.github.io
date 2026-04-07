@@ -107,7 +107,7 @@ Base case: stable growth, balanced labor conditions, selective hiring. The Feder
 - Design for candidate caution: emphasize role clarity, manager fit, and a clean onboarding plan in every offer conversation.  
 - Protect retention in high-churn units with stay interviews and realistic workload planning before adding headcount.
 
-RX2 Solutions perspective: Q2 2026 is a quarter for disciplined optimism. The data supports continued expansion, inflation has improved, and the labor market is more workable than it was earlier in the cycle. Employers that act with speed and clarity, especially in high-demand skill areas, will hire better and waste fewer cycles. We remain ready to support organizations with Work Force Solutionis: HRO, Strategic Staffing, Executive Search, and workforce planning aligned to today’s realities and tomorrow’s growth.
+**RX2 Solutions perspective**: Q2 2026 is a quarter for disciplined optimism. The data supports continued expansion, inflation has improved, and the labor market is more workable than it was earlier in the cycle. Employers that act with speed and clarity, especially in high-demand skill areas, will hire better and waste fewer cycles. We remain ready to support organizations with Work Force Solutionis: HRO, Strategic Staffing, Executive Search, and workforce planning aligned to today’s realities and tomorrow’s growth.
 
 
 ## References and data sources
