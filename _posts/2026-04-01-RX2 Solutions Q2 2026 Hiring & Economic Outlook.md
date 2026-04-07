@@ -120,8 +120,6 @@ Q2 2026 is a quarter for disciplined optimism. The data supports continued expan
 
 <BR>
 
-At **RX2 Solutions**, our focus remains the same: deliver talent solutions that are **agile**, **thoughtful**, and aligned with your evolving business goals.
-
 📞 **Phone**: 610.340.3490  
 📧 **Email**: [info@rx2solutions.com](mailto:info@rx2solutions.com)  
 🌐 **Website**: [www.rx2solutions.com](http://www.rx2solutions.com)
