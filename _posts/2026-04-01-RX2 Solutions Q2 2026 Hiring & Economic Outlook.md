@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 
 # RX2 Solutions Q2 2026 Hiring & Economic Outlook
-**A positive, data-driven US Q2 2026 outlook covering GDP, inflation, interest rates, labor market trends, sector hiring demand, and practical hiring guidance for employers.**
+*A positive, data-driven US Q2 2026 outlook covering GDP, inflation, interest rates, labor market trends, sector hiring demand, and practical hiring guidance for employers.*
 
 ## Executive Summary
 
@@ -17,6 +17,8 @@ Q2 2026 opens with a constructive, data-driven macro backdrop: inflation has coo
 At the same time, the labor market is more balanced than it was at the peak of the post-pandemic cycle. Unemployment remains historically low, wage growth is moderating, and hiring is increasingly concentrated in sectors with structural demand, especially health services and select professional roles.
 
 For employers, this quarter is less about rushing to hire and more about hiring with precision: clarifying critical roles, tightening process discipline, and competing for scarce skills with smart total-rewards design and a better candidate experience.
+
+<br>
 
 ### Key indicators quarter-over-quarter snapshot
 
@@ -33,6 +35,8 @@ For employers, this quarter is less about rushing to hire and more about hiring 
 
 Data notes: GDP values are quarterly and annualized; Q1 2026 is a model-based estimate (GDPNow), not an official BEA release. CPI values are 12-month changes. Fed funds values use the top of the FOMC target range around the corresponding period.
 
+<BR>
+
 ## National Economic Landscape
 
 Resilient demand with a slower growth gear: The latest complete GDP read shows growth decelerated sharply in Q4 2025, with real GDP up 0.7% (annual rate). That same release shows Q3 2025 growth was 4.4%, underscoring how quickly momentum can change quarter-to-quarter. Still, consumer spending and investment were contributors to Q4 growth, which supports a positive baseline rather than a demand collapse.
@@ -45,6 +49,8 @@ Rates: stable and data-dependent. The Federal Reserve maintained the federal fun
 
 Consumer spending: steady in the data that drives hiring. The Census Bureau reports February 2026 retail and food services sales at $738.4B, up 0.6% from the prior month and up 3.7% year-over-year. December 2025 sales were reported at $735.0B and up 2.4% year-over-year. That trend supports continued demand in consumer-adjacent sectors, even if hiring remains selective.
 
+<BR>
+
 ## Labor Market Trends
 
 Cooling, not collapsing. In March 2026, total nonfarm payroll employment rose by 178,000 and the unemployment rate was 4.3%. Labor force participation was 61.9%, and the employment-population ratio was 59.2%, both little changed over the month.
@@ -54,6 +60,8 @@ Hiring remains concentrated in a few areas. Recent payroll gains were led by hea
 Wage growth is moderating, which supports planning. Average hourly earnings for all employees on private nonfarm payrolls rose to $37.38 in March, up 3.5% over the year. In Q4 context, December 2025 average hourly earnings were $37.02 and up 3.8% over the prior 12 months. The direction is constructive: wage pressure remains positive for households, but less volatile for employers.
 
 Candidate behavior is more cautious. One practical signal is the quits rate, which reflects voluntary mobility. Recent JOLTS data show quits at a comparatively lower, steadier pace than earlier cycle highs, consistent with longer job searches, more selective decision-making, and higher importance placed on role stability and manager quality.
+
+<BR>
 
 ## Industry Hiring Trends and Outlook
 
@@ -67,15 +75,7 @@ Below is what current demand data suggests by sector, using payroll trends and j
 
 **Technology: fewer openings, sharper requirements.** The information sector shows about 91,000 job openings (February 2026). That is smaller than other major sectors, suggesting a more selective posture. The roles that do open tend to be high-impact and skills-specific, often tied to security, reliability, data platforms, and modernization programs.
 
-### Simple visual: sector hiring demand (job openings)
-
-```mermaid
-xychart-beta
-    title "Job openings by sector (Feb 2026, thousands)"
-    x-axis ["Health care & social assistance","Professional & business services","Trade/transport/utilities","Manufacturing","Information"]
-    y-axis "Openings (thousands)" 0 --> 1400
-    bar [1279, 1260, 1149, 439, 91]
-```
+<BR>
 
 ## Compensation and Workforce Strategy
 
@@ -91,19 +91,15 @@ Third, plan workforce capacity like a portfolio. Job openings remain meaningful 
 
 A simple Q2 operating rhythm that works well in balanced markets:
 
-```mermaid
-flowchart TD
-  A[Define critical roles] --> B[Confirm pay band + interview plan]
-  B --> C[Move fast on qualified candidates]
-  C --> D[Close with total rewards clarity]
-  D --> E[Strengthen onboarding + early retention]
-```
+<BR>
 
 ## Outlook, Hiring Guidance, and RX2 Perspective
 
 Base case: stable growth, balanced labor conditions, selective hiring. The Federal Reserve’s March 2026 Summary of Economic Projections anticipates continued growth, moderate inflation, and an unemployment rate near recent levels by year-end. Taken together, this supports a positive and steady outlook: not a hiring boom, but an environment where well-prepared employers can recruit effectively and build strong teams.
 
-### Actionable recommendations for employers
+<BR>
+
+## Actionable recommendations for employers
 
 - Prioritize critical roles and run faster hiring cycles for them, even if other roles remain on hold.  
 - Treat compensation as a system: align bands, leveling, and approvals so offers do not stall late-stage.  
@@ -116,25 +112,16 @@ RX2 Solutions perspective: Q2 2026 is a quarter for disciplined optimism. The da
 
 ## References and data sources
 
-BEA  
 - U.S. Bureau of Economic Analysis, “GDP (Second Estimate), 4th Quarter and Year 2025” (real GDP growth rates and contributors). https://www.bea.gov/news/2026/gdp-second-estimate-4th-quarter-and-year-2025
-
-Federal Reserve  
 - Board of Governors of the Federal Reserve System, “FOMC Statement, March 18, 2026” (federal funds target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm  
 - Board of Governors of the Federal Reserve System, “FOMC Statement, June 18, 2025” (historical target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm  
 - Board of Governors of the Federal Reserve System, “FOMC Statement, September 17, 2025” (historical target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm  
 - Board of Governors of the Federal Reserve System, “Summary of Economic Projections, March 2026” (GDP, unemployment, inflation, policy rate median projections). https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm
-
-BLS  
 - U.S. Bureau of Labor Statistics, “The Employment Situation, March 2026” (payroll employment, unemployment rate, participation, wages, industry job gains). https://www.bls.gov/news.release/archives/empsit_04032026.htm  
 - U.S. Bureau of Labor Statistics, “Consumer Price Index, December 2025” (12-month CPI change). https://www.bls.gov/news.release/archives/cpi_01132026.htm  
 - U.S. Bureau of Labor Statistics, “Job Openings and Labor Turnover Survey (JOLTS)” (job openings by industry; quit rates). https://www.bls.gov/news.release/jolts.htm  
 - U.S. Bureau of Labor Statistics, JOLTS Table 1 (job openings levels by industry). https://www.bls.gov/news.release/jolts.t01.htm  
-- U.S. Bureau of Labor Statistics, Monthly Labor Review, “Industry and occupational employment projections overview” (structural sector growth context). https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm
-
-Census Bureau  
+- U.S. Bureau of Labor Statistics, Monthly Labor Review, “Industry and occupational employment projections overview” (structural sector growth context). https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm 
 - U.S. Census Bureau, “Advance Monthly Sales for Retail and Food Services” (February 2026 retail sales level and YoY change; December 2025 comparison). https://www.census.gov/retail/sales.html
-
-Atlanta Fed  
 - Federal Reserve Bank of Atlanta, “GDPNow” (model-based estimate of current-quarter real GDP growth). https://www.atlantafed.org/research-and-data/data/gdpnow
 
