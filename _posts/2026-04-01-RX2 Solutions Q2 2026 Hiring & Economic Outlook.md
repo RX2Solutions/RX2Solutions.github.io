@@ -22,6 +22,8 @@ For employers, this quarter is less about rushing to hire and more about hiring 
 
 ### Key indicators quarter-over-quarter snapshot
 
+<BR>
+
 | Indicator | Q4 2025 | Q1 2026 (latest available) | Direction |
 |---|---:|---:|:---:|
 | Real GDP growth (annual rate) | 0.7% (Q4 2025, second estimate) | 1.3% (2026:Q1 GDPNow estimate, updated Apr 7) | ↗︎ |
@@ -37,7 +39,7 @@ Data notes: GDP values are quarterly and annualized; Q1 2026 is a model-based es
 
 <BR>
 
-## National Economic Landscape
+### National Economic Landscape
 
 Resilient demand with a slower growth gear: The latest complete GDP read shows growth decelerated sharply in Q4 2025, with real GDP up 0.7% (annual rate). That same release shows Q3 2025 growth was 4.4%, underscoring how quickly momentum can change quarter-to-quarter. Still, consumer spending and investment were contributors to Q4 growth, which supports a positive baseline rather than a demand collapse.
 
@@ -51,7 +53,7 @@ Consumer spending: steady in the data that drives hiring. The Census Bureau repo
 
 <BR>
 
-## Labor Market Trends
+### Labor Market Trends
 
 Cooling, not collapsing. In March 2026, total nonfarm payroll employment rose by 178,000 and the unemployment rate was 4.3%. Labor force participation was 61.9%, and the employment-population ratio was 59.2%, both little changed over the month.
 
@@ -63,9 +65,11 @@ Candidate behavior is more cautious. One practical signal is the quits rate, whi
 
 <BR>
 
-## Industry Hiring Trends and Outlook
+### Industry Hiring Trends and Outlook
 
 Below is what current demand data suggests by sector, using payroll trends and job openings (JOLTS) as the primary demand signals.
+
+<BR>
 
 **Life sciences and healthcare: durable demand, steady churn.** Health care and social assistance had roughly 1.279M job openings in February 2026. Recent payroll gains in health care were also substantial. For employers, this is a quarter to assume continued competition for clinical, patient-facing, and operations-critical roles, with retention and scheduling flexibility shaping acceptance decisions.
 
@@ -77,7 +81,7 @@ Below is what current demand data suggests by sector, using payroll trends and j
 
 <BR>
 
-## Compensation and Workforce Strategy
+### Compensation and Workforce Strategy
 
 Compensation is shifting from catch-up to calibration. Wage growth is still positive but moderating, and real earnings have improved versus inflation over the last year. In this environment, employers are increasingly competitive by strengthening the full system, not only base pay.
 
@@ -93,13 +97,13 @@ A simple Q2 operating rhythm that works well in balanced markets:
 
 <BR>
 
-## Outlook, Hiring Guidance, and RX2 Perspective
+### Outlook, Hiring Guidance, and RX2 Perspective
 
 Base case: stable growth, balanced labor conditions, selective hiring. The Federal Reserve’s March 2026 Summary of Economic Projections anticipates continued growth, moderate inflation, and an unemployment rate near recent levels by year-end. Taken together, this supports a positive and steady outlook: not a hiring boom, but an environment where well-prepared employers can recruit effectively and build strong teams.
 
 <BR>
 
-## Actionable recommendations for employers
+### Actionable recommendations for employers
 
 - Prioritize critical roles and run faster hiring cycles for them, even if other roles remain on hold.  
 - Treat compensation as a system: align bands, leveling, and approvals so offers do not stall late-stage.  
@@ -109,19 +113,28 @@ Base case: stable growth, balanced labor conditions, selective hiring. The Feder
 
 **RX2 Solutions perspective**: Q2 2026 is a quarter for disciplined optimism. The data supports continued expansion, inflation has improved, and the labor market is more workable than it was earlier in the cycle. Employers that act with speed and clarity, especially in high-demand skill areas, will hire better and waste fewer cycles. We remain ready to support organizations with Work Force Solutionis: HRO, Strategic Staffing, Executive Search, and workforce planning aligned to today’s realities and tomorrow’s growth.
 
+At **RX2 Solutions**, our focus remains the same: deliver talent solutions that are **agile**, **thoughtful**, and aligned with your evolving business goals.
+
+📞 **Phone**: 610.340.3490  
+📧 **Email**: [info@rx2solutions.com](mailto:info@rx2solutions.com)  
+🌐 **Website**: [www.rx2solutions.com](http://www.rx2solutions.com)
+
+**RX2 Solutions**  
+*A Respectfully Professional People Company*
+
 
 ## References and data sources
 
-- U.S. Bureau of Economic Analysis, “GDP (Second Estimate), 4th Quarter and Year 2025” (real GDP growth rates and contributors). https://www.bea.gov/news/2026/gdp-second-estimate-4th-quarter-and-year-2025
-- Board of Governors of the Federal Reserve System, “FOMC Statement, March 18, 2026” (federal funds target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm  
-- Board of Governors of the Federal Reserve System, “FOMC Statement, June 18, 2025” (historical target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm  
-- Board of Governors of the Federal Reserve System, “FOMC Statement, September 17, 2025” (historical target range). https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm  
-- Board of Governors of the Federal Reserve System, “Summary of Economic Projections, March 2026” (GDP, unemployment, inflation, policy rate median projections). https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm
-- U.S. Bureau of Labor Statistics, “The Employment Situation, March 2026” (payroll employment, unemployment rate, participation, wages, industry job gains). https://www.bls.gov/news.release/archives/empsit_04032026.htm  
-- U.S. Bureau of Labor Statistics, “Consumer Price Index, December 2025” (12-month CPI change). https://www.bls.gov/news.release/archives/cpi_01132026.htm  
-- U.S. Bureau of Labor Statistics, “Job Openings and Labor Turnover Survey (JOLTS)” (job openings by industry; quit rates). https://www.bls.gov/news.release/jolts.htm  
-- U.S. Bureau of Labor Statistics, JOLTS Table 1 (job openings levels by industry). https://www.bls.gov/news.release/jolts.t01.htm  
-- U.S. Bureau of Labor Statistics, Monthly Labor Review, “Industry and occupational employment projections overview” (structural sector growth context). https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm 
-- U.S. Census Bureau, “Advance Monthly Sales for Retail and Food Services” (February 2026 retail sales level and YoY change; December 2025 comparison). https://www.census.gov/retail/sales.html
-- Federal Reserve Bank of Atlanta, “GDPNow” (model-based estimate of current-quarter real GDP growth). https://www.atlantafed.org/research-and-data/data/gdpnow
+- U.S. Bureau of Economic Analysis, [“GDP (Second Estimate), 4th Quarter and Year 2025” (real GDP growth rates and contributors).](https://www.bea.gov/news/2026/gdp-second-estimate-4th-quarter-and-year-2025)
+- Board of Governors of the Federal Reserve System, [“FOMC Statement, March 18, 2026” (federal funds target range).](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm)  
+- Board of Governors of the Federal Reserve System, [“FOMC Statement, June 18, 2025” (historical target range).](https://www.federalreserve.gov/newsevents/pressreleases/monetary20250618a.htm)  
+- Board of Governors of the Federal Reserve System, [“FOMC Statement, September 17, 2025” (historical target range).](https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm)  
+- Board of Governors of the Federal Reserve System, [“Summary of Economic Projections, March 2026” (GDP, unemployment, inflation, policy rate median projections).](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm)
+- U.S. Bureau of Labor Statistics, [“The Employment Situation, March 2026” (payroll employment, unemployment rate, participation, wages, industry job gains).](https://www.bls.gov/news.release/archives/empsit_04032026.htm)  
+- U.S. Bureau of Labor Statistics, [“Consumer Price Index, December 2025” (12-month CPI change).](https://www.bls.gov/news.release/archives/cpi_01132026.htm)  
+- U.S. Bureau of Labor Statistics, [“Job Openings and Labor Turnover Survey (JOLTS)” (job openings by industry; quit rates).](https://www.bls.gov/news.release/jolts.htm)  
+- U.S. Bureau of Labor Statistics, [JOLTS Table 1 (job openings levels by industry).](https://www.bls.gov/news.release/jolts.t01.htm)  
+- U.S. Bureau of Labor Statistics, [Monthly Labor Review, “Industry and occupational employment projections overview” (structural sector growth context).](https://www.bls.gov/opub/mlr/2026/article/industry-and-occupational-employment-projections-overview.htm) 
+- U.S. Census Bureau, [“Advance Monthly Sales for Retail and Food Services” (February 2026 retail sales level and YoY change; December 2025 comparison).](https://www.census.gov/retail/sales.html)
+- Federal Reserve Bank of Atlanta, [“GDPNow” (model-based estimate of current-quarter real GDP growth).](https://www.atlantafed.org/research-and-data/data/gdpnow)
 
