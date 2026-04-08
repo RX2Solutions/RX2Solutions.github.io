@@ -1,0 +1,52 @@
+{% assign home = site.data.home %}
+
+{% if home.cta and home.cta.button_label %}
+<a class="rx2-home-floating-cta pagescroll" href="#{{- home.cta.target_id | default: 'stayconnect' -}}" data-home-floating-cta data-home-floating-target="{{- home.cta.target_id | default: 'stayconnect' -}}">
+    {{- home.cta.floating_label | default: home.cta.button_label -}}
+</a>
+{% endif %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const floatingCta = document.querySelector("[data-home-floating-cta]");
+
+    if (!floatingCta || floatingCta.dataset.initialized === "true") {
+        return;
+    }
+
+    const targetId = floatingCta.getAttribute("data-home-floating-target");
+    const target = targetId ? document.getElementById(targetId) : null;
+
+    if (!target) {
+        return;
+    }
+
+    floatingCta.dataset.initialized = "true";
+
+    const toggleHidden = function (hidden) {
+        floatingCta.classList.toggle("rx2-home-floating-cta-hidden", hidden);
+    };
+
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                toggleHidden(entry.isIntersecting);
+            });
+        }, {
+            threshold: 0.08,
+            rootMargin: "0px 0px -12% 0px"
+        });
+
+        observer.observe(target);
+        return;
+    }
+
+    const handleScroll = function () {
+        const rect = target.getBoundingClientRect();
+        toggleHidden(rect.top < window.innerHeight && rect.bottom > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+});
+</script>

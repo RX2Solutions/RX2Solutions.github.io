@@ -1,319 +1,46 @@
-<!-- Testimonials -->
-<section id="our-testimonial" class="bglight padding_bottom">
-    <div class="parallax page-header testimonial-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{- site.baseurl -}}/assets/images/stock-photo-diversity-people-group-team-union-concept-386966809-cropped.jpeg')">
+{% assign home = site.data.home %}
+
+<section id="home-case-studies" class="padding_bottom_half bglight">
+    <div class="parallax page-header testimonial-bg" style="background-image: linear-gradient(rgba(17, 38, 55, 0.78), rgba(11, 29, 42, 0.82)), url('{{- site.baseurl -}}/assets/images/{{- home.case_studies.background_image -}}')">
         <div class="container">
             <div class="row">
-                <div class="col text-center">
+                <div class="col-lg-7 col-md-10 text-center text-lg-start">
                     <div class="heading-title wow fadeInUp padding_testi" data-wow-delay="300ms">
-                        <h2 class="whitecolor font-normal">What Our Clients and Candidates Say</h2>
+                        <span class="rx2-section-kicker rx2-section-kicker-light">{{- home.case_studies.eyebrow -}}</span>
+                        <h2 class="whitecolor font-normal">{{- home.case_studies.title -}}</h2>
+                        <p class="top20 mb-0 rx2-case-heading-copy">{{- home.case_studies.intro -}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div id="testimonials-filter" class="cbp-l-filters dark top20 bottom20 wow fadeIn d-table mx-auto" data-wow-delay="350ms">
-                <div data-filter=".client" class="cbp-filter-item cbp-filter-item-active">
-                    <span>Clients</span>
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="row top30">
+                    {% for item in home.case_studies.items %}
+                    <div class="col-lg-4 col-md-6 pb-4">
+                        <article class="services-main rx2-case-panel h-100 wow fadeInUp" data-wow-delay="{{ forloop.index | times: 100 | plus: 200 }}ms">
+                            <a href="{{- site.baseurl -}}{{- item.url -}}">
+                                <div class="image bottom10 rx2-case-media">
+                                    <div class="image rx2-case-image">
+                                        <img src="{{- site.baseurl -}}/assets/images/{{- item.image -}}" alt="{{- item.title -}}">
+                                    </div>
+                                    <div class="overlay"></div>
+                                    <span class="rx2-case-service">{{- item.service_line -}}</span>
+                                </div>
+                                <div class="services-content brand text-center text-md-left bglight">
+                                    <h3 class="bottom10 darkcolor">{{- item.title -}}</h3>
+                                    <p class="bottom15">{{- item.summary -}}</p>
+                                    <p class="rx2-case-metrics">{{- item.metrics -}}</p>
+                                    <span class="button-readmore">{{- home.case_studies.button_label -}}</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    {% endfor %}
                 </div>
-                <div data-filter=".candidate" class="cbp-filter-item">
-                    <span>Candidates</span>
-                </div>
-            </div>
-        </div>
-        <div id="testimonials-measonry" class="cbp">
-            <!-- Client Testimonial Items -->
-            <div class="cbp-item client">
-                <div class="owl-carousel" id="testimonial-slider-client">
-                    <!-- Client item 0 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Lynne W.</h3>
-                                <p>Life Science Organization</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I’ve worked with RX2 Solutions on several, hard to fill needs. 
-                                    RX2 Solutions can provide high caliber candidates, even on the most challenging searches. 
-                                    They are a “go-to” when I have a need, particularly in the Information Technology space. 
-                                    I look forward to working with RX2 Solutions for any future needs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 0.2 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">CFO</h3>
-                                <p>Life Science Company</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I have had excellent experiences working with RX2 Solutions for all of my candidate searches. 
-                                    They genuinely take the time to understand what we are looking for and our Company culture to provide high-quality candidates. 
-                                    It has been a pleasure to partner with them!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 0.5 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Steve E.</h3>
-                                <p>A Software Company</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    RX2 Solutions is a pleasure to work with. They listen to want you to need and work from there. Often vendors try to "sell" you 
-                                    what they have, not what you need. RX2 makes sure they listen to want you really need, help you refine what you really need, 
-                                    and then strives to provide you with what you need. I strongly recommend RX2 Solutions!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 1 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">David P.</h3>
-                                <p>A Retail Organization</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                             RX2 Solutions is on my shortlist of technology recruiters who break the mold for the industry. RX2's consistently patient, polite, 
-                                    informative, helpful, and easy to work with. They listen well to what's important to meet my needs and doesn't waste my time 
-                                    with people who don't fit. RX2 Solutions's open to flexible arrangements to land candidates and positively influences my team. 
-                                    I wish all agencies were as great to work with as RX2 Solutions, and they are a strong representation of their vanguard. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 2 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Jerry G.</h3>
-                                <p>A Educational Organization</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    It's been a pleasure getting to know RX2 Solutions over the past year or so.
-                                    Even though we have never been able to do business together, I consider him a class act.
-                                    Their demeanor and attitude are very professional, and I would recommend him to anyone who is looking for a
-                                    trustworthy, engaging, professional IT recruiter.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 3 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Deighton L.</h3>
-                                <p>A Life Science Organization</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I've known RX2 Solutions for several years, and they have become one of my go-to IT recruiters.
-                                    I can depend on RX2 for Integrity, dependability, and delivery.
-                                    It has been a pleasure working with RX2 Solutions.
-                                    I would highly recommend RX2 Solutions for your IT staffing needs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 4 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Thomas H.</h3>
-                                <p>A Law Firm</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I would recommend RX2 Solutions to anyone looking for a hard-working IT recruiter whom they can trust. I had the pleasure 
-                                    of working with them as both a hiring manager and a job seeker, and they always listened to what I wanted, set realistic 
-                                    expectations, and followed up when I asked them to. The candidates they sourced were excellent, and I would recommend RX2 
-                                    Solutions to anyone who has a contract or a direct-hire need for their IT team.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 5 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Keith P.</h3>
-                                <p>A Life Science Company</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    RX2 Solutions is a strong professional recruitment firm that was very involved in finding talent for my organization.
-                                    They stayed engaged and really knew our needs. I would recommend using RX2 Solutions to bring in great IT candidates.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 6 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Igor B.</h3>
-                                <p>A Utilities Company</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                RX2 Solutions is a highly skilled recruitment firm who can grasp an ideal candidate's personality and skill set requirements and 
-                                    deliver right on it. RX2 has helped us on several occasions, and the candidates they helped bring in were a very close match. 
-                                    I would recommend using his services without any hesitation.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 7 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Merle G.</h3>
-                                <p>A Nonprofit Organizations</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    RX2 Solutions has been a valuable partner to the HR and IT Departments to find and identify the right talent for the 
-                                    numerous IT positions that were hard to fill. RX2 Solutions was sensitive to our needs and was always eager to work 
-                                    with us and our limited budget. They have excellent follow-up skills and a very positive attitude. RX2 Solution's a 
-                                    pleasure to work with.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client item 7 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">A Talent Acquisition Profesional</h3>
-                                <p>A Manufacturing Organization</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I highly recommend working with RX2 Solutions. The team is very knowledgeable about the market and does a thoughtful and 
-                                    thorough job gathering details about each role and each candidate that they present. They are flexible and willing to 
-                                    commit to anything that we ask, which makes things easier for me. I trust them and look forward to continuing to 
-                                    work with them.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-            <!-- Candidate Testimonial Items -->
-            <div class="cbp-item candidate">
-                <div class="owl-carousel" id="testimonial-slider-candidate">
-                    <!-- Candidate item 1 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Paul M.</h3>
-                                <p>Sports App Founder</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                 RX2 Solutions is very helpful, advising on being in transition and job hunting strategies for my daughter. I recommend them 
-                                    to anyone seeking recruitment services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Candidate item 2 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Michael D.</h3>
-                                <p>Technology Leader</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                It says a lot about a company to help a stranger when you know they’re up against the odds as they enter the market of looking for 
-                                    a job. That’s exactly what RX2 did for me, and I appreciate the way they stepped up. It’s one thing to be a consummate 
-                                    professional, but it’s also another thing to be a good human. They took time out of their day to offer me a rewrite of my 
-                                    resume, and I’m very grateful to him for doing so. Keep doing what you do.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Candidate item 3 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Angelo V.</h3>
-                                <p>C-Level Executive</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    I initially met RX2 Solutions via a referral by a peer who had done business with him. 
-                                    I did not need their services at the time and soon realized that RX2 was the consummate professional. 
-                                    They followed up professionally when they promised to do so and has never given me the "hard sell."
-                                    When I started searching for a new opportunity, I was comfortable reaching out to RX2 Solutions in confidence.
-                                    They kept everything confidential and only sent my resume to companies that I approved. 
-                                    I would suggest that anyone looking for a trustworthy recruiter should give RX2 Solutions a chance to assist. 
-                                    They have always done well for me.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Candidate item 4 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Marnee K.</h3>
-                                <p>Director of Information Technology</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                Creative communication methods make RX2 Solutions stand out against all the other recruiters who had contacted me over the years. 
-                                    It was an absolute pleasure working with them to acquire my latest position; they made the job search, interview, and 
-                                    compensation negotiation process infinitely more comfortable.
-                                </p>
-                           </div>
-                        </div>
-                    </div>
-                    <!-- Candidate item 5 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">John H.</h3>
-                                <p>SAP Consultant</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                    RX2 Solutions was great to work with, very upfront and communicative. It was one of the best experiences I've had 
-                                    with a recruiter, they made a very stressful situation a lot easier to work through.
-                                </p>
-                           </div>
-                        </div>
-                    </div>
-                    <!-- Candidate item 6 -->
-                    <div class="item container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 text-lg-right text-center">
-                                <h3 class="defaultcolor font-normal">Jim G.</h3>
-                                <p>Project Manager</p>
-                            </div>
-                            <div class="col-lg-8 text-lg-left text-center">
-                                <p class="">
-                                  Highly recommend RX2 Solutions! Professional and great to work with, they offered valuable insights regarding job-hunting 
-                                    strategy and placed me into a position I love. Good to have in your corner!
-                                </p>
-                          </div>
-                        </div>
-                    </div>
-               </div>
             </div>
         </div>
     </div>
 </section>
-<!--Testimonials Ends-->

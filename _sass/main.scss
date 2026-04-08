@@ -4584,3 +4584,582 @@ form.findus .select:after {
 
 /*App Features ends*/
 
+.home-hero-copy {
+    max-width: 860px;
+}
+
+.home-hero-copy h1 {
+    font-size: clamp(3rem, 6.2vw, 5.2rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.1rem;
+}
+
+.home-hero-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-bottom: 0;
+}
+
+.rx2-section-kicker {
+    display: inline-block;
+    color: #1cb0b5;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.rx2-section-kicker-light {
+    color: #8eca50;
+}
+
+#our-services {
+    background: linear-gradient(180deg, #ffffff 0%, #f4faf9 100%);
+}
+
+.rx2-service-panel,
+.rx2-case-panel {
+    height: 100%;
+}
+
+.rx2-service-panel > a,
+.rx2-case-panel > a {
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.rx2-service-media,
+.rx2-case-media,
+.rx2-service-image,
+.rx2-case-image {
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+}
+
+.rx2-service-image img,
+.rx2-case-image img {
+    display: block;
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rx2-service-panel .overlay,
+.rx2-case-panel .overlay {
+    opacity: 1;
+    visibility: visible;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(7, 27, 40, 0.18) 58%, rgba(7, 27, 40, 0.56) 100%);
+}
+
+.rx2-service-panel .services-content,
+.rx2-case-panel .services-content {
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 22px 55px rgba(28, 42, 58, 0.1);
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: -74px;
+    min-height: 272px;
+    padding: 1.8rem 1.5rem 1.45rem;
+    z-index: 120;
+}
+
+.rx2-case-panel .services-content {
+    min-height: 332px;
+}
+
+.rx2-service-icon {
+    align-items: center;
+    background-image: linear-gradient(135deg, #8eca50 0%, #1cb0b5 56%, #0a81ce 100%);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(28, 176, 181, 0.22);
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 1.35rem;
+    height: 60px;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    width: 60px;
+}
+
+.rx2-service-panel h3,
+.rx2-case-panel h3,
+.rx2-case-overview-card h3 {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 0.9rem;
+}
+
+.rx2-service-panel h3,
+.rx2-case-panel h3,
+.rx2-case-overview-card h3,
+.rx2-case-detail-metrics h3 {
+    color: #27333c;
+}
+
+.rx2-service-panel p,
+.rx2-home-copy p,
+.rx2-case-panel p,
+.rx2-case-overview-card p,
+.rx2-case-detail-section p,
+.rx2-case-detail-metrics p,
+.rx2-case-demonstrates p,
+.rx2-case-demonstrates-item {
+    color: #5b6570;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.rx2-home-copy p {
+    margin-bottom: 1.25rem;
+}
+
+.rx2-home-copy-emphasis {
+    color: #27333c !important;
+    font-weight: 600;
+}
+
+.rx2-service-panel .button-readmore,
+.rx2-case-panel .button-readmore {
+    margin-top: 0.2rem;
+}
+
+#home-positioning {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.rx2-partner-visual {
+    position: relative;
+    padding: 1rem 0 3rem 1.5rem;
+}
+
+.rx2-partner-photo {
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 28px 60px rgba(17, 38, 55, 0.18);
+}
+
+.rx2-partner-photo img {
+    display: block;
+    height: 470px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rx2-partner-pill {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(17, 38, 55, 0.16);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    max-width: 220px;
+    padding: 1rem 1.15rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.rx2-partner-pill strong {
+    color: #27333c;
+    font-size: 0.95rem;
+}
+
+.rx2-partner-pill span {
+    color: #5b6570;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.rx2-partner-pill-1 {
+    left: 0;
+    top: 7%;
+}
+
+.rx2-partner-pill-2 {
+    right: -12px;
+    top: 34%;
+}
+
+.rx2-partner-pill-3 {
+    bottom: 0;
+    left: 12%;
+}
+
+.rx2-principles-band .heading-title h2,
+.rx2-principles-band .heading-title p {
+    color: #ffffff;
+}
+
+.rx2-principles-intro {
+    color: rgba(255, 255, 255, 0.78) !important;
+    margin: 1.5rem auto 0;
+    max-width: 920px;
+}
+
+.rx2-principles-wrapp {
+    margin-top: 1rem;
+}
+
+.rx2-principles-wrapp li {
+    vertical-align: top;
+}
+
+.rx2-principles-wrapp li p.fontbold {
+    font-size: 1rem;
+}
+
+.rx2-principles-wrapp li p:last-child {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240px;
+}
+
+#home-case-studies .page-header {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.rx2-case-heading-copy {
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 40rem;
+}
+
+.rx2-case-service,
+.rx2-case-card-label {
+    display: inline-block;
+    color: #8eca50;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.rx2-case-service {
+    background: rgba(17, 38, 55, 0.82);
+    border-radius: 999px;
+    left: 1.1rem;
+    margin-bottom: 0;
+    padding: 0.45rem 0.8rem;
+    position: absolute;
+    top: 1.1rem;
+    z-index: 100;
+}
+
+.rx2-case-card-label-dark {
+    color: #1cb0b5;
+}
+
+.rx2-case-metrics {
+    border-top: 1px solid rgba(39, 51, 60, 0.08);
+    color: #27333c !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 1.15rem;
+    padding-top: 1rem;
+}
+
+.rx2-home-cta {
+    align-items: center;
+    background-image: linear-gradient(135deg, #8eca50 0%, #1cb0b5 50%, #0a81ce 100%);
+    border-radius: 28px;
+    box-shadow: 0 28px 70px rgba(9, 35, 56, 0.24);
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 2.5rem 2.75rem;
+}
+
+.rx2-home-cta h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.rx2-home-cta p {
+    color: rgba(255, 255, 255, 0.88);
+    margin-top: 0.75rem;
+}
+
+.rx2-home-cta .button {
+    background: #ffffff;
+    color: #112637;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.rx2-home-cta .button:hover,
+.rx2-home-cta .button:focus {
+    color: #112637;
+}
+
+.rx2-home-floating-cta {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid rgba(17, 38, 55, 0.08);
+    border-radius: 50px;
+    bottom: calc(1.2rem + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 18px 38px rgba(17, 38, 55, 0.16);
+    display: inline-flex;
+    font-size: 0.88rem;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    max-width: 24rem;
+    min-height: 58px;
+    padding: 0.95rem 1.55rem;
+    position: fixed;
+    right: max(1.25rem, calc((100vw - 1140px) / 2 + 15px));
+    text-align: center;
+    text-decoration: none;
+    color: #26313c;
+    opacity: 1;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+    z-index: 1550;
+}
+
+.rx2-home-floating-cta:hover,
+.rx2-home-floating-cta:focus {
+    box-shadow: 0 22px 42px rgba(17, 38, 55, 0.22);
+    color: #26313c;
+    transform: translateY(-2px);
+}
+
+.rx2-home-floating-cta-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(18px);
+}
+
+.rx2-home-contact-wrapp {
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(17, 38, 55, 0.08);
+    padding: 2.4rem;
+}
+
+.rx2-home-contact-wrapp p {
+    color: #5b6570;
+    line-height: 1.8;
+}
+
+.rx2-home-contact-copy {
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+    max-width: 29rem;
+    padding-right: 1rem;
+}
+
+.rx2-home-contact-copy h3 {
+    font-size: clamp(2rem, 2.8vw, 2.6rem);
+    line-height: 1.12;
+    margin-bottom: 0;
+}
+
+.rx2-home-contact-copy p {
+    margin-top: 0.9rem;
+    max-width: 24rem;
+}
+
+.rx2-home-contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.rx2-home-contact-form .form-control {
+    background: #ffffff;
+    border: 1px solid rgba(17, 38, 55, 0.12);
+    border-radius: 16px;
+    color: #26313c;
+    height: 56px;
+    padding: 0.9rem 1rem;
+}
+
+.rx2-home-contact-form .form-control::placeholder {
+    color: #7f8b96;
+}
+
+.rx2-home-contact-form .button {
+    border-radius: 16px;
+    min-height: 56px;
+}
+
+.rx2-home-contact-message {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    min-height: 1.5rem;
+}
+
+.rx2-case-overview-card,
+.rx2-case-detail-metrics,
+.rx2-case-demonstrates {
+    background: #ffffff;
+    border: 1px solid rgba(28, 176, 181, 0.14);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(28, 42, 58, 0.08);
+}
+
+.rx2-case-overview-card {
+    padding: 2rem;
+}
+
+.rx2-case-overview-metrics {
+    color: #27333c !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.rx2-case-detail-section {
+    border-bottom: 1px solid rgba(39, 51, 60, 0.08);
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    scroll-margin-top: 130px;
+}
+
+.rx2-case-detail-section:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rx2-case-detail-metrics {
+    padding: 1.75rem;
+}
+
+.rx2-case-detail-metrics h3 {
+    color: #27333c;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.rx2-case-demonstrates {
+    padding: 2.5rem;
+}
+
+.rx2-case-demonstrates-item {
+    background: rgba(28, 176, 181, 0.06);
+    border-radius: 16px;
+    height: 100%;
+    padding: 1rem 1.15rem;
+}
+
+@media (max-width: 991.98px) {
+    .home-hero-subtitle {
+        font-size: 1.15rem;
+    }
+
+    .rx2-service-panel .services-content,
+    .rx2-case-panel .services-content {
+        min-height: 0;
+    }
+
+    .rx2-partner-visual {
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .rx2-partner-pill {
+        max-width: 180px;
+    }
+
+    .rx2-home-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .rx2-home-cta .button {
+        white-space: normal;
+        width: 100%;
+    }
+
+    .rx2-case-detail-metrics {
+        margin-top: 1.5rem;
+    }
+
+    .rx2-home-floating-cta {
+        left: 4px;
+        max-width: none;
+        right: 4px;
+    }
+
+    .rx2-home-contact-copy {
+        max-width: none;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-hero-copy h1 {
+        font-size: 2.7rem;
+    }
+
+    .rx2-service-image img,
+    .rx2-case-image img,
+    .rx2-partner-photo img {
+        height: 240px;
+    }
+
+    .rx2-service-panel .services-content,
+    .rx2-case-panel .services-content {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: -54px;
+        padding: 1.4rem 1.2rem 1.25rem;
+    }
+
+    .rx2-partner-pill {
+        gap: 0.25rem;
+        max-width: none;
+        position: static;
+    }
+
+    .rx2-partner-visual {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .rx2-principles-intro {
+        max-width: 100%;
+    }
+
+    .rx2-home-cta {
+        padding: 2rem 1.6rem;
+    }
+
+    .rx2-home-cta h3 {
+        font-size: 1.6rem;
+    }
+
+    .rx2-home-floating-cta {
+        bottom: calc(0.9rem + env(safe-area-inset-bottom, 0px));
+        font-size: 0.84rem;
+        justify-content: center;
+        padding: 0.9rem 1rem;
+    }
+
+    .rx2-home-contact-wrapp {
+        padding: 1.6rem 1.25rem;
+    }
+
+    .rx2-case-overview-card,
+    .rx2-case-detail-metrics,
+    .rx2-case-demonstrates {
+        padding: 1.6rem;
+    }
+}

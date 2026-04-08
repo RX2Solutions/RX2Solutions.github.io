@@ -1,0 +1,96 @@
+{% assign home = site.data.home %}
+
+<section id="{{- home.cta.target_id | default: 'stayconnect' -}}" class="bglight position-relative padding_bottom_half">
+    <div class="container">
+        <div class="contactus-wrapp rx2-home-contact-wrapp">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <div class="heading-title wow fadeInUp rx2-home-contact-copy text-center text-lg-left" data-wow-delay="300ms">
+                        {% if home.cta.form_eyebrow != blank %}
+                        <span class="rx2-section-kicker">{{- home.cta.form_eyebrow -}}</span>
+                        {% endif %}
+                        <h3 class="darkcolor bottom10">{{- home.cta.form_title | default: home.cta.title -}}</h3>
+                        {% if home.cta.form_intro != blank %}
+                        <p class="mb-0">{{- home.cta.form_intro -}}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 mt-4 mt-lg-0">
+                    <form class="getin_form wow fadeInUp rx2-home-contact-form" data-wow-delay="400ms" id="homeContactForm">
+                        <div class="rx2-home-contact-message" id="homeFormMessages" aria-live="polite"></div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="form-group">
+                                    <label for="homeUserName" class="d-none">First Name</label>
+                                    <input class="form-control" type="text" placeholder="First Name" required id="homeUserName" name="userName">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="form-group">
+                                    <label for="homeCompanyName" class="d-none">Company Name</label>
+                                    <input class="form-control" type="text" placeholder="Company Name" id="homeCompanyName" name="companyName">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="form-group">
+                                    <label for="homeEmail" class="d-none">Email</label>
+                                    <input class="form-control" type="email" placeholder="Email" required id="homeEmail" name="email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="button gradient-btn w-100">{{- home.cta.form_submit_label | default: 'Start a Respectfully Professional Conversation' -}}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("homeContactForm");
+    const formMessages = document.getElementById("homeFormMessages");
+
+    if (!form || !formMessages || form.dataset.initialized === "true") {
+        return;
+    }
+
+    form.dataset.initialized = "true";
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const payload = {};
+
+        formData.forEach((value, key) => {
+            payload[key] = value;
+        });
+
+        formMessages.style.color = "#0a81ce";
+        formMessages.textContent = "Sending message...";
+
+        try {
+            const response = await fetch("https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                throw new Error("Request failed");
+            }
+
+            form.reset();
+            formMessages.style.color = "#2b9348";
+            formMessages.textContent = "Message successfully sent!";
+        } catch (error) {
+            console.error("Error submitting the home contact form:", error);
+            formMessages.style.color = "#c0392b";
+            formMessages.textContent = "Failed to send message. Please try again.";
+        }
+    });
+});
+</script>

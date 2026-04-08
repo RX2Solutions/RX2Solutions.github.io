@@ -1,70 +1,37 @@
+{% assign home = site.data.home %}
+
 <section id="our-services" class="padding">
     <div class="container">
-
-        <div class="row align-items-center">
-            <div class="col">
-                <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                    <span class="defaultcolor text-center text-md-left"></span>
-                    <h2 class="darkcolor font-normal text-center">Our Solutions</h2>
-                    <p class="text-center py-3">
-                       We are committed to delivering customized People Solutions that meet each client’s specific needs. Our services include<br />
-                       comprehensive Human Resource Outsourcing, Executive Search, and Strategic Staffing.
-                    </p>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">
+                    <span class="rx2-section-kicker">{{- home.services.eyebrow -}}</span>
+                    <h2 class="darkcolor font-normal">{{- home.services.title -}}</h2>
+                    <p class="py-3 mb-0">{{- home.services.description -}}</p>
                 </div>
             </div>
         </div>
-
-        <div class="row d-flex align-items-center" id="app-feature">
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="text-center text-md-right">
-
-                    <div class="feature-item mt-5" style="visibility: visible;">
-                        <div class="icon"><i class="fas fa-dpaint-brush"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block"><a href="{{- site.baseurl -}}/human-resource-outsourcing.html">Human Resource Outsourcing</a></span>
-                            </h3>
-                            <p>We provide customized HR solutions tailored to your company's culture, values, and goals. Our US-based team streamlines recruitment, payroll, benefits, and compliance, allowing you to focus on growth and innovation.</p>
+        <div class="row top30">
+            {% for item in home.services.items %}
+            <div class="col-lg-4 col-md-6 pb-4">
+                <article class="services-main rx2-service-panel h-100 wow fadeInUp" data-wow-delay="{{ forloop.index | times: 100 | plus: 200 }}ms">
+                    <a href="{{- site.baseurl -}}{{- item.url -}}">
+                        <div class="image bottom10 rx2-service-media">
+                            <div class="image rx2-service-image">
+                                <img src="{{- site.baseurl -}}/assets/images/{{- item.image -}}" alt="{{- item.title -}}">
+                            </div>
+                            <div class="overlay"></div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <div class="app-image top30">
-                    <img src="{{- site.baseurl -}}/assets/images/wavy.png" alt="image">
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="text-center text-md-left">
-
-                    <div class="feature-item mt-5" style="visibility: visible;">
-                        <div class="icon"><i class="fas fa-dcog"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block"><a href="{{- site.baseurl -}}/executive-search.html">Executive Search</a></span>
-                            </h3>
-                            <p>Transforming U.S. Businesses Through Exceptional Leadership</p>
+                        <div class="services-content brand text-center text-md-left bglight">
+                            <div class="rx2-service-icon"><i class="{{- item.icon -}}"></i></div>
+                            <h3 class="bottom10 darkcolor">{{- item.title -}}</h3>
+                            <p class="bottom15 mb-0">{{- item.description -}}</p>
+                            <span class="button-readmore">Explore Solution</span>
                         </div>
-                    </div>
-
-                    <div class="feature-item mt-5" style="visibility: visible;">
-                        <div class="icon"><i class="fas fa-dmicrochip"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block"><a href="{{- site.baseurl -}}/strategic-staffing.html">Strategic Staffing</a></span>
-                            </h3>
-                            <p>At RX2 Solutions, we specialize in recruitment services for contract, contract-to-hire, and direct-hire roles, connecting top talent with the right opportunities.</p>
-                        </div>
-                    </div>
-
-                </div>
+                    </a>
+                </article>
             </div>
-
+            {% endfor %}
         </div>
-
     </div>
 </section>
