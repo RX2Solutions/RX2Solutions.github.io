@@ -4,6 +4,7 @@ This Terraform stack provisions the AWS resources required for the staging Jekyl
 
 - Private S3 bucket for site assets
 - CloudFront distribution with Origin Access Control (OAC)
+- CloudFront Function to rewrite Jekyll-style pretty URLs to `index.html`
 - ACM certificate in `us-east-1`
 - Route 53 `A` and `AAAA` alias records for `rx2solutions-staging.instantbrains.com`
 
@@ -41,5 +42,6 @@ That script will:
 ## Notes
 
 - CloudFront certificates must be created in `us-east-1`, which this stack handles automatically.
+- Because the staging origin is a private S3 bucket behind CloudFront, pretty URLs like `/case-studies/example/` need a viewer-request rewrite to `/case-studies/example/index.html`. This stack provisions that rewrite automatically.
 - The first apply can take several minutes because ACM validation and CloudFront deployment are asynchronous.
 - The Route 53 hosted zone for `instantbrains.com` must live in the same AWS account or be readable through your current AWS credentials.

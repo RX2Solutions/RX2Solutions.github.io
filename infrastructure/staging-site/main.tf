@@ -98,6 +98,14 @@ resource "aws_cloudfront_origin_access_control" "site" {
   signing_protocol                  = "sigv4"
 }
 
+resource "aws_cloudfront_function" "pretty_urls" {
+  name    = "${var.project_prefix}-${var.environment}-pretty-urls"
+  runtime = "cloudfront-js-2.0"
+  comment = "Rewrite Jekyll pretty URLs to index.html objects"
+  publish = true
+  code    = file("${path.module}/cloudfront-url-rewrite.js")
+}
+
 resource "aws_acm_certificate" "site" {
   provider          = aws.use1
   domain_name       = var.domain_name
@@ -151,6 +159,11 @@ resource "aws_cloudfront_distribution" "site" {
     compress               = true
     target_origin_id       = "s3-${aws_s3_bucket.site.id}"
     viewer_protocol_policy = "redirect-to-https"
+
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.pretty_urls.arn
+    }
   }
 
   restrictions {
