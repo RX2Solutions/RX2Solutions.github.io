@@ -9,32 +9,43 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12">
-                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms"  id="contactForm">
+                    <form class="getin_form wow fadeInUp rx2-contact-intake-form" data-wow-delay="400ms" data-rx2-contact-form data-endpoint="{{ site.landing_opt_in_endpoint }}" data-page-name="{{ page.title | default: 'RX2 Solutions' }}" data-success-message="Thanks. We will be in touch shortly.">
                         <div class="row">
-                            <div class="col-md-12 col-sm-12" id="result"></div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
-                                    <label for="userName" class="d-none"></label>
-                                    <input class="form-control" type="text" placeholder="First Name" required id="userName" name="userName">
+                                    <label for="footerFullName" class="d-none">Full Name</label>
+                                    <input class="form-control" type="text" placeholder="Full Name" required id="footerFullName" name="full_name">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
-                                    <label for="companyName" class="d-none"></label>
-                                    <input class="form-control" type="tel" placeholder="Company Name"  id="companyName" name="companyName">
+                                    <label for="footerCompanyName" class="d-none">Company Name</label>
+                                    <input class="form-control" type="text" placeholder="Company Name" id="footerCompanyName" name="company_name">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
-                                    <label for="email" class="d-none"></label>
-                                    <input class="form-control" type="email" placeholder="Email" required id="email" name="email">
+                                    <label for="footerEmail" class="d-none">Email</label>
+                                    <input class="form-control" type="email" placeholder="Email" required id="footerEmail" name="email">
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <button type="submit" class="button gradient-btn w-100" id="submit_btn">contact me</button>
+                                <div class="form-group">
+                                    <label for="footerPhoneNumber" class="d-none">Phone Number</label>
+                                    <input class="form-control" type="tel" placeholder="Phone Number" required id="footerPhoneNumber" name="phone_number" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,}$">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group rx2-contact-honeypot">
+                                    <label for="footerConfirmEmail" class="d-none">Leave this field blank</label>
+                                    <input class="form-control" type="text" id="footerConfirmEmail" name="confirm_email" tabindex="-1" autocomplete="off">
+                                </div>
+                                <div class="rx2-contact-form-message" data-rx2-contact-message aria-live="polite"></div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <button type="submit" class="button gradient-btn w-100">Start a Respectfully Professional Conversation</button>
                             </div>
                         </div>
-                        <div id="formMessages" style="margin-bottom: 10px; font-weight: bold;"></div>
                     </form>
                 </div>
             </div>
@@ -42,44 +53,3 @@
     </div>
 </section>
 <!-- Contact US ends -->
-
-<script>
-    document.getElementById("contactForm").addEventListener("submit", async (event) => {
-        event.preventDefault();
-    
-        const form = event.target;
-        const formData = new FormData(form);
-    
-        // Convert form data to JSON
-        const json = {};
-        formData.forEach((value, key) => {
-            json[key] = value;
-        });
-    
-        // Update the form messages
-        const formMessages = document.getElementById("formMessages");
-        formMessages.style.color = "blue"; // Info color
-        formMessages.textContent = "Sending message...";
-    
-        try {
-            // Send the POST request
-            const response = await fetch("https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(json),
-            });
-    
-            if (response.ok) {
-                formMessages.style.color = "green"; // Success color
-                formMessages.textContent = "Message successfully sent!";
-            } else {
-                formMessages.style.color = "red"; // Error color
-                formMessages.textContent = "Failed to send message. Please try again.";
-            }
-        } catch (error) {
-            console.error("Error submitting the form:", error);
-            formMessages.style.color = "red"; // Error color
-            formMessages.textContent = "An error occurred. Please try again.";
-        }
-    });
-    </script>

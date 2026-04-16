@@ -193,6 +193,8 @@ By combining market expertise with a Respectfully Professional approach, we supp
 
 You get engineering and supply chain talent who strengthen execution and support the continuity your teams rely on.
 
+------------------------------------------------------------------------
+
 **WHY RX2 SOLUTIONS**
 
 **Teams choose RX2 when they want reliable delivery, clear communication, and a partner who stays accountable from start to finish.**

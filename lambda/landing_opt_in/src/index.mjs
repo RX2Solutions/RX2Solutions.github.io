@@ -8,6 +8,7 @@ const allowedOrigins = parseAllowedOrigins(process.env.ALLOWED_ORIGINS || proces
 const notionDatabaseId = process.env.NOTION_DATABASE_ID;
 const emailProperty = process.env.NOTION_EMAIL_PROPERTY;
 const nameProperty = process.env.NOTION_NAME_PROPERTY;
+const companyProperty = process.env.NOTION_COMPANY_PROPERTY;
 const titleProperty = process.env.NOTION_TITLE_PROPERTY || "Name";
 const linkedinProperty = process.env.NOTION_LINKEDIN_PROPERTY;
 const stageProperty = process.env.NOTION_STAGE_PROPERTY;
@@ -90,6 +91,7 @@ export const handler = async (event) => {
     }
 
     const fullName = normaliseText(payload.full_name, 128);
+    const companyName = normaliseText(payload.company_name, 128);
     const linkedinUrl = normaliseLinkedInUrl(payload.linkedin_url);
     const linkedinProvided = typeof payload.linkedin_url === "string" && payload.linkedin_url.trim().length > 0;
     const phoneNumber = normalisePhone(payload.phone_number);
@@ -111,6 +113,7 @@ export const handler = async (event) => {
       email,
       stage: submissionStage,
       fullName,
+      companyName,
       linkedinUrl,
       phoneNumber,
       topicsOfInterest,
@@ -122,6 +125,7 @@ export const handler = async (event) => {
       email,
       stage: submissionStage,
       fullName,
+      companyName,
       linkedinUrl,
       phoneNumber,
       topicsOfInterest,
@@ -378,6 +382,7 @@ async function updateSubscriberRecord({
   email,
   stage,
   fullName,
+  companyName,
   linkedinUrl,
   phoneNumber,
   topicsOfInterest,
@@ -422,6 +427,11 @@ async function updateSubscriberRecord({
   if (fullName) {
     expressions.push("fullName = :fullName");
     values[":fullName"] = fullName;
+  }
+
+  if (companyName) {
+    expressions.push("companyName = :companyName");
+    values[":companyName"] = companyName;
   }
 
   if (linkedinUrl) {
@@ -472,6 +482,7 @@ async function syncNotion({
   email,
   stage,
   fullName,
+  companyName,
   linkedinUrl,
   phoneNumber,
   topicsOfInterest,
@@ -517,6 +528,16 @@ async function syncNotion({
       rich_text: [
         {
           text: { content: fullName },
+        },
+      ],
+    };
+  }
+
+  if (companyProperty && companyName) {
+    properties[companyProperty] = {
+      rich_text: [
+        {
+          text: { content: companyName },
         },
       ],
     };

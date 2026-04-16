@@ -67,7 +67,7 @@ principles:
     - number: "04"
       title: Integrated Expertise
       description: >-
-        As a national provider of Human Resource Outsourcing, Executive Search, and Strategic Staffing, we deliver an interconnected suite of services designed to meet your workforce needs from leadership to operations. Each line of business strengthens the others so however you engage us, you get the benefits of our expertise across all three. The outcome is a unified approach that brings clarity, consistency, and stability to your people strategy.
+        Our services are intentionally connected, supporting your workforce from leadership to operations. Wherever we engage, you benefit from the full scope of our expertise, creating a more consistent and aligned people strategy.
     - number: "05"
       title: Outcome Focused
       description: >-
@@ -82,43 +82,40 @@ case_studies:
   button_label: View Case Studies
   page_title: Case Studies
   page_intro: >-
-    These stories show how RX2 supports organizations when the stakes are high, the work is operationally critical, and execution needs to stay steady. Each overview below expands on the problem, the approach, and the measurable result.
-  demonstrates_title: What These Cases Demonstrate
-  demonstrates_intro: >-
-    Across all six stories, RX2 delivered the same core advantages that define a Respectfully Professional partnership.
-  demonstrates_items:
-    - Volume: sustained staffing support across functions and states
-    - Speed: aligned talent delivered in less than a week when required
-    - Precision: intentional, accurate placements instead of resume pushing
-    - Operational Ease: reduced workload for internal teams with minimal oversight required
-    - Flexibility: immediate adjustment when needs shifted
-    - Integration: one partner across departments, states, and operational environments
+    These stories show how RX2 supports organizations when the stakes are high, the work is operationally critical, and execution needs to stay steady. Expand any summary below to review the situation, the approach, the metrics, and the full case study.
+  page_summary_button_label: Read Full Case
   footer_title: Ready to strengthen your operations?
   footer_text: Let’s talk about how we can support your next stage of growth.
   items:
     - title: One Company Nationwide
       anchor: one-company-nationwide
       url: /case-studies/#one-company-nationwide
+      landing_url: /landing/one-company-nationwide-case-study/
+      detail_url: /case-studies/one-company-nationwide/
       service_line: Strategic Staffing
       image: AdobeStock_677065193_hd.jpeg
       summary: >-
         When a life sciences and manufacturing organization needed continuous Strategic Staffing across more than a dozen states, RX2 delivered with speed, precision, and flexibility. Our work enabled them to operate without interruption, supporting every department and location during a period of rapid growth.
       overview: >-
         A life sciences and manufacturing organization operating across more than a dozen states needed dependable Strategic Staffing during a period of rapid growth. Their work was time-sensitive and operationally critical, requiring a partner who could deliver high-volume hiring with accuracy, speed, and minimal friction. RX2 became that partner. We supported every department and location, delivering aligned candidates in less than a week when required and adjusting quickly as needs shifted. With steady execution and consistent communication, we enabled the organization to continue operating without interruption. Over an 18-month period, RX2 delivered 180 high-quality hires nationwide and became their sole Strategic Staffing partner.
-      metrics: 180 hires • 18 months • Every Department • 12+ states
+      metrics: 180 hires • 18 months • Every department • 12+ states • Aligned talent in under a week when needed
     - title: Precision Talent Delivery
       anchor: precision-talent-delivery
       url: /case-studies/#precision-talent-delivery
+      landing_url: /landing/precision-talent-delivery-case-study/
+      detail_url: /case-studies/precision-talent-delivery/
       service_line: Executive Search
       image: AdobeStock_675065915_hd.jpeg
       summary: >-
         After struggling to fill a highly specialized role, a client turned to RX2 for a more accurate, focused approach. We identified and delivered the exact talent required, accelerating their plans without unnecessary interview cycles or misaligned candidates.
       overview: >-
         A client struggled to fill a niche, highly specialized role despite multiple prior attempts. They needed a partner who could move beyond volume sourcing and identify the exact individual who matched the technical skillset and organizational expectations. RX2 approached the assignment with a precision-first mindset. We rebuilt the search criteria, clarified success factors, and applied a more targeted, research-driven approach to candidate identification. The result was a single, aligned placement who immediately improved the team’s capabilities. This engagement demonstrated RX2’s ability to deliver accurate results where generalized search efforts fall short.
-      metrics: Prior attempts unsuccessful • Successful aligned placement
+      metrics: 3 failed sourcing attempts • 1 aligned placement • Precision over resume volume
     - title: Executive Leadership Alignment
       anchor: executive-leadership-alignment
       url: /case-studies/#executive-leadership-alignment
+      landing_url: /landing/executive-leadership-alignment-case-study/
+      detail_url: /case-studies/executive-leadership-alignment/
       service_line: Executive Search
       image: AdobeStock_128206575_hd.jpeg
       summary: >-
@@ -129,16 +126,20 @@ case_studies:
     - title: One Company Scaling
       anchor: one-company-scaling
       url: /case-studies/#one-company-scaling
+      landing_url: /landing/one-company-scaling-case-study/
+      detail_url: /case-studies/one-company-scaling/
       service_line: Strategic Staffing
       image: AdobeStock_514001530_hd.jpeg
       summary: >-
         What began as a single departmental engagement grew into company-wide support. As the client scaled, RX2 provided Strategic Staffing across every major function, reducing complexity and giving the organization one integrated partner for all hiring needs.
       overview: >-
         What began as a single-department engagement expanded into a company-wide partnership as the client grew. The organization needed a consistent, dependable Strategic Staffing model that could support multiple functions without creating additional complexity for internal teams. RX2 delivered a unified approach that scaled seamlessly with the business. From technical teams to operational roles and business support, we provided aligned candidates, clear communication, and predictable delivery. Over time, the organization consolidated all staffing needs under one partner, reducing fragmentation, improving hiring consistency, and strengthening workforce planning.
-      metrics: 1 department to full enterprise • Multi-function support
+      metrics: 1 department to full enterprise • Multi-function support • One partner as needs expanded
     - title: Strategic Needs Discovery
       anchor: strategic-needs-discovery
       url: /case-studies/#strategic-needs-discovery
+      landing_url: /landing/strategic-needs-discovery-case-study/
+      detail_url: /case-studies/strategic-needs-discovery/
       service_line: Executive Search
       image: AdobeStock_702158206.jpeg
       summary: >-
@@ -149,13 +150,15 @@ case_studies:
     - title: Complete HR Integration
       anchor: complete-hr-integration
       url: /case-studies/#complete-hr-integration
+      landing_url: /landing/complete-hr-integration-case-study/
+      detail_url: /case-studies/complete-hr-integration/
       service_line: HR Outsourcing
       image: AdobeStock_88821040_hd.jpeg
       summary: >-
         A rapidly growing biotech organization brought RX2 in to operate as their full HR department. We managed recruiting, onboarding, compliance, payroll coordination, headcount planning, and compensation structure, giving leadership the freedom to focus on scientific and operational priorities.
       overview: >-
         A rapidly growing biotech company needed a full HR function but wasn’t ready to build an internal department. They engaged RX2 to operate as their end-to-end HR partner. We managed all core HR functions, including recruiting, onboarding, compliance, payroll coordination, headcount planning, compensation structure, and daily HR administration. This allowed leadership to focus entirely on scientific and operational priorities while HR ran smoothly behind the scenes. With clear structure, consistent communication, and a scalable HR framework, the organization avoided the growing pains and compliance risks common during rapid expansion.
-      metrics: Full HR function outsourced • Scalable people foundation
+      metrics: Full HR function outsourced • Scalable people foundation • Leadership bandwidth reclaimed
 
 cta:
   title: Ready to talk about your people challenges?

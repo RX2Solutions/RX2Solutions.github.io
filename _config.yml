@@ -1,6 +1,9 @@
 collections:
   authors:
     output: true
+  case_studies:
+    output: true
+    permalink: /case-studies/:name/
   landing_pages:
     output: true
     permalink: /landing/:title/
@@ -22,6 +25,11 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "case_studies"
+    values:
+      layout: "case-study"
+  - scope:
+      path: ""
       type: "landing_pages"
     values:
       layout: "landing"
@@ -35,5 +43,7 @@ defaults:
 
 future: false
 
+url: https://www.rx2solutions.com
 logo: /assets/images/RX2+Solutions-01+grey+text+added+2.png
 landing_opt_in_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/landingOptIn
+google_analytics_measurement_id:

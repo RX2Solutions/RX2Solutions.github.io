@@ -201,6 +201,7 @@ resource "aws_lambda_function" "landing_opt_in" {
       NOTION_DATABASE_ID            = var.notion_database_id
       NOTION_EMAIL_PROPERTY         = var.notion_email_property
       NOTION_NAME_PROPERTY          = var.notion_name_property
+      NOTION_COMPANY_PROPERTY       = var.notion_company_property
       NOTION_TITLE_PROPERTY         = var.notion_title_property
       NOTION_LINKEDIN_PROPERTY      = var.notion_linkedin_property
       NOTION_PHONE_PROPERTY         = var.notion_phone_property

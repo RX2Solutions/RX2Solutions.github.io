@@ -1,6 +1,6 @@
 ---
 layout: services-page
-title: Strategic Staffing
+title: Business challenges don't wait, and neither should your staffing solutions.
 text-color: white
 background: AdobeStock_668870479_hd.jpg
 whys: false
@@ -25,4 +25,8 @@ sections:
     image: AdobeStock_708819693_hd.jpg
     text: As a technology-driven organization we understand how important it is to have the right software, hardware, and people in place. Our focus at RX2 Solutions is to deliver the right talent to ensure that your technology goals are being achieved. [...]
 ---
-At RX2 Solutions, we specialize in recruitment services for contract, contract-to-hire, and direct-hire roles, connecting top talent with the right opportunities. Our **<a href="{{- site.baseurl -}}/rpp.html">Respectfully Professional Process</a>** sets us apart built on a commitment to quality, customized search strategies, and a consultative approach. We take the time to understand the unique needs of both clients and candidates, ensuring the right fit every time. Whether you’re growing your team or seeking your next career move, RX2 Solutions is here to help with expertise, integrity, and a people-first mindset.
+We approach Strategic Staffing with the same structure and care we apply to Executive Search. Because the people doing the work every day have just as much influence on performance as the leaders who guide them, every placement is grounded in clarity, alignment, and a Respectfully Professional approach.
+
+Whether you need contract, contract-to-hire, or direct hire support, each placement integrates cleanly into your organization and strengthens execution without slowing momentum. No clutter, no mismatches, no resume dumping, just aligned, dependable talent delivered by a partner who understands how your organization operates.
+
+You stay agile and productive. We make sure the right people are in the right roles at the right time.

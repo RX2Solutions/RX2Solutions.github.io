@@ -2,73 +2,52 @@
 
 <section class="padding bglight">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 text-center">
-                <div class="heading-title">
-                    <span class="rx2-section-kicker">{{- home.case_studies.eyebrow -}}</span>
-                    <h1 class="darkcolor">{{- home.case_studies.page_title -}}</h1>
-                    <p class="top20 mb-0">{{- home.case_studies.page_intro -}}</p>
-                </div>
+        <div class="rx2-case-page-intro">
+            <div class="heading-title mb-0 text-center text-lg-left">
+                <span class="rx2-section-kicker">{{- home.case_studies.eyebrow -}}</span>
+                <h1 class="darkcolor">{{- home.case_studies.page_title -}}</h1>
+                <p class="top20 mb-0">{{- home.case_studies.page_intro -}}</p>
             </div>
-        </div>
-        <div class="row top30">
-            {% for item in home.case_studies.items %}
-            <div class="col-lg-4 col-md-6 pb-4 d-flex">
-                <article class="rx2-case-overview-card w-100">
-                    <span class="rx2-case-card-label rx2-case-card-label-dark">{{- item.service_line -}}</span>
-                    <h3>{{- item.title -}}</h3>
-                    <p>{{- item.overview -}}</p>
-                    <p class="rx2-case-overview-metrics">{{- item.metrics -}}</p>
-                    <a class="button gradient-btn" href="#{{- item.anchor -}}">Jump to Summary</a>
-                </article>
-            </div>
-            {% endfor %}
         </div>
     </div>
 </section>
 
 <section class="padding_top padding_bottom_half">
     <div class="container">
-        {% for item in home.case_studies.items %}
-        <section id="{{- item.anchor -}}" class="rx2-case-detail-section">
-            <span class="rx2-case-card-label rx2-case-card-label-dark">{{- item.service_line -}}</span>
-            <div class="row align-items-start">
-                <div class="col-lg-8">
-                    <h2 class="darkcolor font-normal">{{- item.title -}}</h2>
-                    <p class="mb-0">{{- item.overview -}}</p>
-                </div>
-                <div class="col-lg-4 mt-4 mt-lg-0">
-                    <div class="rx2-case-detail-metrics">
-                        <h3>Key Metrics</h3>
-                        <p class="mb-0">{{- item.metrics -}}</p>
+        <div class="rx2-case-accordion">
+            {% for item in home.case_studies.items %}
+            <details id="{{- item.anchor -}}" class="rx2-case-accordion-item" data-case-summary>
+                <summary>
+                    <div class="rx2-case-accordion-copy">
+                        <h2 class="darkcolor font-normal">{{- item.title -}}</h2>
+                        <p class="mb-0">{{- item.summary -}}</p>
+                    </div>
+                    <span class="rx2-case-accordion-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="rx2-case-accordion-body">
+                    <div class="row align-items-start">
+                        <div class="col-lg-8">
+                            <p class="mb-0">{{- item.overview -}}</p>
+                        </div>
+                        <div class="col-lg-4 mt-4 mt-lg-0">
+                            <div class="rx2-case-detail-metrics">
+                                <h3>Key Metrics</h3>
+                                <p class="mb-0">{{- item.metrics -}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rx2-case-accordion-actions">
+                        <a class="button gradient-btn" href="{{- site.baseurl -}}{{- item.landing_url -}}">{{- home.case_studies.page_summary_button_label -}}</a>
                     </div>
                 </div>
-            </div>
-        </section>
-        {% endfor %}
+            </details>
+            {% endfor %}
+        </div>
     </div>
 </section>
 
 <section class="padding_bottom">
     <div class="container">
-        <div class="rx2-case-demonstrates">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <span class="rx2-section-kicker">{{- home.case_studies.eyebrow -}}</span>
-                    <h2 class="darkcolor font-normal">{{- home.case_studies.demonstrates_title -}}</h2>
-                    <p class="mb-0">{{- home.case_studies.demonstrates_intro -}}</p>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row">
-                        {% for item in home.case_studies.demonstrates_items %}
-                        <div class="col-md-6 pb-3">
-                            <div class="rx2-case-demonstrates-item">{{- item -}}</div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row top30">
             <div class="col">
                 <div class="rx2-home-cta">
@@ -82,3 +61,58 @@
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const caseSummaries = Array.from(document.querySelectorAll("[data-case-summary]"));
+
+    if (!caseSummaries.length) {
+        return;
+    }
+
+    const activateSummary = function (hash, shouldScroll) {
+        if (!hash) {
+            return;
+        }
+
+        const targetId = hash.replace(/^#/, "");
+        const target = document.getElementById(targetId);
+
+        if (!target || !target.matches("[data-case-summary]")) {
+            return;
+        }
+
+        caseSummaries.forEach(function (item) {
+            item.open = item === target;
+        });
+
+        if (shouldScroll) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
+    activateSummary(window.location.hash, false);
+
+    caseSummaries.forEach(function (item) {
+        item.addEventListener("toggle", function () {
+            if (!item.open) {
+                return;
+            }
+
+            caseSummaries.forEach(function (other) {
+                if (other !== item) {
+                    other.open = false;
+                }
+            });
+
+            if (history.replaceState) {
+                history.replaceState(null, "", "#" + item.id);
+            }
+        });
+    });
+
+    window.addEventListener("hashchange", function () {
+        activateSummary(window.location.hash, false);
+    });
+});
+</script>

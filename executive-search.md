@@ -1,6 +1,6 @@
 ---
 layout: solutions
-title: Executive Search
+title: Executive performance depends on leadership that fits, aligns, and delivers.
 text-color: white
 background: AdobeStock_668870479_hd.jpg
 front-text: "### Executive Search: Building Leadership Excellence
@@ -25,4 +25,8 @@ rightsections:
     image: AdobeStock_708819693_hd.jpg
     text: "• Rigorous Verification: We conduct exhaustive reference checks to validate track records, achievements, and leadership styles.<br /><br />• Background Screening: Our due diligence includes verifying credentials, employment history, and alignment with your company’s values.<br /><br />• Risk Mitigation: By addressing any potential red flags early in the process, we provide you with peace of mind and confidence in your hiring decisions."
 ---
-At RX2 Solutions, we specialize in identifying and placing top-tier executives within organizations across the United States. Our philosophy is simple: the right leader can propel a business toward remarkable growth and innovation. Drawing on our extensive networks and industry insights, we help clients secure the visionary talent they need to thrive in today’s competitive market.
+Our Executive Search process identifies the leaders who elevate your organization, not just fill a role. We start by understanding the realities of your business, how decisions are made, where teams are strong, and what the next stage of growth demands.
+
+That insight drives a search built around impact, not resumes. We engage proven executives who add clarity, sharpen strategy, and strengthen performance across the teams they lead. Every step is deliberate, people-focused, and anchored in long-term success.
+
+You get more than a placement. You get a leader who can move the organization forward at the pace your strategy demands.

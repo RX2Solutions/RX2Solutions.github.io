@@ -76,6 +76,12 @@ variable "notion_name_property" {
   default     = ""
 }
 
+variable "notion_company_property" {
+  type        = string
+  description = "Optional Notion property name that stores the subscriber's company name (leave blank to skip)."
+  default     = ""
+}
+
 variable "notion_title_property" {
   type        = string
   description = "Notion title property used when creating new database rows."

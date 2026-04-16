@@ -21,6 +21,8 @@ sections:
     image: AdobeStock_257168162_hd.jpg
     text: Finding and retaining some of the brightest minds can be challenging for any organization.  With the help and expertise of RX2 Solution, we can partner with any organization to build up their research team from the ground up or augment as critical pieces are needed.
 ---
-Science is in our DNA. RX2 Solutions has been partnering with leading Medical Device, Biotechnology, Hospitals, Health Systems and Pharmaceutical companies for the better part of three decades. Whether you are in Phase 1 or have an established presence, we are equipped to help you achieve your human capital goals.
+Science is in our DNA. For nearly three decades, our leadership team has partnered with leading organizations across Biotechnology, Pharmaceuticals, Medical Devices, Hospitals, and Health Systems to deliver the specialized talent that drives innovation. Whether advancing early-phase research or scaling an established operation, your goals become our focus.
 
-Our proven formula for delivering on your Scientific & Clinical needs has been developed through decades of research. Our Scientific Process for recruitment will help your organization stay relevant and shape the future by acquiring top tiered talent.
+Our Scientific & Clinical practice is built on experience, precision, and partnership, helping you attract, engage, and retain professionals who move meaningful work forward. Through a structured and Respectfully Professional approach, we support the demands of your team, the pace of your projects, and the accuracy your environment requires.
+
+You get proven scientific and clinical professionals who support your team's objectives and contribute to the work that matters most.
