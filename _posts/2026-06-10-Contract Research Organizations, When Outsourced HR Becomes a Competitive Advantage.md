@@ -3,7 +3,7 @@ layout: post
 title: Contract Research Organizations, When Outsourced HR Becomes a Competitive Advantage
 author: rx2solutions
 tags: publication
-thumbnail: 
+thumbnail: comp.jpeg
 excerpt_separator: <!--more-->
 ---
 # How HR Quietly Became a CRO Differentiator
