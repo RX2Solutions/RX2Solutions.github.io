@@ -3,9 +3,11 @@ layout: post
 title: Excipients and Formulation, The Specialist Talent Pool No One Is Developing
 author: rx2solutions
 tags: publication
-thumbnail: 
+thumbnail: CA.jpeg
 excerpt_separator: <!--more-->
 ---
+
+# Everyone in pharma manufacturing talks about API talent and aseptic talent. Almost nobody talks about the formulation scientists who make the drug actually work.
 
 The pharmaceutical talent conversation focuses heavily on visible categories. Drug discovery scientists. Manufacturing operators. Clinical research professionals. Regulatory affairs specialists. Each of these gets significant industry attention, formal pipeline development through university partnerships, and substantive media coverage of the talent shortage.
 
