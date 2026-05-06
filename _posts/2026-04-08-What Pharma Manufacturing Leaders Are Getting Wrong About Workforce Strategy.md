@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 ---
 # The workforce playbook that built pharma manufacturing over the last twenty years is not the one that will carry it through the next five.
 
-The U.S. pharmaceutical industry is in the middle of the largest domestic manufacturing buildout in its history. Since early 2025, drug companies have announced more than $480 billion in U.S. manufacturing investment commitments, according to research published by Think Global Health in November 2025. AstraZeneca pledged $50 billion. Johnson & Johnson committed $55 billion. Eli Lilly's combined investment plan now exceeds $50 billion across multiple facilities. <!--more-->
+The U.S. pharmaceutical industry is in the middle of the largest domestic manufacturing buildout in its history. Since early 2025, drug companies have announced more than $480 billion in U.S. manufacturing investment commitments, according to research published by Think Global Health in November 2025. AstraZeneca pledged $50 billion. Johnson & Johnson committed $55 billion. <!--more-->Eli Lilly's combined investment plan now exceeds $50 billion across multiple facilities. 
 
 The capital is real. The press releases are constant. The factories are being built.
 
