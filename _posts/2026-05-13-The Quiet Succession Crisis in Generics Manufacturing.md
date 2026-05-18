@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 
 The most important workforce story in U.S. generics manufacturing is not getting much public attention. It is not about shop-floor labor shortages, contested wage negotiations, or the broader pharma reshoring narrative. It is about senior leadership.
 
-The operations executives, plant directors, VP-level quality leaders, and supply chain heads who built modern U.S. generic drug manufacturing came up through the 1990s and 2000s. They learned cGMP under FDA scrutiny that has since intensified. They navigated the API offshoring decades. They built the supply chain depth that makes the current reshoring conversation even feasible.
+The operations executives, plant directors, VP-level quality leaders, and supply chain heads who built modern <!--more--> U.S. generic drug manufacturing came up through the 1990s and 2000s. They learned cGMP under FDA scrutiny that has since intensified. They navigated the API offshoring decades. They built the supply chain depth that makes the current reshoring conversation even feasible.
 
 Many of them are now within five years of retirement. The bench behind them was systematically thinned over two decades of consolidation, margin compression, and limited investment in U.S. generic drug leadership development. Most generics manufacturers have one or two layers of bench depth in critical operations roles. The retirement wave will require three or four.
 
