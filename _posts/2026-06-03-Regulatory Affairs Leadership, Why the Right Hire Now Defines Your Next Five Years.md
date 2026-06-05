@@ -12,7 +12,7 @@ Regulatory affairs leadership is the single most consequential executive search 
 
 This is not the same statement that could have been made in 2018, when the senior regulatory affairs role was important but not strategically distinctive. The combination of FDA workforce disruption, intensifying enforcement activity, accelerating product complexity, and the natural retirement of the senior regulatory leadership generation has restructured what the role requires and what it delivers.
 
-The Chief Regulatory Officer or Head of Global Regulatory Affairs that a pharma company hires in 2026 will determine product approval timelines, inspection performance, and competitive position for the next five years. The wrong hire creates years of remediation work, missed approval dates, and inspection-driven supply disruption that operations leaders cannot fix downstream.
+The Chief Regulatory Officer or Head of Global Regulatory Affairs that a pharma company hires in 2026 will determine product approval timelines, inspection performance, <!--more--> and competitive position for the next five years. The wrong hire creates years of remediation work, missed approval dates, and inspection-driven supply disruption that operations leaders cannot fix downstream.
 
 Most boards are still treating this as a function-level hire. The market has moved past that framing.
 
