@@ -1,7 +1,7 @@
 ---
 title: One Company Scaling
 subtitle: Expanding from a Single Department to a Fully Integrated Enterprise Partnership
-background: AdobeStock_514001530_hd.jpeg
+background: 2026-08-one-company-scaling.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A growing organization initially engaged RX2 to support one department facing increased hiring pressure. Through consistent delivery and a unified approach, RX2 became the company's preferred Strategic Staffing partner across all major functions, reducing complexity, improving coordination, and supporting sustainable growth.

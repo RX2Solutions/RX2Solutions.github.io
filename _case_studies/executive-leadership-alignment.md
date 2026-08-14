@@ -1,7 +1,7 @@
 ---
 title: Executive Leadership Alignment
 subtitle: Delivering IT Leaders Who Stabilized Teams and Accelerated Modernization
-background: AdobeStock_128206575_hd.jpeg
+background: 2026-08-executive-leadership-alignment.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A manufacturing organization needed IT leadership capable of stabilizing teams, creating alignment, and driving modernization forward. RX2 partnered with executive leadership to define the real leadership profile, then delivered two experienced IT leaders who changed the pace and direction of the department almost immediately.

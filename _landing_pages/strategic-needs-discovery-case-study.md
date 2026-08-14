@@ -1,5 +1,6 @@
 ---
 title: Strategic Needs Discovery Case Study
+layout: case-study-optin
 description: See how RX2 diagnosed the real leadership issue behind a seemingly simple project-role request.
 colorway: sage
 hero_eyebrow: RX2 Case Study

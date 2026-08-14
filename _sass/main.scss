@@ -4585,14 +4585,20 @@ form.findus .select:after {
 /*App Features ends*/
 
 .home-hero-copy {
-    max-width: 860px;
+    max-width: 1040px;
+    text-align: left;
 }
 
 .home-hero-copy h1 {
-    font-size: clamp(3rem, 6.2vw, 5.2rem);
+    font-size: 4rem;
     line-height: 1.04;
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     margin-bottom: 1.1rem;
+}
+
+.rx2-home-hero-nowrap {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .home-hero-subtitle {
@@ -4600,6 +4606,7 @@ form.findus .select:after {
     line-height: 1.7;
     max-width: 700px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .rx2-section-kicker {
@@ -4728,7 +4735,8 @@ form.findus .select:after {
 
 .rx2-service-panel .button-readmore,
 .rx2-case-panel .button-readmore {
-    margin-top: 0.2rem;
+    margin-top: 1.35rem;
+    padding-top: 0.35rem;
 }
 
 .rx2-contact-honeypot {
@@ -4776,6 +4784,7 @@ form.findus .select:after {
 
 .rx2-partner-pill {
     background: #ffffff;
+    border: 1px solid rgba(17, 38, 55, 0.08);
     border-radius: 18px;
     box-shadow: 0 18px 45px rgba(17, 38, 55, 0.16);
     display: flex;
@@ -4799,16 +4808,22 @@ form.findus .select:after {
 }
 
 .rx2-partner-pill-1 {
+    background: #edf8f1;
+    border-color: rgba(142, 202, 80, 0.28);
     left: 0;
     top: 7%;
 }
 
 .rx2-partner-pill-2 {
-    right: -12px;
+    background: #edf7ff;
+    border-color: rgba(10, 129, 206, 0.24);
+    right: -44px;
     top: 34%;
 }
 
 .rx2-partner-pill-3 {
+    background: #f7f3e6;
+    border-color: rgba(240, 190, 76, 0.28);
     bottom: 0;
     left: 12%;
 }
@@ -4995,16 +5010,61 @@ form.findus .select:after {
     min-height: 56px;
 }
 
-.rx2-case-page-intro,
-.rx2-case-detail-metrics {
+.rx2-case-page-intro {
     background: #ffffff;
     border: 1px solid rgba(28, 176, 181, 0.14);
     border-radius: 22px;
     box-shadow: 0 24px 60px rgba(28, 42, 58, 0.08);
 }
 
+.rx2-case-detail-metrics {
+    background: #0a81ce;
+    border: 1px solid rgba(10, 129, 206, 0.2);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(10, 129, 206, 0.24);
+    color: #ffffff;
+}
+
 .rx2-case-page-intro {
     padding: 2.4rem 2.5rem;
+}
+
+.rx2-case-page-intro-band {
+    background: #112637;
+    overflow: hidden;
+    padding: 7.25rem 0 2.85rem;
+    position: relative;
+}
+
+.rx2-case-page-intro-band::before,
+.rx2-case-page-intro-band::after {
+    bottom: -2.75rem;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rx2-case-page-intro-band::before {
+    background-image: var(--rx2-case-intro-image);
+    background-position: center 42%;
+    background-size: cover;
+    transform: scale(1.18);
+    transform-origin: center center;
+}
+
+.rx2-case-page-intro-band::after {
+    background: linear-gradient(rgba(17, 38, 55, 0.46), rgba(11, 29, 42, 0.54));
+}
+
+.rx2-case-page-intro-band .container {
+    position: relative;
+    z-index: 2;
+}
+
+.rx2-case-page-intro-band .rx2-case-page-intro {
+    background: #ffffff;
 }
 
 .rx2-case-page-intro .heading-title {
@@ -5013,30 +5073,64 @@ form.findus .select:after {
 
 .rx2-case-accordion {
     display: grid;
-    gap: 1.25rem;
+    gap: 2rem;
 }
 
 .rx2-case-accordion-item {
-    background: #ffffff;
-    border: 1px solid rgba(28, 176, 181, 0.14);
-    border-radius: 22px;
-    box-shadow: 0 24px 60px rgba(28, 42, 58, 0.08);
-    overflow: hidden;
+    background: transparent;
+    border: 0;
+    overflow: visible;
     scroll-margin-top: 130px;
 }
 
 .rx2-case-accordion-item summary {
-    align-items: flex-start;
     cursor: pointer;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: space-between;
+    display: block;
     list-style: none;
-    padding: 1.7rem 1.9rem;
+    padding: 0;
 }
 
 .rx2-case-accordion-item summary::-webkit-details-marker {
     display: none;
+}
+
+.rx2-case-listing-section {
+    padding-top: 2.35rem;
+}
+
+.rx2-case-summary-layout {
+    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(260px, 38%) minmax(0, 1fr);
+}
+
+.rx2-case-summary-media {
+    border-radius: 24px;
+    box-shadow: 0 22px 52px rgba(17, 38, 55, 0.14);
+    margin: 0;
+    overflow: hidden;
+}
+
+.rx2-case-summary-media img {
+    display: block;
+    height: 305px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rx2-case-summary-card {
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid rgba(28, 176, 181, 0.14);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(28, 42, 58, 0.08);
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-left: -3.25rem;
+    padding: 1.7rem 1.9rem;
+    position: relative;
+    z-index: 2;
 }
 
 .rx2-case-accordion-copy h2 {
@@ -5070,8 +5164,42 @@ form.findus .select:after {
 }
 
 .rx2-case-accordion-body {
-    border-top: 1px solid rgba(39, 51, 60, 0.08);
-    padding: 0 1.9rem 1.9rem;
+    background: #ffffff;
+    border: 1px solid rgba(28, 176, 181, 0.14);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(28, 42, 58, 0.07);
+    margin-left: calc(38% - 3.25rem);
+    margin-top: 1rem;
+    padding: 1.8rem 1.9rem;
+}
+
+.rx2-case-accordion-visual,
+.rx2-case-study-visual,
+.rx2-case-optin-visual {
+    border-radius: 22px;
+    box-shadow: 0 22px 52px rgba(17, 38, 55, 0.14);
+    margin: 0;
+    overflow: hidden;
+}
+
+.rx2-case-accordion-visual img,
+.rx2-case-study-visual img,
+.rx2-case-optin-visual img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rx2-case-accordion-visual img {
+    height: 320px;
+}
+
+.rx2-case-study-visual {
+    margin-top: 1.25rem;
+}
+
+.rx2-case-study-visual img {
+    height: 390px;
 }
 
 .rx2-case-accordion-actions {
@@ -5083,9 +5211,14 @@ form.findus .select:after {
 }
 
 .rx2-case-detail-metrics h3 {
-    color: #27333c;
+    color: #ffffff;
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
+}
+
+.rx2-case-detail-metrics p,
+.rx2-case-detail-metrics li {
+    color: rgba(255, 255, 255, 0.92) !important;
 }
 
 .rx2-case-study-hero {
@@ -5187,7 +5320,103 @@ form.findus .select:after {
     margin-bottom: 0;
 }
 
+.case-study-optin-page {
+    background: #ffffff;
+}
+
+.rx2-case-optin-hero {
+    background: linear-gradient(180deg, #f4faf9 0%, #ffffff 100%);
+}
+
+.rx2-case-optin-copy h1 {
+    font-size: 3.3rem;
+    line-height: 1.08;
+    margin-bottom: 1rem;
+}
+
+.rx2-case-optin-subtitle {
+    color: #5b6570;
+    font-size: 1.15rem;
+    line-height: 1.75;
+    max-width: 42rem;
+}
+
+.rx2-case-optin-list {
+    list-style: none;
+    margin: 1.6rem 0 0;
+    padding: 0;
+}
+
+.rx2-case-optin-list li {
+    color: #27333c;
+    font-weight: 600;
+    line-height: 1.65;
+    margin-bottom: 0.85rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.rx2-case-optin-list li::before {
+    border: solid #1cb0b5;
+    border-width: 0 0.18rem 0.18rem 0;
+    content: "";
+    height: 0.85rem;
+    left: 0.45rem;
+    position: absolute;
+    top: 0.35rem;
+    transform: rotate(45deg);
+    width: 0.45rem;
+}
+
+.rx2-case-optin-form-panel .lp-form {
+    border-color: rgba(28, 176, 181, 0.18);
+    border-radius: 22px;
+    box-shadow: 0 26px 70px rgba(17, 38, 55, 0.12);
+}
+
+.rx2-case-optin-form-panel .lp-form button,
+.rx2-case-optin-form-panel .lp-dialog-submit {
+    background-image: linear-gradient(135deg, #8eca50 0%, #1cb0b5 54%, #0a81ce 100%);
+    color: #ffffff;
+}
+
+.rx2-case-optin-visual img {
+    height: 430px;
+}
+
+.rx2-case-optin-preview {
+    background: #ffffff;
+    border: 1px solid rgba(28, 176, 181, 0.14);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(28, 42, 58, 0.08);
+    padding: 2.2rem 2.35rem;
+}
+
+.rx2-case-optin-preview p {
+    color: #5b6570;
+    font-size: 1.06rem;
+    line-height: 1.85;
+}
+
+.rx2-case-optin-preview p:last-child {
+    margin-bottom: 0;
+}
+
+.rx2-case-optin-service {
+    color: #0a81ce;
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
 @media (min-width: 992px) {
+    .home-hero-copy h1 {
+        font-size: 4.15rem;
+    }
+
     .rx2-service-grid > [class*="col-"],
     .rx2-case-grid > [class*="col-"] {
         display: flex;
@@ -5209,12 +5438,15 @@ form.findus .select:after {
     .rx2-service-panel .button-readmore,
     .rx2-case-panel .button-readmore {
         margin-top: auto;
+        padding-top: 1.3rem;
     }
 }
 
 @media (max-width: 991.98px) {
     .home-hero-subtitle {
         font-size: 1.15rem;
+        margin-left: 0;
+        max-width: 700px;
     }
 
     .rx2-service-panel .services-content,
@@ -5229,6 +5461,10 @@ form.findus .select:after {
 
     .rx2-partner-pill {
         max-width: 180px;
+    }
+
+    .rx2-partner-pill-2 {
+        right: -18px;
     }
 
     .rx2-home-cta {
@@ -5261,21 +5497,32 @@ form.findus .select:after {
     }
 
     .rx2-case-accordion-item summary {
-        padding: 1.45rem 1.5rem;
+        padding: 0;
     }
 
     .rx2-case-accordion-body {
-        padding: 0 1.5rem 1.5rem;
+        margin-left: 0;
+        padding: 1.6rem;
     }
 
     .rx2-case-study-metrics {
         margin-top: 1.5rem;
     }
+
+    .rx2-case-accordion-visual,
+    .rx2-case-study-visual {
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+    }
+
+    .rx2-case-optin-copy h1 {
+        font-size: 2.75rem;
+    }
 }
 
 @media (max-width: 767.98px) {
     .home-hero-copy h1 {
-        font-size: 2.7rem;
+        font-size: 2.25rem;
     }
 
     .rx2-service-image img,
@@ -5290,6 +5537,38 @@ form.findus .select:after {
         margin-right: 12px;
         margin-top: -54px;
         padding: 1.4rem 1.2rem 1.25rem;
+    }
+
+    .rx2-case-page-intro-band {
+        padding: 5.5rem 0 0.65rem;
+    }
+
+    .rx2-case-page-intro-band::before {
+        bottom: -2.35rem;
+        background-position: center 36%;
+        transform: scale(1.55);
+    }
+
+    .rx2-case-page-intro-band::after {
+        bottom: -2.35rem;
+    }
+
+    .rx2-case-listing-section {
+        padding-top: 1.75rem;
+    }
+
+    .rx2-case-summary-layout {
+        display: block;
+    }
+
+    .rx2-case-summary-media img {
+        height: 250px;
+    }
+
+    .rx2-case-summary-card {
+        flex-direction: column;
+        margin: -54px 12px 0;
+        padding: 1.45rem 1.5rem;
     }
 
     .rx2-partner-pill {
@@ -5331,12 +5610,24 @@ form.findus .select:after {
         padding: 1.6rem;
     }
 
+    .rx2-case-accordion-visual img,
+    .rx2-case-study-visual img,
+    .rx2-case-optin-visual img {
+        height: 260px;
+    }
+
     .rx2-case-accordion-item summary {
         flex-direction: column;
     }
 
     .rx2-case-accordion-toggle {
         margin-top: 0.2rem;
+    }
+
+    .rx2-case-accordion-body {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 0.9rem;
     }
 
     .rx2-case-study-subtitle {
@@ -5346,5 +5637,16 @@ form.findus .select:after {
     .rx2-case-study-snapshot,
     .rx2-case-study-body {
         padding: 1.6rem;
+    }
+
+    .rx2-case-optin-preview,
+    .rx2-case-optin-form-panel .lp-form {
+        padding: 1.6rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rx2-home-hero-nowrap {
+        white-space: normal;
     }
 }

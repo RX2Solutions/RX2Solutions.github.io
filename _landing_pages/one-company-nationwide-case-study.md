@@ -1,5 +1,6 @@
 ---
 title: One Company Nationwide Case Study
+layout: case-study-optin
 description: See how RX2 delivered strategic staffing continuity across more than a dozen states during a high-pressure growth period.
 colorway: sage
 hero_eyebrow: RX2 Case Study

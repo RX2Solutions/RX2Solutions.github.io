@@ -2,7 +2,7 @@
 layout: services-page
 title: Business challenges don't wait, and neither should your staffing solutions.
 text-color: white
-background: AdobeStock_668870479_hd.jpg
+background: 2026-08-strategic-staffing.jpg
 whys: false
 contact: true
 trailer-title: Why Partner with Us?

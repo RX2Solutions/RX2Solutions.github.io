@@ -24,7 +24,7 @@
           </div>
           <div class="lp-form-group">
             <label for="{{ dialog_id }}-phone">Phone number</label>
-            <input type="tel" id="{{ dialog_id }}-phone" name="phone_number" placeholder="(555) 123-4567" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,}$" required>
+            <input type="tel" id="{{ dialog_id }}-phone" name="phone_number" placeholder="(555) 123-4567" inputmode="tel" pattern="\+?(?:\d|\s|\(|\)|\.|-){7,}" required>
           </div>
           <div class="lp-form-group">
             <label for="{{ dialog_id }}-linkedin">LinkedIn URL</label>

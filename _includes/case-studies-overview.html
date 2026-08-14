@@ -1,6 +1,6 @@
 {% assign home = site.data.home %}
 
-<section class="padding bglight">
+<section class="bglight rx2-case-page-intro-band" style="--rx2-case-intro-image: url('{{- site.baseurl -}}/assets/images/{{- home.case_studies.background_image -}}')">
     <div class="container">
         <div class="rx2-case-page-intro">
             <div class="heading-title mb-0 text-center text-lg-left">
@@ -12,17 +12,24 @@
     </div>
 </section>
 
-<section class="padding_top padding_bottom_half">
+<section class="padding_bottom_half rx2-case-listing-section">
     <div class="container">
         <div class="rx2-case-accordion">
             {% for item in home.case_studies.items %}
             <details id="{{- item.anchor -}}" class="rx2-case-accordion-item" data-case-summary>
                 <summary>
-                    <div class="rx2-case-accordion-copy">
-                        <h2 class="darkcolor font-normal">{{- item.title -}}</h2>
-                        <p class="mb-0">{{- item.summary -}}</p>
+                    <div class="rx2-case-summary-layout">
+                        <figure class="rx2-case-summary-media">
+                            <img src="{{- site.baseurl -}}/assets/images/{{- item.image -}}" alt="{{- item.title -}}">
+                        </figure>
+                        <div class="rx2-case-summary-card">
+                            <div class="rx2-case-accordion-copy">
+                                <h2 class="darkcolor font-normal">{{- item.title -}}</h2>
+                                <p class="mb-0">{{- item.summary -}}</p>
+                            </div>
+                            <span class="rx2-case-accordion-toggle" aria-hidden="true"></span>
+                        </div>
                     </div>
-                    <span class="rx2-case-accordion-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="rx2-case-accordion-body">
                     <div class="row align-items-start">

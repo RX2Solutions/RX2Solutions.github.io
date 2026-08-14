@@ -20,20 +20,29 @@
     <section class="padding bglight">
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-lg-8">
-            <div class="rx2-case-study-snapshot">
-              <h2>Snapshot</h2>
-              <p class="mb-0">{{ page.snapshot }}</p>
-            </div>
+          <div class="col-lg-4">
+            <figure class="rx2-case-study-visual">
+              <img src="{{- site.baseurl -}}/assets/images/{{- page.background -}}" alt="{{ page.title }}">
+            </figure>
           </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="rx2-case-detail-metrics rx2-case-study-metrics">
-              <h3>Key Metrics</h3>
-              <ul>
-                {% for metric in page.metrics %}
-                <li>{{ metric }}</li>
-                {% endfor %}
-              </ul>
+          <div class="col-lg-8">
+            <div class="row align-items-start">
+              <div class="col-lg-7">
+                <div class="rx2-case-study-snapshot">
+                  <h2>Snapshot</h2>
+                  <p class="mb-0">{{ page.snapshot }}</p>
+                </div>
+              </div>
+              <div class="col-lg-5 mt-4 mt-lg-0">
+                <div class="rx2-case-detail-metrics rx2-case-study-metrics">
+                  <h3>Key Metrics</h3>
+                  <ul>
+                    {% for metric in page.metrics %}
+                    <li>{{ metric }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

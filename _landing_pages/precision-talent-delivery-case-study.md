@@ -1,5 +1,6 @@
 ---
 title: Precision Talent Delivery Case Study
+layout: case-study-optin
 description: Access the full RX2 case study on solving a highly specialized search after multiple failed attempts.
 colorway: sage
 hero_eyebrow: RX2 Case Study

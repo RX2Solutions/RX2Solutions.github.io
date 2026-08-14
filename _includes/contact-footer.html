@@ -9,7 +9,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12">
-                    <form class="getin_form wow fadeInUp rx2-contact-intake-form" data-wow-delay="400ms" data-rx2-contact-form data-endpoint="{{ site.landing_opt_in_endpoint }}" data-page-name="{{ page.title | default: 'RX2 Solutions' }}" data-success-message="Thanks. We will be in touch shortly.">
+                    <form class="getin_form wow fadeInUp rx2-contact-intake-form" data-wow-delay="400ms" data-rx2-contact-form data-endpoint="{{ site.contact_form_endpoint }}" data-page-name="{{ page.title | default: 'RX2 Solutions' }}" data-success-message="Thanks. We will be in touch shortly.">
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
@@ -32,7 +32,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="form-group">
                                     <label for="footerPhoneNumber" class="d-none">Phone Number</label>
-                                    <input class="form-control" type="tel" placeholder="Phone Number" required id="footerPhoneNumber" name="phone_number" inputmode="tel" pattern="^\\+?[0-9\\s().-]{7,}$">
+                                    <input class="form-control" type="tel" placeholder="Phone Number" required id="footerPhoneNumber" name="phone_number" inputmode="tel" pattern="\+?(?:\d|\s|\(|\)|\.|-){7,}">
                                 </div>
                             </div>
                             <div class="col-md-12">

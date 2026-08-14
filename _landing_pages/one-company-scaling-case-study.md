@@ -1,5 +1,6 @@
 ---
 title: One Company Scaling Case Study
+layout: case-study-optin
 description: Access the full RX2 case study on growing from one departmental assignment into an enterprise staffing partnership.
 colorway: sage
 hero_eyebrow: RX2 Case Study

@@ -1,7 +1,7 @@
 ---
 title: Precision Talent Delivery
 subtitle: Delivering the Exact Specialist a Client Needed After Multiple Failed Attempts
-background: AdobeStock_675065915_hd.jpeg
+background: 2026-08-precision-talent-delivery.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A client needed to fill a highly specialized role that blended technical expertise with nuanced industry experience. Three prior sourcing attempts failed to produce aligned candidates. RX2 reframed the role, refined the success criteria, and delivered the single candidate who fit precisely and moved the client's initiative forward immediately.

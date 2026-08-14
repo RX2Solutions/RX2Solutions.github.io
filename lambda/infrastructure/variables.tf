@@ -30,12 +30,72 @@ variable "default_tags" {
   }
 }
 
+variable "contact_form_allowed_origins" {
+  type        = list(string)
+  description = "List of allowed CORS origins for site contact submissions."
+  default = [
+    "https://rx2solutions.com",
+    "https://www.rx2solutions.com",
+    "https://rx2solutions-staging.instantbrains.com",
+    "http://localhost:4000",
+  ]
+}
+
+variable "contact_notion_api_key_parameter_name" {
+  type        = string
+  description = "SSM Parameter Store name containing the Notion integration secret used by the site contact Lambda."
+  default     = "/rx2/landing/notion/api_key"
+}
+
+variable "contact_notion_database_id" {
+  type        = string
+  description = "Destination Notion database ID for site contact submissions."
+  default     = "33dfc5bb792a803f8500c6825f997c0f"
+}
+
+variable "contact_notion_title_property" {
+  type        = string
+  description = "Notion title property used when creating new site contact rows."
+  default     = "Full Name"
+}
+
+variable "contact_notion_email_property" {
+  type        = string
+  description = "Notion email property used by the site contact Lambda."
+  default     = "Email"
+}
+
+variable "contact_notion_name_property" {
+  type        = string
+  description = "Optional rich text property that stores the full name separately from the title."
+  default     = ""
+}
+
+variable "contact_notion_company_property" {
+  type        = string
+  description = "Optional rich text property that stores the company name."
+  default     = "Company Name"
+}
+
+variable "contact_notion_phone_property" {
+  type        = string
+  description = "Optional phone number property that stores the phone number."
+  default     = "Phone"
+}
+
+variable "contact_notion_page_name_property" {
+  type        = string
+  description = "Optional rich text property that stores the originating page name for a site contact submission."
+  default     = ""
+}
+
 variable "landing_opt_in_allowed_origins" {
   type        = list(string)
   description = "List of allowed CORS origins for landing opt-in submissions."
   default = [
     "https://rx2solutions.com",
     "https://www.rx2solutions.com",
+    "https://rx2solutions-staging.instantbrains.com",
     "http://localhost:4000",
   ]
 }

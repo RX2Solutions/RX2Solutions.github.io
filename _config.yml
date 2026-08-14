@@ -45,5 +45,7 @@ future: false
 
 url: https://www.rx2solutions.com
 logo: /assets/images/RX2+Solutions-01+grey+text+added+2.png
+contact_form_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm
 landing_opt_in_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/landingOptIn
+# Set this to the GA4 measurement ID, e.g. G-XXXXXXXXXX, to enable Google Analytics.
 google_analytics_measurement_id:

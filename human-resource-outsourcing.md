@@ -2,7 +2,7 @@
 layout: leftright
 title: Stronger organizations start with a stronger HR foundation.
 text-color: white
-background: AdobeStock_668870479_hd.jpg
+background: 2026-08-human-resource-outsourcing.jpg
 trailer-title: Why Partner with Us?
 trailer-text: Our process is rooted in customization, collaboration, and commitment to excellence. By understanding your goals and leveraging our expertise, we help you secure leaders who not only meet today’s challenges but also drive long-term organizational success.
 contact: true

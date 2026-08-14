@@ -2,7 +2,7 @@
 layout: solutions
 title: Executive performance depends on leadership that fits, aligns, and delivers.
 text-color: white
-background: AdobeStock_668870479_hd.jpg
+background: 2026-08-executive-search.jpg
 front-text: "### Executive Search: Building Leadership Excellence
 
   <br />At the core of every organization’s success lies its leadership. Our executive search services are designed to identify, attract, and secure transformative talent for high-impact roles, from the C-suite to senior management. We partner closely with your organization to deliver tailored solutions that align with your strategic goals and organizational culture. Here’s how we ensure the perfect match:"

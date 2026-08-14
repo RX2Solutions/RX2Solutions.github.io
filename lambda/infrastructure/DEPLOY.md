@@ -42,4 +42,6 @@ curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/landingOptIn -d
 ## Notes
 - Keep your `terraform.tfvars` (with any overrides) out of git.
 - Ensure the Notion database has matching properties for phone and topics, or update `variables.tf` to reflect your schema before applying.
+- Both Lambdas now use env-driven CORS allowlists. The checked-in defaults include `https://rx2solutions-staging.instantbrains.com`; if your staging hostname changes, override `contact_form_allowed_origins` and `landing_opt_in_allowed_origins` in `terraform.tfvars` before applying.
+- The site contact Lambda now uses its own Notion database settings. The default contact database id comes from `_inbox/2026-04-09_notes.md`; that database still needs to be shared with the configured Notion integration before live writes will succeed.
 - Git push publishes the Jekyll site via GitHub Pages; backend updates require the steps above.

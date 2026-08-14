@@ -1,7 +1,7 @@
 ---
 title: Complete HR Integration
 subtitle: Operating as the Full HR Department for a Rapidly Growing Biotech Organization
-background: AdobeStock_88821040_hd.jpeg
+background: 2026-08-complete-hr-integration.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A fast-growing biotech company needed a complete HR function while leadership stayed focused on scientific and operational priorities. RX2 stepped in as a single integrated partner, handling every core HR process and building the structure, scalability, and clarity the organization needed during aggressive growth.

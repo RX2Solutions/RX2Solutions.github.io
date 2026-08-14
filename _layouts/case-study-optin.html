@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+{% include headers.html %}
+  {% assign case_colorway = page.colorway | default: 'sage' | slugify %}
+  {% assign optin_endpoint = page.api_endpoint | default: site.landing_opt_in_endpoint %}
+  {% assign raw_content_url = page.content_url | default: '' %}
+  {% assign content_path = page.content_path | default: '' %}
+  {% if raw_content_url != '' %}
+    {% assign resolved_content_url = raw_content_url %}
+  {% elsif content_path != '' and site.url %}
+    {% assign resolved_content_url = site.url | append: content_path %}
+  {% else %}
+    {% assign resolved_content_url = '' %}
+  {% endif %}
+  {% assign case_image = page.image | default: '' %}
+  {% assign case_service = page.topic_of_interest | default: '' %}
+  {% assign case_summary = page.description | default: '' %}
+  {% for item in site.data.home.case_studies.items %}
+    {% if item.detail_url == content_path or item.landing_url == page.url %}
+      {% if case_image == '' %}
+        {% assign case_image = item.image %}
+      {% endif %}
+      {% if case_service == '' %}
+        {% assign case_service = item.service_line %}
+      {% endif %}
+      {% if case_summary == '' %}
+        {% assign case_summary = item.summary %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% assign case_image = case_image | default: site.data.home.case_studies.background_image %}
+  {% assign top_submit_label = page.hero_submit_label | default: 'Unlock the Full Case Study' %}
+  {% assign dialog_heading = page.dialog_heading | default: 'Finish your profile to view the full case study' %}
+  {% assign dialog_subheading = page.dialog_subheading | default: 'Add a couple of details so we can share the complete case study immediately.' %}
+  {% assign dialog_submit_label = page.dialog_submit_label | default: 'View the Full Case Study' %}
+  <body class="case-study-optin-page landing-theme-{{ case_colorway }}">
+    {% include preloader.html %}
+    {% include navigation.html %}
+
+    <main>
+      <section class="padding bglight rx2-case-optin-hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="rx2-case-optin-copy">
+                <span class="rx2-section-kicker">{{ page.hero_eyebrow | default: 'RX2 Case Study' }}</span>
+                <h1 class="darkcolor">{{ page.hero_heading | default: page.title }}</h1>
+                <p class="rx2-case-optin-subtitle">{{ page.hero_subheading | default: case_summary }}</p>
+                {% if page.hero_bullets %}
+                <ul class="rx2-case-optin-list">
+                  {% for item in page.hero_bullets %}
+                  <li>{{ item }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0">
+              <div class="rx2-case-optin-form-panel">
+                {% include landing/form.html id="case-study-optin-top" endpoint=optin_endpoint heading=page.offer_download_title asset=page.offer_asset_highlight submit_label=top_submit_label content_url=resolved_content_url %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="padding_top padding_bottom_half">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-5">
+              <figure class="rx2-case-optin-visual">
+                <img src="{{- site.baseurl -}}/assets/images/{{- case_image -}}" alt="{{ page.hero_heading | default: page.title }}">
+              </figure>
+            </div>
+            <div class="col-lg-7 mt-4 mt-lg-0">
+              <div class="rx2-case-optin-preview">
+                {% if case_service != '' %}
+                <span class="rx2-case-optin-service">{{ case_service }}</span>
+                {% endif %}
+                {{ content | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include landing/profile-dialog.html id="case-study-profile-dialog" endpoint=optin_endpoint heading=dialog_heading subheading=dialog_subheading submit_label=dialog_submit_label topic_of_interest=page.topic_of_interest content_url=resolved_content_url %}
+    {% include footer.html %}
+    {% include endscripts.html %}
+    <script src="{{ '/assets/js/landing-optin.js' | relative_url }}"></script>
+  </body>
+</html>

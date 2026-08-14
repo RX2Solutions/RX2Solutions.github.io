@@ -1,7 +1,7 @@
 ---
 title: Strategic Needs Discovery
 subtitle: Identifying the Real Leadership Gap Behind a Single Role Request
-background: AdobeStock_702158206.jpeg
+background: 2026-08-strategic-needs-discovery.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A client initially approached RX2 to fill a single project-based role. During intake, it became clear that the underlying challenge was not bandwidth but leadership misalignment across teams. RX2 reframed the problem and delivered the leadership solution that restored clarity, direction, and execution momentum.

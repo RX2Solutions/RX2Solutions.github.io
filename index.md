@@ -3,8 +3,9 @@ layout: default
 title: RX2 Solutions
 ---
 {% capture hero_content %}
+{% assign hero_title = site.data.home.hero.title | replace: 'Respectfully Professional, Always.', '<span class="rx2-home-hero-nowrap">Respectfully Professional, Always.</span>' %}
 <div class="home-hero-copy">
-  <h1>{{- site.data.home.hero.title -}}</h1>
+  <h1>{{- hero_title -}}</h1>
   <p class="home-hero-subtitle">{{- site.data.home.hero.subtitle -}}</p>
 </div>
 {% endcapture %}

@@ -43,7 +43,6 @@
     }
 
     const formData = new FormData(form);
-    formData.set('submission_stage', 'profile_completion');
 
     if (form.dataset.pageName) {
       formData.set('page_name', form.dataset.pageName);

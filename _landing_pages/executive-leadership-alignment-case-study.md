@@ -1,5 +1,6 @@
 ---
 title: Executive Leadership Alignment Case Study
+layout: case-study-optin
 description: See how RX2 placed the IT leaders who stabilized teams and accelerated modernization for a manufacturing organization.
 colorway: sage
 hero_eyebrow: RX2 Case Study

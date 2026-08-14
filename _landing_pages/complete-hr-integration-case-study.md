@@ -1,5 +1,6 @@
 ---
 title: Complete HR Integration Case Study
+layout: case-study-optin
 description: Access the full RX2 case study on operating as the full HR department for a fast-growing biotech company.
 colorway: sage
 hero_eyebrow: RX2 Case Study

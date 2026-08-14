@@ -39,9 +39,23 @@ resource "aws_lambda_function" "rx2_submit_contact_form" {
   handler          = "src/index.handler"
   memory_size      = 128
   package_type     = "Zip"
-  role             = "arn:aws:iam::642038304273:role/rx2LambdaContactFormRole"
+  role             = aws_iam_role.contact_form.arn
   runtime          = "nodejs22.x"
-  timeout          = 3
+  timeout          = 10
+
+  environment {
+    variables = {
+      ALLOWED_ORIGINS           = join(",", var.contact_form_allowed_origins)
+      NOTION_API_KEY_PARAMETER  = var.contact_notion_api_key_parameter_name
+      NOTION_DATABASE_ID        = var.contact_notion_database_id
+      NOTION_TITLE_PROPERTY     = var.contact_notion_title_property
+      NOTION_EMAIL_PROPERTY     = var.contact_notion_email_property
+      NOTION_NAME_PROPERTY      = var.contact_notion_name_property
+      NOTION_COMPANY_PROPERTY   = var.contact_notion_company_property
+      NOTION_PHONE_PROPERTY     = var.contact_notion_phone_property
+      NOTION_PAGE_NAME_PROPERTY = var.contact_notion_page_name_property
+    }
+  }
 
   ephemeral_storage {
     size = 512
@@ -109,6 +123,50 @@ resource "aws_lambda_permission" "allow_apigw_invoke_rx2_contact_form" {
   function_name = aws_lambda_function.rx2_submit_contact_form.function_name
   principal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_apigatewayv2_api.rx2_contact_form.execution_arn}/*/*/rx2SubmitContactForm"
+}
+
+data "aws_iam_policy_document" "contact_form_assume_role" {
+  statement {
+    actions = ["sts:AssumeRole"]
+
+    principals {
+      type        = "Service"
+      identifiers = ["lambda.amazonaws.com"]
+    }
+  }
+}
+
+resource "aws_iam_role" "contact_form" {
+  name               = "${var.project_prefix}ContactFormRole"
+  assume_role_policy = data.aws_iam_policy_document.contact_form_assume_role.json
+}
+
+resource "aws_iam_role_policy_attachment" "contact_form_basic_execution" {
+  role       = aws_iam_role.contact_form.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
+data "aws_iam_policy_document" "contact_form" {
+  statement {
+    actions = [
+      "ssm:GetParameter",
+      "ssm:GetParameters",
+    ]
+
+    resources = [
+      "arn:aws:ssm:${var.aws_region}:${data.aws_caller_identity.current.account_id}:parameter${var.contact_notion_api_key_parameter_name}",
+    ]
+  }
+}
+
+resource "aws_iam_policy" "contact_form" {
+  name   = "${var.project_prefix}ContactFormPolicy"
+  policy = data.aws_iam_policy_document.contact_form.json
+}
+
+resource "aws_iam_role_policy_attachment" "contact_form_custom" {
+  role       = aws_iam_role.contact_form.name
+  policy_arn = aws_iam_policy.contact_form.arn
 }
 
 resource "aws_dynamodb_table" "landing_opt_in" {

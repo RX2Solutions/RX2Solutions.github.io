@@ -1,7 +1,7 @@
 ---
 title: One Company Nationwide
 subtitle: Strategic Staffing That Enabled Operational Continuity Across 12+ States
-background: AdobeStock_677065193_hd.jpeg
+background: 2026-08-one-company-nationwide.jpg
 hero_eyebrow: Case Study
 snapshot: >-
   A life sciences and manufacturing organization operating across more than a dozen states needed dependable support for high-volume Strategic Staffing during a period of rapid expansion. RX2 became their integrated staffing partner, delivering aligned candidates with speed, precision, and flexibility so the organization could continue operating without interruption while scaling aggressively.
