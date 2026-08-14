@@ -3,14 +3,14 @@ layout: post
 title: Growing Fast Without Losing Your Culture
 author: rx2solutions
 tags: publication
-thumbnail: Culture.jpeg
+thumbnail: Culture1.jpeg
 excerpt_separator: <!--more-->
 ---
 
 # Scaling Without Dilution  
 ## How Leadership Teams Protect Culture While Growing Fast
 
-Growing a company at breakneck speed can feel like a tightrope walk. One wrong step and the culture that made your startup special might slip away. Research shows that hypergrowth firms rank maintaining their culture as one of their top challenges. The good news is that with the right strategies, founders and executives can scale their businesses without diluting the core values that drive high performance and accountability.
+Growing a company at breakneck speed can feel like a tightrope walk. One wrong step and the culture that made your startup special might slip away. Research shows that hypergrowth firms rank maintaining their culture as one of their top challenges. The good news is that with the right strategies, founders and executives can scale their businesses without diluting the core values that drive high performance and accountability.<!--more-->
 
 This Forbes-style guide offers tactical, positive insights. From Atlassian’s radical transparency to Basecamp’s focus on sane productivity, these examples show how to expand without losing your company’s soul.
 
