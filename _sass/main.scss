@@ -4606,6 +4606,7 @@ form.findus .select:after {
     line-height: 1.7;
     max-width: 700px;
     margin-bottom: 0;
+    margin-left: 5px; /* aligns subtitle ink with the heading's glyph side bearing */
     text-align: left;
 }
 
