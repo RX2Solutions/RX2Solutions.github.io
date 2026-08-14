@@ -1,6 +1,6 @@
 hero:
   title: People First. Respectfully Professional, Always.
-  subtitle: HR Outsourcing. Executive Search. Strategic Staffing - Delivered Nationwide.
+  subtitle: Strategic Staffing. HR Outsourcing. Executive Search - Delivered Nationwide.
 
 services:
   eyebrow: What We Do
@@ -14,23 +14,23 @@ services:
       image: 2026-08-human-resource-outsourcing.jpg
       description: >-
         Comprehensive HR support that strengthens structure and streamlines day-to-day operations. A U.S.-based team handles every HR function you need so you can stay focused on growth.
-    - title: Executive Search
-      url: /executive-search.html
-      icon: fas fa-user-tie
-      image: 2026-08-executive-search.jpg
-      description: >-
-        Leadership recruitment built for impact. We identify proven executives who elevate teams, sharpen strategy, and strengthen organizational performance, ensuring every hire brings clarity, capability, and direction to your next stage of growth.
     - title: Strategic Staffing
       url: /strategic-staffing.html
       icon: fas fa-network-wired
       image: 2026-08-strategic-staffing.jpg
       description: >-
         Fast, precise staffing delivered by people who understand your operations and performance expectations. We provide contract, contract-to-hire, and direct hire talent that integrates quickly and keeps your teams moving without disruption.
+    - title: Executive Search
+      url: /executive-search.html
+      icon: fas fa-user-tie
+      image: 2026-08-executive-search.jpg
+      description: >-
+        Leadership recruitment built for impact. We identify proven executives who elevate teams, sharpen strategy, and strengthen organizational performance, ensuring every hire brings clarity, capability, and direction to your next stage of growth.
 
 expectations:
   eyebrow: What You Can Expect
   title: One Partner. One Contact. Fully Integrated.
-  image: stock-photo-diversity-people-group-team-union-concept-386966809-cropped.jpeg
+  image: 2026-08-one-partner-integrated.jpg
   paragraphs:
     - >-
       You work with one point of contact who can support all of your organization’s people needs anywhere in the country. Most firms create complexity through narrow offerings or siloed teams. We do the opposite. Your dedicated contact is backed by a connected, U.S.-based team built with the depth and discipline to deliver consistently across your organization.
