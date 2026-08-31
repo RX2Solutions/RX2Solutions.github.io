@@ -1,60 +1,134 @@
-<!doctype html>
-<html>
-{% include headers.html %}
-  <body>
-    {% include preloader.html %}
-    {% include navigation.html %}
-<!-- post content -->
-<section id="our-blog" class="bgdarker padding">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-8 col-md-7">
-              <div class="news_item shadow">
-                {%- if page.image -%}
-                <div class="image">
-                      <img src="{{- site.baseurl -}}/assets/images/{{- page.image -}}" alt="Latest News" class="img-responsive">
-                </div>
-                {%- endif -%}
-                  <div class="news_desc text-center text-md-left">
-                    <h3 class="text-capitalize font-normal darkcolor">{{ page.title }}</h3>
-                    <ul class="meta-tags top20 bottom20">
-                        <li><a href="#."><i class="fas fa-calendar-alt"></i> {{ page.date | date_to_string }}</a></li>
-                        <li><a href="#."> <i class="far fa-user"></i> 
-                            {%- assign author = site.authors | where: 'short_name', page.author | first -%}
-                            {%- if author -%}
-                            <a href="#."> {{ author.name -}}</a>
-                            {%- endif -%}
-                        </li>
-                    </ul>
-<div class="blog-article">
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include rx2-head.html %}
+{%- assign post_dek = page.dek | default: page.excerpt | strip_html | strip_newlines | strip | truncate: 200 -%}
+{%- assign post_words = content | strip_html | number_of_words -%}
+{%- assign read_mins = post_words | divided_by: 220 | at_least: 1 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ post_dek | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": { "@type": "Organization", "name": "RX2 Solutions", "url": "{{ site.url }}/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "RX2 Solutions",
+    "logo": { "@type": "ImageObject", "url": "{{ site.url }}/assets/rx2-logo.png" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+  "image": "{{ site.url }}/assets/icons/og-image.png"{% if page.practice %},
+  "articleSection": {{ page.practice | jsonify }}{% endif %},
+  "isAccessibleForFree": true
+}
+</script>
+</head>
+<body>
+
+<a class="skiplink" href="#main">Skip to main content</a>
+
+{% include rx2-header.html %}
+
+<main id="main" class="page theme-blue">
+
+<div class="arthero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/articles.html">Publications</a>{% if page.practice %} <span>/</span> <span>{{ page.practice }}</span>{% endif %}</nav>
+    {% if page.practice %}<span class="jtag big">{{ page.practice }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="dek">{{ post_dek }}</p>
+    <div class="artmeta"><span>{{ page.date | date: "%B %-d, %Y" }}</span><span>{{ read_mins }} min read</span><span>RX2 Solutions</span></div>
+  </div>
 </div>
-                    </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-5">
-              <aside class="sidebar whitebox mt-5 mt-md-0">
-                  <div class="widget heading_space shadow wow fadeIn" data-wow-delay="350ms">
-                      <h4 class="text-capitalize darkcolor bottom20 text-center text-md-left">Recent Posts</h4>
-                      {% for post in site.posts limit:12 %}
-                      <div class="single_post bottom15">
-                        {%- if post.thumbnail -%}
-                          <a href="{{- site.baseurl -}}{{ post.url }}" class="post"><img src="{{- site.baseurl -}}/assets/images/{{- post.thumbnail -}}" alt="post image"></a>
-                        {%- endif -%}
-                          <div class="text">
-                              <a href="{{- site.baseurl -}}{{ post.url }}">{{ post.title }}</a>
-                              <span>{{ post.date | date_to_string }}</span>
-                          </div>
-                      </div>
-                      {% endfor %}
-                  </div>
-              </aside>
-          </div>
+
+<section class="artwrap">
+  <div class="wrap artgrid">
+    <article class="artbody">
+      {{ content }}
+
+      <div class="capture">
+        <div class="capbody">
+          <div class="capeyebrow">Keep reading</div>
+          <h3>Get the next one of these.</h3>
+          <p>We publish one piece a week on hiring, HR, and leadership in regulated industries. Written by the people running the searches.</p>
+          <form class="capform" onsubmit="return subscribed(event)">
+            <label class="sr" for="sub-{{ page.url | slugify }}">Work email</label>
+            <input id="sub-{{ page.url | slugify }}" type="email" name="email" placeholder="you@company.com" required>
+            <button class="btn" type="submit">Send it to me</button>
+          </form>
+          <p class="capfine">One email a week. Unsubscribe in one click. Your address stays with us.</p>
+        </div>
       </div>
+
+      <div class="artcta">
+        <h3>Working on this problem right now?</h3>
+        <p>Talk to a Managing Partner. You will hear back within one business day.</p>
+        <a class="btn" href="/contactus.html">Start a Conversation</a>
+      </div>
+    </article>
+
+    <aside class="artside">
+      <div class="stack">
+        {% if page.related and page.related.size > 0 %}
+        <h4>Related practices</h4>
+        <ul class="plainlinks">
+          {% for slug in page.related %}{% assign pr = site.data.practices[slug] %}{% if pr %}
+          <li><a href="{{ pr.url }}">{{ pr.name }}</a></li>
+          {% endif %}{% endfor %}
+        </ul>
+        {% else %}
+        <h4>Explore RX2</h4>
+        <ul class="plainlinks">
+          <li><a href="/strategic-staffing.html">Strategic Staffing</a></li>
+          <li><a href="/human-resource-outsourcing.html">HR Outsourcing</a></li>
+          <li><a href="/executive-search.html">Executive Search</a></li>
+        </ul>
+        {% endif %}
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3>Working on this problem?</h3>
+        <p style="margin-top:8px">Talk to the people who run these searches every day.</p>
+        <p class="fit"><a href="/contactus.html"><b>Start a conversation &rarr;</b></a></p>
+      </div>
+    </aside>
   </div>
 </section>
-<!-- post content ends -->
-{% include footer.html %}
-{% include endscripts.html %}
+
+<section class="onwhite">
+  <div class="wrap">
+    <div class="eyebrow">Keep Reading</div>
+    <h2 class="narrow">More from our publications.</h2>
+    <div class="grid-3" style="margin-top:30px">
+      {%- assign shown = 0 -%}
+      {%- for p in site.posts -%}
+        {%- if shown < 3 and p.url != page.url -%}
+          {%- unless p.tags contains "announcement" -%}
+      <a class="post" href="{{ p.url }}"><div class="date">{{ p.date | date: "%B %-d, %Y" }}</div>
+        <h3>{{ p.title }}</h3><p>{{ p.excerpt | strip_html | strip_newlines | strip | truncate: 140 }}</p></a>
+            {%- assign shown = shown | plus: 1 -%}
+          {%- endunless -%}
+        {%- endif -%}
+      {%- endfor %}
+    </div>
+    <p style="margin-top:24px"><a href="/articles.html"><strong>See all publications &rarr;</strong></a></p>
+  </div>
+</section>
+
+<div class="ctaband">
+  <div class="wrap">
+    <h2>Hiring in a regulated environment?</h2>
+    <p>Tell us what you are working on. You'll hear back from an RX2 team member within one business day.</p>
+    <a class="btn" href="/contactus.html">Start a Respectfully Professional Conversation</a>
+  </div>
+</div>
+</main>
+
+{% include rx2-footer.html %}
+
+{% include rx2-scripts.html %}
+
 </body>
 </html>

@@ -1,6 +1,100 @@
 ---
-layout: default
-title: Blog
-desired-tag: publication
+layout: rx2-default
+title: "Publications: Hiring & Workforce Insight for Regulated Industries"
+description: "Weekly articles from RX2 Solutions on hiring, HR, and leadership across technology, manufacturing, life sciences, and finance."
+theme: theme-blue
 ---
-{% include blog.html %}
+{%- comment -%}
+Publications = every post that is not tagged "announcement".
+This includes the 19 historical posts with no tags, which the old index dropped.
+{%- endcomment -%}
+{%- assign pubs = "" | split: "" -%}
+{%- for p in site.posts -%}
+  {%- unless p.tags contains "announcement" -%}
+    {%- assign pubs = pubs | push: p -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign featured = pubs.first -%}
+
+<div class="hero">
+  <div class="wrap hero-split">
+    <div>
+      <div class="eyebrow">Publications</div>
+      <h1>One piece a week on hiring in regulated industries.</h1>
+      <p class="lede">Written by the people running the searches, for the people doing the hiring. No candidate advice, no filler, no gated downloads.</p>
+      <a class="btn" href="#latest">Read the Latest</a>
+    </div>
+    <div class="stack">
+      <h4>What you can expect</h4>
+      <ul>
+        <li>Published every week, without fail</li>
+        <li>Written for hiring managers, not job seekers</li>
+        <li>Specific to life sciences, manufacturing, technology, and finance</li>
+        <li>Free to read, no form in the way</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section id="latest">
+  <div class="wrap">
+    <div class="eyebrow">Latest</div>
+    <a class="feature" href="{{ featured.url }}">
+      <div>
+        {% if featured.practice %}<span class="jtag">{{ featured.practice }}</span>{% endif %}
+        <h2>{{ featured.title }}</h2>
+        <p>{{ featured.excerpt | strip_html | strip_newlines | strip | truncate: 200 }}</p>
+        <div class="more">Read it &rarr;</div>
+      </div>
+      <div class="featmeta">
+        <div><b>Published</b><span>{{ featured.date | date: "%B %-d, %Y" }}</span></div>
+        <div><b>Length</b><span>{% assign fw = featured.content | strip_html | number_of_words %}{{ fw | divided_by: 220 | at_least: 1 }} min read</span></div>
+        {% if featured.practice %}<div><b>Practice</b><span>{{ featured.practice }}</span></div>{% endif %}
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="onwhite">
+  <div class="wrap">
+    <div class="eyebrow">Archive</div>
+    <h2 class="narrow">Everything we've published.</h2>
+    <p class="sub">{{ pubs.size }} articles, newest first.</p>
+    <div class="grid-2">
+      {% for post in pubs offset: 1 %}
+      <a class="post" href="{{ post.url }}">
+        <div class="date">{{ post.date | date: "%B %-d, %Y" }}{% assign pw = post.content | strip_html | number_of_words %} &middot; {{ pw | divided_by: 220 | at_least: 1 }} min read</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}</p>
+        <div class="more">Read it &rarr;</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div class="capture">
+      <div class="capbody">
+        <div class="capeyebrow">Keep reading</div>
+        <h3>Get it in your inbox instead.</h3>
+        <p>One email a week with the newest piece. That is the whole offer. No sequence, no sales follow-up, unsubscribe in one click.</p>
+        <form class="capform" onsubmit="return subscribed(event)">
+          <label class="sr" for="sub-index">Work email</label>
+          <input id="sub-index" type="email" name="email" placeholder="you@company.com" required>
+          <button class="btn" type="submit">Send it to me</button>
+        </form>
+        <p class="capfine">One email a week. Unsubscribe in one click. Your address stays with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ctaband">
+  <div class="wrap">
+    <h2>Want to talk instead of read?</h2>
+    <p>Tell us what you're working on. You'll hear back from an RX2 team member within one business day.</p>
+    <a class="btn" href="/contactus.html">Start a Respectfully Professional Conversation</a>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<script>
+  // Mobile menu
+  var b = document.getElementById('burger'), m = document.getElementById('menu');
+  b.addEventListener('click', function(){
+    var open = m.classList.toggle('open');
+    b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  // Dropdowns work on hover for desktop; tap-toggle for touch inside open mobile menu
+  Array.prototype.forEach.call(document.querySelectorAll('.menu > li > button'), function(btn){
+    btn.addEventListener('click', function(e){
+      if (window.innerWidth <= 860) return; // mobile menu shows all links expanded
+      e.preventDefault();
+    });
+  });
+  function demo(){
+    alert('Internal build: this control is not wired up yet.');
+    return false;
+  }
+  function subscribed(e){
+    e.preventDefault();
+    /* TODO: point at the newsletter platform endpoint (beehiiv or EmailOctopus) once Rob picks one. */
+    var f=e.target;
+    f.innerHTML='<p class="capdone">Thanks. Check your inbox to confirm.</p>';
+    return false;
+  }
+</script>

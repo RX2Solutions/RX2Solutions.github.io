@@ -1,0 +1,31 @@
+# Slug -> display name + URL, used by the post layout's "Related practices" sidebar
+strategic-staffing:
+  name: Strategic Staffing
+  url: /strategic-staffing.html
+human-resource-outsourcing:
+  name: HR Outsourcing
+  url: /human-resource-outsourcing.html
+hr-outsourcing:
+  name: HR Outsourcing
+  url: /human-resource-outsourcing.html
+executive-search:
+  name: Executive Search
+  url: /executive-search.html
+information-technology:
+  name: Information Technology
+  url: /information-technology.html
+engineering-manufacturing:
+  name: Engineering & Manufacturing
+  url: /engineering-manufacturing.html
+scientific-clinical:
+  name: Scientific & Clinical
+  url: /scientific-clinical.html
+accounting-finance:
+  name: Accounting & Finance
+  url: /accounting-finance.html
+professional-services:
+  name: Professional Services
+  url: /professional-services.html
+pharma-biotech:
+  name: Pharmaceutical & Biotech
+  url: /pharma-biotech.html
