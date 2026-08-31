@@ -76,8 +76,8 @@ img{max-width:100%;display:block}
 .btn:hover,.btn:focus{background:var(--accent-dark)}
 .btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent);margin-left:10px}
 .btn.ghost:hover{background:var(--accent-soft)}
-.btn.gold{background:var(--accent-bright);color:#062B47}
-.btn.gold:hover,.btn.gold:focus{background:var(--accent-bright);color:#062B47;filter:brightness(.9)}
+.btn.gold{background:var(--accent-bright);color:#fff}
+.btn.gold:hover,.btn.gold:focus{background:var(--accent-bright);color:#fff;filter:brightness(.9)}
 :focus-visible{outline:3px solid var(--brand-green);outline-offset:3px}
 
 /* ---------- Header / nav ---------- */
