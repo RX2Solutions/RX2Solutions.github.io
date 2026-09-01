@@ -27,7 +27,10 @@ redirect_from:
           <div class="field"><label for="n">Full name</label><input id="n" name="name" type="text" placeholder="Jane Doe" required></div>
           <div class="field"><label for="c">Company</label><input id="c" name="company" type="text" placeholder="Company name"></div>
         </div>
-        <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
+        <div class="row2">
+          <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" placeholder="(610) 555-0100" inputmode="tel" pattern="\+?(?:\d|\s|\(|\)|\.|-){7,}" required></div>
+        </div>
         <div class="field">
           <label for="s">What do you need help with?</label>
           <select id="s" name="help">
