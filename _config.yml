@@ -81,5 +81,5 @@ contact_form_worker_url: https://rx2-contact-form.rx2solutions.workers.dev
 # subscribers to the Contact US Database until a sending platform is chosen.
 subscribe_endpoint: https://rx2-contact-form.rx2solutions.workers.dev/subscribe
 landing_opt_in_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/landingOptIn
-# Set this to the GA4 measurement ID, e.g. G-XXXXXXXXXX, to enable Google Analytics.
-google_analytics_measurement_id:
+# GA4 measurement ID. Renders the gtag snippet in every page head when set.
+google_analytics_measurement_id: G-5DP4BNFG0V
