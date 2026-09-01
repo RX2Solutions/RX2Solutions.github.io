@@ -1054,3 +1054,6 @@ section[id],div[id].proof,details[id]{scroll-margin-top:96px}
 .rx2-contact-form-message{font-size:.95rem;font-weight:600;margin-bottom:1rem;min-height:1.5rem}
 .rx2-contact-form-message.is-error{color:#c0392b}
 .rx2-contact-form-message.is-success{color:#2b9348}
+
+/* ---- team headshots: photo variant of the avatar circle ---- */
+.person img.avatar{width:120px;height:120px;object-fit:cover;background:#E8EEF3;display:block;font-size:0}
