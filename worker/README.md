@@ -6,16 +6,18 @@ inquirer updates their row instead of duplicating it). Stores name, company,
 email, help topic, and message. Honeypot submissions are dropped silently;
 real ones 303-redirect the visitor to `/thanks.html`.
 
-The Notion database needs these properties (or edit `NOTION_PROPERTIES` in
-`src/index.js` to match your names):
+Target database: "RX2 Website Forms" in Rob's Notion workspace
+(database id 33dfc5bb792a803f8500c6825f997c0f). The mapping in
+`src/index.js` matches its columns:
 
 | Property      | Type  |
 | ------------- | ----- |
-| Name          | Title |
+| Full Name     | Title |
 | Email         | Email |
-| Company       | Text  |
+| Company Name  | Text  |
 | Interested In | Text  |
 | Message       | Text  |
+| Phone         | Phone |
 
 ## One-time setup (Rob)
 

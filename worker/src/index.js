@@ -19,11 +19,12 @@ const NOTION_VERSION = "2022-06-28";
 // property names, change ONLY this table.
 // ---------------------------------------------------------------------------
 const NOTION_PROPERTIES = {
-  name:    { property: "Name",    type: "title" },
-  email:   { property: "Email",   type: "email" },
-  company: { property: "Company", type: "rich_text" },
+  name:    { property: "Full Name",    type: "title" },
+  email:   { property: "Email",        type: "email" },
+  company: { property: "Company Name", type: "rich_text" },
   help:    { property: "Interested In", type: "rich_text" },
-  message: { property: "Message", type: "rich_text" },
+  message: { property: "Message",      type: "rich_text" },
+  phone:   { property: "Phone",        type: "phone_number" },
 };
 
 const REQUIRED_FIELDS = ["name", "email", "help"];
@@ -80,6 +81,9 @@ function buildNotionProperties(fields) {
         break;
       case "email":
         props[map.property] = { email: value };
+        break;
+      case "phone_number":
+        props[map.property] = { phone_number: value };
         break;
       case "rich_text":
       default:
