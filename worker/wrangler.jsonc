@@ -17,6 +17,8 @@
     // Origin allowed to POST to this Worker + where visitors are sent after success.
     "SITE_ORIGIN": "https://rx2solutions.com",
     // "RX2 Website Forms" database in Rob's Notion workspace (not a secret; useless without the token).
-    "NOTION_DATABASE_ID": "33dfc5bb792a803f8500c6825f997c0f"
+    "NOTION_DATABASE_ID": "33dfc5bb792a803f8500c6825f997c0f",
+    // "Contact US Database" (subscriber list) - target of POST /subscribe.
+    "NOTION_SUBSCRIBERS_DB_ID": "29bfc5bb792a803b85d8d4c8564fb6bc"
   }
 }

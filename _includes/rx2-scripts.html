@@ -16,11 +16,34 @@
     alert('Internal build: this control is not wired up yet.');
     return false;
   }
+  var SUBSCRIBE_ENDPOINT = '{{ site.subscribe_endpoint | default: "" }}';
   function subscribed(e){
     e.preventDefault();
-    /* TODO: point at the newsletter platform endpoint (beehiiv or EmailOctopus) once Rob picks one. */
-    var f=e.target;
-    f.innerHTML='<p class="capdone">Thanks. Check your inbox to confirm.</p>';
+    var f = e.target;
+    var emailInput = f.querySelector('input[type="email"]');
+    var hp = f.querySelector('input[name="company_website"]');
+    if (!SUBSCRIBE_ENDPOINT) {
+      f.innerHTML = '<p class="capdone">Thanks. You&#39;re on the list.</p>';
+      return false;
+    }
+    var btn = f.querySelector('button');
+    var label = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
+    fetch(SUBSCRIBE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: emailInput ? emailInput.value : '',
+        page: document.title,
+        company_website: hp ? hp.value : ''
+      })
+    }).then(function(r){
+      if (!r.ok) throw new Error('subscribe failed');
+      f.innerHTML = '<p class="capdone">Thanks. You&#39;re on the list.</p>';
+    }).catch(function(){
+      if (btn) { btn.disabled = false; btn.textContent = label; }
+      alert('Something went wrong. Please try again in a moment.');
+    });
     return false;
   }
 </script>

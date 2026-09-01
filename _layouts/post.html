@@ -57,7 +57,8 @@
           <form class="capform" onsubmit="return subscribed(event)">
             <label class="sr" for="sub-{{ page.url | slugify }}">Work email</label>
             <input id="sub-{{ page.url | slugify }}" type="email" name="email" placeholder="you@company.com" required>
-            <button class="btn" type="submit">Send it to me</button>
+            <input type="text" name="company_website" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+          <button class="btn" type="submit">Send it to me</button>
           </form>
           <p class="capfine">One email a week. Unsubscribe in one click. Your address stays with us.</p>
         </div>

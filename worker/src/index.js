@@ -125,6 +125,72 @@ async function findPageIdByEmail(env, email) {
   }
 }
 
+/**
+ * POST /subscribe — newsletter capture from the publications index and
+ * article pages. Writes into the subscriber database ("Contact US Database")
+ * as Pending until a sending platform (beehiiv / EmailOctopus) takes over.
+ * An email already on the list is left untouched (never resubscribes someone
+ * who unsubscribed). Returns JSON for the inline form JS.
+ */
+async function handleSubscribe(request, env, ctx) {
+  let fields;
+  try {
+    fields = await readSubmission(request);
+  } catch (err) {
+    console.log(JSON.stringify({ event: "subscribe_bad_body", error: String(err) }));
+    return jsonResponse(env, 400, { ok: false });
+  }
+  if (fields[HONEYPOT_FIELD]) {
+    console.log(JSON.stringify({ event: "subscribe_honeypot_drop" }));
+    return jsonResponse(env, 200, { ok: true });
+  }
+  if (!fields.email || !EMAIL_RE.test(fields.email)) {
+    return jsonResponse(env, 400, { ok: false, error: "That email address doesn't look right." });
+  }
+
+  try {
+    const lookup = await notionFetch(env, `/v1/databases/${env.NOTION_SUBSCRIBERS_DB_ID}/query`, "POST", {
+      filter: { property: "Email", email: { equals: fields.email } },
+      page_size: 1,
+    });
+    if (lookup.ok) {
+      const data = await lookup.json();
+      if (data?.results?.length > 0) {
+        console.log(JSON.stringify({ event: "subscribe_existing" }));
+        return jsonResponse(env, 200, { ok: true });
+      }
+    }
+    const created = await notionFetch(env, "/v1/pages", "POST", {
+      parent: { database_id: env.NOTION_SUBSCRIBERS_DB_ID },
+      properties: {
+        "Name": { title: [{ text: { content: fields.email } }] },
+        "Email": { email: fields.email },
+        "Subscription Status": { select: { name: "Pending" } },
+        "Subscription Date": { date: { start: new Date().toISOString() } },
+        ...(fields.page ? { "Landing Page": { rich_text: [{ text: { content: fields.page.slice(0, 128) } }] } } : {}),
+      },
+    });
+    if (!created.ok) {
+      const detail = await created.text();
+      console.log(JSON.stringify({ event: "subscribe_notion_error", status: created.status, detail: detail.slice(0, 300) }));
+      return jsonResponse(env, 502, { ok: false, error: "We couldn't save that just now. Please try again." });
+    }
+    ctx.waitUntil(created.arrayBuffer());
+    console.log(JSON.stringify({ event: "subscriber_recorded" }));
+    return jsonResponse(env, 200, { ok: true });
+  } catch (err) {
+    console.log(JSON.stringify({ event: "subscribe_unreachable", error: String(err) }));
+    return jsonResponse(env, 502, { ok: false, error: "We couldn't save that just now. Please try again." });
+  }
+}
+
+function jsonResponse(env, status, body) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { "Content-Type": "application/json", ...corsHeaders(env) },
+  });
+}
+
 export default {
   async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
@@ -132,6 +198,9 @@ export default {
     }
     if (request.method !== "POST") {
       return textResponse(env, 405, "Method not allowed.");
+    }
+    if (new URL(request.url).pathname === "/subscribe") {
+      return handleSubscribe(request, env, ctx);
     }
 
     let fields;
