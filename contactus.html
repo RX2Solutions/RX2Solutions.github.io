@@ -1,5 +1,118 @@
 ---
-layout: default
-title: Contact Us
+layout: rx2-default
+title: "Contact RX2 Solutions | Staffing, HR Outsourcing & Executive Search"
+description: "Contact RX2 Solutions in Newtown Square, PA. Call +1-610-340-3490 or send a note and hear back from an RX2 team member within one business day."
+theme: theme-blue
+redirect_from:
+  - /contact.html
 ---
-{% include contactus.html %}
+<div class="hero tall">
+  <div class="wrap">
+    <div class="eyebrow">Contact Us</div>
+    <h1>Tell us what you need. We'll get back fast.</h1>
+    <p class="lede">Every inquiry goes straight to an RX2 team member who can actually help, and you'll hear back within one business day.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="grid-2" style="gap:50px;align-items:start">
+      <div class="formcard">
+        <h2 style="font-size:24px;margin-bottom:8px">Start a Respectfully Professional Conversation</h2>
+        <p style="color:var(--ink-soft);font-size:16px;margin-bottom:26px">Give us a brief description of what you're working on.</p>
+        {% if site.contact_form_worker_url and site.contact_form_worker_url != "" %}
+        {%- comment -%} Cloudflare Worker path (see /worker): plain POST, redirects to /thanks.html {%- endcomment -%}
+        <form method="POST" action="{{ site.contact_form_worker_url }}">
+        <div class="row2">
+          <div class="field"><label for="n">Full name</label><input id="n" name="name" type="text" placeholder="Jane Doe" required></div>
+          <div class="field"><label for="c">Company</label><input id="c" name="company" type="text" placeholder="Company name"></div>
+        </div>
+        <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
+        <div class="field">
+          <label for="s">What do you need help with?</label>
+          <select id="s" name="help">
+            <option>Strategic Staffing</option>
+            <option>HR Outsourcing</option>
+            <option>Executive Search</option>
+            <option>I'm a candidate looking for a role</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="m">Tell us more</label><textarea id="m" name="message" placeholder="The role, the timeline, the environment, or whatever's most useful."></textarea></div>
+        <!-- Honeypot: humans never see or fill this; bots do. The Worker silently drops any submission where it has a value. -->
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label for="cw">Company website</label>
+          <input id="cw" name="company_website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn" type="submit">Send</button>
+        </form>
+        {% else %}
+        {%- comment -%}
+        Interim path: the existing AWS Lambda behind contact_form_endpoint,
+        which already writes submissions into the Notion database (upsert by
+        email, confirm_email honeypot). It requires full_name, email, and
+        phone_number, so the phone field stays until the Worker replaces it.
+        {%- endcomment -%}
+        <form method="POST" data-rx2-contact-form data-endpoint="{{ site.contact_form_endpoint }}" data-page-name="Contact Us" data-success-message="Thanks. We will be in touch shortly.">
+        <div class="rx2-contact-form-message" data-rx2-contact-message aria-live="polite"></div>
+        <div class="row2">
+          <div class="field"><label for="n">Full name</label><input id="n" name="full_name" type="text" placeholder="Jane Doe" required></div>
+          <div class="field"><label for="c">Company</label><input id="c" name="company_name" type="text" placeholder="Company name"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone_number" type="tel" placeholder="(610) 555-0100" inputmode="tel" pattern="\+?(?:\d|\s|\(|\)|\.|-){7,}" required></div>
+        </div>
+        <div class="field">
+          <label for="s">What do you need help with?</label>
+          <select id="s" name="help">
+            <option>Strategic Staffing</option>
+            <option>HR Outsourcing</option>
+            <option>Executive Search</option>
+            <option>I'm a candidate looking for a role</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="m">Tell us more</label><textarea id="m" name="message" placeholder="The role, the timeline, the environment, or whatever's most useful."></textarea></div>
+        <!-- Honeypot: humans never see or fill this; bots do. The Lambda silently drops any submission where it has a value. -->
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label for="ce">Confirm email</label>
+          <input id="ce" name="confirm_email" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn" type="submit">Send</button>
+        </form>
+        <script src="/assets/js/site-contact-form.js" defer></script>
+        {% endif %}
+        <p class="formnote">You'll hear back from an RX2 team member within one business day. We don't add you to a drip campaign.</p>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:18px">
+          <h3>RX2 Solutions</h3>
+          <p style="margin-top:10px">18 Campus Blvd, Suite 100<br>Newtown Square, PA 19073</p>
+          <p style="margin-top:14px"><a href="tel:+16103403490"><strong>+1-610-340-3490</strong></a><br>
+          <a href="mailto:info@rx2solutions.com">info@rx2solutions.com</a></p>
+          <p class="fit">Monday to Friday, 9am to 5pm Eastern</p>
+        </div>
+        <div class="stack">
+          <h4>What happens next</h4>
+          <ul>
+            <li>A real RX2 team member personally reads every note</li>
+            <li>You get a reply within one business day</li>
+            <li>If it's a fit, we schedule a working intake call</li>
+            <li>If it isn't, we'll tell you that too</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ctaband">
+  <div class="wrap">
+    <h2>Prefer to just call?</h2>
+    <p>Reach us Monday through Friday, 9am to 5pm Eastern, at +1-610-340-3490.</p>
+    <a class="btn" href="/contactus.html">Start a Respectfully Professional Conversation</a>
+  </div>
+</div>

@@ -1,3 +1,28 @@
+title: RX2 Solutions
+description: >-
+  Strategic Staffing, HR Outsourcing, and Executive Search across
+  Information Technology, Engineering & Manufacturing, Scientific & Clinical,
+  Accounting & Finance, and Professional Services. Delivered nationwide.
+
+# CNAME is the apex domain (rx2solutions.com) and the GitHub Pages TLS cert
+# covers the apex only, so canonicals use the apex. (The old config pointed
+# canonicals at www, which cannot serve HTTPS.)
+url: https://rx2solutions.com
+logo: /assets/rx2-logo.png
+
+twitter:
+  card: summary_large_image
+social:
+  name: RX2 Solutions
+  links:
+    - https://www.linkedin.com/company/rx2-solutions
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
 collections:
   authors:
     output: true
@@ -10,9 +35,14 @@ collections:
 
 exclude:
   - lambda
+  - worker
   - _inbox
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/icons/og-image.png
   - scope:
       path: ""
       type: "authors"
@@ -43,9 +73,10 @@ defaults:
 
 future: false
 
-url: https://www.rx2solutions.com
-logo: /assets/images/RX2+Solutions-01+grey+text+added+2.png
 contact_form_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm
+# Cloudflare Worker that writes contact submissions to Notion (see /worker).
+# Leave empty until the Worker is deployed; the form stays in demo mode.
+contact_form_worker_url:
 landing_opt_in_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/landingOptIn
 # Set this to the GA4 measurement ID, e.g. G-XXXXXXXXXX, to enable Google Analytics.
 google_analytics_measurement_id:

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include rx2-head.html %}
+{% if page.extra_schema %}{{ page.extra_schema }}{% endif %}
+</head>
+<body>
+
+<a class="skiplink" href="#main">Skip to main content</a>
+
+{% include rx2-header.html %}
+
+<main id="main" class="page {{ page.theme | default: 'theme-blue' }}">
+{{ content }}
+</main>
+
+{% include rx2-footer.html %}
+
+{% include rx2-scripts.html %}
+
+</body>
+</html>

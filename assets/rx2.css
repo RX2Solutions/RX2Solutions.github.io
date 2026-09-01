@@ -1,0 +1,1056 @@
+/* ==========================================================
+   RX2 Solutions — site stylesheet
+   Brand palette: Green #8ECA50 / Teal #1CB0B5 / Blue #0A81CE
+   Brights are used on dark panels and as graphic accents.
+   Deeper derived shades carry text and buttons (WCAG AA).
+   ========================================================== */
+
+:root{
+  /* --- true brand colors (graphics, dark backgrounds, accents) --- */
+  --brand-green:#8ECA50;
+  --brand-teal:#1CB0B5;
+  --brand-blue:#0A81CE;
+
+  /* --- accessible derived shades (text + buttons on white) --- */
+  --green-ink:#4F7A2C;
+  --teal-ink:#127277;
+  --blue-ink:#0A6BAC;
+
+  /* --- tints --- */
+  --green-tint:#EEF7E5;
+  --teal-tint:#E0F3F4;
+  --blue-tint:#E4F0FA;
+
+  /* --- neutrals, pulled toward the blue family --- */
+  --ink:#062B47;
+  --ink-2:#0A3557;
+  --ink-soft:#3F566B;
+  --muted:#78909F;
+  --paper:#F5F8FA;
+  --white:#ffffff;
+  --line:#D9E4EB;
+
+  /* --- typography --- */
+  --display:'Good Times','Michroma','Archivo',sans-serif;
+  --head:'Archivo','Figtree',sans-serif;
+  --body:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+
+  --radius:10px;
+  --maxw:1120px;
+
+  /* defaults, overridden per service line below */
+  --accent:var(--blue-ink);
+  --accent-bright:var(--brand-blue);
+  --accent-soft:var(--blue-tint);
+  --accent-dark:#08578A;
+}
+
+/* --- service-line themes --- */
+.page{--accent:var(--blue-ink);--accent-bright:var(--brand-blue);--accent-soft:var(--blue-tint);--accent-dark:#08578A}
+.page.theme-teal{--accent:var(--teal-ink);--accent-bright:var(--brand-teal);--accent-soft:var(--teal-tint);--accent-dark:#0D5B5F}
+.page.theme-green{--accent:var(--green-ink);--accent-bright:var(--brand-green);--accent-soft:var(--green-tint);--accent-dark:#3F6222}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  color:var(--ink);background:var(--paper);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.16;letter-spacing:-0.015em}
+a{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.eyebrow{font-family:var(--display);font-size:11px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:15px}
+.eyebrow.gold{color:var(--accent-bright)}
+.sub{color:var(--ink-soft);max-width:64ch;margin-bottom:44px}
+.center{text-align:center}
+.center .sub{margin-left:auto;margin-right:auto}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+  font-weight:600;font-size:16px;padding:15px 30px;border-radius:6px;
+  border:none;cursor:pointer;transition:background .15s ease;
+}
+.btn:hover,.btn:focus{background:var(--accent-dark)}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent);margin-left:10px}
+.btn.ghost:hover{background:var(--accent-soft)}
+.btn.gold{background:var(--accent-bright);color:#fff}
+.btn.gold:hover,.btn.gold:focus{background:var(--accent-bright);color:#fff;filter:brightness(.9)}
+:focus-visible{outline:3px solid var(--brand-green);outline-offset:3px}
+
+/* ---------- Header / nav ---------- */
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
+.navbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+
+.menu{display:flex;align-items:center;gap:4px;list-style:none}
+.menu>li{position:relative}
+.menu>li>a,.menu>li>button{
+  font:inherit;font-size:15.5px;color:var(--ink-soft);background:none;border:none;
+  text-decoration:none;padding:10px 13px;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+}
+.menu>li>a:hover,.menu>li>button:hover{color:var(--accent);background:var(--accent-soft)}
+.menu>li>a.here{color:var(--accent);font-weight:600}
+.caret{width:8px;height:8px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+
+.drop{
+  position:absolute;top:calc(100% + 6px);left:0;min-width:262px;background:var(--white);
+  border:1px solid var(--line);border-radius:var(--radius);padding:9px;
+  box-shadow:0 14px 34px rgba(28,43,58,.12);
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .16s ease;list-style:none;
+}
+.menu>li:hover .drop,.menu>li:focus-within .drop{opacity:1;visibility:visible;transform:translateY(0)}
+.drop a{display:block;padding:9px 12px;font-size:15px;color:var(--ink-soft);text-decoration:none;border-radius:6px}
+.drop a:hover{background:var(--accent-soft);color:var(--accent)}
+.drop .grouplabel{
+  font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);padding:12px 12px 6px;border-top:1px solid var(--line);margin-top:6px;
+}
+.drop li:first-child .grouplabel{border-top:none;margin-top:0;padding-top:6px}
+.navcta{display:flex;align-items:center;gap:10px}
+.navcta .btn{padding:11px 20px;font-size:15px}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:7px;padding:9px 11px;cursor:pointer}
+.burger span{display:block;width:19px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--white);padding:86px 0 66px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(33px,4.9vw,52px);font-weight:700;max-width:19ch}
+.hero .lede{font-size:19.5px;color:var(--ink-soft);max-width:60ch;margin:22px 0 32px}
+.hero.tall h1{max-width:22ch}
+.hero-split{display:grid;grid-template-columns:1.25fr .95fr;gap:56px;align-items:center}
+.stack{background:var(--accent-soft);border-radius:var(--radius);padding:30px;border:1px solid rgba(0,0,0,.07)}
+.stack h4{font-size:15px;margin-bottom:14px;color:var(--accent)}
+.stack ul{list-style:none;font-size:15.5px;color:var(--ink-soft)}
+.stack li{padding:8px 0 8px 22px;position:relative}
+.stack li::before{content:"";position:absolute;left:0;top:17px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+/* ---------- Proof strip ---------- */
+.proof{background:var(--ink);color:#fff}
+.proof .wrap{padding-top:36px;padding-bottom:32px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.proof .stat b{display:block;font-family:var(--display);font-size:25px;font-weight:400;letter-spacing:-.01em}
+.proof .stat:nth-child(1) b{color:var(--brand-green)}
+.proof .stat:nth-child(2) b{color:var(--brand-teal)}
+.proof .stat:nth-child(3) b{color:#54B8F0}
+.proof .stat:nth-child(4) b{color:#fff}
+.proof .stat span{font-size:14px;color:#9FB6C6;display:block;margin-top:2px}
+.proof .note{grid-column:1/-1;font-size:12.5px;color:#7E97A8;border-top:1px solid #154467;padding-top:14px}
+
+/* ---------- Sections ---------- */
+section{padding:74px 0}
+section.tight{padding:52px 0}
+section.onwhite{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section h2{font-size:clamp(25px,3.3vw,36px);font-weight:700;margin-bottom:14px}
+section h2.narrow{max-width:26ch}
+section p+p{margin-top:15px}
+.prose{max-width:70ch;color:var(--ink-soft);font-size:17.5px}
+.prose p{margin-bottom:17px;line-height:1.65}
+.prose p:last-child{margin-bottom:0}
+.prose h3{color:var(--ink);font-size:20px;margin:34px 0 10px}
+
+/* ---------- Cards ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{font-size:15.5px;color:var(--ink-soft)}
+.card .fit{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:14.5px}
+.card .fit b{color:var(--accent);font-weight:600}
+.card.link{text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s}
+.card.link:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card .more{margin-top:15px;color:var(--accent);font-weight:600;font-size:14.5px}
+.card.feature{border-top:3px solid var(--accent)}
+
+/* ---------- Process rail (shared signature element) ---------- */
+.rail{display:grid;grid-template-columns:repeat(4,1fr);position:relative;margin-top:10px}
+.rail.three{grid-template-columns:repeat(3,1fr)}
+.rail::before{content:"";position:absolute;top:9px;left:9px;right:12.5%;height:2px;background:var(--line)}
+.rail.three::before{left:9px;right:16.6%}
+.stop{padding:0 20px 0 0;position:relative}
+.stop::before{
+  content:"";display:block;width:18px;height:18px;border-radius:50%;
+  background:var(--accent);border:4px solid var(--accent-soft);margin-bottom:18px;position:relative;z-index:1;
+}
+.onwhite .stop::before{border-color:var(--accent-soft)}
+.stop .when{font-size:12.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--brand-green);margin-bottom:6px}
+.stop h3{font-size:17px;margin-bottom:8px}
+.stop p{font-size:14.5px;color:var(--ink-soft)}
+
+/* ---------- Case callout ---------- */
+.case{background:var(--ink);color:#fff;border-radius:14px;padding:50px 46px;display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:center}
+.case h2{color:#fff;font-size:28px}
+.case p{color:#BED0DD;font-size:16px;margin:14px 0 26px}
+.case .metrics{border-left:2px solid var(--accent-bright);padding-left:26px}
+.case .metrics div{margin-bottom:17px}
+.case .metrics div:last-child{margin-bottom:0}
+.case .metrics b{display:block;font-family:var(--display);font-size:21px;font-weight:400}
+.case .metrics span{font-size:14px;color:#9FB6C6}
+
+/* ---------- Case study accordion ---------- */
+.cs{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:16px;overflow:hidden}
+.cs summary{
+  padding:26px 28px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;
+  align-items:flex-start;gap:24px;
+}
+.cs summary::-webkit-details-marker{display:none}
+.cs summary h3{font-size:21px;margin-bottom:8px}
+.cs summary p{font-size:15.5px;color:var(--ink-soft);max-width:74ch}
+.cs .tag{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:5px 10px;border-radius:20px;white-space:nowrap;margin-bottom:10px;display:inline-block}
+.cs .plus{flex:0 0 auto;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--accent);font-size:19px;line-height:1}
+.cs[open] .plus{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cs .body{padding:2px 28px 28px;border-top:1px solid var(--line);margin-top:4px;padding-top:24px}
+.cs .body p{color:var(--ink-soft);font-size:16.5px;max-width:76ch;margin-bottom:15px;line-height:1.65}
+.cs .body p:last-of-type{margin-bottom:4px}
+.cs .kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.cs .kpi{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:9px 14px;font-size:14.5px;font-weight:600;color:var(--ink)}
+
+/* ---------- Capability list (industry sub-categories) ---------- */
+.caps{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--white)}
+.cap{padding:28px 30px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.cap:nth-child(2n){border-right:none}
+.cap h3{font-size:18px;margin-bottom:9px}
+.cap p{font-size:15.5px;color:var(--ink-soft)}
+
+/* ---------- Team ---------- */
+.person{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-align:center}
+.person .avatar{width:78px;height:78px;border-radius:50%;background:var(--accent-soft);color:var(--accent);margin:0 auto 16px;display:grid;place-items:center;font-family:var(--display);font-weight:400;font-size:20px}
+.person h3{font-size:18px;margin-bottom:3px}
+.person .role{font-size:14.5px;color:var(--accent);font-weight:600;margin-bottom:10px}
+.person p{font-size:15px;color:var(--ink-soft)}
+
+/* ---------- Articles ---------- */
+.post{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-decoration:none;color:inherit;display:block;transition:border-color .15s}
+.post:hover{border-color:var(--accent)}
+.post .date{font-size:13px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+.post h3{font-size:19px;margin:9px 0 8px}
+.post p{font-size:15px;color:var(--ink-soft)}
+
+/* ---------- Form ---------- */
+.formcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:36px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:14.5px;font-weight:600;margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);
+  border-radius:7px;background:var(--paper);color:var(--ink);
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);outline:none;background:#fff}
+.field textarea{min-height:120px;resize:vertical}
+.formnote{font-size:14px;color:var(--muted);margin-top:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+
+/* ---------- CTA band ---------- */
+.ctaband{background:var(--white);border-top:1px solid var(--line);text-align:center;padding:78px 0}
+.ctaband h2{max-width:24ch;margin:0 auto 14px}
+.ctaband p{color:var(--ink-soft);margin-bottom:28px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:#9BB2C4;padding:56px 0 26px;font-size:15px}
+footer a{color:#C6D7E3;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px;padding-bottom:34px;border-bottom:1px solid #154467}
+.fgrid h4{color:#fff;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:15px}
+.fgrid ul{list-style:none}
+.fgrid li{margin-bottom:9px}
+.fbrand p{max-width:34ch;font-size:14.5px}
+.fbot{padding-top:22px;display:flex;justify-content:space-between;gap:18px;font-size:13.5px;color:#7E97A8;flex-wrap:wrap}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  .hero-split{grid-template-columns:1fr;gap:34px}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+  .menu,.navcta .btn{display:none}
+  .burger{display:block}
+  .menu.open{
+    display:block;position:absolute;top:100%;left:0;right:0;background:#fff;
+    border-bottom:1px solid var(--line);padding:14px 26px 22px;
+    box-shadow:0 16px 30px rgba(28,43,58,.1);
+  }
+  .menu.open>li{width:100%}
+  .menu.open>li>a,.menu.open>li>button{display:block;width:100%;text-align:left;padding:12px 0}
+  .menu.open .drop{
+    position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;
+    border:none;border-left:2px solid var(--line);border-radius:0;margin:0 0 8px 4px;padding:0 0 0 12px;
+  }
+  .caret{display:none}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .grid-3,.grid-4,.grid-2,.caps,.row2{grid-template-columns:1fr}
+  .cap{border-right:none}
+  .rail,.rail.three{grid-template-columns:1fr;gap:26px}
+  .rail::before{display:none}
+  .stop{padding-right:0}
+  .case{grid-template-columns:1fr;padding:34px 26px}
+  .case .metrics{border-left:none;border-top:2px solid var(--accent-bright);padding:22px 0 0}
+  section{padding:56px 0}
+}
+@media(max-width:520px){
+  body{font-size:16.5px}
+  .fgrid{grid-template-columns:1fr}
+  .cs summary{padding:22px}
+  .cs .body{padding:22px 22px 24px}
+}
+
+
+/* ==========================================================
+   Brand color layer
+   ========================================================== */
+
+/* three-color hairline used as a section/brand device */
+.brandrule{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--brand-green) 0 33.3%,var(--brand-teal) 33.3% 66.6%,var(--brand-blue) 66.6% 100%)}
+header{border-bottom:none;box-shadow:0 1px 0 var(--line)}
+header .brandrule{border-radius:0}
+
+/* logo mark uses the full palette */
+
+/* dark panels sit in the blue family */
+.proof,.case,footer{background:var(--ink)}
+.case{background:linear-gradient(135deg,#062B47 0%,#0A3A5E 100%);position:relative;overflow:hidden}
+.case::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue));
+}
+.case .metrics{border-left-color:var(--accent-bright)}
+.case .metrics b{color:#fff}
+.proof{position:relative}
+.proof::after{
+  content:"";position:absolute;bottom:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--brand-green) 0 33.3%,var(--brand-teal) 33.3% 66.6%,var(--brand-blue) 66.6% 100%);
+}
+
+/* service-line color coding on the homepage grid */
+.card.svc-staffing{border-top:4px solid var(--brand-green)}
+.card.svc-hro{border-top:4px solid var(--brand-teal)}
+.card.svc-search{border-top:4px solid var(--brand-blue)}
+.card.svc-staffing .more{color:var(--green-ink)}
+.card.svc-hro .more{color:var(--teal-ink)}
+.card.svc-search .more{color:var(--blue-ink)}
+.card.svc-staffing:hover{border-color:var(--brand-green)}
+.card.svc-hro:hover{border-color:var(--brand-teal)}
+.card.svc-search:hover{border-color:var(--brand-blue)}
+.card.svc-staffing:hover,.card.svc-hro:hover,.card.svc-search:hover{border-top-width:4px}
+
+/* hero tinted field per service line */
+.hero{background:linear-gradient(180deg,var(--accent-soft) 0%,var(--white) 78%)}
+.hero h1{color:var(--ink)}
+
+/* capability grid numbering in brand color */
+.cap{position:relative}
+.cap:hover{background:var(--accent-soft)}
+
+/* process rail: bright dots, tinted ring */
+.stop::before{background:var(--accent-bright);border-color:var(--accent-soft)}
+.stop .when{color:var(--accent);font-family:var(--display);font-size:10.5px;letter-spacing:.13em}
+
+/* case study tags cycle the palette */
+.cs.cs-ss .tag{background:var(--green-tint);color:var(--green-ink)}
+.cs.cs-hro .tag{background:var(--teal-tint);color:var(--teal-ink)}
+.cs.cs-es .tag{background:var(--blue-tint);color:var(--blue-ink)}
+.cs[open]{border-color:var(--accent-bright)}
+
+/* section separators */
+section.onwhite{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ctaband{background:var(--accent-soft);border-top:1px solid var(--line)}
+.ctaband h2{color:var(--ink)}
+
+/* feature card keeps its teal top edge */
+.card.feature{border-top:4px solid var(--brand-teal)}
+
+/* stack panel */
+.stack{background:var(--accent-soft)}
+.stack li::before{background:var(--accent-bright)}
+.stack h4{font-family:var(--display);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+/* footer palette bar */
+footer{border-top:4px solid transparent;border-image:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue)) 1}
+.fgrid h4{font-family:var(--display);font-size:10.5px;letter-spacing:.14em;color:#fff}
+
+/* person avatars cycle the palette */
+.person:nth-child(3n+1) .avatar{background:var(--teal-tint);color:var(--teal-ink)}
+.person:nth-child(3n+2) .avatar{background:var(--green-tint);color:var(--green-ink)}
+.person:nth-child(3n) .avatar{background:var(--blue-tint);color:var(--blue-ink)}
+
+/* post cards get a left brand edge on hover */
+.post{border-left:3px solid transparent}
+.post:hover{border-left-color:var(--accent-bright);border-color:var(--line);border-left-color:var(--accent-bright)}
+
+/* nav */
+.menu>li>a.here{color:var(--accent);font-weight:600}
+.drop .grouplabel{font-family:var(--display);font-size:9.5px;letter-spacing:.14em}
+
+/* ==========================================================
+   Proof strip: service-line labels + pending slots
+   ========================================================== */
+.proof .stat i{
+  display:block;font-family:var(--display);font-style:normal;font-size:9.5px;
+  letter-spacing:.15em;text-transform:uppercase;color:#7E97A8;margin-bottom:7px;
+}
+.proof .stat:nth-child(1) i{color:var(--brand-green)}
+.proof .stat:nth-child(2) i{color:var(--brand-teal)}
+.proof .stat:nth-child(3) i{color:#54B8F0}
+.proof .stat:nth-child(4) i{color:#9FB6C6}
+.proof .stat.pending{opacity:.5}
+.proof .stat.pending b{color:#9FB6C6!important}
+
+/* ==========================================================
+   Homepage case cards
+   ========================================================== */
+.card .tagline{
+  display:inline-block;font-family:var(--display);font-size:9.5px;letter-spacing:.15em;
+  text-transform:uppercase;margin-bottom:12px;padding:5px 10px;border-radius:20px;
+}
+.card.svc-staffing .tagline{background:var(--green-tint);color:var(--green-ink)}
+.card.svc-hro .tagline{background:var(--teal-tint);color:var(--teal-ink)}
+.card.svc-search .tagline{background:var(--blue-tint);color:var(--blue-ink)}
+.minimetrics{list-style:none;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.minimetrics li{font-size:14.5px;color:var(--ink-soft);padding:5px 0 5px 15px;position:relative}
+.minimetrics li::before{
+  content:"";position:absolute;left:0;top:13px;width:6px;height:6px;border-radius:50%;
+  background:var(--accent-bright);
+}
+.card.svc-staffing .minimetrics li::before{background:var(--brand-teal)}
+.card.svc-hro .minimetrics li::before{background:var(--brand-green)}
+.card.svc-search .minimetrics li::before{background:var(--brand-blue)}
+.minimetrics b{color:var(--ink);font-family:var(--head);font-weight:700}
+
+/* ==========================================================
+   Two-up proof strip (HRO, Executive Search)
+   ========================================================== */
+.proof.duo .wrap{
+  grid-template-columns:1fr 1fr;
+  max-width:840px;
+  gap:0;
+  padding-top:46px;padding-bottom:44px;
+}
+.proof.duo .stat{
+  text-align:center;
+  padding:4px 42px;
+  position:relative;
+}
+.proof.duo .stat + .stat::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;
+  background:linear-gradient(180deg,transparent,#1B4A6E 22%,#1B4A6E 78%,transparent);
+}
+.proof.duo .stat i{
+  font-size:10px;letter-spacing:.18em;margin-bottom:12px;color:var(--accent-bright);
+}
+.proof.duo .stat:nth-child(1) i,
+.proof.duo .stat:nth-child(2) i{color:var(--accent-bright)}
+.proof.duo .stat b{
+  font-size:40px;line-height:1.05;color:#fff;margin-bottom:12px;
+}
+.proof.duo .stat:nth-child(1) b,
+.proof.duo .stat:nth-child(2) b{color:#fff}
+.proof.duo .stat span{
+  font-size:15px;color:#9FB6C6;max-width:30ch;margin:0 auto;line-height:1.55;
+}
+@media(max-width:860px){
+  .proof.duo .wrap{grid-template-columns:1fr;gap:34px;padding-top:38px;padding-bottom:36px}
+  .proof.duo .stat{padding:0 12px}
+  .proof.duo .stat + .stat::before{
+    left:22%;right:22%;top:-17px;bottom:auto;width:auto;height:1px;
+    background:linear-gradient(90deg,transparent,#1B4A6E 22%,#1B4A6E 78%,transparent);
+  }
+  .proof.duo .stat b{font-size:34px}
+}
+
+/* ==========================================================
+   Real logo (replaces the CSS wordmark)
+   ========================================================== */
+.brand{gap:0}
+.brand .logo{height:42px;width:auto;display:block}
+.fbrand .logo-footer{height:44px;width:auto;margin-bottom:16px}
+@media(max-width:860px){
+  .brand .logo{height:36px}
+}
+@media(max-width:520px){
+  .brand .logo{height:32px}
+}
+
+/* ==========================================================
+   Social icons
+   ========================================================== */
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{
+  width:38px;height:38px;border-radius:8px;display:grid;place-items:center;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  transition:background .15s,border-color .15s,transform .15s;
+}
+.social a svg{width:17px;height:17px;fill:#C6D7E3;transition:fill .15s}
+.social a:hover{transform:translateY(-2px)}
+.social a.li:hover{background:var(--brand-blue);border-color:var(--brand-blue)}
+.social a.yt:hover{background:#FF0000;border-color:#FF0000}
+.social a:hover svg{fill:#fff}
+
+/* ==========================================================
+   Practice cards: one continuous logo gradient across the row
+   ========================================================== */
+.practice{position:relative;overflow:hidden}
+.practice::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:5px;
+  background-image:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue));
+  background-size:400% 100%;
+  background-repeat:no-repeat;
+}
+.grid-4 .practice:nth-child(1)::before{background-position:0% 0}
+.grid-4 .practice:nth-child(2)::before{background-position:33.333% 0}
+.grid-4 .practice:nth-child(3)::before{background-position:66.666% 0}
+.grid-4 .practice:nth-child(4)::before{background-position:100% 0}
+.grid-3 .practice::before{background-size:300% 100%}
+.grid-3 .practice:nth-child(1)::before{background-position:0% 0}
+.grid-3 .practice:nth-child(2)::before{background-position:50% 0}
+.grid-3 .practice:nth-child(3)::before{background-position:100% 0}
+.practice h3{margin-top:4px}
+.practice:hover{border-color:var(--line);box-shadow:0 8px 22px rgba(6,43,71,.09)}
+
+/* stacked on mobile: full gradient on each so none looks broken */
+@media(max-width:860px){
+  .grid-4 .practice::before,.grid-3 .practice::before{
+    background-size:100% 100%;background-position:0 0;
+  }
+}
+
+/* ==========================================================
+   Tinted service cards (scoped: homepage "What We Do" only)
+   ========================================================== */
+.tinted .card.svc-staffing{background:var(--green-tint);border-color:#D8E9C6}
+.tinted .card.svc-hro{background:var(--teal-tint);border-color:#C8E6E8}
+.tinted .card.svc-search{background:var(--blue-tint);border-color:#C7DEF2}
+.tinted .card p{color:#3A5062}
+.tinted .card.link:hover{
+  box-shadow:0 10px 26px rgba(6,43,71,.10);
+  transform:translateY(-3px);
+}
+.tinted .card.svc-staffing:hover{background:#E6F3D9}
+.tinted .card.svc-hro:hover{background:#D6EEEF}
+.tinted .card.svc-search:hover{background:#D8E9F7}
+
+/* ==========================================================
+   "What You Can Expect" — iconed, tinted rows
+   ========================================================== */
+.expects{display:flex;flex-direction:column;gap:14px}
+.expect{
+  display:flex;gap:18px;align-items:flex-start;
+  background:var(--white);border:1px solid var(--line);border-left-width:4px;
+  border-radius:var(--radius);padding:22px 24px;
+  transition:transform .15s,box-shadow .15s;
+}
+.expect:hover{transform:translateX(3px);box-shadow:0 8px 20px rgba(6,43,71,.08)}
+.expect h3{font-size:18px;margin-bottom:6px}
+.expect p{font-size:15.5px;color:#3A5062;margin:0}
+.expect .ico{
+  flex:0 0 auto;width:44px;height:44px;border-radius:10px;
+  display:grid;place-items:center;
+}
+.expect .ico svg{width:23px;height:23px}
+
+.expect.e-teal{border-left-color:var(--brand-teal);background:var(--teal-tint);border-color:#C8E6E8;border-left-color:var(--brand-teal)}
+.expect.e-teal .ico{background:rgba(28,176,181,.16)}
+.expect.e-teal .ico svg{fill:var(--teal-ink)}
+
+.expect.e-green{border-left-color:var(--brand-green);background:var(--green-tint);border-color:#D8E9C6;border-left-color:var(--brand-green)}
+.expect.e-green .ico{background:rgba(142,202,80,.22)}
+.expect.e-green .ico svg{fill:var(--green-ink)}
+
+.expect.e-blue{border-left-color:var(--brand-blue);background:var(--blue-tint);border-color:#C7DEF2;border-left-color:var(--brand-blue)}
+.expect.e-blue .ico{background:rgba(10,129,206,.15)}
+.expect.e-blue .ico svg{fill:var(--blue-ink)}
+
+@media(max-width:520px){
+  .expect{padding:18px;gap:14px}
+  .expect .ico{width:38px;height:38px}
+  .expect .ico svg{width:20px;height:20px}
+}
+
+/* ==========================================================
+   Practice grid: handles 4 or 5 cards, gradient sliced across
+   ========================================================== */
+.pgrid{display:grid;gap:16px}
+.pgrid.p5{grid-template-columns:repeat(5,1fr)}
+.pgrid.p4{grid-template-columns:repeat(4,1fr)}
+.pgrid .card{padding:24px 20px}
+.pgrid .card h3{font-size:16.5px;line-height:1.25}
+.pgrid .card p{font-size:14.5px}
+.pgrid .card .more{font-size:14px}
+
+
+
+@media(max-width:1040px){
+  .pgrid.p5,.pgrid.p4{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .pgrid.p5,.pgrid.p4{grid-template-columns:1fr}
+}
+
+/* ==========================================================
+   Anchor offset so jump links clear the sticky header
+   ========================================================== */
+section[id],div[id].proof,details[id]{scroll-margin-top:96px}
+#respectfully-professional{scroll-margin-top:96px}
+
+/* ==========================================================
+   FIVE CAPABILITY-GRID VARIANTS
+   One per industry page, so no two pages look identical.
+   ========================================================== */
+
+/* ---- 2. Engineering & Manufacturing: colored left edge, numbered chip ---- */
+.caps-edge{border:none;background:none;gap:14px;overflow:visible}
+.caps-edge .cap{
+  background:var(--white);border:1px solid var(--line);
+  border-left:4px solid var(--brand-green);border-radius:var(--radius);
+}
+.caps-edge .cap:nth-child(3n+2){border-left-color:var(--brand-teal)}
+.caps-edge .cap:nth-child(3n+3){border-left-color:var(--brand-blue)}
+.caps-edge .caps-edge .cap:hover{box-shadow:0 8px 20px rgba(6,43,71,.08);background:var(--white)}
+
+/* ---- 4. Accounting & Finance: separated cards, gradient top bar ---- */
+.caps-split{border:none;background:none;gap:16px;overflow:visible}
+.caps-split .cap{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  position:relative;overflow:hidden;padding-top:32px;
+}
+.caps-split .cap::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background-image:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue));
+  background-size:300% 100%;background-repeat:no-repeat;
+}
+.caps-split .cap:nth-child(1)::before,.caps-split .cap:nth-child(2)::before{background-position:0% 0}
+.caps-split .cap:nth-child(3)::before,.caps-split .cap:nth-child(4)::before{background-position:50% 0}
+.caps-split .cap:nth-child(5)::before,.caps-split .cap:nth-child(6)::before{background-position:100% 0}
+.caps-split .caps-split .cap:hover{box-shadow:0 8px 20px rgba(6,43,71,.08)}
+
+/* shared: variants that break the shared border box need their own cell edges */
+.caps-edge .cap,.caps-split .cap,.caps-edge .cap:nth-child(2n),.caps-split .cap:nth-child(2n),.caps-edge .cap{border-left-width:4px}
+
+/* ==========================================================
+   "How We Engage" cards — icon, bullets, fit line
+   ========================================================== */
+.engage{align-items:stretch}
+.engage .card{display:flex;flex-direction:column;padding:28px 26px 26px}
+.engage .card h3{font-size:19px;margin-bottom:9px}
+.engage .card>p:first-of-type{font-size:15.5px;margin-bottom:0}
+.engage .card .more{margin-top:auto;padding-top:18px}
+
+.engage .eico{
+  width:44px;height:44px;border-radius:11px;display:grid;place-items:center;margin-bottom:16px;
+}
+.engage .eico svg{width:23px;height:23px}
+.engage .svc-staffing .eico{background:rgba(28,176,181,.15)}
+.engage .svc-staffing .eico svg{fill:var(--teal-ink)}
+.engage .svc-hro .eico{background:rgba(142,202,80,.22)}
+.engage .svc-hro .eico svg{fill:var(--green-ink)}
+.engage .svc-search .eico{background:rgba(10,129,206,.14)}
+.engage .svc-search .eico svg{fill:var(--blue-ink)}
+
+.cardlist{list-style:none;margin:16px 0 0;padding-top:15px;border-top:1px solid var(--line)}
+.cardlist li{font-size:14.5px;color:var(--ink-soft);padding:5px 0 5px 17px;position:relative;line-height:1.5}
+.cardlist li::before{
+  content:"";position:absolute;left:1px;top:12px;width:7px;height:7px;border-radius:2px;
+  transform:rotate(45deg);
+}
+.engage .svc-staffing .cardlist li::before{background:var(--brand-teal)}
+.engage .svc-hro .cardlist li::before{background:var(--brand-green)}
+.engage .svc-search .cardlist li::before{background:var(--brand-blue)}
+
+.engage .card .fit{
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
+  font-size:14px;color:var(--ink-soft);line-height:1.5;
+}
+.engage .svc-staffing .fit b{color:var(--teal-ink)}
+.engage .svc-hro .fit b{color:var(--green-ink)}
+.engage .svc-search .fit b{color:var(--blue-ink)}
+
+@media(max-width:520px){
+  .engage .card{padding:24px 22px}
+  .engage .eico{width:38px;height:38px}
+  .engage .eico svg{width:20px;height:20px}
+}
+
+/* ==========================================================
+   Two capability-grid styles, alternating across industry pages
+   No numbering.
+   ========================================================== */
+
+/* A: gradient top bar, separated cards (IT, Scientific & Clinical, Professional Services) */
+.caps-split{border:none;background:none;gap:16px;overflow:visible}
+.caps-split .cap{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  position:relative;overflow:hidden;padding:30px;
+}
+.caps-split .cap::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background-image:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue));
+  background-size:300% 100%;background-repeat:no-repeat;
+}
+.caps-split .cap:nth-child(1)::before,.caps-split .cap:nth-child(2)::before{background-position:0% 0}
+.caps-split .cap:nth-child(3)::before,.caps-split .cap:nth-child(4)::before{background-position:50% 0}
+.caps-split .cap:nth-child(5)::before,.caps-split .cap:nth-child(6)::before{background-position:100% 0}
+.caps-split .cap:hover{box-shadow:0 8px 20px rgba(6,43,71,.08);transform:translateY(-2px)}
+
+/* B: colored left edge, separated cards (Engineering & Manufacturing, Accounting & Finance) */
+.caps-edge{border:none;background:none;gap:14px;overflow:visible}
+.caps-edge .cap{
+  background:var(--white);border:1px solid var(--line);
+  border-left:4px solid var(--brand-green);border-radius:var(--radius);padding:26px 28px;
+}
+.caps-edge .cap:nth-child(3n+2){border-left-color:var(--brand-teal)}
+.caps-edge .cap:nth-child(3n+3){border-left-color:var(--brand-blue)}
+.caps-edge .cap:hover{box-shadow:0 8px 20px rgba(6,43,71,.08);transform:translateX(3px)}
+
+.caps-split .cap,.caps-edge .cap{transition:transform .15s,box-shadow .15s}
+
+/* ==========================================================
+   Skip-to-content link (visible only on keyboard focus)
+   ========================================================== */
+.skiplink{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--ink);color:#fff;font-family:var(--body);font-size:15px;font-weight:600;
+  padding:12px 20px;border-radius:0 0 8px 0;text-decoration:none;
+}
+.skiplink:focus{left:0}
+
+/* ==========================================================
+   CAREERS: job list, filters, cards
+   ========================================================== */
+.jobtools{display:flex;flex-direction:column;gap:16px;margin-bottom:26px}
+#jobsearch{
+  width:100%;max-width:460px;font:inherit;font-size:16px;padding:13px 16px;
+  border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);
+}
+#jobsearch:focus{border-color:var(--accent);outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{
+  font:inherit;font-size:14px;font-weight:600;padding:9px 15px;border-radius:20px;cursor:pointer;
+  background:var(--white);border:1px solid var(--line);color:var(--ink-soft);transition:all .14s;
+}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+
+.joblist{display:grid;gap:14px}
+.jobcard{
+  display:block;text-decoration:none;color:inherit;background:var(--white);
+  border:1px solid var(--line);border-left:4px solid var(--brand-teal);
+  border-radius:var(--radius);padding:24px 26px;transition:transform .15s,box-shadow .15s;
+}
+.jobcard:hover{transform:translateX(4px);box-shadow:0 8px 22px rgba(6,43,71,.09)}
+.jobcard.p-it{border-left-color:var(--brand-blue)}
+.jobcard.p-eng{border-left-color:var(--brand-green)}
+.jobcard.p-sci{border-left-color:var(--brand-teal)}
+.jobcard.p-af{border-left-color:var(--brand-blue)}
+.jobcard.p-ps{border-left-color:var(--brand-green)}
+.jobtop{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:11px}
+.jtag{
+  font-family:var(--display);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 10px;border-radius:20px;background:var(--teal-tint);color:var(--teal-ink);
+}
+.p-it .jtag,.p-af .jtag{background:var(--blue-tint);color:var(--blue-ink)}
+.p-eng .jtag,.p-ps .jtag{background:var(--green-tint);color:var(--green-ink)}
+.jtype{font-size:13px;font-weight:600;color:var(--ink-soft);white-space:nowrap}
+.jobcard h3{font-size:20px;margin-bottom:8px}
+.jsum{font-size:15.5px;color:var(--ink-soft);max-width:78ch}
+.jmeta{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+.jmeta span{font-size:14px;color:var(--ink-soft);position:relative}
+.jmeta span+span::before{content:"";position:absolute;left:-12px;top:8px;width:3px;height:3px;border-radius:50%;background:var(--muted)}
+.jobcard .more{margin-top:14px}
+.noresults{display:none;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;color:var(--ink-soft)}
+
+/* ==========================================================
+   JOB DETAIL PAGE
+   ========================================================== */
+.jobhero{background:linear-gradient(180deg,var(--accent-soft) 0%,var(--white) 82%);padding:34px 0 56px;border-bottom:1px solid var(--line)}
+.crumbs{font-size:14px;color:var(--ink-soft);margin-bottom:20px}
+.crumbs a{color:var(--accent);text-decoration:none;font-weight:600}
+.crumbs span{margin:0 4px}
+.jtag.big{display:inline-block;font-size:10.5px;padding:6px 12px;margin-bottom:14px}
+.jobhero h1{font-size:clamp(29px,4.2vw,44px);max-width:24ch;margin-bottom:26px}
+.jfacts{display:flex;flex-wrap:wrap;gap:0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:26px}
+.jfacts div{flex:1 1 170px;padding:18px 22px;border-right:1px solid var(--line)}
+.jfacts div:last-child{border-right:none}
+.jfacts b{display:block;font-family:var(--display);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;font-weight:400}
+.jfacts span{font-size:15.5px;font-weight:600;color:var(--ink)}
+
+.jobgrid{display:grid;grid-template-columns:1.55fr .8fr;gap:52px;align-items:start}
+.jobbody p{margin-bottom:16px;line-height:1.65}
+.jobbody p:last-child{margin-bottom:0}
+.jobbody h2{font-size:23px;margin:34px 0 12px}
+.jobbody h2:first-child{margin-top:0}
+.jobbody p{color:var(--ink-soft);font-size:17px;max-width:72ch}
+.ticks{list-style:none;margin-top:4px}
+.ticks li{position:relative;padding:7px 0 7px 26px;color:var(--ink-soft);font-size:16.5px;max-width:70ch}
+.ticks li::before{
+  content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:2px;
+  transform:rotate(45deg);background:var(--accent-bright);
+}
+.jobside .stack h4{margin-bottom:12px}
+
+@media(max-width:900px){
+  .jobgrid{grid-template-columns:1fr;gap:36px}
+  .jfacts div{flex:1 1 50%;border-bottom:1px solid var(--line)}
+}
+@media(max-width:520px){
+  .jobtop{flex-direction:column;align-items:flex-start;gap:8px}
+  .jfacts div{flex:1 1 100%;border-right:none}
+}
+
+/* ==========================================================
+   ARTICLE PAGES
+   ========================================================== */
+.arthero{background:linear-gradient(180deg,var(--accent-soft) 0%,var(--white) 82%);padding:32px 0 52px;border-bottom:1px solid var(--line)}
+.arthero h1{font-size:clamp(30px,4.4vw,46px);max-width:22ch;margin-bottom:18px}
+.arthero .dek{font-size:19.5px;color:var(--ink-soft);max-width:62ch;margin-bottom:22px}
+.artmeta{display:flex;flex-wrap:wrap;gap:0 20px}
+.artmeta span{font-size:14.5px;color:var(--ink-soft);position:relative;font-weight:600}
+.artmeta span+span::before{content:"";position:absolute;left:-11px;top:9px;width:3px;height:3px;border-radius:50%;background:var(--muted)}
+
+.artgrid{display:grid;grid-template-columns:1.6fr .75fr;gap:56px;align-items:start}
+.artbody p{font-size:17.5px;color:var(--ink-soft);max-width:70ch;margin-bottom:18px}
+.artbody p.lead{font-size:20px;color:var(--ink)}
+.artbody h2{font-size:25px;margin:38px 0 14px}
+.artbody blockquote{
+  margin:30px 0;padding:22px 28px;border-left:4px solid var(--brand-teal);
+  background:var(--teal-tint);border-radius:0 var(--radius) var(--radius) 0;
+  font-size:19.5px;line-height:1.5;color:var(--ink);font-weight:500;max-width:66ch;
+}
+.artcta{margin-top:40px;padding:30px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}
+.artcta h3{font-size:20px;margin-bottom:8px}
+.artcta p{margin-bottom:18px;font-size:16px}
+.plainlinks{list-style:none}
+.plainlinks li{padding:7px 0}
+.plainlinks a{color:var(--accent);font-weight:600;text-decoration:none;font-size:15.5px}
+.plainlinks a:hover{text-decoration:underline}
+
+/* featured article on the index */
+.feature{
+  display:grid;grid-template-columns:1.5fr .8fr;gap:40px;align-items:center;
+  background:var(--white);border:1px solid var(--line);border-top:4px solid var(--brand-teal);
+  border-radius:var(--radius);padding:38px 40px;text-decoration:none;color:inherit;
+  transition:box-shadow .15s,transform .15s;
+}
+.feature:hover{box-shadow:0 10px 26px rgba(6,43,71,.09);transform:translateY(-2px)}
+.feature h2{font-size:29px;margin:12px 0 12px;max-width:22ch}
+.feature p{color:var(--ink-soft);font-size:16.5px;max-width:60ch}
+.featmeta{border-left:2px solid var(--brand-green);padding-left:24px}
+.featmeta div{margin-bottom:16px}
+.featmeta div:last-child{margin-bottom:0}
+.featmeta b{display:block;font-family:var(--display);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:5px;font-weight:400}
+.featmeta span{font-size:15.5px;font-weight:600}
+
+/* ==========================================================
+   EMAIL CAPTURE
+   Inline, after-content. Research: inline outperforms popup for
+   B2B services; after-content placement converts up to 40% better
+   than top-of-page. Email only, no name field.
+   ========================================================== */
+.capture{
+  margin:38px 0;border-radius:14px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#062B47 0%,#0A3A5E 100%);
+}
+.capture::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--brand-green),var(--brand-teal),var(--brand-blue));
+}
+.capbody{padding:34px 36px}
+.capeyebrow{font-family:var(--display);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand-green);margin-bottom:12px}
+.capture h3{color:#fff;font-size:24px;margin-bottom:10px;max-width:24ch}
+.capture p{color:#BED0DD;font-size:16px;max-width:58ch;margin-bottom:20px}
+.capform{display:flex;gap:10px;flex-wrap:wrap;max-width:520px}
+.capform input{
+  flex:1 1 240px;font:inherit;font-size:16px;padding:14px 16px;border-radius:7px;
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;
+}
+.capform input::placeholder{color:#8CA3B6}
+.capform input:focus{outline:none;border-color:var(--brand-teal);background:rgba(255,255,255,.14)}
+.capform .btn{background:var(--brand-green);color:#0B2E12;white-space:nowrap}
+.capform .btn:hover{background:#7FBA44}
+.capfine{font-size:13.5px;color:#8CA3B6;margin:14px 0 0}
+.capform.stacked{flex-direction:column;max-width:none}
+.capform.stacked input{flex:none;width:100%;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+.capform.stacked input::placeholder{color:var(--muted)}
+.capform.stacked .btn{width:100%;background:var(--accent);color:#fff}
+.capform.stacked .btn:hover{background:var(--accent-dark)}
+.capdone{color:var(--brand-green);font-weight:600;font-size:16px;margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media(max-width:900px){
+  .artgrid{grid-template-columns:1fr;gap:36px}
+  .feature{grid-template-columns:1fr;padding:30px}
+  .featmeta{border-left:none;border-top:2px solid var(--brand-green);padding:20px 0 0}
+}
+@media(max-width:520px){
+  .capbody{padding:26px 22px}
+  .capform .btn{width:100%}
+}
+
+/* sidebar link lists: no bullet dots (fixes overlap on first letter) */
+.stack .plainlinks li{padding-left:0}
+.stack .plainlinks li::before{display:none}
+
+/* condensed engage cards (case studies page) */
+.grid-3.mini .card{padding:24px 24px}
+.grid-3.mini .card h3{font-size:17.5px}
+.grid-3.mini .card p{font-size:14.5px}
+.grid-3.mini .card .more{font-size:14px;margin-top:12px}
+
+
+
+/* ==========================================================
+   BRAND IMAGE LAYER
+   Owned abstract imagery, always under a navy overlay so text
+   passes contrast and the images read as brand, not decoration.
+   ========================================================== */
+.hero.dark{
+  background-color:#062B47;
+  background-blend-mode:normal;
+  border-bottom:none;position:relative;
+}
+.hero.dark .wrap{position:relative;z-index:1}
+.hero.img-plexus{background:linear-gradient(100deg,rgba(4,24,40,.92) 0%,rgba(6,43,71,.78) 55%,rgba(10,58,94,.62) 100%),url("/assets/img/plexus.jpg") center/cover no-repeat #062B47}
+.hero.img-net{background:linear-gradient(100deg,rgba(4,24,40,.92) 0%,rgba(6,43,71,.80) 55%,rgba(10,58,94,.64) 100%),url("/assets/img/net.jpg") center/cover no-repeat #062B47}
+
+.hero.dark .eyebrow{color:var(--brand-green)}
+.hero.dark h1{color:#fff}
+.hero.dark .lede{color:#C4D5E2}
+.hero.dark .btn.ghost{border-color:rgba(255,255,255,.35);color:#fff}
+.hero.dark .btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero.dark .stack{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(2px)}
+.hero.dark .stack h4{color:var(--brand-teal)}
+.hero.dark .stack li{color:#D8E4ED}
+.hero.dark .stack li::before{background:var(--brand-green)}
+
+/* CTA band picks up the grunge gradient texture sitewide */
+.ctaband{
+  background:linear-gradient(90deg,rgba(6,27,44,.88),rgba(6,43,71,.86)),url("/assets/img/texture.jpg") center/cover no-repeat #062B47;
+}
+
+/* article capture block gets the same texture under its gradient */
+.capture{
+  background:linear-gradient(135deg,rgba(6,27,44,.92) 0%,rgba(10,58,94,.88) 100%),url("/assets/img/texture.jpg") center/cover no-repeat #062B47;
+}
+
+/* service-line hero images */
+.hero.img-wave{background:linear-gradient(100deg,rgba(4,24,40,.92) 0%,rgba(6,43,71,.80) 55%,rgba(10,58,94,.62) 100%),url("/assets/img/wave.jpg") center/cover no-repeat #062B47}
+.hero.img-flow{background:linear-gradient(100deg,rgba(4,24,40,.92) 0%,rgba(6,43,71,.80) 55%,rgba(10,58,94,.62) 100%),url("/assets/img/flow.jpg") center/cover no-repeat #062B47}
+.hero.img-texture{background:linear-gradient(100deg,rgba(4,24,40,.86) 0%,rgba(6,43,71,.74) 55%,rgba(10,58,94,.55) 100%),url("/assets/img/texture.jpg") center/cover no-repeat #062B47}
+
+
+/* dark gradient heroes, one brand color each:
+   About = teal, Case Studies = green, Team = blue */
+.hero.grad-teal{background:linear-gradient(115deg,#04182A 0%,#062B47 45%,#0E5A5D 100%)}
+.hero.grad-green{background:linear-gradient(115deg,#04182A 0%,#062B47 45%,#3E6B1F 100%)}
+.hero.grad-blue{background:linear-gradient(115deg,#04182A 0%,#062B47 45%,#0A5A8E 100%)}
+.hero.grad-teal .eyebrow{color:var(--brand-teal)}
+.hero.grad-green .eyebrow{color:var(--brand-green)}
+.hero.grad-blue .eyebrow{color:#4FC3F7}
+
+/* CTA band over the texture: text must be light */
+.ctaband h2{color:#fff}
+.ctaband p{color:#C4D5E2}
+
+/* solid colored engage cards (team page only) */
+.grid-3.mini.solid .card{border:1px solid transparent;border-top:none}
+.grid-3.mini.solid .card::before{display:none}
+.grid-3.mini.solid .svc-staffing{background:#5E9433;border-color:#5E9433}
+.grid-3.mini.solid .svc-hro{background:#0E7C80;border-color:#0E7C80}
+.grid-3.mini.solid .svc-search{background:#0A6BAC;border-color:#0A6BAC}
+.grid-3.mini.solid .card h3,
+.grid-3.mini.solid .card p,
+.grid-3.mini.solid .card .more{color:#fff}
+.grid-3.mini.solid .card p{color:rgba(255,255,255,.88)}
+.grid-3.mini.solid .card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(6,43,71,.18)}
+
+/* ==========================================================
+   FIXED INDUSTRY COLORS
+   Each practice owns one colour along the brand gradient, used
+   identically on its card bar and on its own page hero.
+   IT green -> Eng teal-green -> Sci teal -> A&F teal-blue -> PS blue
+   ========================================================== */
+:root{
+  --p1:#8ECA50; --p1-ink:#4F7A2C; --p1-tint:#EEF7E5; --p1-dark:#3F6222;
+  --p2:#4FBE84; --p2-ink:#2C6E4E; --p2-tint:#E6F4EC; --p2-dark:#245A40;
+  --p3:#1CB0B5; --p3-ink:#127277; --p3-tint:#E4F4F5; --p3-dark:#0D5B5F;
+  --p4:#1298C4; --p4-ink:#0D6E90; --p4-tint:#E1F0F7; --p4-dark:#0A5876;
+  --p5:#0A81CE; --p5-ink:#0A6BAC; --p5-tint:#E3EFF9; --p5-dark:#08548A;
+}
+
+/* card top bars: solid industry colour, no position slicing */
+.pgrid .practice::before{background-image:none}
+.pgrid .p-it::before {background-color:var(--p1)}
+.pgrid .p-eng::before{background-color:var(--p2)}
+.pgrid .p-sci::before{background-color:var(--p3)}
+.pgrid .p-af::before {background-color:var(--p4)}
+.pgrid .p-ps::before {background-color:var(--p5)}
+
+/* page themes: hero tint, eyebrows, links and buttons all follow suit */
+.page.theme-p1{--accent:var(--p1-ink);--accent-bright:var(--p1);--accent-soft:var(--p1-tint);--accent-dark:var(--p1-dark)}
+.page.theme-p2{--accent:var(--p2-ink);--accent-bright:var(--p2);--accent-soft:var(--p2-tint);--accent-dark:var(--p2-dark)}
+.page.theme-p3{--accent:var(--p3-ink);--accent-bright:var(--p3);--accent-soft:var(--p3-tint);--accent-dark:var(--p3-dark)}
+.page.theme-p4{--accent:var(--p4-ink);--accent-bright:var(--p4);--accent-soft:var(--p4-tint);--accent-dark:var(--p4-dark)}
+.page.theme-p5{--accent:var(--p5-ink);--accent-bright:var(--p5);--accent-soft:var(--p5-tint);--accent-dark:var(--p5-dark)}
+
+/* capability grid variants inherit the page colour instead of cycling */
+.caps-split .cap::before{background-image:none;background-color:var(--accent-bright)}
+.caps-edge .cap,
+.caps-edge .cap:nth-child(3n+2),
+.caps-edge .cap:nth-child(3n+3){border-left-color:var(--accent-bright)}
+
+/* ==========================================================
+   INDUSTRY HERO GRADIENT JOURNEY
+   The five industry heroes are consecutive segments of the brand
+   gradient. Walk the pages in nav order and you traverse
+   green -> teal -> blue, with adjacent pages sharing an endpoint.
+   Six stops: #8ECA50 #60C078 #33B5A1 #18A7BA #1194C4 #0A81CE
+   ========================================================== */
+.page[class*="theme-p"] .hero{position:relative}
+
+/* saturated segment bar across the top of each hero */
+.page[class*="theme-p"] .hero::after{
+  content:"";position:absolute;top:0;left:0;right:0;height:5px;
+}
+.page.theme-p1 .hero::after{background:linear-gradient(90deg,#8ECA50,#60C078)}
+.page.theme-p2 .hero::after{background:linear-gradient(90deg,#60C078,#33B5A1)}
+.page.theme-p3 .hero::after{background:linear-gradient(90deg,#33B5A1,#18A7BA)}
+.page.theme-p4 .hero::after{background:linear-gradient(90deg,#18A7BA,#1194C4)}
+.page.theme-p5 .hero::after{background:linear-gradient(90deg,#1194C4,#0A81CE)}
+
+/* hero wash: segment tints left to right, dissolving into the page
+   below. The vertical layer fades from transparent to the page paper
+   colour, so there is no hard edge and no solid block. */
+.page[class*="theme-p"] .hero{padding-bottom:88px}
+.page.theme-p1 .hero{background:linear-gradient(180deg,rgba(245,248,250,0) 30%,#F5F8FA 96%),linear-gradient(105deg,#E8F4DC 0%,#DFF2E4 100%)}
+.page.theme-p2 .hero{background:linear-gradient(180deg,rgba(245,248,250,0) 30%,#F5F8FA 96%),linear-gradient(105deg,#DFF2E4 0%,#D6F0EC 100%)}
+.page.theme-p3 .hero{background:linear-gradient(180deg,rgba(245,248,250,0) 30%,#F5F8FA 96%),linear-gradient(105deg,#D6F0EC 0%,#D1EDF1 100%)}
+.page.theme-p4 .hero{background:linear-gradient(180deg,rgba(245,248,250,0) 30%,#F5F8FA 96%),linear-gradient(105deg,#D1EDF1 0%,#CFEAF3 100%)}
+.page.theme-p5 .hero{background:linear-gradient(180deg,rgba(245,248,250,0) 30%,#F5F8FA 96%),linear-gradient(105deg,#CFEAF3 0%,#CEE6F5 100%)}
+
+/* industry hero intro: real paragraphs, not a wall */
+.hero .prose p{
+  font-size:18.5px;line-height:1.65;color:var(--ink-soft);
+  max-width:64ch;margin-bottom:18px;
+}
+.hero .prose p:first-child{font-size:19.5px;color:var(--ink)}
+.hero .prose p:last-child{margin-bottom:0}
+
+/* nav: items never wrap to two lines; keep the header CTA compact */
+.menu>li>a,.menu>li>button{white-space:nowrap;font-size:15px;padding:10px 11px}
+.navcta .btn{white-space:nowrap;padding:11px 18px;font-size:15px}
+@media(max-width:1180px){
+  .menu>li>a,.menu>li>button{font-size:14.5px;padding:9px 9px}
+  .navcta .btn{padding:10px 14px;font-size:14.5px}
+}
+
+/* team bios: real paragraphs with breathing room */
+.person p{margin-bottom:13px;line-height:1.6}
+.person p:last-child{margin-bottom:0}
+
+/* ---- contact form status message (used by /assets/js/site-contact-form.js) ---- */
+.rx2-contact-form-message{font-size:.95rem;font-weight:600;margin-bottom:1rem;min-height:1.5rem}
+.rx2-contact-form-message.is-error{color:#c0392b}
+.rx2-contact-form-message.is-success{color:#2b9348}

@@ -9,3 +9,5 @@ lambda/infrastructure/discovery/
 lambda/discovery/
 .env.staging.local
 .env.staging.local.*
+.bundle/
+.gems/

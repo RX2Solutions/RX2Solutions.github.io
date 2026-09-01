@@ -1,0 +1,105 @@
+---
+layout: rx2-default
+title: "Pharmaceutical & Biotech Staffing"
+description: "Pharmaceutical, biotech, and CDMO staffing from RX2 Solutions: validation, quality, process engineering, and the business roles behind GMP operations. Nationwide."
+theme: theme-p3
+---
+<div class="hero tall">
+  <div class="wrap">
+    <div class="eyebrow">Pharmaceutical &amp; Biotech</div>
+    <h1>Staffing for pharmaceutical, biotech, and CDMO operations.</h1>
+    <div class="prose">
+      <p>This is where RX2 started, and it is still the center of gravity. Regulated manufacturing has a screening standard all its own: a candidate who looks perfect on paper and has never worked under GMP is not a near miss, they are a different profession.</p>
+      <p>We staff the whole operation, not just the lab. The validation engineer commissioning a new suite, the QC analyst running release testing, the cost accountant who understands standard costing on a plant floor, and the HR generalist keeping a growing site compliant.</p>
+      <p>One partner across all of it, so you are not managing five vendors while you scale.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">What We Staff</div>
+    <h2 class="narrow">The roles behind a compliant operation.</h2>
+    <p class="sub">Across contract, contract-to-hire, and direct hire, drawn from all five of our practices.</p>
+    <div class="caps caps-split">
+      <div class="cap"><h3>Validation &amp; CQV</h3><p>IQ, OQ, and PQ execution, commissioning support, and capital project validation for new suites and lines.</p></div>
+      <div class="cap"><h3>Quality Control &amp; Assurance</h3><p>Release and stability testing, deviation and CAPA management, and the documentation discipline auditors expect.</p></div>
+      <div class="cap"><h3>Process &amp; Manufacturing Engineering</h3><p>Sterile fill-finish, process characterization, tech transfer, and continuous improvement in GMP environments.</p></div>
+      <div class="cap"><h3>Regulatory &amp; Clinical</h3><p>Regulatory affairs, clinical operations, and the professionals who keep submissions and studies on track.</p></div>
+      <div class="cap"><h3>Plant Finance &amp; Accounting</h3><p>Cost accountants and FP&amp;A professionals who understand inventory valuation and variance analysis in manufacturing.</p></div>
+      <div class="cap"><h3>Site HR &amp; Operations</h3><p>HR generalists, administrators, and coordinators for sites growing faster than their infrastructure.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="onwhite">
+  <div class="wrap">
+    <div class="case">
+      <div>
+        <div class="eyebrow gold">Case Study</div>
+        <h2>One company. Every department. Twelve-plus states.</h2>
+        <p>A life sciences and manufacturing organization needed continuous staffing across the country during rapid growth. RX2 became their sole Strategic Staffing partner, delivering aligned candidates in under a week when required.</p>
+        <a class="btn gold" href="/case-studies.html#one-company-nationwide">Read the Full Case Study</a>
+      </div>
+      <div class="metrics">
+        <div><b>180 hires</b><span>over 18 months</span></div>
+        <div><b>Every department</b><span>technical, operations, and support</span></div>
+        <div><b>Sole partner</b><span>for all Strategic Staffing needs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">From Our Publications</div>
+    <h2 class="narrow">We write about your world every week.</h2>
+    <div class="grid-3" style="margin-top:30px">
+      {%- assign shown = 0 -%}
+      {%- for p in site.posts -%}
+        {%- if shown < 3 -%}
+          {%- unless p.tags contains "announcement" -%}
+      <a class="post" href="{{ p.url }}"><div class="date">{{ p.date | date: "%B %-d, %Y" }}</div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.excerpt | strip_html | strip_newlines | strip | truncate: 120 }}</p></a>
+            {%- assign shown = shown | plus: 1 -%}
+          {%- endunless -%}
+        {%- endif -%}
+      {%- endfor %}
+    </div>
+    <p style="margin-top:24px"><a href="/articles.html"><strong>See all publications &rarr;</strong></a></p>
+  </div>
+</section>
+
+<section class="onwhite">
+  <div class="wrap">
+    <div class="eyebrow">How We Engage</div>
+    <h2 class="narrow">Three ways to bring this talent on board.</h2>
+    <div class="grid-3 mini" style="margin-top:30px">
+      <a class="card link svc-staffing" href="/strategic-staffing.html">
+        <h3>Strategic Staffing</h3>
+        <p>Contract, contract-to-hire, and direct hire. Best when the seat is open now and the work cannot wait.</p>
+        <div class="more">See how it works &rarr;</div>
+      </a>
+      <a class="card link svc-hro" href="/human-resource-outsourcing.html">
+        <h3>HR Outsourcing</h3>
+        <p>A full HR function on one platform. Best when a growing site has outrun its people infrastructure.</p>
+        <div class="more">Explore HRO &rarr;</div>
+      </a>
+      <a class="card link svc-search" href="/executive-search.html">
+        <h3>Executive Search</h3>
+        <p>Leadership recruitment in four defined stages. Best when the hire sets direction for the site or the function.</p>
+        <div class="more">Explore search &rarr;</div>
+      </a>
+    </div>
+    <p style="margin-top:26px">Looking for a specific discipline? Start with <a href="/scientific-clinical.html"><strong>Scientific &amp; Clinical</strong></a> or <a href="/engineering-manufacturing.html"><strong>Engineering &amp; Manufacturing</strong></a>.</p>
+  </div>
+</section>
+
+<div class="ctaband">
+  <div class="wrap">
+    <h2>Hiring in a regulated environment?</h2>
+    <p>Tell us about the site, the line, or the seat. You'll hear back from an RX2 team member within one business day.</p>
+    <a class="btn" href="/contactus.html">Start a Respectfully Professional Conversation</a>
+  </div>
+</div>

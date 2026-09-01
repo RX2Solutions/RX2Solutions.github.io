@@ -1,0 +1,51 @@
+<header>
+  <div class="wrap navbar">
+    <a class="brand" href="/" aria-label="RX2 Solutions home">
+      <img src="/assets/rx2-logo.png" alt="RX2 Solutions" class="logo">
+    </a>
+
+    <ul class="menu" id="menu">
+      <li>
+        <button aria-expanded="false">About Us <span class="caret"></span></button>
+        <ul class="drop">
+          <li><a href="/about.html">Why RX2 Solutions?</a></li>
+          <li><a href="/case-studies.html">Case Studies</a></li>
+          <li><a href="/team.html">Meet the Team</a></li>
+        </ul>
+      </li>
+      <li>
+        <button aria-expanded="false">Our Solutions <span class="caret"></span></button>
+        <ul class="drop">
+          <li><div class="grouplabel">Core Solutions</div></li>
+          <li><a href="/strategic-staffing.html">Strategic Staffing</a></li>
+          <li><a href="/human-resource-outsourcing.html">HR Outsourcing</a></li>
+          <li><a href="/executive-search.html">Executive Search</a></li>
+          <li><div class="grouplabel">Practices</div></li>
+          <li><a href="/information-technology.html">Information Technology</a></li>
+          <li><a href="/engineering-manufacturing.html">Engineering &amp; Manufacturing</a></li>
+          <li><a href="/scientific-clinical.html">Scientific &amp; Clinical</a></li>
+          <li><a href="/accounting-finance.html">Accounting &amp; Finance</a></li>
+          <li><a href="/professional-services.html">Professional Services</a></li>
+        </ul>
+      </li>
+      <li><a href="/articles.html"{% if page.url == '/articles.html' or page.layout == 'post' %} class="here"{% endif %}>Publications</a></li>
+      <li><a href="/contactus.html"{% if page.url == '/contactus.html' %} class="here"{% endif %}>Contact Us</a></li>
+      <li><a href="/careers2.html"{% if page.url == '/careers2.html' or page.url == '/careers.html' %} class="here"{% endif %}>Careers</a></li>
+      <li>
+        <button aria-expanded="false">Login <span class="caret"></span></button>
+        <ul class="drop">
+          <li><a href="https://www2.jobdiva.com/login_timesheet.jsp?a=bgjdnwc9nv07ivdb0syybuj8ucs9qa069dbvjfjr8ddm03lcdn91xmixspyjd7zj" target="_blank" rel="noopener">Client Portal</a></li>
+          <li><a href="https://www2.jobdiva.com/portal/?a=q8jdnwbqh4neghqba6qlqp8nu2ts1j069d0dhhe99j43tzo9syoi2usoc25y5pru&compid=0#/login" target="_blank" rel="noopener">Consultant Portal</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="navcta">
+      <a class="btn" href="/contactus.html">Start a Conversation</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="brandrule"></div>
+</header>

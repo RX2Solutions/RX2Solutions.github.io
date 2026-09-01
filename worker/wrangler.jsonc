@@ -1,0 +1,20 @@
+// RX2 Solutions — contact form Worker
+// Receives the contactus.html form POST and creates a row in Rob's Notion database.
+// Secrets (never in this file):
+//   wrangler secret put NOTION_TOKEN        <- Notion internal integration secret
+//   wrangler secret put NOTION_DATABASE_ID  <- target database id (share the DB with the integration first)
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rx2-contact-form",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-31",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    // Origin allowed to POST to this Worker + where visitors are sent after success.
+    "SITE_ORIGIN": "https://rx2solutions.com"
+  }
+}
