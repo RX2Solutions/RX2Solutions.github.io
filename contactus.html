@@ -20,17 +20,15 @@ redirect_from:
       <div class="formcard">
         <h2 style="font-size:24px;margin-bottom:8px">Start a Respectfully Professional Conversation</h2>
         <p style="color:var(--ink-soft);font-size:16px;margin-bottom:26px">Give us a brief description of what you're working on.</p>
+        <form method="POST"{% if site.contact_form_worker_url and site.contact_form_worker_url != "" %} action="{{ site.contact_form_worker_url }}"{% else %} onsubmit="return demo()"{% endif %}>
         <div class="row2">
-          <div class="field"><label for="n">Full name</label><input id="n" type="text" placeholder="Jane Doe"></div>
-          <div class="field"><label for="c">Company</label><input id="c" type="text" placeholder="Company name"></div>
+          <div class="field"><label for="n">Full name</label><input id="n" name="name" type="text" placeholder="Jane Doe" required></div>
+          <div class="field"><label for="c">Company</label><input id="c" name="company" type="text" placeholder="Company name"></div>
         </div>
-        <div class="row2">
-          <div class="field"><label for="e">Work email</label><input id="e" type="email" placeholder="jane@company.com"></div>
-          <div class="field"><label for="p">Phone</label><input id="p" type="tel" placeholder="(610) 555-0100"></div>
-        </div>
+        <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
         <div class="field">
           <label for="s">What do you need help with?</label>
-          <select id="s">
+          <select id="s" name="help">
             <option>Strategic Staffing</option>
             <option>HR Outsourcing</option>
             <option>Executive Search</option>
@@ -38,8 +36,14 @@ redirect_from:
             <option>Something else</option>
           </select>
         </div>
-        <div class="field"><label for="m">Tell us more</label><textarea id="m" placeholder="The role, the timeline, the environment, or whatever's most useful."></textarea></div>
-        <button class="btn" onclick="return demo()">Send</button>
+        <div class="field"><label for="m">Tell us more</label><textarea id="m" name="message" placeholder="The role, the timeline, the environment, or whatever's most useful."></textarea></div>
+        <!-- Honeypot: humans never see or fill this; bots do. The Worker silently drops any submission where it has a value. -->
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label for="cw">Company website</label>
+          <input id="cw" name="company_website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn" type="submit">Send</button>
+        </form>
         <p class="formnote">You'll hear back from an RX2 team member within one business day. We don't add you to a drip campaign.</p>
       </div>
 

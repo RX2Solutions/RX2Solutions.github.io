@@ -35,6 +35,7 @@ collections:
 
 exclude:
   - lambda
+  - worker
   - _inbox
 
 defaults:
@@ -73,6 +74,9 @@ defaults:
 future: false
 
 contact_form_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/rx2SubmitContactForm
+# Cloudflare Worker that writes contact submissions to Notion (see /worker).
+# Leave empty until the Worker is deployed; the form stays in demo mode.
+contact_form_worker_url:
 landing_opt_in_endpoint: https://laochjbsna.execute-api.us-east-1.amazonaws.com/landingOptIn
 # Set this to the GA4 measurement ID, e.g. G-XXXXXXXXXX, to enable Google Analytics.
 google_analytics_measurement_id:
