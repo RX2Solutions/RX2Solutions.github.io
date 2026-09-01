@@ -37,6 +37,10 @@ exclude:
   - lambda
   - worker
   - _inbox
+  - infrastructure
+  - AGENTS.md
+  - 2026-08-client-image-update-summary.md
+  - README.md
 
 defaults:
   - scope:
