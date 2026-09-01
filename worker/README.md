@@ -1,8 +1,21 @@
 # rx2-contact-form Worker
 
-Receives POSTs from the site contact form (`/contactus.html`) and creates a
-row in the RX2 Notion contacts database. Honeypot submissions are dropped
-silently; real ones 303-redirect the visitor to `/thanks.html`.
+Receives POSTs from the site contact form (`/contactus.html`) and upserts a
+row in the RX2 Notion contacts database (matched by email, so a repeat
+inquirer updates their row instead of duplicating it). Stores name, company,
+email, help topic, and message. Honeypot submissions are dropped silently;
+real ones 303-redirect the visitor to `/thanks.html`.
+
+The Notion database needs these properties (or edit `NOTION_PROPERTIES` in
+`src/index.js` to match your names):
+
+| Property      | Type  |
+| ------------- | ----- |
+| Name          | Title |
+| Email         | Email |
+| Company       | Text  |
+| Interested In | Text  |
+| Message       | Text  |
 
 ## One-time setup (Rob)
 

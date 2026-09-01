@@ -22,7 +22,7 @@ const NOTION_PROPERTIES = {
   name:    { property: "Name",    type: "title" },
   email:   { property: "Email",   type: "email" },
   company: { property: "Company", type: "rich_text" },
-  help:    { property: "Interested In", type: "select" },
+  help:    { property: "Interested In", type: "rich_text" },
   message: { property: "Message", type: "rich_text" },
 };
 
@@ -81,9 +81,6 @@ function buildNotionProperties(fields) {
       case "email":
         props[map.property] = { email: value };
         break;
-      case "select":
-        props[map.property] = { select: { name: value } };
-        break;
       case "rich_text":
       default:
         props[map.property] = { rich_text: [{ text: { content: value } }] };
@@ -91,6 +88,37 @@ function buildNotionProperties(fields) {
     }
   }
   return props;
+}
+
+function notionFetch(env, path, method, body) {
+  return fetch(`https://api.notion.com${path}`, {
+    method,
+    headers: {
+      "Authorization": `Bearer ${env.NOTION_TOKEN}`,
+      "Notion-Version": NOTION_VERSION,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+}
+
+/** Return the id of the existing row with this email, or null. Never throws the submission away over a lookup problem. */
+async function findPageIdByEmail(env, email) {
+  try {
+    const res = await notionFetch(env, `/v1/databases/${env.NOTION_DATABASE_ID}/query`, "POST", {
+      filter: { property: NOTION_PROPERTIES.email.property, email: { equals: email } },
+      page_size: 1,
+    });
+    if (!res.ok) {
+      console.log(JSON.stringify({ event: "lookup_failed", status: res.status }));
+      return null;
+    }
+    const data = await res.json();
+    return data?.results?.[0]?.id || null;
+  } catch (err) {
+    console.log(JSON.stringify({ event: "lookup_error", error: String(err) }));
+    return null;
+  }
 }
 
 export default {
@@ -124,22 +152,21 @@ export default {
       return textResponse(env, 400, "That email address doesn't look right.");
     }
 
-    const payload = {
-      parent: { database_id: env.NOTION_DATABASE_ID },
-      properties: buildNotionProperties(fields),
-    };
+    const properties = buildNotionProperties(fields);
 
     let notionResponse;
     try {
-      notionResponse = await fetch("https://api.notion.com/v1/pages", {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${env.NOTION_TOKEN}`,
-          "Notion-Version": NOTION_VERSION,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      // Upsert by email: a repeat inquirer updates their existing row
+      // instead of creating a duplicate.
+      const existingId = await findPageIdByEmail(env, fields.email);
+      if (existingId) {
+        notionResponse = await notionFetch(env, `/v1/pages/${existingId}`, "PATCH", { properties });
+      } else {
+        notionResponse = await notionFetch(env, "/v1/pages", "POST", {
+          parent: { database_id: env.NOTION_DATABASE_ID },
+          properties,
+        });
+      }
     } catch (err) {
       console.log(JSON.stringify({ event: "notion_unreachable", error: String(err) }));
       return textResponse(env, 502, "We couldn't record your message just now. Please email info@rx2solutions.com.");
