@@ -1049,3 +1049,8 @@ section[id],div[id].proof,details[id]{scroll-margin-top:96px}
 /* team bios: real paragraphs with breathing room */
 .person p{margin-bottom:13px;line-height:1.6}
 .person p:last-child{margin-bottom:0}
+
+/* ---- contact form status message (used by /assets/js/site-contact-form.js) ---- */
+.rx2-contact-form-message{font-size:.95rem;font-weight:600;margin-bottom:1rem;min-height:1.5rem}
+.rx2-contact-form-message.is-error{color:#c0392b}
+.rx2-contact-form-message.is-success{color:#2b9348}

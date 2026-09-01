@@ -20,7 +20,9 @@ redirect_from:
       <div class="formcard">
         <h2 style="font-size:24px;margin-bottom:8px">Start a Respectfully Professional Conversation</h2>
         <p style="color:var(--ink-soft);font-size:16px;margin-bottom:26px">Give us a brief description of what you're working on.</p>
-        <form method="POST"{% if site.contact_form_worker_url and site.contact_form_worker_url != "" %} action="{{ site.contact_form_worker_url }}"{% else %} onsubmit="return demo()"{% endif %}>
+        {% if site.contact_form_worker_url and site.contact_form_worker_url != "" %}
+        {%- comment -%} Cloudflare Worker path (see /worker): plain POST, redirects to /thanks.html {%- endcomment -%}
+        <form method="POST" action="{{ site.contact_form_worker_url }}">
         <div class="row2">
           <div class="field"><label for="n">Full name</label><input id="n" name="name" type="text" placeholder="Jane Doe" required></div>
           <div class="field"><label for="c">Company</label><input id="c" name="company" type="text" placeholder="Company name"></div>
@@ -44,6 +46,43 @@ redirect_from:
         </div>
         <button class="btn" type="submit">Send</button>
         </form>
+        {% else %}
+        {%- comment -%}
+        Interim path: the existing AWS Lambda behind contact_form_endpoint,
+        which already writes submissions into the Notion database (upsert by
+        email, confirm_email honeypot). It requires full_name, email, and
+        phone_number, so the phone field stays until the Worker replaces it.
+        {%- endcomment -%}
+        <form method="POST" data-rx2-contact-form data-endpoint="{{ site.contact_form_endpoint }}" data-page-name="Contact Us" data-success-message="Thanks. We will be in touch shortly.">
+        <div class="rx2-contact-form-message" data-rx2-contact-message aria-live="polite"></div>
+        <div class="row2">
+          <div class="field"><label for="n">Full name</label><input id="n" name="full_name" type="text" placeholder="Jane Doe" required></div>
+          <div class="field"><label for="c">Company</label><input id="c" name="company_name" type="text" placeholder="Company name"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="e">Work email</label><input id="e" name="email" type="email" placeholder="jane@company.com" required></div>
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone_number" type="tel" placeholder="(610) 555-0100" inputmode="tel" pattern="\+?(?:\d|\s|\(|\)|\.|-){7,}" required></div>
+        </div>
+        <div class="field">
+          <label for="s">What do you need help with?</label>
+          <select id="s" name="help">
+            <option>Strategic Staffing</option>
+            <option>HR Outsourcing</option>
+            <option>Executive Search</option>
+            <option>I'm a candidate looking for a role</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="m">Tell us more</label><textarea id="m" name="message" placeholder="The role, the timeline, the environment, or whatever's most useful."></textarea></div>
+        <!-- Honeypot: humans never see or fill this; bots do. The Lambda silently drops any submission where it has a value. -->
+        <div style="position:absolute;left:-9999px" aria-hidden="true">
+          <label for="ce">Confirm email</label>
+          <input id="ce" name="confirm_email" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn" type="submit">Send</button>
+        </form>
+        <script src="/assets/js/site-contact-form.js" defer></script>
+        {% endif %}
         <p class="formnote">You'll hear back from an RX2 team member within one business day. We don't add you to a drip campaign.</p>
       </div>
 
