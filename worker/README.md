@@ -37,7 +37,6 @@ cd worker
 npm install -g wrangler   # or use npx wrangler
 wrangler login
 wrangler secret put NOTION_TOKEN
-wrangler secret put NOTION_DATABASE_ID
 wrangler deploy
 ```
 
