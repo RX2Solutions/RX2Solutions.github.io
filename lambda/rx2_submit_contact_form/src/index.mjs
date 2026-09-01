@@ -10,6 +10,8 @@ const nameProperty = process.env.NOTION_NAME_PROPERTY || "";
 const companyProperty = process.env.NOTION_COMPANY_PROPERTY || "";
 const phoneProperty = process.env.NOTION_PHONE_PROPERTY || "";
 const pageNameProperty = process.env.NOTION_PAGE_NAME_PROPERTY || "";
+const helpProperty = process.env.NOTION_HELP_PROPERTY || "";
+const messageProperty = process.env.NOTION_MESSAGE_PROPERTY || "";
 const notionVersion = "2022-06-28";
 
 let notionApiKeyPromise;
@@ -39,6 +41,8 @@ export const handler = async (event) => {
         const email = normaliseEmail(payload.email);
         const phoneNumber = normalisePhone(payload.phone_number);
         const pageName = normaliseText(payload.page_name, 128);
+        const helpTopic = normaliseText(payload.help, 128);
+        const message = normaliseText(payload.message, 1900);
 
         if (!fullName) {
             return validationError("Full name is required.", requestOrigin);
@@ -48,16 +52,14 @@ export const handler = async (event) => {
             return validationError("A valid email address is required.", requestOrigin);
         }
 
-        if (!phoneNumber) {
-            return validationError("Please provide a valid phone number.", requestOrigin);
-        }
-
         await upsertContactInNotion({
             fullName,
             companyName,
             email,
             phoneNumber,
             pageName,
+            helpTopic,
+            message,
         });
 
         return buildResponse(200, { message: "Thanks. We will be in touch shortly." }, requestOrigin);
@@ -80,6 +82,8 @@ async function upsertContactInNotion({
     email,
     phoneNumber,
     pageName,
+    helpTopic,
+    message,
 }) {
     const properties = {};
 
@@ -107,6 +111,14 @@ async function upsertContactInNotion({
 
     if (pageNameProperty && pageName) {
         properties[pageNameProperty] = richTextProperty(pageName);
+    }
+
+    if (helpProperty && helpTopic) {
+        properties[helpProperty] = richTextProperty(helpTopic);
+    }
+
+    if (messageProperty && message) {
+        properties[messageProperty] = richTextProperty(message);
     }
 
     const existingPage = await findNotionPageByEmail(email);
