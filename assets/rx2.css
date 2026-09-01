@@ -335,6 +335,11 @@ header .brandrule{border-radius:0}
 .card.svc-search .more{color:var(--blue-ink)}
 .card.svc-staffing:hover{border-color:var(--brand-green)}
 .card.svc-hro:hover{border-color:var(--brand-teal)}
+/* 4-step brand ramp for card top edges: green -> blue across a grid */
+.card.ramp-1{border-top:4px solid #8ECA50}
+.card.ramp-2{border-top:4px solid #33B5A1}
+.card.ramp-3{border-top:4px solid #18A7BA}
+.card.ramp-4{border-top:4px solid #0A81CE}
 .card.svc-search:hover{border-color:var(--brand-blue)}
 .card.svc-staffing:hover,.card.svc-hro:hover,.card.svc-search:hover{border-top-width:4px}
 
