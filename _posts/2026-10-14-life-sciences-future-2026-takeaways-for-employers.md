@@ -3,7 +3,7 @@ layout: post
 title: "Life Sciences Future 2026: Takeaways for Employers"
 author: rx2solutions
 tags: publication
-thumbnail: AdobeStock_333410533.jpeg
+thumbnail: 
 excerpt_separator: <!--more-->
 ---
 
