@@ -1,0 +1,112 @@
+name: Form health
+
+# Why this exists: from launch night until 16 Nov 2026 the contact form and the
+# newsletter capture both posted to rx2-contact-form.rx2solutions.workers.dev,
+# a hostname that never existed (the account subdomain is rbgraham). Every
+# submission died in the browser and nothing anywhere noticed for eleven weeks.
+#
+# So this check reads the endpoints the LIVE SITE renders rather than any URL
+# written here. A wrong value in _config.yml fails exactly like a dead backend,
+# which is the failure that actually happened.
+#
+# Every probe below is non-destructive: it either trips the honeypot (the Worker
+# answers success and writes nothing) or sends a deliberately invalid payload.
+# Nothing reaches Notion.
+
+on:
+  schedule:
+    - cron: "17 13 * * *" # daily, 13:17 UTC (~8:17am ET)
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe the live forms
+        run: |
+          set -uo pipefail
+          fail=0
+          bad() { printf '::error::%s\n' "$*"; fail=1; }
+          ok()  { printf '  ok  %s\n' "$*"; }
+
+          # --- what is the live site actually pointing at? ---------------------
+          contact_page=$(curl -sS --max-time 20 https://rx2solutions.com/contactus.html) \
+            || { bad "contactus.html is unreachable"; exit 1; }
+          articles_page=$(curl -sS --max-time 20 https://rx2solutions.com/articles.html) \
+            || { bad "articles.html is unreachable"; exit 1; }
+
+          contact_ep=$(printf '%s' "$contact_page" \
+            | grep -o '<form method="POST" action="[^"]*"' | head -1 \
+            | sed 's/.*action="//; s/"$//')
+          subscribe_ep=$(printf '%s' "$articles_page" \
+            | grep -o "SUBSCRIBE_ENDPOINT = '[^']*'" | head -1 \
+            | sed "s/.*= '//; s/'$//")
+
+          [ -n "$contact_ep" ]   || bad "no contact form action found on contactus.html"
+          [ -n "$subscribe_ep" ] || bad "no SUBSCRIBE_ENDPOINT found on articles.html"
+          [ "$fail" -eq 0 ] || exit 1
+
+          echo "contact endpoint:   $contact_ep"
+          echo "subscribe endpoint: $subscribe_ep"
+          echo
+
+          # curl writes 000 when the host does not resolve or refuses the
+          # connection; normalise the empty case to the same thing.
+          code() { local c; c=$(curl -sS --max-time 20 -o /dev/null -w '%{http_code}' "$@" 2>/dev/null); printf '%s' "${c:-000}"; }
+
+          # --- contact form ----------------------------------------------------
+          # 000 means the host did not resolve or refused the connection. That is
+          # the eleven-week bug, and it is the single most important line here.
+          c=$(code -X POST "$contact_ep" \
+                --data-urlencode "name=health check" \
+                --data-urlencode "email=health-check@example.com" \
+                --data-urlencode "help=health check" \
+                --data-urlencode "company_website=honeypot")
+          case "$c" in
+            303) ok "contact form accepts a submission (303 to /thanks.html)" ;;
+            000) bad "contact form endpoint unreachable: $contact_ep" ;;
+            *)   bad "contact form returned $c, expected 303 ($contact_ep)" ;;
+          esac
+
+          c=$(code -X POST "$contact_ep" --data-urlencode "email=health-check@example.com")
+          case "$c" in
+            400) ok "contact form validates required fields (400)" ;;
+            000) bad "contact form endpoint unreachable: $contact_ep" ;;
+            *)   bad "contact form returned $c for an incomplete submission, expected 400" ;;
+          esac
+
+          # --- newsletter ------------------------------------------------------
+          c=$(code -X POST "$subscribe_ep" -H 'Content-Type: application/json' \
+                -d '{"email":"health-check@example.com","company_website":"honeypot"}')
+          case "$c" in
+            200) ok "newsletter accepts a submission (200)" ;;
+            000) bad "newsletter endpoint unreachable: $subscribe_ep" ;;
+            *)   bad "newsletter returned $c, expected 200 ($subscribe_ep)" ;;
+          esac
+
+          c=$(code -X POST "$subscribe_ep" -H 'Content-Type: application/json' \
+                -d '{"email":"not-an-email"}')
+          case "$c" in
+            400) ok "newsletter rejects a bad address (400)" ;;
+            000) bad "newsletter endpoint unreachable: $subscribe_ep" ;;
+            *)   bad "newsletter returned $c for an invalid address, expected 400" ;;
+          esac
+
+          # --- CORS: the browser path, not just the server ---------------------
+          # The newsletter form is a fetch() from the page, so a wrong
+          # Access-Control-Allow-Origin breaks it even when the Worker is fine.
+          acao=$(curl -sS --max-time 20 -i -X OPTIONS "$subscribe_ep" \
+                   -H 'Origin: https://rx2solutions.com' 2>/dev/null \
+                 | tr -d '\r' | awk -F': ' 'tolower($1)=="access-control-allow-origin"{print $2}' | head -1)
+          if [ "$acao" = "https://rx2solutions.com" ]; then
+            ok "newsletter CORS allows https://rx2solutions.com"
+          else
+            bad "newsletter CORS returned '${acao:-nothing}', expected https://rx2solutions.com"
+          fi
+
+          echo
+          if [ "$fail" -ne 0 ]; then
+            echo "A form on rx2solutions.com is not working. Submissions are being lost right now."
+            exit 1
+          fi
+          echo "All form endpoints healthy."
